@@ -5,6 +5,8 @@ import json
 # Import your own modules
 from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
+from Evaluator.fairness_checks import run_fairness_scoring
+from Evaluator.validation_rules import validate_metadata_intentions
 from Evaluator.evaluator import (
     load_dmp,
     evaluate_dmp_against_fip,
@@ -47,6 +49,28 @@ def main():
 
     print(f"📄 Saved evaluation report to: {csv_output}")
     print(f"📝 Saved recommendations to: {txt_output}")
+
+    # FAIRness Evaluation
+    fairness_results = run_fairness_scoring(dmp)
+
+    # Save FAIRness results to JSON
+    fairness_output = os.path.join(args.output, f"{base_filename}_fairness.json")
+    with open(fairness_output, 'w', encoding='utf-8') as file:
+        json.dump(fairness_results, file, indent=2)
+
+    print(f"🎯 FAIRness evaluation results saved to: {fairness_output}")
+
+    # Validate metadata intentions vs actual content
+    metadata_issues = validate_metadata_intentions(dmp)
+
+    # Save metadata validation results to JSON
+    validation_output = os.path.join(args.output, f"{base_filename}_metadata_validation.json")
+    with open(validation_output, 'w', encoding='utf-8') as file:
+        json.dump(metadata_issues, file, indent=2)
+
+    print(f"🔍 Metadata intention validation results saved to: {validation_output}")
+
+
 
 if __name__ == "__main__":
     main()
