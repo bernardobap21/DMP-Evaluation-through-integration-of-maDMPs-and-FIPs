@@ -1,0 +1,29 @@
+# Core dependencies
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+
+# Machine learning libraries
+scikit-learn>=0.24.0
+
+# Additional utilities
+tqdm>=4.61.0
+
+# For reproducibility
+seaborn>=0.11.0
+
+# Jupyter Notebook support (if applicable)
+jupyter>=1.0.0
+
+# For handling YAML files (if applicable)
+pyyaml>=5.4.0
+
+# For deep learning (if applicable)
+tensorflow>=2.5.0
+torch>=1.9.0
+
+# For scientific computing (if applicable)
+scipy>=1.7.0
+
+# For working with JSON or APIs (if applicable)
+requests>=2.25.0
