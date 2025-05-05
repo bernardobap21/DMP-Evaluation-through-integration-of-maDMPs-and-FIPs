@@ -1,0 +1,28 @@
+@prefix dmp: <http://example.org/dmp#> .
+
+<https://doi.org/10.0000/00.0.1234> a dmp:DataManagementPlan ;
+    dmp:description "This DMP is for our new project." ;
+    dmp:hasContact <https://www.tiss.tuwien.ac.at/person/2351952424> ;
+    dmp:hasDataset <https://hdl.handle.net/0000/00.00000> ;
+    dmp:title "DMP for our new project" .
+
+<https://hdl.handle.net/0000/00.00000> a dmp:Dataset ;
+    dmp:hasDistribution <https://hdl.handle.net/0000/00.00000/distribution/Planned%20distribution>,
+        <https://www.re3data.org/repository/r3d100010375>,
+        <https://www.re3data.org/repository/r3d100010468> ;
+    dmp:title "Client application",
+        "Image collection",
+        "Interviews" .
+
+<https://hdl.handle.net/0000/00.00000/distribution/Planned%20distribution> a dmp:Distribution ;
+    dmp:dataAccess "closed" .
+
+<https://www.re3data.org/repository/r3d100010375> a dmp:Distribution ;
+    dmp:dataAccess "open" .
+
+<https://www.re3data.org/repository/r3d100010468> a dmp:Distribution ;
+    dmp:dataAccess "open" .
+
+<https://www.tiss.tuwien.ac.at/person/2351952424> a dmp:Contact ;
+    dmp:name "John Smith" .
+

@@ -27,3 +27,6 @@ scipy>=1.7.0
 
 # For working with JSON or APIs (if applicable)
 requests>=2.25.0
+
+# For working with RDF data (if applicable)
+rdflib>=6.0.0
