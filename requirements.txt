@@ -12,21 +12,27 @@ tqdm>=4.61.0
 # For reproducibility
 seaborn>=0.11.0
 
-# Jupyter Notebook support (if applicable)
+# Jupyter Notebook support 
 jupyter>=1.0.0
 
-# For handling YAML files (if applicable)
+# For handling YAML files 
 pyyaml>=5.4.0
 
-# For deep learning (if applicable)
+# For deep learning 
 tensorflow>=2.5.0
 torch>=1.9.0
 
-# For scientific computing (if applicable)
+# For scientific computing 
 scipy>=1.7.0
 
-# For working with JSON or APIs (if applicable)
+# For working with JSON or APIs 
 requests>=2.25.0
 
-# For working with RDF data (if applicable)
+# For working with RDF data 
 rdflib>=6.0.0
+
+# For working with graphs 
+networkx>=2.5
+
+# For working with validators
+validators>=0.18.0

@@ -18,10 +18,12 @@
     dmp:dataAccess "closed" .
 
 <https://www.re3data.org/repository/r3d100010375> a dmp:Distribution ;
-    dmp:dataAccess "open" .
+    dmp:dataAccess "open" ;
+    dmp:license <http://opensource.org/licenses/mit-license.php> .
 
 <https://www.re3data.org/repository/r3d100010468> a dmp:Distribution ;
-    dmp:dataAccess "open" .
+    dmp:dataAccess "open" ;
+    dmp:license <http://creativecommons.org/licenses/by/4.0/> .
 
 <https://www.tiss.tuwien.ac.at/person/2351952424> a dmp:Contact ;
     dmp:name "John Smith" .

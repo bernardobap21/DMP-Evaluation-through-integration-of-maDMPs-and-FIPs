@@ -63,7 +63,7 @@ def save_recommendations(results, output_path):
             recommendations.append(f"- Improve or add metadata for: {question} (Mapping status: {mapping_status})")
 
     if not recommendations:
-        recommendations.append("✅ All mapped fields are present! No missing information detected.")
+        recommendations.append(" All mapped fields are present! No missing information detected.")
 
     with open(output_path, mode='w', encoding='utf-8') as file:
         for line in recommendations:

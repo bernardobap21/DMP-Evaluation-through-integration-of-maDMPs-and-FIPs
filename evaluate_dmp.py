@@ -36,7 +36,7 @@ def main():
 
     # Summarize
     present, total = summarize_results(evaluation_results)
-    print(f"✅ Evaluation Complete: {present}/{total} fields present.")
+    print(f" Evaluation Complete: {present}/{total} fields present.")
 
     # Prepare filenames
     base_filename = os.path.splitext(os.path.basename(args.input))[0]
@@ -47,8 +47,8 @@ def main():
     save_evaluation_results(evaluation_results, csv_output)
     save_recommendations(evaluation_results, txt_output)
 
-    print(f"📄 Saved evaluation report to: {csv_output}")
-    print(f"📝 Saved recommendations to: {txt_output}")
+    print(f" Saved evaluation report to: {csv_output}")
+    print(f" Saved recommendations to: {txt_output}")
 
     # FAIRness Evaluation
     fairness_results = run_fairness_scoring(dmp)
@@ -58,7 +58,7 @@ def main():
     with open(fairness_output, 'w', encoding='utf-8') as file:
         json.dump(fairness_results, file, indent=2)
 
-    print(f"🎯 FAIRness evaluation results saved to: {fairness_output}")
+    print(f" FAIRness evaluation results saved to: {fairness_output}")
 
     # Validate metadata intentions vs actual content
     metadata_issues = validate_metadata_intentions(dmp)
@@ -68,7 +68,7 @@ def main():
     with open(validation_output, 'w', encoding='utf-8') as file:
         json.dump(metadata_issues, file, indent=2)
 
-    print(f"🔍 Metadata intention validation results saved to: {validation_output}")
+    print(f" Metadata intention validation results saved to: {validation_output}")
 
 
 

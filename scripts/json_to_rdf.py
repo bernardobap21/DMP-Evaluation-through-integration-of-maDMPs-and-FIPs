@@ -1,6 +1,6 @@
 import json
 from rdflib import Graph, Namespace, Literal, RDF, URIRef
-from urllib.parse import quote  # <-- new import!
+from urllib.parse import quote  
 
 DMP = Namespace("http://example.org/dmp#")
 
@@ -45,9 +45,15 @@ def json_to_rdf(json_path, rdf_path):
             g.add((dist_uri, DMP.dataAccess, Literal(dist.get("data_access", "unknown"))))
             g.add((ds_uri, DMP.hasDistribution, dist_uri))
 
+            licenses = dist.get("license", [])
+            for lic in licenses:
+                license_ref = lic.get("license_ref")
+                if license_ref:
+                    g.add((dist_uri, DMP.license, URIRef(license_ref)))
+
     # Save RDF as Turtle (.ttl)
     g.serialize(destination=rdf_path, format='turtle')
-    print(f"📗 RDF saved successfully at {rdf_path}")
+    print(f" RDF saved successfully at {rdf_path}")
 
 if __name__ == "__main__":
     json_to_rdf(
