@@ -16,11 +16,17 @@ def check_completeness(dmp):
         for key in keys:
             if isinstance(temp, list):
                 temp = temp[0] if temp else {}
+                ##temp = temp[0] if temp else None
+            ##if temp is None:
+                ##break
             temp = temp.get(key) if isinstance(temp, dict) else None
             if temp is None:
                 missing_fields.append(path)
                 break
     completeness_score = 1 - len(missing_fields)/len(required_fields)
+        ##if temp in (None, '', [], {}):
+          ##  missing_fields.append(path)
+    ##completeness_score = 1 - len(missing_fields) / len(required_fields)
     return completeness_score, missing_fields
 
 def check_accuracy(dmp):
