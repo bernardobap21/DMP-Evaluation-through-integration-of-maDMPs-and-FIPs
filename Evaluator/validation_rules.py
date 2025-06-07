@@ -19,15 +19,19 @@ def check_personal_vs_sensitive(dataset):
             issues.append(f"Dataset '{title}' claims no personal data but is marked sensitive.")
     return issues
 
-def check_distribution_integrity(dataset):
+def check_distribution_integrity(datasets):
     issues = []
-    for ds in dataset:
-        title = ds.get('title', 'Unnamed Dataset')
+    for ds in datasets:
+        title = ds.get("title", "Unknown")
         for dist in ds.get("distribution", []):
-            byte_size = dist.get("byte_size", 0)
-            if byte_size <= 0:
-                issues.append(f"Dataset '{title}' has an invalid byte size ({byte_size}).")
+            # extract byte_size and check for None
+            byte_size = dist.get("byte_size")
+            if byte_size is None:
+                issues.append(f"Dataset '{title}' has a distribution with missing byte_size.")
+            elif byte_size <= 0:
+                issues.append(f"Dataset '{title}' has invalid byte_size: {byte_size}")
     return issues
+
 
 def validate_metadata_intentions(dmp):
     issues = {}

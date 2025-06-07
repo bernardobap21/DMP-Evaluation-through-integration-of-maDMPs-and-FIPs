@@ -1,0 +1,41 @@
+{
+  "dmp": {
+    "title": "Incomplete DMP Example",
+    "description": "A test DMP with missing and incorrect fields.",
+    "language": "de",
+    "contact": {
+      "name": "Jane Doe"
+    },
+    "dataset": [
+      {
+        "title": "Incomplete Dataset",
+        "personal_data": "yes",
+        "sensitive_data": "no",
+        "type": "Images",
+        "description": "Images with no distribution.",
+        "distribution": [
+          {
+            "title": "Distribution without details",
+            "data_access": "open",
+            "license": [],
+            "host": {
+              "title": "Invalid Host",
+              "url": "not a url"
+            }
+          }
+        ]
+      },
+      {
+        "title": "No License Dataset",
+        "distribution": [
+          {
+            "title": "Another distribution",
+            "data_access": "open",
+            "format": [],
+            "byte_size": null
+          }
+        ]
+      }
+    ]
+  }
+}
