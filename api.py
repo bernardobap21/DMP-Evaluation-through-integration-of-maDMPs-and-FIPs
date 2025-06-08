@@ -16,6 +16,13 @@ def read_root():
 
 @app.post("/evaluate/")
 async def evaluate(dmp_file: UploadFile = File(...), fip_mapping_file: UploadFile = File(...)):
+
+    for uploaded_file in [dmp_file, fip_mapping_file]:
+        if not uploaded_file.filename.endswith(".json"):
+            return {
+                "error": f"Invalid file type: {uploaded_file.filename}. Only .json files are allowed."
+            }
+        
     # Temporarily save uploaded files
     with tempfile.TemporaryDirectory() as tmpdir:
         dmp_path = os.path.join(tmpdir, dmp_file.filename)
