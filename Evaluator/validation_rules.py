@@ -9,7 +9,7 @@ def check_access_vs_license(dataset):
                 issues.append(f"Dataset '{title}' marked as open access but has no license.")
     return issues
 
-def check_personal_vs_sensitive(dataset):
+"""def check_personal_vs_sensitive(dataset):
     issues = []
     for ds in dataset:
         title = ds.get('title', 'Unnamed Dataset')
@@ -17,7 +17,7 @@ def check_personal_vs_sensitive(dataset):
         sensitive = ds.get("sensitive_data", "").lower()
         if personal == "no" and sensitive == "yes":
             issues.append(f"Dataset '{title}' claims no personal data but is marked sensitive.")
-    return issues
+    return issues"""
 
 def check_distribution_integrity(datasets):
     issues = []
@@ -37,13 +37,13 @@ def validate_metadata_intentions(dmp):
     issues = {}
     datasets = dmp.get("dataset", [])
     access_license_issues = check_access_vs_license(datasets)
-    personal_sensitive_issues = check_personal_vs_sensitive(datasets)
+    #personal_sensitive_issues = check_personal_vs_sensitive(datasets)
     distribution_integrity_issues = check_distribution_integrity(datasets)
 
     if access_license_issues:
         issues["access_vs_license"] = access_license_issues
-    if personal_sensitive_issues:
-        issues["personal_vs_sensitive"] = personal_sensitive_issues
+    #if personal_sensitive_issues:
+       # issues["personal_vs_sensitive"] = personal_sensitive_issues
     if distribution_integrity_issues:
         issues["distribution_integrity"] = distribution_integrity_issues
 

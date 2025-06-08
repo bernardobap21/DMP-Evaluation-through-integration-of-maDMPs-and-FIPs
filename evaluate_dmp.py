@@ -7,6 +7,7 @@ from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
 from Evaluator.fairness_checks import run_fairness_scoring
 from Evaluator.validation_rules import validate_metadata_intentions
+from Evaluator.planned_fairness import check_planned_fairness
 from Evaluator.evaluator import (
     load_dmp,
     evaluate_dmp_against_fip,
@@ -69,6 +70,13 @@ def main():
         json.dump(metadata_issues, file, indent=2)
 
     print(f" Metadata intention validation results saved to: {validation_output}")
+
+    # Save planned FAIRness checks
+    planned_result = check_planned_fairness(dmp)
+    planned_output = os.path.join(args.output, f"{base_filename}_planned_fairness.json")
+    with open(planned_output, 'w') as f:
+        json.dump(planned_result, f, indent=2)
+
 
 
 
