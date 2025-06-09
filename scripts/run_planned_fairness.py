@@ -9,6 +9,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from Evaluator.planned_fairness import check_planned_fairness
 from Evaluator.ostrails_formatter import export_planned_fairness
+from Evaluator.evaluator import load_dmp
 
 # === CLI ARGUMENT PARSING ===
 parser = argparse.ArgumentParser(description="Run planned FAIRness evaluation on a maDMP.")
@@ -20,14 +21,16 @@ input_path = args.input
 output_path = args.output
 
 # === Load maDMP ===
-with open(input_path) as f:
-    dmp = json.load(f)
+#with open(input_path) as f:
+ #   dmp = json.load(f)
+dmp = load_dmp(input_path)
 
 # === Run the FAIRness Evaluation ===
 result = check_planned_fairness(dmp)
 
 # === Prepare Output ID ===
-dmp_title = dmp.get("dmp", {}).get("title", "unknown").replace(" ", "_")
+#dmp_title = dmp.get("dmp", {}).get("title", "unknown").replace(" ", "_")
+dmp_title = dmp.get("title", "unknown").replace(" ", "_")
 timestamp = datetime.now().strftime("%Y%m%d_%H%M")
 dmp_id = f"{dmp_title}"  # optionally append _{timestamp}
 

@@ -41,7 +41,7 @@ def main():
 
     # Prepare filenames
     base_filename = os.path.splitext(os.path.basename(args.input))[0]
-    csv_output = os.path.join(args.output, f"{base_filename}_evaluation.csv")
+    csv_output = os.path.join(args.output, f"{base_filename}_mapping_report.csv")
     txt_output = os.path.join(args.output, f"{base_filename}_recommendations.txt")
 
     # Save outputs
