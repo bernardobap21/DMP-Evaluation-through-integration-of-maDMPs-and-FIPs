@@ -4,7 +4,8 @@ def check_planned_fairness(dmp):
     total_score = 0
     num_tests = 0
 
-    datasets = dmp.get("dataset", [])
+    datasets = dmp.get("dmp", {}).get("dataset", [])
+
 
     for ds in datasets:
         title = ds.get("title", "Unnamed Dataset")
@@ -123,3 +124,6 @@ def check_planned_fairness(dmp):
             "test_results": test_results
         }
     }
+
+
+

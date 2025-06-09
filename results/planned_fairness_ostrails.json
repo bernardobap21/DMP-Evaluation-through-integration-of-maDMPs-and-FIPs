@@ -1,0 +1,53 @@
+{
+  "@context": "https://w3id.org/ostrails/fair-assessment/context",
+  "@type": "AssessmentResult",
+  "evaluated_resource": "Example_DMP",
+  "date": "2025-06-09T16:34:14.835719",
+  "results": [
+    {
+      "@type": "TestResult",
+      "test_id": "planned_data_access",
+      "test_name": "Access Level Declared",
+      "test_description": "Checks if data access level is properly declared",
+      "test_status": "pass",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "@type": "TestResult",
+      "test_id": "planned_license",
+      "test_name": "License Specified",
+      "test_description": "Checks if a license is planned",
+      "test_status": "pass",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "@type": "TestResult",
+      "test_id": "planned_format",
+      "test_name": "File Format Specified",
+      "test_description": "Checks if file format is defined",
+      "test_status": "pass",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "@type": "TestResult",
+      "test_id": "planned_pid",
+      "test_name": "PID System Declared",
+      "test_description": "Checks if persistent identifier system is mentioned",
+      "test_status": "pass",
+      "score": 1,
+      "comment": ""
+    },
+    {
+      "@type": "TestResult",
+      "test_id": "planned_versioning",
+      "test_name": "Versioning Supported",
+      "test_description": "Checks if the planned host supports versioning",
+      "test_status": "pass",
+      "score": 1,
+      "comment": ""
+    }
+  ]
+}

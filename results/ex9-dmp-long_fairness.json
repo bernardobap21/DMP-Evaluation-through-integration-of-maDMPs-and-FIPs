@@ -1,0 +1,22 @@
+{
+  "completeness": {
+    "score": 1.0,
+    "issues": []
+  },
+  "accuracy": {
+    "score": 1,
+    "issues": []
+  },
+  "consistency": {
+    "score": 0.7,
+    "issues": [
+      "Client application is missing format.",
+      "Image collection is missing format."
+    ]
+  },
+  "guidance_compliance": {
+    "score": 1,
+    "issues": []
+  },
+  "total_score": 0.93
+}
