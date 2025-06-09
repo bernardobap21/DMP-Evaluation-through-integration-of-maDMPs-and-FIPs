@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ## Running the evaluator
 
-The main script `evaluate_dmp.py` compares a maDMP file with the FIP mapping and generates several reports. An example of how it can be executed is:
+The main script `evaluate_dmp.py` compares a maDMP file with the FIP mapping and generates several reports. An example with a maDMP and a FIP (both available in the repository) of how it can be executed is:
 
 ```bash
 python evaluate_dmp.py --input examples/ex9-dmp-long.json --mapping FIP_Mapping/fip_madmp_mapping.json --output results
