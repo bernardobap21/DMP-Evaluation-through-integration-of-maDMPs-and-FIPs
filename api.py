@@ -6,7 +6,7 @@ from Evaluator.evaluator import (
 )
 from Evaluator.fairness_checks import run_fairness_scoring
 from Evaluator.validation_rules import validate_metadata_intentions
-#from Evaluator.planned_fairness import check_planned_fairness
+#from Evaluator.planned_fairness import check_planned_fairness # (need to check this)
 from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
 import tempfile
@@ -49,7 +49,7 @@ async def evaluate(dmp_file: UploadFile = File(...), fip_mapping_file: UploadFil
         results = evaluate_dmp_against_fip(dmp, mapping)
         present, total = summarize_results(results)
 
-        # Additional checks
+        # Other results
         fairness_results = run_fairness_scoring(dmp)
         metadata_validation = validate_metadata_intentions(dmp)
         #planned_fairness = check_planned_fairness(dmp)

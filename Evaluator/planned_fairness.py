@@ -32,7 +32,7 @@ def check_planned_fairness(dmp):
                 "comment": comment
             })
 
-            # === Test 2: license exists ===
+            # Test 2: license exists
             num_tests += 1
             licenses = dist.get("license", [])
             has_license = bool(licenses and licenses[0].get("license_name"))
@@ -54,7 +54,7 @@ def check_planned_fairness(dmp):
                 "comment": comment
             })
 
-            # === Test 3: format exists ===
+            # Test 3: format exists
             num_tests += 1
             if dist.get("format"):
                 score = 1
@@ -74,7 +74,7 @@ def check_planned_fairness(dmp):
                 "comment": comment
             })
 
-            # === Test 4: PID system declared ===
+            # Test 4: PID system declared
             num_tests += 1
             host = dist.get("host", {})
             pid_system = host.get("pid_system", [])
@@ -96,7 +96,7 @@ def check_planned_fairness(dmp):
                 "comment": comment
             })
 
-            # === Test 5: Supports versioning ===
+            # Test 5: Supports versioning
             num_tests += 1
             versioning = host.get("supports_versioning")
             if versioning == "yes":
@@ -117,7 +117,7 @@ def check_planned_fairness(dmp):
                 "comment": comment
             })
 
-    # === Summary ===
+    # Summary
     overall_score = round(total_score / num_tests, 2) if num_tests else 0
     return {
         "planned_fairness": {

@@ -26,5 +26,5 @@ def export_planned_fairness(test_results, dmp_id, output_path):
         json.dump(output, f, indent=2)
 
 
-    print(f"✅ Planned FAIRness (OSTrails format) saved to {output_path}")
+    print(f"Planned FAIRness (OSTrails format) saved to {output_path}")
 

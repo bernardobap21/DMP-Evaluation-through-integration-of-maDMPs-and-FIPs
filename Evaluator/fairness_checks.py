@@ -1,7 +1,7 @@
 from urllib.parse import urlparse
 import validators
 
-# New helper
+# New to check licenses, etc.
 def is_known_open_license(name):
     return any(keyword in name.lower() for keyword in ["cc", "creative commons", "mit", "open", "gnu", "bsd"])
 
