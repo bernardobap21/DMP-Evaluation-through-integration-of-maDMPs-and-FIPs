@@ -41,10 +41,10 @@ def main():
     print(f"Evaluation Complete: {present}/{total} fields present, {compliant}/{total} compliant.")
 
     base_filename = os.path.splitext(os.path.basename(args.input))[0]
-    csv_output = os.path.join(args.output, f"{base_filename}_mapping_report.csv")
+    #csv_output = os.path.join(args.output, f"{base_filename}_mapping_report.csv")
     txt_output = os.path.join(args.output, f"{base_filename}_recommendations.txt")
 
-    save_evaluation_results(evaluation_results, csv_output)
+    #save_evaluation_results(evaluation_results, csv_output)
     save_recommendations(evaluation_results, txt_output)
 
     ###########
@@ -52,7 +52,7 @@ def main():
     save_compliance_table(evaluation_results, compliance_output)
     print(f"Compliance details saved to: {compliance_output}")
 
-    print(f"Saved evaluation report to: {csv_output}")
+    #print(f"Saved evaluation report to: {csv_output}")
     print(f"Saved recommendations to: {txt_output}")
 
     # Run FAIRness scoring and validation
