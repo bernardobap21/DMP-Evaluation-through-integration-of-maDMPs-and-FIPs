@@ -71,6 +71,13 @@ def detect_identifier_type(identifier):
         "REST": r"^(GET|POST|PUT|DELETE).*"
     }
 
+    # Specific Creative Commons license URLs
+    cc_license_patterns = {
+        "CC-BY 4.0": r"^https?://creativecommons\.org/licenses/by/4\.0/?$",
+        "CC0 1.0": r"^https?://creativecommons\.org/publicdomain/zero/1\.0/?$",
+        "CC BY-NC 4.0": r"^https?://creativecommons\.org/licenses/by-nc/4\.0/?$",
+    }
+
     known_labels = [
         "Schema.org", "DCAT", "Dublin Core", "DataCite", "GBIF search engine",
         "Global Biotic Interactions", "Open Data", "OAuth 2.0", "GBIF local account",
@@ -78,6 +85,11 @@ def detect_identifier_type(identifier):
         "Plant Pollinator Vocabulary", "Relations Ontology",
         "CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0", "PROV-O"
     ]
+
+    # Match Creative Commons license URLs first
+    for label, pattern in cc_license_patterns.items():
+        if re.match(pattern, identifier, re.I):
+            return label
 
     # Match patterns
     for id_type, pattern in patterns.items():
