@@ -5,10 +5,10 @@ Which metadata schemas do you use for findability?,dataset.metadata.metadata_sta
 What is the technology that links the persistent identifiers of your data to the metadata description?,dataset.distribution.host.pid_system,"[""doi""]",DataCite,No
 In which search engines are your metadata records indexed?,,null,"GBIF search engine, Global Biotic Interactions",No
 In which search engines are your datasets indexed?,,null,"GBIF search engine, Global Biotic Interactions",No
-Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,"""https://zenodo.org""","HTTPS, REST",No
-Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,"""https://zenodo.org""","HTTPS, REST",No
-Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,"""open""","Open Data, OAuth 2.0",No
-Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,"""open""","OAuth 2.0, GBIF local account, Open Data",No
+Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,"""https://zenodo.org""","HTTPS, REST",Yes
+Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,"""https://zenodo.org""","HTTPS, REST",Yes
+Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,"""open""","Open Data, Open, OAuth 2.0",Yes
+Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,"""open""","OAuth 2.0, GBIF local account, Open, Open Data",Yes
 Which metadata longevity plan do you use?,,null,,No
 Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,,null,"DwC-A, JSON, XMLS, RDFS",No
 Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,,null,"DwC-A, JSON, XMLS, RDFS",No

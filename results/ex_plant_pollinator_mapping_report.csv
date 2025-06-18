@@ -5,10 +5,10 @@ Which metadata schemas do you use for findability?,Mapped,Not Present,Missing va
 What is the technology that links the persistent identifiers of your data to the metadata description?,Mapped,Present,Non-compliant
 In which search engines are your metadata records indexed?,Not Mapped,Not Present,Not Applicable
 In which search engines are your datasets indexed?,Not Mapped,Not Present,Not Applicable
-Which standardized communication protocol do you use for metadata records?,Mapped,Present,Non-compliant
-Which standardized communication protocol do you use for datasets?,Mapped,Present,Non-compliant
-Which authentication & authorisation technique do you use for metadata records?,Partially Mapped,Present,Non-compliant
-Which authentication & authorisation technique do you use for datasets?,Partially Mapped,Present,Non-compliant
+Which standardized communication protocol do you use for metadata records?,Mapped,Present,Compliant
+Which standardized communication protocol do you use for datasets?,Mapped,Present,Compliant
+Which authentication & authorisation technique do you use for metadata records?,Partially Mapped,Present,Compliant
+Which authentication & authorisation technique do you use for datasets?,Partially Mapped,Present,Compliant
 Which metadata longevity plan do you use?,Not Mapped,Not Present,Not Applicable
 Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,Not Mapped,Not Present,Not Applicable
 Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,Not Mapped,Not Present,Not Applicable

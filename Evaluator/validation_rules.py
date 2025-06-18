@@ -53,7 +53,7 @@ def validate_metadata_intentions(dmp):
 # Enhanced detect_identifier_type to recognize a wide range of formats and vocabularies
 import re
 
-def detect_identifier_type(identifier):
+def detect_identifier_type(identifier, allowed_values=None):
     if not isinstance(identifier, str):
         return "Unknown"
 
@@ -71,6 +71,13 @@ def detect_identifier_type(identifier):
         "REST": r"^(GET|POST|PUT|DELETE).*"
     }
 
+    # If allowed_values provided, prioritize matching those patterns first
+    if allowed_values:
+        for val in allowed_values:
+            pattern = patterns.get(val)
+            if pattern and re.match(pattern, identifier, re.I):
+                return val
+
     # Specific Creative Commons license URLs
     cc_license_patterns = {
         "CC-BY 4.0": r"^https?://creativecommons\.org/licenses/by/4\.0/?$",
@@ -80,7 +87,7 @@ def detect_identifier_type(identifier):
 
     known_labels = [
         "Schema.org", "DCAT", "Dublin Core", "DataCite", "GBIF search engine",
-        "Global Biotic Interactions", "Open Data", "OAuth 2.0", "GBIF local account",
+        "Global Biotic Interactions", "Open Data", "Open", "OAuth 2.0", "GBIF local account",
         "DwC-A", "JSON", "XMLS", "RDFS", "EML", "DwC",
         "Plant Pollinator Vocabulary", "Relations Ontology",
         "CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0", "PROV-O"
@@ -110,7 +117,7 @@ def is_allowed_value(field_value, allowed_values):
     Checks if a field value (string or list) matches any allowed types/value names.
     """
     def check_one(val):
-        detected = detect_identifier_type(val)
+        detected = detect_identifier_type(val, allowed_values)
         return detected in allowed_values or val in allowed_values
 
     if isinstance(field_value, list):

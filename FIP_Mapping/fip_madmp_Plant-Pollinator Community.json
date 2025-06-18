@@ -70,7 +70,7 @@
             "maDMP_field": "dataset.distribution.data_access",
             "Mapping_status": "Partially Mapped",
             "Comments": "Just tells if it's open, shared or closed",
-            "Allowed_values": ["Open Data",  "OAuth 2.0"]
+            "Allowed_values": ["Open Data", "Open", "OAuth 2.0"]
         },
         {
             "FAIR_principle": "A1.2",
@@ -78,7 +78,7 @@
             "maDMP_field": "dataset.distribution.data_access",
             "Mapping_status": "Partially Mapped",
             "Comments": "Just tells if it's open, shared or closed",
-            "Allowed_values": ["OAuth 2.0", "GBIF local account", "Open Data"]
+            "Allowed_values": ["OAuth 2.0", "GBIF local account", "Open", "Open Data"]
         },
         {
             "FAIR_principle": "A2",
