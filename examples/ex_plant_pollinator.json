@@ -1,0 +1,141 @@
+{
+    "dmp": {
+      "title": "DMP for Plant–Pollinator Monitoring Project",
+      "description": "This DMP describes the data management strategy for a multi-season observational study on plant–pollinator interactions in agroecosystems, aligned with the WorldFAIR WP10 FIP.",
+      "language": "eng",
+      "created": "2025-06-14T10:00:00Z",
+      "modified": "2025-06-14T10:00:00Z",
+      "dmp_id": {
+        "identifier": "https://doi.org/10.1234/plantpoll.dmp.2025",
+        "type": "doi"
+      },
+      "contact": {
+        "name": "Dr. Jane Bee",
+        "mbox": "jane.bee@biodiversitylab.org",
+        "contact_id": {
+          "identifier": "https://orcid.org/0000-0002-1234-5678",
+          "type": "orcid"
+        }
+      },
+      "contributor": [
+        {
+          "name": "Alex Bloom",
+          "mbox": "alex.bloom@pollinators.eu",
+          "contributor_id": {
+            "identifier": "https://orcid.org/0000-0003-4567-8901",
+            "type": "orcid"
+          },
+          "role": ["ProjectLeader"]
+        },
+        {
+          "name": "Lina Humm",
+          "mbox": "lina.humm@ecology.org",
+          "contributor_id": {
+            "identifier": "https://orcid.org/0000-0002-9876-5432",
+            "type": "orcid"
+          },
+          "role": ["DataManager", "ContactPerson"]
+        }
+      ],
+      "ethical_issues_exist": "no",
+      "ethical_issues_description": "",
+      "project": [
+        {
+          "title": "PollinatorNet: Seasonal Monitoring of Pollination Ecosystem Services",
+          "project_id": "https://projects.ec.europa.eu/pollinatornet",
+          "project_id_type": "URL",
+          "start": "2025-03-01",
+          "end": "2027-02-28",
+          "description": "PollinatorNet aims to collect, standardize, and publish high-quality pollinator interaction data across diverse landscapes, supporting biodiversity policy and ecological modeling.",
+          "funding": [
+            {
+              "funder_name": "European Commission Horizon Europe",
+              "funder_id": {
+                "identifier": "10.13039/100017325",
+                "type": "fundref"
+              },
+              "grant_id": {
+                "identifier": "HE-2025-ENV-002",
+                "type": "other"
+              }
+            }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "dataset_id": {
+            "identifier": "https://doi.org/10.5281/zenodo.1234567",
+            "type": "doi"
+          },
+          "title": "Pollinator Observation Records (2025 Field Season)",
+          "personal_data": "no",
+          "sensitive_data": "no",
+          "type": "Observational data",
+          "description": "Darwin Core-formatted table of pollinator species visits to plants collected in structured sampling events during the 2025 growing season.",
+          "distribution": [
+            {
+              "title": "Darwin Core Archive on Zenodo",
+              "format": ["text/csv", "application/zip"],
+              "byte_size": 2048000,
+              "data_access": "open",
+              "license": [
+                {
+                  "license_name": "Creative Commons Attribution (CC-BY)",
+                  "license_ref": "http://creativecommons.org/licenses/by/4.0/",
+                  "start_date": "2025-09-01"
+                }
+              ],
+              "host": {
+                "title": "Zenodo",
+                "url": "https://zenodo.org",
+                "host_id_type": "HTTP-RE3DATA",
+                "description": "Zenodo is a general-purpose open-access repository developed under the European OpenAIRE program and operated by CERN.",
+                "supports_versioning": "yes",
+                "storage_type": "repository",
+                "pid_system": ["doi"]
+              },
+              "available_until": "2035-01-01"
+            }
+          ]
+        },
+        {
+          "dataset_id": {
+            "identifier": "https://doi.org/10.5281/zenodo.7654321",
+            "type": "doi"
+          },
+          "title": "Pollinator Photographs and Metadata",
+          "personal_data": "no",
+          "sensitive_data": "no",
+          "type": "Images",
+          "description": "Field images of pollinator specimens associated with observation records, with embedded EXIF metadata (GPS, time).",
+          "distribution": [
+            {
+              "title": "Image archive",
+              "format": ["image/jpeg"],
+              "byte_size": 104857600,
+              "data_access": "open",
+              "license": [
+                {
+                  "license_name": "Creative Commons Zero (CC0)",
+                  "license_ref": "http://creativecommons.org/publicdomain/zero/1.0/",
+                  "start_date": "2025-09-01"
+                }
+              ],
+              "host": {
+                "title": "Zenodo",
+                "url": "https://zenodo.org",
+                "host_id_type": "HTTP-RE3DATA",
+                "description": "Zenodo open access repository supporting a wide variety of formats.",
+                "supports_versioning": "yes",
+                "storage_type": "repository",
+                "pid_system": ["doi"]
+              },
+              "available_until": "2035-01-01"
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

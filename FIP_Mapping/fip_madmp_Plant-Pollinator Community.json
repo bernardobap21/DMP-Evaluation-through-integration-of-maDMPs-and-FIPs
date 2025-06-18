@@ -86,7 +86,7 @@
             "maDMP_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "project.end or something with host like backup_type or distribution.available_until",
-            "Allowed_values": ""
+            "Allowed_values": "" 
         },
         {
             "FAIR_principle": "I1",

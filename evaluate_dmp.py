@@ -2,7 +2,6 @@ import argparse
 import os
 import json
 
-# Import your own modules
 from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
 from Evaluator.fairness_checks import run_fairness_scoring
@@ -13,8 +12,10 @@ from Evaluator.evaluator import (
     evaluate_dmp_against_fip,
     summarize_results,
     save_evaluation_results,
-    save_recommendations
+    save_recommendations,
+    save_compliance_table 
 )
+
 
 def main():
     parser = argparse.ArgumentParser(description="Evaluate a maDMP against a FIP mapping.")
@@ -24,61 +25,63 @@ def main():
 
     args = parser.parse_args()
 
-    # Create output directory if it doesn't exist
     os.makedirs(args.output, exist_ok=True)
 
-    # Load input files
+    # Load the maDMP and FIP mapping
     dmp = load_dmp(args.input)
     mapping_raw = load_mapping(args.mapping)
-    mapping = transform_mapping(mapping_raw)   # Transform after loading!
+    mapping = transform_mapping(mapping_raw)
 
-    # Evaluate
     evaluation_results = evaluate_dmp_against_fip(dmp, mapping)
 
-    # Summarize
-    present, total = summarize_results(evaluation_results)
-    print(f" Evaluation Complete: {present}/{total} fields present.")
+   ####
 
-    # Prepare filenames
+
+    present, compliant, total = summarize_results(evaluation_results)
+    print(f"Evaluation Complete: {present}/{total} fields present, {compliant}/{total} compliant.")
+
     base_filename = os.path.splitext(os.path.basename(args.input))[0]
     csv_output = os.path.join(args.output, f"{base_filename}_mapping_report.csv")
     txt_output = os.path.join(args.output, f"{base_filename}_recommendations.txt")
 
-    # Save outputs
     save_evaluation_results(evaluation_results, csv_output)
     save_recommendations(evaluation_results, txt_output)
 
-    print(f" Saved evaluation report to: {csv_output}")
-    print(f" Saved recommendations to: {txt_output}")
+    ###########
+    compliance_output = os.path.join(args.output, f"{base_filename}_compliance_table.csv")
+    save_compliance_table(evaluation_results, compliance_output)
+    print(f"Compliance details saved to: {compliance_output}")
 
-    # FAIRness Evaluation
+    print(f"Saved evaluation report to: {csv_output}")
+    print(f"Saved recommendations to: {txt_output}")
+
+    # Run FAIRness scoring and validation
     fairness_results = run_fairness_scoring(dmp)
 
-    # Save FAIRness results to JSON
     fairness_output = os.path.join(args.output, f"{base_filename}_fairness.json")
     with open(fairness_output, 'w', encoding='utf-8') as file:
         json.dump(fairness_results, file, indent=2)
 
-    print(f" FAIRness evaluation results saved to: {fairness_output}")
+    print(f"FAIRness evaluation results saved to: {fairness_output}")
 
-    # Validate metadata intentions vs actual content
+    # Validate metadata intentions
     metadata_issues = validate_metadata_intentions(dmp)
 
-    # Save metadata validation results to JSON
     validation_output = os.path.join(args.output, f"{base_filename}_metadata_validation.json")
     with open(validation_output, 'w', encoding='utf-8') as file:
         json.dump(metadata_issues, file, indent=2)
 
-    print(f" Metadata intention validation results saved to: {validation_output}")
+    print(f"Metadata intention validation results saved to: {validation_output}")
 
-    # Save planned FAIRness checks
+    # Check planned FAIRness
     planned_result = check_planned_fairness(dmp)
     planned_output = os.path.join(args.output, f"{base_filename}_planned_fairness.json")
     with open(planned_output, 'w') as f:
         json.dump(planned_result, f, indent=2)
 
+    print(f"Planned FAIRness evaluation results saved to: {planned_output}")
 
-
+       
 
 if __name__ == "__main__":
     main()
