@@ -4,7 +4,8 @@ def transform_mapping(mapping_data):
             "FAIR_principle": item["FAIR_principle"],
             "maDMP_field": item["maDMP_field"],
             "Mapping_status": item["Mapping_status"],
-            "Comments": item["Comments"]
+            "Comments": item["Comments"],
+            "Allowed_values": item.get("Allowed_values", [])
         }
         for item in mapping_data["FIP_maDMP_Mapping"]
     }
