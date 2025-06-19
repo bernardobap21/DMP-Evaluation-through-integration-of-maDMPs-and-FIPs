@@ -113,9 +113,9 @@ def detect_identifier_type(identifier, allowed_values=None):
 
 # Updated generic allowed-value checker
 def is_allowed_value(field_value, allowed_values):
-    """
-    Checks if a field value (string or list) matches any allowed types/value names.
-    """
+    
+    # Checks if a field value (string or list) matches any allowed types/value names.
+    
     def check_one(val):
         detected = detect_identifier_type(val, allowed_values)
         return detected in allowed_values or val in allowed_values

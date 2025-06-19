@@ -104,10 +104,21 @@ def save_compliance_table(results, output_path):
         writer = csv.writer(file)
         writer.writerow(["FIP Question", "maDMP Field", "maDMP Value", "Accepted Values", "Compliant"])
         for r in results:
+            allowed_values = r["allowed_values"]
+            if isinstance(allowed_values, list):
+                allowed_str = ", ".join(allowed_values)
+            else:
+                allowed_str = allowed_values
+
+            if allowed_values == "":
+                compliant = "No choice made by community"
+            else:
+                compliant = "Yes" if r["compliance_status"] == "Compliant" else "No"
+
             writer.writerow([
                 r["FIP_question"],
                 r["maDMP_field"],
                 json.dumps(r["field_value"], ensure_ascii=False),
-                ", ".join(r["allowed_values"]),
-                "Yes" if r["compliance_status"] == "Compliant" else "No"
+                allowed_str,
+                compliant
             ])

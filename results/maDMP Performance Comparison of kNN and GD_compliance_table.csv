@@ -1,22 +1,22 @@
 FIP Question,maDMP Field,maDMP Value,Accepted Values,Compliant
-"What globally unique, persistent, resolvable identifiers do you use for metadata records?",dataset.dataset_id.identifier,null,"DOI, dPIDs",No
-"What globally unique, persistent, resolvable identifiers do you use for datasets?",dataset.dataset_id.identifier,null,"URI, DOI",No
-Which metadata schemas do you use for findability?,dataset.metadata.metadata_standard_id.identifier,null,"EML, Schema.org, DCAT, Dublin Core",No
-What is the technology that links the persistent identifiers of your data to the metadata description?,dataset.distribution.host.pid_system,"[""doi""]",DataCite,No
-In which search engines are your metadata records indexed?,,null,"GBIF search engine, Global Biotic Interactions",No
-In which search engines are your datasets indexed?,,null,"GBIF search engine, Global Biotic Interactions",No
-Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,"""https://zenodo.org/""","HTTPS, REST",Yes
-Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,"""https://zenodo.org/""","HTTPS, REST",Yes
-Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,"""open""","Open Data, Open, OAuth 2.0",Yes
-Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,"""open""","OAuth 2.0, GBIF local account, Open, Open Data",Yes
-Which metadata longevity plan do you use?,,null,,No
-Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,,null,"DwC-A, JSON, XMLS, RDFS",No
-Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,,null,"DwC-A, JSON, XMLS, RDFS",No
-Which structured vocabularies do you use to annotate your metadata records?,dataset.metadata.metadata_standard_id.identifier,null,"EML, DwC",No
-Which structured vocabularies do you use to encode your datasets?,dataset.metadata.metadata_standard_id.identifier,null,"Plant Pollinator Vocabulary, DwC",No
-"Which models, schema(s) do you use for your metadata records?",dataset.metadata.metadata_standard_id.type,null,"Relations Ontology, DwC",No
-"Which models, schema(s) do you use for your datasets?",dataset.metadata.metadata_standard_id.type,null,DwC-A,No
-Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""","CC0 1.0, CC-BY 4.0, CC BY-NC 4.0",Yes
-Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""","CC0 1.0, CC-BY 4.0, CC BY-NC 4.0",Yes
-Which metadata schemas do you use for describing the provenance of your metadata records?,,null,PROV-O,No
-Which metadata schemas do you use for describing the provenance of your datasets?,,null,PROV-O,No
+"What globally unique, persistent, resolvable identifiers do you use for metadata records?",dataset.dataset_id.identifier,null,Handle System,No
+"What globally unique, persistent, resolvable identifiers do you use for datasets?",dataset.dataset_id.identifier,null,Handle System,No
+Which metadata schemas do you use for findability?,dataset.metadata.metadata_standard_id.identifier,null,"Dublin Core, Europeana, Metadata Object Description Schema (MODS), MARC21, BIBFRAME 2.0",No
+What is the technology that links the persistent identifiers of your data to the metadata description?,dataset.distribution.host.pid_system,"[""doi""]",FEDORA-O2O,No
+In which search engines are your metadata records indexed?,dataset.distribution.access_url,"""https://zenodo.org/record/6467615""","UBL-DC_REG, Europeana, Delpher, WorldCat, Biblissima, Allmaps, HetGeheugen, GBooks, PrimoVE, WOL",No
+In which search engines are your datasets indexed?,dataset.distribution.access_url,"""https://zenodo.org/record/6467615""","UBL-DC_REG, HetGeheugen, Delpher, GBooks, Europeana, WOL",No
+Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,"""https://zenodo.org/""",OAI-PMH Schema,No
+Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,"""https://zenodo.org/""",OAI-PMH Schema,No
+Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,"""open""","ULCN, ICAR",No
+Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,"""open""","ULCN, ICAR",No
+Which metadata longevity plan do you use?,,null,,No choice made by community
+Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,,null,"JSON-LD, XML, RDF/XML, MARC21, TXT",No
+Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,,null,"IIIF, TIFF, JPEG, PDF, MP3, WAV",No
+Which structured vocabularies do you use to annotate your metadata records?,dataset.metadata.metadata_standard_id.identifier,null,"LCNAF, AAT, TGN, NTA, BCL, AST, AST | African Studies Thesaurus of African Studies Centre Leiden (ASCL)",No
+Which structured vocabularies do you use to encode your datasets?,dataset.metadata.metadata_standard_id.identifier,null,,No choice made by community
+"Which models, schema(s) do you use for your metadata records?",dataset.metadata.metadata_standard_id.type,null,"EAD, Dublin Core, MODS, MARC21, IIIF, Europeana",No
+"Which models, schema(s) do you use for your datasets?",dataset.metadata.metadata_standard_id.type,null,"IIIF, Europeana",No
+Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""",CC0 1.0,No
+Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""",CC0 1.0,No
+Which metadata schemas do you use for describing the provenance of your metadata records?,,null,,No choice made by community
+Which metadata schemas do you use for describing the provenance of your datasets?,,null,,No choice made by community
