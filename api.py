@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile, File, Query
 from Evaluator.evaluator import (
     load_dmp,
     evaluate_dmp_against_fip,
@@ -6,11 +6,15 @@ from Evaluator.evaluator import (
 )
 from Evaluator.fairness_checks import run_fairness_scoring
 from Evaluator.validation_rules import validate_metadata_intentions
-#from Evaluator.planned_fairness import check_planned_fairness # (need to check this)
+#from Evaluator.planned_fairness import check_planned_fairness (need to check this)
 from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
 import tempfile
 import os
+
+
+FIP_DIRECTORY = "FIP_Mapping"
+FIP_OPTIONS = [f for f in os.listdir(FIP_DIRECTORY) if f.endswith(".json")]
 
 app = FastAPI()
 
@@ -21,24 +25,25 @@ def read_root():
 
 
 @app.post("/evaluate/")
-async def evaluate(dmp_file: UploadFile = File(...), fip_mapping_file: UploadFile = File(...)):
+async def evaluate(
+    dmp_file: UploadFile = File(...),
+    fip_mapping_file: str = Query(..., enum=FIP_OPTIONS),
+):
 
-    for uploaded_file in [dmp_file, fip_mapping_file]:
-        if not uploaded_file.filename.endswith(".json"):
-            return {
-                "error": f"Invalid file type: {uploaded_file.filename}. Only .json files are allowed."
-            }
-        
-    # Temporarily save uploaded files
+    # Validate uploaded DMP file
+    if not dmp_file.filename.endswith(".json"):
+        return {
+            "error": f"Invalid file type: {dmp_file.filename}. Only .json files are allowed."
+        }
+    
     with tempfile.TemporaryDirectory() as tmpdir:
         dmp_path = os.path.join(tmpdir, dmp_file.filename)
-        mapping_path = os.path.join(tmpdir, fip_mapping_file.filename)
+        #mapping_path = os.path.join(tmpdir, fip_mapping_file.filename)
 
         with open(dmp_path, "wb") as buffer:
             buffer.write(await dmp_file.read())
 
-        with open(mapping_path, "wb") as buffer:
-            buffer.write(await fip_mapping_file.read())
+        mapping_path = os.path.join(FIP_DIRECTORY, fip_mapping_file)
 
         # Load DMP and mapping
         dmp = load_dmp(dmp_path)

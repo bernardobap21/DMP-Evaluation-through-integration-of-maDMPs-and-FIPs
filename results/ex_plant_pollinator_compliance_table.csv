@@ -3,8 +3,8 @@ FIP Question,maDMP Field,maDMP Value,Accepted Values,Compliant
 "What globally unique, persistent, resolvable identifiers do you use for datasets?",dataset.dataset_id.identifier,"""https://doi.org/10.5281/zenodo.1234567""","URI, DOI",Yes
 Which metadata schemas do you use for findability?,dataset.metadata.metadata_standard_id.identifier,null,"EML, Schema.org, DCAT, Dublin Core",No
 What is the technology that links the persistent identifiers of your data to the metadata description?,dataset.distribution.host.pid_system,"[""doi""]",DataCite,No
-In which search engines are your metadata records indexed?,,null,"GBIF search engine, Global Biotic Interactions",No
-In which search engines are your datasets indexed?,,null,"GBIF search engine, Global Biotic Interactions",No
+In which search engines are your metadata records indexed?,dataset.distribution.access_url,null,"GBIF search engine, Global Biotic Interactions",No
+In which search engines are your datasets indexed?,dataset.distribution.access_url,null,"GBIF search engine, Global Biotic Interactions",No
 Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,"""https://zenodo.org""","HTTPS, REST",Yes
 Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,"""https://zenodo.org""","HTTPS, REST",Yes
 Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,"""open""","Open Data, Open, OAuth 2.0",Yes

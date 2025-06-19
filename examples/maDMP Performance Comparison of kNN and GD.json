@@ -1,0 +1,332 @@
+{
+  "dmp" : {
+      "contact" : {
+        "contact_id" : {
+          "identifier" : "0000-0002-7143-0353",
+          "type" : "orcid"
+        },
+        "mbox" : "tobias.hajszan@tuwien.ac.at",
+        "name" : "Tobias Hajszan"
+      },
+      "contributor" : [ {
+        "contributor_id" : {
+          "identifier" : "0000-0002-5164-2690",
+          "type" : "orcid"
+        },
+        "mbox" : "moritz.staudinger@tuwien.ac.at",
+        "name" : "Moritz Staudinger",
+        "role" : [ "Data Manager" ]
+      }, {
+        "contributor_id" : {
+          "identifier" : "0000-0002-7143-0353",
+          "type" : "orcid"
+        },
+        "mbox" : "tobias.hajszan@tuwien.ac.at",
+        "name" : "Tobias Hajszan",
+        "role" : [ "Project Leader" ]
+      } ],
+      "cost" : [ ],
+      "created" : 1650029602613,
+      "dataset" : [ {
+        "description" : "For each dataset (fish and employee) the original dataset will be split into two subsets, one for training and one for testing the performance.",
+        "distribution" : [ {
+          "access_url" : "https://zenodo.org/record/6467615",
+          "byte_size" : 2999302,
+          "data_access" : "open",
+          "description" : "For each dataset (fish and employee) the original dataset will be split into two subsets, one for training and one for testing the performance.",
+          "format" : [ "STRUCTURED_TEXT" ],
+          "host" : {
+            "description" : "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+            "pid_system" : [ "doi" ],
+            "storage_type" : "other",
+            "support_versioning" : "unknown",
+            "title" : "Zenodo",
+            "url" : "https://zenodo.org/"
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Training and Test Subsets for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 100000000,
+          "data_access" : "open",
+          "description" : "For each dataset (fish and employee) the original dataset will be split into two subsets, one for training and one for testing the performance.",
+          "format" : [ "STRUCTURED_TEXT" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Training and Test Subsets for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 100000000,
+          "data_access" : "open",
+          "description" : "For each dataset (fish and employee) the original dataset will be split into two subsets, one for training and one for testing the performance.",
+          "format" : [ "STRUCTURED_TEXT" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Training and Test Subsets for Performance Comparison of kNN and GD"
+        } ],
+        "personal_data" : "no",
+        "security_and_privacy" : [ ],
+        "sensitive_data" : "no",
+        "title" : "Training and Test Subsets for Performance Comparison of kNN and GD",
+        "type" : "STRUCTURED_TEXT"
+      }, {
+        "description" : "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset",
+        "distribution" : [ {
+          "access_url" : "https://zenodo.org/record/6467646",
+          "byte_size" : 16518,
+          "data_access" : "open",
+          "description" : "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset",
+          "format" : [ "IMAGES" ],
+          "host" : {
+            "description" : "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+            "pid_system" : [ "doi" ],
+            "storage_type" : "other",
+            "support_versioning" : "unknown",
+            "title" : "Zenodo",
+            "url" : "https://zenodo.org/"
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Results for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 100000000,
+          "data_access" : "open",
+          "description" : "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset",
+          "format" : [ "IMAGES" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Results for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 100000000,
+          "data_access" : "open",
+          "description" : "Results for Performance Comparison of kNN and GD. It contains the results for both knn and gd for fish and employee dataset",
+          "format" : [ "IMAGES" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Results for Performance Comparison of kNN and GD"
+        } ],
+        "personal_data" : "no",
+        "security_and_privacy" : [ ],
+        "sensitive_data" : "no",
+        "title" : "Results for Performance Comparison of kNN and GD",
+        "type" : "IMAGES"
+      }, {
+        "description" : "Plots for Performance Comparison of kNN and GD. It contains 38 plots for both knn and gd for fish and employee dataset showing changes in evaluation scores over changed metrics. Overall there are 4 bar plots, 4 scatter plots and 30 line plots. ",
+        "distribution" : [ {
+          "access_url" : "https://zenodo.org/deposit/6467644",
+          "byte_size" : 10378046,
+          "data_access" : "open",
+          "description" : "Plots for Performance Comparison of kNN and GD. It contains 38 plots for both knn and gd for fish and employee dataset showing changes in evaluation scores over changed metrics. Overall there are 4 bar plots, 4 scatter plots and 30 line plots. ",
+          "format" : [ "IMAGES" ],
+          "host" : {
+            "description" : "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+            "pid_system" : [ "doi" ],
+            "storage_type" : "other",
+            "support_versioning" : "unknown",
+            "title" : "Zenodo",
+            "url" : "https://zenodo.org/"
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Plots for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 100000000,
+          "data_access" : "open",
+          "description" : "Plots for Performance Comparison of kNN and GD. It contains 38 plots for both knn and gd for fish and employee dataset showing changes in evaluation scores over changed metrics. Overall there are 4 bar plots, 4 scatter plots and 30 line plots. ",
+          "format" : [ "IMAGES" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Plots for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 100000000,
+          "data_access" : "open",
+          "description" : "Plots for Performance Comparison of kNN and GD. It contains 38 plots for both knn and gd for fish and employee dataset showing changes in evaluation scores over changed metrics. Overall there are 4 bar plots, 4 scatter plots and 30 line plots. ",
+          "format" : [ "IMAGES" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Plots for Performance Comparison of kNN and GD"
+        } ],
+        "personal_data" : "no",
+        "security_and_privacy" : [ ],
+        "sensitive_data" : "no",
+        "title" : "Plots for Performance Comparison of kNN and GD",
+        "type" : "IMAGES"
+      }, {
+        "description" : "These datasets are used in the project Performance Comparison of kNN and GD. It contains the fish dataset as CSV (https://www.kaggle.com/aungpyaeap/fish-market) and employee dataset as ARFF (https://www.openml.org/d/42125).",
+        "distribution" : [ {
+          "access_url" : "https://zenodo.org/record/6467551",
+          "byte_size" : 1609062,
+          "data_access" : "open",
+          "description" : "These datasets are used in the project Performance Comparison of kNN and GD. It contains the fish dataset as CSV (https://www.kaggle.com/aungpyaeap/fish-market) and employee dataset as ARFF (https://www.openml.org/d/42125).",
+          "format" : [ "STRUCTURED_TEXT" ],
+          "host" : {
+            "description" : "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+            "pid_system" : [ "doi" ],
+            "storage_type" : "other",
+            "support_versioning" : "unknown",
+            "title" : "Zenodo",
+            "url" : "https://zenodo.org/"
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Datasets for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 100000000,
+          "data_access" : "open",
+          "description" : "These datasets are used in the project Performance Comparison of kNN and GD. It contains the fish dataset as CSV (https://www.kaggle.com/aungpyaeap/fish-market) and employee dataset as ARFF (https://www.openml.org/d/42125).",
+          "format" : [ "STRUCTURED_TEXT" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Datasets for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 100000000,
+          "data_access" : "open",
+          "description" : "These datasets are used in the project Performance Comparison of kNN and GD. It contains the fish dataset as CSV (https://www.kaggle.com/aungpyaeap/fish-market) and employee dataset as ARFF (https://www.openml.org/d/42125).",
+          "format" : [ "STRUCTURED_TEXT" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://creativecommons.org/licenses/by/4.0/",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Datasets for Performance Comparison of kNN and GD"
+        } ],
+        "personal_data" : "no",
+        "security_and_privacy" : [ ],
+        "sensitive_data" : "no",
+        "title" : "Datasets for Performance Comparison of kNN and GD",
+        "type" : "STRUCTURED_TEXT"
+      }, {
+        "description" : "Python source code for performance comparison of kNN and GD",
+        "distribution" : [ {
+          "access_url" : "https://zenodo.org/record/6467636",
+          "byte_size" : 32378,
+          "data_access" : "open",
+          "description" : "Python source code for performance comparison of kNN and GD",
+          "format" : [ "SOURCE_CODE" ],
+          "host" : {
+            "description" : "ZENODO builds and operates a simple and innovative service that enables researchers, scientists, EU projects and institutions to share and showcase multidisciplinary research results (data and publications) that are not part of the existing institutional or subject-based repositories of the research communities.\nZENODO enables researchers, scientists, EU projects and institutions to:\neasily share the long tail of small research results in a wide variety of formats including text, spreadsheets, audio, video, and images across all fields of science.\ndisplay their research results and get credited by making the research results citable and integrate them into existing reporting lines to funding agencies like the European Commission.\neasily access and reuse shared research results.",
+            "pid_system" : [ "doi" ],
+            "storage_type" : "other",
+            "support_versioning" : "unknown",
+            "title" : "Zenodo",
+            "url" : "https://zenodo.org/"
+          },
+          "license" : [ {
+            "license_ref" : "https://opensource.org/licenses/GPL-3.0",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Source Code for Performance Comparison of kNN and GD"
+        }, {
+          "access_url" : "https://github.com/kooperativ97/Performance-Comparison-kNN-and-GD",
+          "byte_size" : 32378,
+          "data_access" : "open",
+          "description" : "Python source code for performance comparison of kNN and GD",
+          "format" : [ "SOURCE_CODE" ],
+          "host" : {
+            "description" : "GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over three million people use GitHub to build amazing things together. With the collaborative features of GitHub.com, our desktop and mobile apps, and GitHub Enterprise, it has never been easier for individuals and teams to write better code, faster. Originally founded by Tom Preston-Werner, Chris Wanstrath, and PJ Hyett to simplify sharing code, GitHub has grown into the largest code host in the world.",
+            "pid_system" : [ null ],
+            "storage_type" : "other",
+            "support_versioning" : "yes",
+            "title" : "GitHub",
+            "url" : "https://github.com"
+          },
+          "license" : [ {
+            "license_ref" : "https://opensource.org/licenses/GPL-3.0",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Source Code for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 32378,
+          "data_access" : "open",
+          "description" : "Python source code for performance comparison of kNN and GD",
+          "format" : [ "SOURCE_CODE" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://opensource.org/licenses/GPL-3.0",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Source Code for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 32378,
+          "data_access" : "open",
+          "description" : "Python source code for performance comparison of kNN and GD",
+          "format" : [ "SOURCE_CODE" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, every dataset affected will be updated. "
+          },
+          "license" : [ {
+            "license_ref" : "https://opensource.org/licenses/GPL-3.0",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Source Code for Performance Comparison of kNN and GD"
+        }, {
+          "byte_size" : 32378,
+          "data_access" : "open",
+          "description" : "Python source code for performance comparison of kNN and GD",
+          "format" : [ "SOURCE_CODE" ],
+          "host" : {
+            "backup_frequency" : "Whenever changes in the repository (code, data, libraries) occur, the repository will be updated and a new version is going to be released. "
+          },
+          "license" : [ {
+            "license_ref" : "https://opensource.org/licenses/GPL-3.0",
+            "start_date" : "2022-05-01 22:00:00.0"
+          } ],
+          "title" : "Source Code for Performance Comparison of kNN and GD"
+        } ],
+        "personal_data" : "no",
+        "security_and_privacy" : [ ],
+        "sensitive_data" : "no",
+        "title" : "Source Code for Performance Comparison of kNN and GD",
+        "type" : "SOURCE_CODE"
+      } ],
+      "ethical_issues_exist" : "no",
+      "modified" : 1650108810633,
+      "project" : [ ]
+    }
+  }

@@ -42,6 +42,8 @@ The API is available locally at `http://127.0.0.1:8000/docs`.
 
 Or in the web at  `https://dmp-evaluation.onrender.com/docs`.
 
+When using the interactive documentation, upload your maDMP file and select one of the available mapping files from the dropdown.
+
 ## FAIR Implementation Profile mapping
 
 The file `FIP_Mapping/fip_madmp_mapping.json` defines how each FIP question relates to fields in a maDMP (following the structure of the RDA DMP Common Standard for machine-actionable Data Management Plans) . Each entry lists the FAIR principle, the original question, the corresponding maDMP path and the mapping status (`Mapped`, `Partially Mapped`, `Not Mapped`). During evaluation the mapping guides the checks that populate the reports listed above.

@@ -1,164 +1,169 @@
 {
-    "dmp": {
-      "contact": {
-        "contact_id": {
-          "identifier": "26edbbab-2c5d-4b82-943c-a5ebeba0c43e",
-          "type": "other",
-          "additional_properties": {}
-        },
-        "mbox": "ebernal.iacs@aragon.es",
-        "name": "Enrique Bernal-Delgado",
-        "additional_properties": {}
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "26edbbab-2c5d-4b82-943c-a5ebeba0c43e",
+        "type" : "other",
+        "additional_properties" : { }
       },
-      "contributor": [
-        {
-          "contributor_id": {
-            "identifier": "http://orcid.org/0000-0002-9586-7955",
-            "type": "orcid",
-            "additional_properties": {}
-          },
-          "name": "Natalia Martínez-Lizaga (orcid:0000-0002-9586-7955)",
-          "additional_properties": {}
-        },
-        {
-          "contributor_id": {
-            "identifier": "http://orcid.org/0000-0002-8783-5478",
-            "type": "orcid",
-            "additional_properties": {}
-          },
-          "name": "Javier González Galindo (orcid:0000-0002-8783-5478)",
-          "additional_properties": {}
-        },
-        {
-          "contributor_id": {
-            "identifier": "http://orcid.org/0000-0002-0048-4370",
-            "type": "orcid",
-            "additional_properties": {}
-          },
-          "name": "Santiago Royo-Sierra (orcid:0000-0002-0048-4370)",
-          "additional_properties": {}
-        },
-        {
-          "contributor_id": {
-            "identifier": "http://orcid.org/0000-0001-7316-6990",
-            "type": "orcid",
-            "additional_properties": {}
-          },
-          "name": "Nina Van Goethem (orcid:0000-0001-7316-6990)",
-          "additional_properties": {}
-        },
-        {
-          "contributor_id": {
-            "identifier": "http://orcid.org/0000-0002-6285-8120",
-            "type": "orcid",
-            "additional_properties": {}
-          },
-          "name": "Francisco Estupiñán Romero (orcid:0000-0002-6285-8120)",
-          "additional_properties": {}
-        },
-        {
-          "contributor_id": {
-            "identifier": "http://orcid.org/0000-0003-2922-8749",
-            "type": "orcid",
-            "additional_properties": {}
-          },
-          "name": "Ramón Launa Garces (orcid:0000-0003-2922-8749)",
-          "additional_properties": {}
-        },
-        {
-          "contributor_id": {
-            "identifier": "http://orcid.org/0000-0002-0961-3298",
-            "type": "orcid",
-            "additional_properties": {}
-          },
-          "name": "ENRIQUE BERNAL-DELGADO (orcid:0000-0002-0961-3298)",
-          "additional_properties": {}
-        },
-        {
-          "contributor_id": {
-            "identifier": "http://orcid.org/0000-0002-4409-0664",
-            "type": "orcid",
-            "additional_properties": {}
-          },
-          "name": "Marjan Meurisse (orcid:0000-0002-4409-0664)",
-          "additional_properties": {}
-        }
-      ],
-      "cost": [],
-      "created": "2023-09-14T14:03:28Z",
-      "dataset": [
-        {
-          "data_quality_assurance": [
-            "Set up of scientific and technical committee",
-            "Use of tools for automatic checks",
-            "Data conform to format specification",
-            "Consistency verified with data models and standards",
-            "BIGAN has a data quality assurance system for data processing to enable the secondary use of health data in Aragon (Spain).  In this sense, the DMP is a key part of the quality assurance process."
-          ],
-          "dataset_id": {
-            "identifier": "1e3c0a06-0ee2-4b8a-8b7f-5f7f0b6f19f5",
-            "type": "other",
-            "additional_properties": {}
-          },
-          "description": "This DMP describes two types of data: 1) electronic health records (EHRs) from regional and national health data sources (databases); and 2) aggregated data (indicators) derived from the analysis of EHRs. The data are used to estimate vaccine effectiveness in preventing SARS-CoV-2 infection across multiple regions/countries. **EHR Data**: patient-level clinical data (e.g. vaccinations, lab results, diagnoses) from participating health systems, standardized to common models for analysis. **Aggregated Data**: summary tables of population-level outcomes and vaccination status, stratified by factors like age, sex, etc., used for pooled analysis across sites. All data will be pseudonymized or aggregated to protect privacy.",
-          "distribution": [
-            {
-              "title": "BY-COVID WP5 Baseline Use Case Datasets"
-            },
-            {
-              "license": [
-                "proprietary"
-              ]
-            },
-            {
-              "host": {
-                "title": "Multiple health data sources (regional/national databases) – see BY-COVID DMP for details"
-              }
-            },
-            {
-              "access_url": "Restricted access – data remain with data providers; only aggregated outputs are shared"
-            },
-            {
-              "dataset_id": {
-                "identifier": "https://doi.org/10.5281/zenodo.12636106",
-                "type": "doi"
-              }
-            }
-          ],
-          "personal_data": "yes",
-          "sensitive_data": "yes",
-          "title": "COVID-19 Vaccine Effectiveness Study Data (EHR & Derived Indicators)",
-          "type": "Observational/Clinical Study Data"
-        }
-      ],
-      "description": "Data Management Plan for the BY-COVID project baseline use case on “COVID-19 vaccine effectiveness in preventing SARS-CoV-2 infection”:contentReference[oaicite:12]{index=12}. This DMP covers data sources, standards and procedures for a multi-country observational study using health records and aggregated health indicators.",
-      "dmp_id": {
-        "identifier": "2a2b1e3e-39ef-4916-9431-c644dbe43f19",
-        "type": "other",
-        "additional_properties": {}
+      "mbox" : "ebernal.iacs@aragon.es",
+      "name" : "Enrique Bernal-Delgado",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-9586-7955",
+        "type" : "orcid",
+        "additional_properties" : { }
       },
-      "ethical_issues_description": "All patient-level data remain under custody of health authorities in each region. Only de-identified or aggregated data are shared for analysis. The study obtained necessary ethics approvals or data use agreements in each participating jurisdiction. Results will be published at aggregate level, with no personally identifiable information.",
-      "ethical_issues_exist": "yes",
-      "language": "eng",
-      "modified": "2023-11-10T10:45:00Z",
-      "project": [
-        {
-          "funding": [
-            {
-              "funder_id": {
-                "identifier": "European Commission",
-                "type": "crossref-funder-id"
-              },
-              "grant_id": {
-                "identifier": "101046203 (BY-COVID)",
-                "type": "other"
-              }
-            }
-          ],
-          "title": "Beyond COVID (BY-COVID)"
-        }
-      ],
-      "title": "BY-COVID Vaccine Effectiveness Use Case DMP"
+      "name" : "Natalia Martínez-Lizaga (orcid:0000-0002-9586-7955)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-8783-5478",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Javier González Galindo (orcid:0000-0002-8783-5478)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0048-4370",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Santiago Royo-Sierra (orcid:0000-0002-0048-4370)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0001-7316-6990",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Nina Van Goethem (orcid:0000-0001-7316-6990)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-6285-8120",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Francisco Estupiñán Romero (orcid:0000-0002-6285-8120)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0003-2922-8749",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ramón Launa Garces (orcid:0000-0003-2922-8749)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-0961-3298",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "ENRIQUE BERNAL-DELGADO (orcid:0000-0002-0961-3298)",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-4409-0664",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Marjan Meurisse (orcid:0000-0002-4409-0664)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2023-09-14T14:03:28Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Use of tools for automatic checks", "Data conform to format specification", "Consistency verified with data models and standards", "BIGAN has a data quality assurance system for data processing to enable the secondary use of health data in Aragon (Spain).&#160; In addition, we implement our own data quality assessment and assurance procedures within the BY-COVID baseline use case, aiming to provide insight into the impact of data quality in interpreting the research outcomes and producing high-quality research. Those procedures include the assessment of the information requirements and the data model specification by a scientific and technical committee, the implementation of an automatic data quality check (i.e. exploratory data analysis - EDA) on the original dataset of each participant on-site, the implementation of data conformance and consistency checking following the common data model specification, and a final missing values assessment on core variables to inform decisions on imputation requirements.&#160;" ],
+      "dataset_id" : {
+        "identifier" : "f55bf8d2-be76-4ef0-adb6-d14d6a17358d",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "The COVID-19 public health cohort in Aragon links selected variables from existing population-level registries for COVID-19 public health surveillance and the COVID-19 vaccination&#160;program in Aragon, covering a global population for the region of approximately 1.3 million lives.&#160;<div><div><br></div><div>This cohort includes all registered COVID-19 cases reported to the Health System in Aragon (Spain) in the public health surveillance registry and complementary information on patients' attributes (i.e. underlying health problems, socio-demographic and economic factors), test results, and healthcare use combined with all citizens receiving at least one dose of any of the available vaccines included in the COVID-19 vaccination programme for Aragon.&#160;</div><div><br></div><div>Original data is maintained and updated daily by&#160;<a href=\"https://bigan.iacs.es/es/inicio\" target=\"_blank\">BIGAN</a>&#160;(Health Data Space in Aragon).&#160;</div><div><br></div><div>A common data model specification with the required information to achieve the expected results of the baseline use case research question is provided as supporting documentation at&#160;<a href=\"https://doi.org/10.5281/zenodo.6913046\" target=\"_blank\">BY-COVID - WP5 - Baseline Use Case: COVID-19 vaccine effectiveness assessment - Common Data Model Specification</a>.</div><div>Data is provided pseudonymised and in compliance with the baseline use case data model specification by BIGAN after the data request is processed and granted by the Aragon Ethical Research Committee.&#160;</div></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "BIGAN has a regional mandate from the government of Aragon to curate and maintain original data requests (and related ETL queries) in the long term and report on the re-use of health data for research purposes.&#160;",
+      "title" : "COVID-19 public health cohort in Aragon (Spain)",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "74ddc2c7-db99-472a-ba5c-6755657e3b7d",
+        "otherDQA" : "BIGAN has a data quality assurance system for data processing to enable the secondary use of health data in Aragon (Spain).&#160; In addition, we implement our own data quality assessment and assurance procedures within the BY-COVID baseline use case, aiming to provide insight into the impact of data quality in interpreting the research outcomes and producing high-quality research. Those procedures include the assessment of the information requirements and the data model specification by a scientific and technical committee, the implementation of an automatic data quality check (i.e. exploratory data analysis - EDA) on the original dataset of each participant on-site, the implementation of data conformance and consistency checking following the common data model specification, and a final missing values assessment on core variables to inform decisions on imputation requirements.&#160;",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Set up of scientific and technical committee", "Use of tools for automatic checks", "Data conform to format specification", "Consistency verified with data models and standards", "We implement our own data quality assessment and assurance procedures within the BY-COVID baseline use case, aiming to provide insight into the impact of data quality in interpreting the research outcomes and producing high-quality research. Those procedures include the assessment of the information requirements and the data model specification by a scientific and technical committee, the implementation of an automatic data quality check (i.e. exploratory data analysis - EDA) on the original dataset (linked and transformed data to comply with the requirements captured in the common data model specification, conditional on data availability and access) of each participating node, the implementation of data conformance and consistency checking following the common data model specification, and a final missing values assessment on core variables to inform decisions on imputation requirements. The EDA, checking of consistency with the common data model specification and missing values assessment are performed within the secured processing environment (SPE) of each participating node.<br>" ],
+      "dataset_id" : {
+        "identifier" : "686ab52b-7688-4deb-8859-e2b0c792ff72",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>The <b><a href=\"https://www.sciensano.be/en/projects/linking-registers-covid-19-vaccine-surveillance\" target=\"_blank\">LINK-VACC project</a></b> links <b>selected variables from existing national registries</b> for COVID-19 vaccine surveillance to ensure the monitoring of COVID-19 vaccines in the phase following their marketing authorization (post-authorization surveillance). This includes the measurement of uptake and coverage of the vaccination, the estimation of vaccine effectiveness, and continuous monitoring of the vaccine&#8217;s safety. For these purposes, existing pseudonymized data on COVID-19 laboratory test results, hospitalized COVID-19 patients, COVID-19 vaccinations, underlying health problems, socio-demographic and -economic factors, and healthcare worker status are linked.</div><div><br></div><div>By linking existing databases, the LINK-VACC project enables to create a <b>prospective cohort</b> of all individuals that are recorded in the vaccine registry as having received at least one dose of a registered COVID-19 vaccine and/or recorded in the COVID-19 Healthdata Database as having a positive test for SARS-CoV-2 (PCR or rapid antigen). This cohort covers more than 90% of the total population in Belgium. The COVID-19 vaccine related data from the vaccine registry (<b>VACCINNET+</b>) and the COVID-19 test result database (<b>COVID-19 Healthdata Database</b>) are continuously updated and linked (on a daily basis) to the database of hospitalized patients with a confirmed COVID-19 diagnosis (<b>COVID-19 Clinical Hospital Survey</b>) and to the common database for the different public institutions responsible for the recognition of healthcare actors in Belgium (<b>COBRHA</b>). In addition, there are non-continuous linkages (monthly, bi-annual or <i>ad hoc</i>) to the database on reimbursed care and medicines of citizens insured in Belgium (<b>Intermutualistic Agency - IMA</b>) and to the socioeconomic information (civil status, employment status, income decile, ...) from the <b>STATBEL</b> database. <br></div><div><br></div><div>Data from the vaccine registry (VACCINNET +), the TestResult database (COVID-19 Healthdata Database) and the COVID-19 clinical database (COVID-19 Clinical Hospital Survey), are hosted in the HealthData COVID-19 data Center (secured environment), where personal patient data are available. As described above, links are organized with the databases external to healthdata.be (COBRHA, IMA and STATBEL) using the national registry number. The Trusted Third Party (TTP) service of the eHealth platform pseudonymizes the patient's identifier and the data from the six databases are stored in <b>Healthdata's pseudonymised environment</b> (separation of secured environment and research environment). <br></div><div><br></div><div>In the context of the <b><a href=\"https://by-covid.org/\" target=\"_blank\">BY-COVID project</a></b>, analysis scripts will be distributed and deployed in a federated way within the secured processing environment (SPE) of participating nodes. Sciensano will be one of the nodes participating in the baseline use case, and the analyses will take place within the architecture of the LINK-VACC project (pseudonymised research environment). Data available within this architecture allow to meet the requirements of the common data model specifications. The required information to achieve the expected results of the baseline use case research question is provided as supporting documentation at <a href=\"https://doi.org/10.5281/zenodo.7572373\" target=\"_blank\">BY-COVID - WP5 - Baseline Use Case: COVID-19 vaccine effectiveness assessment - Common Data Model Specification</a>. <br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "End date of LINK-VACC project<br>",
+      "title" : " LINK-VACC: Linking of Registries for COVID-19 Vaccine Surveillance (Belgium)",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "74ddc2c7-db99-472a-ba5c-6755657e3b7d",
+        "otherDQA" : "We implement our own data quality assessment and assurance procedures within the BY-COVID baseline use case, aiming to provide insight into the impact of data quality in interpreting the research outcomes and producing high-quality research. Those procedures include the assessment of the information requirements and the data model specification by a scientific and technical committee, the implementation of an automatic data quality check (i.e. exploratory data analysis - EDA) on the original dataset (linked and transformed data to comply with the requirements captured in the common data model specification, conditional on data availability and access) of each participating node, the implementation of data conformance and consistency checking following the common data model specification, and a final missing values assessment on core variables to inform decisions on imputation requirements. The EDA, checking of consistency with the common data model specification and missing values assessment are performed within the secured processing environment (SPE) of each participating node.<br>",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "This publication corresponds to the Data Management Plan (DMP) for the Baseline Use Case proposed in T.5.2 (WP5) in the BY-COVID project on &#8220;COVID-19 Vaccine(s) effectiveness in preventing SARS-CoV-2 infection.&#8221;<div><br><div>This use case aims to investigate the real-world effectiveness of SARS-CoV-2 primary vaccination compared to partial or no vaccination in preventing SARS-CoV-2 infection in virtually all resident populations spanning different countries. The study will be conducted in two sequential stages, expanding the exercise to several countries/regions:</div><div><ul><li>Stage I (pilot): Aragon (Spain) and Belgium.</li><li>Stage II: Aragon (Spain), Belgium, Austria, Finland, Norway, Estonia and The Netherlands. The participation of these countries/regions is conditional on data access.</li></ul></div><div><div>A brief structured description of the research question, the proposed study design, and the cohort definition is provided below.&#160;</div><div><b>Research Question:</b> &#8220;How effective have the SARS-CoV-2 vaccination programmes been in preventing SARS-CoV-2 infections?&#8221;&#10;</div><div><b>Intervention (exposure):</b> COVID-19 vaccine(s) &#10;</div><div><b>Outcome: </b>SARS-CoV-2 infection &#10;</div><div><b>Subgroup analysis: </b>Vaccination schedule (type of vaccine)&#10;</div><div><b>Study Design:</b> An observational retrospective longitudinal study to assess the effectiveness of the COVID-19 vaccine(s) in preventing SARS-CoV-2 infections using routinely collected social, health and care data from several countries.&#10;</div><div><span>A causal model was established using Directed Acyclic Graphs (DAGs) to map domain knowledge, theories and assumptions about the causal relationship between exposure and outcome.</span><br></div><div><b>Cohort definition:</b> All people eligible to be vaccinated (from 5 to 115 years old, included) or with, at least, one dose of a SARS-CoV-2 vaccine (any of the available brands) having or not a previous SARS-CoV-2 infection.&#10;</div><div><ul><li><b>Inclusion criteria:</b> All people vaccinated with at least one dose of the COVID-19 vaccine (any available brands) in an area of residence. Any person eligible to be vaccinated (from 5 to 115 years old, included) with a positive diagnosis (irrespective of the type of test) for SARS-CoV-2 infection (COVID-19) during the period of study.&#10;</li><li><b>Exclusion criteria: </b>People not eligible for the vaccine (from 0 to 4 years old, included)&#10;</li><li><b>Study period: </b>From the date of the first documented SARS-CoV-2 infection in each country to the most recent date in which data is available at the time of analysis. Roughly from 01-03-2020 to 30-06-2022, depending on the country.</li></ul><div>This DMP follows the guidelines and principles of the&#160;<a href=\"https://doi.org/10.5281/zenodo.7476926\" target=\"_blank\">BY-COVID - Deliverable 8.2.2 Project Data Management Plan</a>.&#160;</div></div><div><br></div><div>&#10;</div><div>&#10;</div><div>&#10;</div><div>&#10;</div></div></div>",
+    "dmp_id" : {
+      "identifier" : "2a2b1e3e-39ef-4916-9431-c644dbe43f19",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-07-03T11:44:19Z",
+    "project" : [ {
+      "end" : "Sat Jan 20 09:29:05 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "5daccc8b-be5f-47c7-b68f-827e7e09e00b",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "corda_____he::101046203",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Jan 20 09:29:05 UTC 2023",
+      "title" : "Beyond COVID",
+      "additional_properties" : { }
+    } ],
+    "title" : "BY-COVID. Real-world effectiveness of SARS-CoV-2 primary vaccination against SARS-CoV-2 infection: observational federated study across several EU regions.",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution-NonCommercial 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-NC-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : null,
+      "templates" : [ "3d43ba45-25fa-4815-81b4-9bf22ecd8316" ],
+      "contact" : "26edbbab-2c5d-4b82-943c-a5ebeba0c43e",
+      "publicDate" : "2023-06-30T00:00:00.000Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
     }
   }
-  
+}

@@ -1,0 +1,58 @@
+{
+  "completeness": {
+    "score": 0.8,
+    "issues": [
+      "dmp_id.identifier"
+    ]
+  },
+  "accuracy": {
+    "score": 1,
+    "issues": []
+  },
+  "consistency": {
+    "score": 0,
+    "issues": [
+      "Training and Test Subsets for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Training and Test Subsets for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Training and Test Subsets for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Results for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Results for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Results for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Plots for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Plots for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Plots for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Datasets for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Datasets for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Datasets for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Source Code for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Source Code for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Source Code for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Source Code for Performance Comparison of kNN and GD is open but lacks a license.",
+      "Source Code for Performance Comparison of kNN and GD is open but lacks a license."
+    ]
+  },
+  "guidance_compliance": {
+    "score": 0,
+    "issues": [
+      "Language '' not standard.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant.",
+      "License 'None' may not be FAIR-compliant."
+    ]
+  },
+  "total_score": 0.45
+}

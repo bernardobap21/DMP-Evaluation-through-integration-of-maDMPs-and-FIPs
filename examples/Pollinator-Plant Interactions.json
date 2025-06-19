@@ -39,7 +39,13 @@
             {
               "title": "Zenodo Repository (Primary Host)",
               "access_url": "https://zenodo.org/record/6788464",
-              "license": ["https://creativecommons.org/licenses/by/4.0/"],
+              "license": [
+                {
+                  "license_name": "Creative Commons Zero (CC0)",
+                  "license_ref": "https://creativecommons.org/licenses/by/4.0/",
+                  "start_date": "2025-09-01"
+                }
+              ],              
               "format": ["csv", "dwc", "json"],
               "host": {
                 "title": "Zenodo",

@@ -35,16 +35,16 @@
         {
             "FAIR_principle": "F4",
             "FIP_question": "In which search engines are your metadata records indexed?",
-            "maDMP_field": "",
-            "Mapping_status": "Not Mapped",
+            "maDMP_field": "dataset.distribution.access_url",
+            "Mapping_status": "Mapped",
             "Comments": "No field explicitly covers search engine indexing",
             "Allowed_values": ["GBIF search engine",  "Global Biotic Interactions"]
         },
         {
             "FAIR_principle": "F4",
             "FIP_question": "In which search engines are your datasets indexed?",
-            "maDMP_field": "",
-            "Mapping_status": "Not Mapped",
+            "maDMP_field": "dataset.distribution.access_url",
+            "Mapping_status": "Mapped",
             "Comments": "No field explicitly covers search engine indexing",
             "Allowed_values": ["GBIF search engine",  "Global Biotic Interactions"]
         },

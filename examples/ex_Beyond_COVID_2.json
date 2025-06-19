@@ -1,0 +1,164 @@
+{
+    "dmp": {
+      "contact": {
+        "contact_id": {
+          "identifier": "26edbbab-2c5d-4b82-943c-a5ebeba0c43e",
+          "type": "other",
+          "additional_properties": {}
+        },
+        "mbox": "ebernal.iacs@aragon.es",
+        "name": "Enrique Bernal-Delgado",
+        "additional_properties": {}
+      },
+      "contributor": [
+        {
+          "contributor_id": {
+            "identifier": "http://orcid.org/0000-0002-9586-7955",
+            "type": "orcid",
+            "additional_properties": {}
+          },
+          "name": "Natalia Martínez-Lizaga (orcid:0000-0002-9586-7955)",
+          "additional_properties": {}
+        },
+        {
+          "contributor_id": {
+            "identifier": "http://orcid.org/0000-0002-8783-5478",
+            "type": "orcid",
+            "additional_properties": {}
+          },
+          "name": "Javier González Galindo (orcid:0000-0002-8783-5478)",
+          "additional_properties": {}
+        },
+        {
+          "contributor_id": {
+            "identifier": "http://orcid.org/0000-0002-0048-4370",
+            "type": "orcid",
+            "additional_properties": {}
+          },
+          "name": "Santiago Royo-Sierra (orcid:0000-0002-0048-4370)",
+          "additional_properties": {}
+        },
+        {
+          "contributor_id": {
+            "identifier": "http://orcid.org/0000-0001-7316-6990",
+            "type": "orcid",
+            "additional_properties": {}
+          },
+          "name": "Nina Van Goethem (orcid:0000-0001-7316-6990)",
+          "additional_properties": {}
+        },
+        {
+          "contributor_id": {
+            "identifier": "http://orcid.org/0000-0002-6285-8120",
+            "type": "orcid",
+            "additional_properties": {}
+          },
+          "name": "Francisco Estupiñán Romero (orcid:0000-0002-6285-8120)",
+          "additional_properties": {}
+        },
+        {
+          "contributor_id": {
+            "identifier": "http://orcid.org/0000-0003-2922-8749",
+            "type": "orcid",
+            "additional_properties": {}
+          },
+          "name": "Ramón Launa Garces (orcid:0000-0003-2922-8749)",
+          "additional_properties": {}
+        },
+        {
+          "contributor_id": {
+            "identifier": "http://orcid.org/0000-0002-0961-3298",
+            "type": "orcid",
+            "additional_properties": {}
+          },
+          "name": "ENRIQUE BERNAL-DELGADO (orcid:0000-0002-0961-3298)",
+          "additional_properties": {}
+        },
+        {
+          "contributor_id": {
+            "identifier": "http://orcid.org/0000-0002-4409-0664",
+            "type": "orcid",
+            "additional_properties": {}
+          },
+          "name": "Marjan Meurisse (orcid:0000-0002-4409-0664)",
+          "additional_properties": {}
+        }
+      ],
+      "cost": [],
+      "created": "2023-09-14T14:03:28Z",
+      "dataset": [
+        {
+          "data_quality_assurance": [
+            "Set up of scientific and technical committee",
+            "Use of tools for automatic checks",
+            "Data conform to format specification",
+            "Consistency verified with data models and standards",
+            "BIGAN has a data quality assurance system for data processing to enable the secondary use of health data in Aragon (Spain).  In this sense, the DMP is a key part of the quality assurance process."
+          ],
+          "dataset_id": {
+            "identifier": "1e3c0a06-0ee2-4b8a-8b7f-5f7f0b6f19f5",
+            "type": "other",
+            "additional_properties": {}
+          },
+          "description": "This DMP describes two types of data: 1) electronic health records (EHRs) from regional and national health data sources (databases); and 2) aggregated data (indicators) derived from the analysis of EHRs. The data are used to estimate vaccine effectiveness in preventing SARS-CoV-2 infection across multiple regions/countries. **EHR Data**: patient-level clinical data (e.g. vaccinations, lab results, diagnoses) from participating health systems, standardized to common models for analysis. **Aggregated Data**: summary tables of population-level outcomes and vaccination status, stratified by factors like age, sex, etc., used for pooled analysis across sites. All data will be pseudonymized or aggregated to protect privacy.",
+          "distribution": [
+            {
+              "title": "BY-COVID WP5 Baseline Use Case Datasets"
+            },
+            {
+              "license": [
+                "proprietary"
+              ]
+            },
+            {
+              "host": {
+                "title": "Multiple health data sources (regional/national databases) – see BY-COVID DMP for details"
+              }
+            },
+            {
+              "access_url": "Restricted access – data remain with data providers; only aggregated outputs are shared"
+            },
+            {
+              "dataset_id": {
+                "identifier": "https://doi.org/10.5281/zenodo.12636106",
+                "type": "doi"
+              }
+            }
+          ],
+          "personal_data": "yes",
+          "sensitive_data": "yes",
+          "title": "COVID-19 Vaccine Effectiveness Study Data (EHR & Derived Indicators)",
+          "type": "Observational/Clinical Study Data"
+        }
+      ],
+      "description": "Data Management Plan for the BY-COVID project baseline use case on “COVID-19 vaccine effectiveness in preventing SARS-CoV-2 infection”:contentReference[oaicite:12]{index=12}. This DMP covers data sources, standards and procedures for a multi-country observational study using health records and aggregated health indicators.",
+      "dmp_id": {
+        "identifier": "2a2b1e3e-39ef-4916-9431-c644dbe43f19",
+        "type": "other",
+        "additional_properties": {}
+      },
+      "ethical_issues_description": "All patient-level data remain under custody of health authorities in each region. Only de-identified or aggregated data are shared for analysis. The study obtained necessary ethics approvals or data use agreements in each participating jurisdiction. Results will be published at aggregate level, with no personally identifiable information.",
+      "ethical_issues_exist": "yes",
+      "language": "eng",
+      "modified": "2023-11-10T10:45:00Z",
+      "project": [
+        {
+          "funding": [
+            {
+              "funder_id": {
+                "identifier": "European Commission",
+                "type": "crossref-funder-id"
+              },
+              "grant_id": {
+                "identifier": "101046203 (BY-COVID)",
+                "type": "other"
+              }
+            }
+          ],
+          "title": "Beyond COVID (BY-COVID)"
+        }
+      ],
+      "title": "BY-COVID Vaccine Effectiveness Use Case DMP"
+    }
+  }
+  
