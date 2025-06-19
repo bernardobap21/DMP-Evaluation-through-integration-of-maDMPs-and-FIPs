@@ -26,12 +26,12 @@ def read_root():
 
 @app.post("/evaluate/")
 async def evaluate(
-    dmp_file: UploadFile = File(...),
+    maDMP_file: UploadFile = File(...),
     fip_mapping_file: str = Query(..., enum=FIP_OPTIONS),
 ):
 
     # Validate uploaded DMP file
-    if not dmp_file.filename.endswith(".json"):
+    if not maDMP_file.filename.endswith(".json"):
         return {
             "error": f"Invalid file type: {dmp_file.filename}. Only .json files are allowed."
         }
