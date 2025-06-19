@@ -33,15 +33,15 @@ async def evaluate(
     # Validate uploaded DMP file
     if not maDMP_file.filename.endswith(".json"):
         return {
-            "error": f"Invalid file type: {dmp_file.filename}. Only .json files are allowed."
+            "error": f"Invalid file type: {maDMP_file.filename}. Only .json files are allowed."
         }
     
     with tempfile.TemporaryDirectory() as tmpdir:
-        dmp_path = os.path.join(tmpdir, dmp_file.filename)
+        dmp_path = os.path.join(tmpdir, maDMP_file.filename)
         #mapping_path = os.path.join(tmpdir, fip_mapping_file.filename)
 
         with open(dmp_path, "wb") as buffer:
-            buffer.write(await dmp_file.read())
+            buffer.write(await maDMP_file.read())
 
         mapping_path = os.path.join(FIP_DIRECTORY, fip_mapping_file)
 
