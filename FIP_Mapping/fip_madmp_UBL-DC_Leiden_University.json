@@ -158,7 +158,7 @@
             "maDMP_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "Maybe dataset.data_quality_assurance could be useful",
-            "Allowed_values": ["PROV-O"]
+            "Allowed_values": [""]
         },
         {
             "FAIR_principle": "R1.2",
@@ -166,7 +166,7 @@
             "maDMP_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "Maybe dataset.data_quality_assurance could be useful",
-            "Allowed_values": ["PROV-O"]
+            "Allowed_values": [""]
         }
     ]
 }
