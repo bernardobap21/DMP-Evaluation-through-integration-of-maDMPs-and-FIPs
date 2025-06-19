@@ -118,7 +118,7 @@
             "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
             "Mapping_status": "Partially Mapped",
             "Comments": "The example value is http://www.dublincore.org/specifications/dublin-core/dcmi-terms/ which could help to partially infer something",
-            "Allowed_values": [""]
+            "Allowed_values": ""
         },
         {
             "FAIR_principle": "I3",
@@ -158,7 +158,7 @@
             "maDMP_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "Maybe dataset.data_quality_assurance could be useful",
-            "Allowed_values": [""]
+            "Allowed_values": ""
         },
         {
             "FAIR_principle": "R1.2",
@@ -166,7 +166,7 @@
             "maDMP_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "Maybe dataset.data_quality_assurance could be useful",
-            "Allowed_values": [""]
+            "Allowed_values": ""
         }
     ]
 }
