@@ -1,0 +1,36 @@
+{
+  "completeness": {
+    "score": 0.8,
+    "issues": [
+      "dataset[0].distribution[0].license"
+    ]
+  },
+  "accuracy": {
+    "score": 1,
+    "issues": []
+  },
+  "consistency": {
+    "score": 0,
+    "issues": [
+      "LCS FARP is missing byte_size.",
+      "LCS FARP is missing format.",
+      "LCS FARP is missing byte_size.",
+      "LCS FARP is missing format.",
+      "LCS FARP is missing byte_size.",
+      "LCS FARP is missing format.",
+      "LCS FARP is missing byte_size.",
+      "LCS FARP is missing format.",
+      "LCS FARP is missing byte_size.",
+      "LCS FARP is missing format.",
+      "LCS FARP is missing byte_size.",
+      "LCS FARP is missing format.",
+      "LCS FARP is missing byte_size.",
+      "LCS FARP is missing format."
+    ]
+  },
+  "guidance_compliance": {
+    "score": 1,
+    "issues": []
+  },
+  "total_score": 0.7
+}

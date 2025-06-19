@@ -1,5 +1,4 @@
 import json
-import os
 from datetime import datetime
 
 def export_planned_fairness(test_results, dmp_id, output_path):

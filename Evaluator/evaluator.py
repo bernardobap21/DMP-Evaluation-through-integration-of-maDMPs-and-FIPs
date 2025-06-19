@@ -68,8 +68,8 @@ def summarize_results(results):
     present = sum(1 for r in results if r["field_status"] == "Present")
     compliant = sum(1 for r in results if r["compliance_status"] == "Compliant")
     total = len(results)
-    print(f"{present}/{total} fields present in the maDMP.")
-    print(f"{compliant}/{total} fields compliant with allowed values.")
+    #print(f"{present}/{total} fields present in the maDMP.")
+    #print(f"{compliant}/{total} fields compliant with allowed values.")
     return present, compliant, total
 
 def save_evaluation_results(results, output_path):

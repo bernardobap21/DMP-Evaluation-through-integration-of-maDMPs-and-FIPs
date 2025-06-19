@@ -38,7 +38,7 @@ def main():
 
 
     present, compliant, total = summarize_results(evaluation_results)
-    print(f"Evaluation Complete: {present}/{total} fields present, {compliant}/{total} compliant.")
+    print(f"Evaluation Complete: \n{present}/{total} fields present. \n{compliant}/{total} compliant.")
 
     base_filename = os.path.splitext(os.path.basename(args.input))[0]
     #csv_output = os.path.join(args.output, f"{base_filename}_mapping_report.csv")

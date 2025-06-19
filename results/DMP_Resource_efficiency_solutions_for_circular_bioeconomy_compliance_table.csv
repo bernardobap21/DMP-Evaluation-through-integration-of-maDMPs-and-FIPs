@@ -1,0 +1,22 @@
+FIP Question,maDMP Field,maDMP Value,Accepted Values,Compliant
+"What globally unique, persistent, resolvable identifiers do you use for metadata records?",dataset.dataset_id.identifier,"""38c7f8c0-8e65-4225-87a0-1669a601aedf""","DOI, dPIDs",Yes
+"What globally unique, persistent, resolvable identifiers do you use for datasets?",dataset.dataset_id.identifier,"""38c7f8c0-8e65-4225-87a0-1669a601aedf""","URI, DOI",No
+Which metadata schemas do you use for findability?,dataset.metadata.metadata_standard_id.identifier,null,"EML, Schema.org, DCAT, Dublin Core",No
+What is the technology that links the persistent identifiers of your data to the metadata description?,dataset.distribution.host.pid_system,null,DataCite,No
+In which search engines are your metadata records indexed?,,null,"GBIF search engine, Global Biotic Interactions",No
+In which search engines are your datasets indexed?,,null,"GBIF search engine, Global Biotic Interactions",No
+Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,null,"HTTPS, REST",No
+Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,null,"HTTPS, REST",No
+Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,null,"Open Data, Open, OAuth 2.0",No
+Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,null,"OAuth 2.0, GBIF local account, Open, Open Data",No
+Which metadata longevity plan do you use?,,null,,No
+Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,,null,"DwC-A, JSON, XMLS, RDFS",No
+Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,,null,"DwC-A, JSON, XMLS, RDFS",No
+Which structured vocabularies do you use to annotate your metadata records?,dataset.metadata.metadata_standard_id.identifier,null,"EML, DwC",No
+Which structured vocabularies do you use to encode your datasets?,dataset.metadata.metadata_standard_id.identifier,null,"Plant Pollinator Vocabulary, DwC",No
+"Which models, schema(s) do you use for your metadata records?",dataset.metadata.metadata_standard_id.type,null,"Relations Ontology, DwC",No
+"Which models, schema(s) do you use for your datasets?",dataset.metadata.metadata_standard_id.type,null,DwC-A,No
+Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,null,"CC0 1.0, CC-BY 4.0, CC BY-NC 4.0",No
+Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,null,"CC0 1.0, CC-BY 4.0, CC BY-NC 4.0",No
+Which metadata schemas do you use for describing the provenance of your metadata records?,,null,PROV-O,No
+Which metadata schemas do you use for describing the provenance of your datasets?,,null,PROV-O,No

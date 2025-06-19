@@ -47,7 +47,7 @@ async def evaluate(dmp_file: UploadFile = File(...), fip_mapping_file: UploadFil
 
         # Evaluate
         results = evaluate_dmp_against_fip(dmp, mapping)
-        present, total = summarize_results(results)
+        present, compliant, total = summarize_results(results)
 
         # Other results
         fairness_results = run_fairness_scoring(dmp)
@@ -56,7 +56,7 @@ async def evaluate(dmp_file: UploadFile = File(...), fip_mapping_file: UploadFil
 
     # Return results as JSON
     return {
-        "summary": f"{present}/{total} fields present\n",
+        "summary": f"{present}/{total} fields present, {compliant}/{total} compliant\n",
         "fairness": fairness_results,
         "metadata_validation": metadata_validation,
         "Mapping_to_FIP_Results": results,
