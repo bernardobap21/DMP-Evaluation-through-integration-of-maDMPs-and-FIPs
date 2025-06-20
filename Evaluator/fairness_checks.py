@@ -3,16 +3,31 @@ import validators
 
 # New to check licenses, etc.
 def is_known_open_license(name):
-    return any(keyword in name.lower() for keyword in ["cc", "creative commons", "mit", "open", "gnu", "bsd"])
+    name = name.lower()
+    keywords = [
+        "cc",
+        "creative commons",
+        "creativecommons",
+        "mit",
+        "open",
+        "gnu",
+        "gpl",
+        "apache",
+        "bsd",
+    ]
+    return any(keyword in name for keyword in keywords)
 
 def check_completeness(dmp):
     required_fields = [
-        "dmp_id.identifier", "contact.name", "dataset",
-        "dataset[0].distribution", "dataset[0].distribution[0].license"
+        "dmp_id.identifier",
+        "contact.name",
+        "dataset",
+        "dataset[0].distribution",
+        "dataset[0].distribution[0].license",
     ]
     missing = []
     for path in required_fields:
-        keys = path.replace('[0]', '').split('.')
+        keys = path.replace('[0]', "").split(".")
         temp = dmp
         for key in keys:
             if isinstance(temp, list):
@@ -48,7 +63,9 @@ def check_consistency(dmp):
         for dist in ds.get("distribution", []):
             access = dist.get("data_access", "")
             licenses = dist.get("license", [])
-            has_license = any(lic.get("license_name") for lic in licenses)
+            has_license = any(
+                lic.get("license_name") or lic.get("license_ref") for lic in licenses
+            )
             if access == "open" and not has_license:
                 issues.append(f"{ds.get('title')} is open but lacks a license.")
             if not dist.get("byte_size"):
@@ -59,15 +76,19 @@ def check_consistency(dmp):
 
 def check_guidance_compliance(dmp):
     issues = []
-    lang = dmp.get("language", "")
-    if lang not in ["en", "eng"]:
-        issues.append(f"Language '{lang}' not standard.")
+    lang = dmp.get("language")
+    if lang:
+        if lang not in ["en", "eng"]:
+            issues.append(f"Language '{lang}' not standard.")
+    else:
+        issues.append("Language missing.")
     for ds in dmp.get("dataset", []):
         for dist in ds.get("distribution", []):
             for lic in dist.get("license", []):
-                if not is_known_open_license(lic.get("license_name", "")):
-                    issues.append(f"License '{lic.get('license_name')}' may not be FAIR-compliant.")
-    return 1 if not issues else max(0, 1 - 0.2*len(issues)), issues
+                lic_name = lic.get("license_name") or lic.get("license_ref", "")
+                if not is_known_open_license(lic_name):
+                    issues.append(f"License '{lic_name}' may not be FAIR-compliant.")
+    return 1 if not issues else max(0, 1 - 0.2 * len(issues)), issues
 
 def run_fairness_scoring(dmp):
     results = {}
