@@ -3,7 +3,7 @@ from rdflib import Graph
 def run_all_sparql_checks(graph):
     results = {}
 
-    # Rule 1: License Present
+    # License Present
     license_query = """
     ASK WHERE {
         ?distribution <https://w3id.org/dmp/terms/license> ?license .
@@ -11,7 +11,7 @@ def run_all_sparql_checks(graph):
     """
     results["license_present"] = bool(graph.query(license_query))
 
-    # Rule 2: Data Access Field Present
+    # Data Access Field Present
     data_access_query = """
     ASK WHERE {
         ?distribution <https://w3id.org/dmp/terms/dataAccess> ?access .
@@ -19,7 +19,7 @@ def run_all_sparql_checks(graph):
     """
     results["data_access_present"] = bool(graph.query(data_access_query))
 
-    # Rule 3: Dataset PID Exists
+    # Dataset PID Exists
     pid_query = """
     ASK WHERE {
         ?dataset <https://w3id.org/dmp/terms/datasetID> ?pid .
@@ -27,7 +27,7 @@ def run_all_sparql_checks(graph):
     """
     results["dataset_pid_present"] = bool(graph.query(pid_query))
 
-    # Rule 4: Dataset Has Description
+    # Dataset Has Description
     dataset_desc_query = """
     ASK WHERE {
         ?dataset <http://purl.org/dc/terms/description> ?desc .
@@ -35,7 +35,7 @@ def run_all_sparql_checks(graph):
     """
     results["dataset_description_present"] = bool(graph.query(dataset_desc_query))
 
-    # Rule 5: Contributor Has ORCID
+    # Contributor Has ORCID
     orcid_query = """
     ASK WHERE {
         ?contributor <http://purl.org/dc/terms/identifier> ?id .
@@ -44,7 +44,7 @@ def run_all_sparql_checks(graph):
     """
     results["contributor_orcid_present"] = bool(graph.query(orcid_query))
 
-    # Rule 6: Host Supports Versioning
+    # Host Supports Versioning
     versioning_query = """
     ASK WHERE {
         ?host <https://w3id.org/dmp/terms/supportsVersioning> "yes" .
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     g.parse("examples/ex9-dmp-long.ttl", format="turtle")
 
     results = run_all_sparql_checks(g)
-    print("\n🔎 SPARQL Evaluation Results:")
+    print("\n SPARQL Evaluation Results:")
     for check, status in results.items():
         print(f" {check.replace('_', ' ').capitalize()}: {status}")
 

@@ -33,7 +33,7 @@ def evaluate_dmp_against_fip(dmp, mapping_dict):
             })
             continue
 
-        # Resolve field value
+        # Get field value
         value = dmp
         for key in field_path.split('.'):
             if isinstance(value, dict) and key in value:

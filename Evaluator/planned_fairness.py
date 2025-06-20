@@ -11,7 +11,7 @@ def check_planned_fairness(dmp):
     for ds in datasets:
         title = ds.get("title", "Unnamed Dataset")
         for dist in ds.get("distribution", []):
-            # === Test 1: data_access declared ===
+            # data_access declared
             num_tests += 1
             data_access = dist.get("data_access")
             if data_access in ["open", "restricted", "closed"]:
@@ -32,7 +32,7 @@ def check_planned_fairness(dmp):
                 "comment": comment
             })
 
-            # Test 2: license exists
+            # license exists
             num_tests += 1
             licenses = dist.get("license", [])
             has_license = bool(licenses and licenses[0].get("license_name"))
@@ -54,7 +54,7 @@ def check_planned_fairness(dmp):
                 "comment": comment
             })
 
-            # Test 3: format exists
+            # format exists
             num_tests += 1
             if dist.get("format"):
                 score = 1
@@ -74,7 +74,7 @@ def check_planned_fairness(dmp):
                 "comment": comment
             })
 
-            # Test 4: PID system declared
+            # PID system declared
             num_tests += 1
             host = dist.get("host", {})
             pid_system = host.get("pid_system", [])
@@ -96,7 +96,7 @@ def check_planned_fairness(dmp):
                 "comment": comment
             })
 
-            # Test 5: Supports versioning
+            # Supports versioning
             num_tests += 1
             versioning = host.get("supports_versioning")
             if versioning == "yes":

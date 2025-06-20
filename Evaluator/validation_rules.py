@@ -1,6 +1,6 @@
 import re
 
-# Existing generic checks...
+# Checks for metadata 
 def check_access_vs_license(dataset):
     issues = []
     for ds in dataset:
@@ -50,7 +50,7 @@ def validate_metadata_intentions(dmp):
 
     return issues
 
-# Enhanced detect_identifier_type to recognize a wide range of formats and vocabularies
+# Recognize formats and vocabularies
 import re
 
 def detect_identifier_type(identifier, allowed_values=None):
@@ -71,14 +71,14 @@ def detect_identifier_type(identifier, allowed_values=None):
         "REST": r"^(GET|POST|PUT|DELETE).*"
     }
 
-    # If allowed_values provided, prioritize matching those patterns first
+    # If allowed_values are provided, prioritize matching these first
     if allowed_values:
         for val in allowed_values:
             pattern = patterns.get(val)
             if pattern and re.match(pattern, identifier, re.I):
                 return val
 
-    # Specific Creative Commons license URLs
+    # CC license URLs
     cc_license_patterns = {
         "CC-BY 4.0": r"^https?://creativecommons\.org/licenses/by/4\.0/?$",
         "CC0 1.0": r"^https?://creativecommons\.org/publicdomain/zero/1\.0/?$",
@@ -93,7 +93,7 @@ def detect_identifier_type(identifier, allowed_values=None):
         "CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0", "PROV-O"
     ]
 
-    # Match Creative Commons license URLs first
+    # CC license URLs first 
     for label, pattern in cc_license_patterns.items():
         if re.match(pattern, identifier, re.I):
             return label
@@ -111,10 +111,8 @@ def detect_identifier_type(identifier, allowed_values=None):
     return "Unknown"
 
 
-# Updated generic allowed-value checker
+# allowed-value checker
 def is_allowed_value(field_value, allowed_values):
-    
-    # Checks if a field value (string or list) matches any allowed types/value names.
     
     def check_one(val):
         detected = detect_identifier_type(val, allowed_values)

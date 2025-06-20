@@ -19,7 +19,7 @@ args = parser.parse_args()
 input_path = args.input
 output_path = args.output
 
-# === Load maDMP ===
+# Load maDMP
 #with open(input_path) as f:
  #   dmp = json.load(f)
 dmp = load_dmp(input_path)
@@ -27,7 +27,7 @@ dmp = load_dmp(input_path)
 # FAIRness Evaluation
 result = check_planned_fairness(dmp)
 
-# Prepare Output ID
+# Output ID
 #dmp_title = dmp.get("dmp", {}).get("title", "unknown").replace(" ", "_")
 dmp_title = dmp.get("title", "unknown").replace(" ", "_")
 timestamp = datetime.now().strftime("%Y%m%d_%H%M")

@@ -1,0 +1,22 @@
+FIP Question,maDMP Field,maDMP Value,Accepted Values,Compliant
+"What globally unique, persistent, resolvable identifiers do you use for metadata records?",dataset.dataset_id.identifier,"""https://hdl.handle.net/0000/00.00000""",,No
+"What globally unique, persistent, resolvable identifiers do you use for datasets?",dataset.dataset_id.identifier,"""https://hdl.handle.net/0000/00.00000""",,No
+Which metadata schemas do you use for findability?,dataset.metadata.metadata_standard_id.identifier,null,,No
+What is the technology that links the persistent identifiers of your data to the metadata description?,dataset.distribution.host.pid_system,"[""other""]",,No
+In which search engines are your metadata records indexed?,dataset.distribution.access_url,null,,No
+In which search engines are your datasets indexed?,dataset.distribution.access_url,null,,No
+Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,"""https://www.re3data.org/repository/r3d100010375""",,No
+Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,"""https://www.re3data.org/repository/r3d100010375""",,No
+Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,"""open""",,No
+Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,"""open""",,No
+Which metadata longevity plan do you use?,,null,,No
+Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,,null,,No
+Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,,null,,No
+Which structured vocabularies do you use to annotate your metadata records?,dataset.metadata.metadata_standard_id.identifier,null,,No
+Which structured vocabularies do you use to encode your datasets?,dataset.metadata.metadata_standard_id.identifier,null,,No
+"Which models, schema(s) do you use for your metadata records?",dataset.metadata.metadata_standard_id.type,null,,No
+"Which models, schema(s) do you use for your datasets?",dataset.metadata.metadata_standard_id.type,null,,No
+Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,"""http://opensource.org/licenses/mit-license.php""",,No
+Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,"""http://opensource.org/licenses/mit-license.php""",,No
+Which metadata schemas do you use for describing the provenance of your metadata records?,,null,,No
+Which metadata schemas do you use for describing the provenance of your datasets?,,null,,No

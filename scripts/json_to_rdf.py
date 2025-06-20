@@ -12,7 +12,7 @@ def json_to_rdf(json_path, rdf_path):
     g = Graph()
     g.bind("dmp", DMP)
 
-    # Basic metadata conversion example:
+    # Metadata conversion example:
     dmp_uri = URIRef(dmp["dmp_id"]["identifier"])
     g.add((dmp_uri, RDF.type, DMP.DataManagementPlan))
     g.add((dmp_uri, DMP.title, Literal(dmp["title"])))
@@ -24,7 +24,7 @@ def json_to_rdf(json_path, rdf_path):
     g.add((contact_uri, DMP.name, Literal(dmp["contact"]["name"])))
     g.add((dmp_uri, DMP.hasContact, contact_uri))
 
-    # Dataset and Distribution info (with URI encoding clearly fixed)
+    # Dataset and Distribution info
     for ds in dmp.get("dataset", []):
         ds_uri = URIRef(ds["dataset_id"]["identifier"])
         g.add((ds_uri, RDF.type, DMP.Dataset))
@@ -37,7 +37,7 @@ def json_to_rdf(json_path, rdf_path):
             if host_url:
                 dist_uri = URIRef(host_url)
             else:
-                # Now safely URL-encode clearly:
+                # URL-encode:
                 title_encoded = quote(dist.get('title', 'unknown'))
                 dist_uri = URIRef(f"{ds_uri}/distribution/{title_encoded}")
 

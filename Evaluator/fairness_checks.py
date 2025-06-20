@@ -1,7 +1,7 @@
 from urllib.parse import urlparse
 import validators
 
-# New to check licenses, etc.
+# Ask Tomasz if I should include more than these
 def is_known_open_license(name):
     name = name.lower()
     keywords = [

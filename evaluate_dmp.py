@@ -64,7 +64,7 @@ def main():
 
     print(f"FAIRness evaluation results saved to: {fairness_output}")
 
-    # Validate metadata intentions
+    # Validate metadata 
     metadata_issues = validate_metadata_intentions(dmp)
 
     validation_output = os.path.join(args.output, f"{base_filename}_metadata_validation.json")
