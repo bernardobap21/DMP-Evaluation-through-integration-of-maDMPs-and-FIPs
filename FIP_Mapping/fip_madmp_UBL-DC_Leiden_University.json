@@ -85,7 +85,7 @@
             "FIP_question": "Which metadata longevity plan do you use?",
             "maDMP_field": "",
             "Mapping_status": "Not Mapped",
-            "Comments": "project.end or something with host like backup_type or distribution.available_until",
+            "Comments": "project.end or something with host like backup_type, backup_frequency or distribution.available_until",
             "Allowed_values": "" 
         },
         {
@@ -155,7 +155,7 @@
         {
             "FAIR_principle": "R1.2",
             "FIP_question": "Which metadata schemas do you use for describing the provenance of your metadata records?",
-            "maDMP_field": "",
+            "maDMP_field": "dataset.data_quality_assurance",
             "Mapping_status": "Not Mapped",
             "Comments": "Maybe dataset.data_quality_assurance could be useful",
             "Allowed_values": ""
@@ -163,7 +163,7 @@
         {
             "FAIR_principle": "R1.2",
             "FIP_question": "Which metadata schemas do you use for describing the provenance of your datasets?",
-            "maDMP_field": "",
+            "maDMP_field": "dataset.data_quality_assurance",
             "Mapping_status": "Not Mapped",
             "Comments": "Maybe dataset.data_quality_assurance could be useful",
             "Allowed_values": ""

@@ -1,0 +1,25 @@
+{
+  "completeness": {
+    "score": 0.8,
+    "issues": [
+      "dmp_id.identifier"
+    ]
+  },
+  "accuracy": {
+    "score": 1,
+    "issues": []
+  },
+  "consistency": {
+    "score": 0.55,
+    "issues": [
+      "Pollinator-Plant Interactions from the REBIPP Project, Brazil is missing byte_size.",
+      "Pollinator-Plant Interactions from the REBIPP Project, Brazil is missing byte_size.",
+      "Pollinator-Plant Interactions from the REBIPP Project, Brazil is missing format."
+    ]
+  },
+  "guidance_compliance": {
+    "score": 1,
+    "issues": []
+  },
+  "total_score": 0.84
+}

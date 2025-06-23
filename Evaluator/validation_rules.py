@@ -1,3 +1,4 @@
+# Recognize formats and vocabularies
 import re
 
 # Checks for metadata 
@@ -50,8 +51,6 @@ def validate_metadata_intentions(dmp):
 
     return issues
 
-# Recognize formats and vocabularies
-import re
 
 def detect_identifier_type(identifier, allowed_values=None):
     if not isinstance(identifier, str):
