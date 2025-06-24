@@ -43,7 +43,9 @@
           {
             "title": "Zenodo Repository",
             "access_url": "https://zenodo.org/record/10669877",
-            "license": ["https://creativecommons.org/licenses/by/4.0/"],
+            "license" : [ {
+              "license_ref" : "https://creativecommons.org/licenses/by/4.0/"
+          } ],
             "format": ["csv"],
             "host": {
               "title": "Zenodo",

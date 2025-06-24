@@ -17,6 +17,6 @@ Which structured vocabularies do you use to encode your datasets?,dataset.metada
 "Which models, schema(s) do you use for your metadata records?",dataset.metadata.metadata_standard_id.type,null,"EAD, Dublin Core, MODS, MARC21, IIIF, Europeana",No
 "Which models, schema(s) do you use for your datasets?",dataset.metadata.metadata_standard_id.type,null,"IIIF, Europeana",No
 Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""",CC0 1.0,No
-Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""",CC0 1.0,No
-Which metadata schemas do you use for describing the provenance of your metadata records?,,null,,No choice made by community
-Which metadata schemas do you use for describing the provenance of your datasets?,,null,,No choice made by community
+Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""","CC0 1.0, CC-BY 4.0",Yes
+Which metadata schemas do you use for describing the provenance of your metadata records?,dataset.data_quality_assurance,null,,No choice made by community
+Which metadata schemas do you use for describing the provenance of your datasets?,dataset.data_quality_assurance,null,,No choice made by community

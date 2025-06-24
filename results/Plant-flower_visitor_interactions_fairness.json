@@ -12,9 +12,9 @@
   "consistency": {
     "score": 0.55,
     "issues": [
-      "Pollinator-Plant Interactions from the REBIPP Project, Brazil is missing byte_size.",
-      "Pollinator-Plant Interactions from the REBIPP Project, Brazil is missing byte_size.",
-      "Pollinator-Plant Interactions from the REBIPP Project, Brazil is missing format."
+      "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing byte_size.",
+      "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing byte_size.",
+      "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing format."
     ]
   },
   "guidance_compliance": {

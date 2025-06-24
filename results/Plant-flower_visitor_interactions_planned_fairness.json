@@ -1,6 +1,6 @@
 {
   "planned_fairness": {
-    "score": 0.3,
+    "score": 0.2,
     "test_results": [
       {
         "test_id": "planned_data_access",
@@ -8,15 +8,15 @@
         "test_description": "Checks if data access level is properly declared",
         "status": "fail",
         "score": 0,
-        "comment": "No or invalid access level for 'Pollinator-Plant Interactions from the REBIPP Project, Brazil'"
+        "comment": "No or invalid access level for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
       },
       {
         "test_id": "planned_license",
         "test_name": "License Specified",
         "test_description": "Checks if a license is planned",
-        "status": "pass",
-        "score": 1,
-        "comment": ""
+        "status": "fail",
+        "score": 0,
+        "comment": "No license specified for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
       },
       {
         "test_id": "planned_format",
@@ -40,7 +40,7 @@
         "test_description": "Checks if the planned host supports versioning",
         "status": "fail",
         "score": 0,
-        "comment": "Repository does not support versioning for 'Pollinator-Plant Interactions from the REBIPP Project, Brazil'"
+        "comment": "Repository does not support versioning for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
       },
       {
         "test_id": "planned_data_access",
@@ -48,7 +48,7 @@
         "test_description": "Checks if data access level is properly declared",
         "status": "fail",
         "score": 0,
-        "comment": "No or invalid access level for 'Pollinator-Plant Interactions from the REBIPP Project, Brazil'"
+        "comment": "No or invalid access level for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
       },
       {
         "test_id": "planned_license",
@@ -56,7 +56,7 @@
         "test_description": "Checks if a license is planned",
         "status": "fail",
         "score": 0,
-        "comment": "No license specified for 'Pollinator-Plant Interactions from the REBIPP Project, Brazil'"
+        "comment": "No license specified for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
       },
       {
         "test_id": "planned_format",
@@ -64,7 +64,7 @@
         "test_description": "Checks if file format is defined",
         "status": "fail",
         "score": 0,
-        "comment": "No file format planned for 'Pollinator-Plant Interactions from the REBIPP Project, Brazil'"
+        "comment": "No file format planned for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
       },
       {
         "test_id": "planned_pid",
@@ -72,7 +72,7 @@
         "test_description": "Checks if persistent identifier system is mentioned",
         "status": "fail",
         "score": 0,
-        "comment": "No PID system defined for 'Pollinator-Plant Interactions from the REBIPP Project, Brazil'"
+        "comment": "No PID system defined for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
       },
       {
         "test_id": "planned_versioning",
@@ -80,7 +80,7 @@
         "test_description": "Checks if the planned host supports versioning",
         "status": "fail",
         "score": 0,
-        "comment": "Repository does not support versioning for 'Pollinator-Plant Interactions from the REBIPP Project, Brazil'"
+        "comment": "Repository does not support versioning for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
       }
     ]
   }
