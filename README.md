@@ -19,16 +19,16 @@ pip install -r requirements.txt
 The main script `evaluate_dmp.py` compares a maDMP file with the FIP mapping and generates several reports. An example with a maDMP and a FIP (both available in the repository) of how it can be executed is:
 
 ```bash
-python evaluate_dmp.py --input examples/ex9-dmp-long.json --mapping FIP_Mapping/fip_madmp_mapping.json --output results
+python  evaluate_dmp.py --input examples/Plant-flower_visitor_interactions.json --mapping FIP_Mapping/fip_madmp_Plant-Pollinator Community.json --output results
 ```
 
 This will produce:
 
-* `*_evaluation.csv` – table of FIP questions, mapping status and whether each field is present in the maDMP
+* `*_compliance_table.csv` – table of FIP questions, to which maDMP they are mapped to (in case it is true), the given value for this field, what is the accepted/allowed values and whether each field is compliant to the FIP used for the evaluation or not.
 * `*_recommendations.txt` – short textual recommendations for missing fields
-* `*_fairness.json` – Scores for the following goals: completeness, accuracy, consistency and guidance_compliance (this will be extended in the future)
+* `*_fairness.json` – Scores for the following goals: Completeness, Feasibility (Accuracy, Availability and Consistency) and  Guidance compliance (this will be extended in the future)
 * `*_metadata_validation.json` – validation of metadata against basic rules
-* `*_planned_fairness.json` – evaluation of the planned FAIRness of distributions (early stages of a DMP)
+* `*_planned_fairness.json` – evaluation of the planned FAIRness of distributions (early stages of a DMP) (not yet functional)
 
 ## Starting the API
 
@@ -40,9 +40,9 @@ python -m uvicorn api:app --reload
 
 The API is available locally at `http://127.0.0.1:8000/docs`.
 
-Or in the web at  `https://dmp-evaluation.onrender.com/docs`.
+Or in the web at  `https://dmp-evaluation.onrender.com/docs#/default/evaluate_evaluate__post`.
 
-When using the interactive documentation, upload your maDMP file and select one of the available mapping files from the dropdown.
+Click the Try it out button and then, upload your maDMP file and select one of the available FIPs for the evaluation from the dropdown.
 
 ## FAIR Implementation Profile mapping
 
