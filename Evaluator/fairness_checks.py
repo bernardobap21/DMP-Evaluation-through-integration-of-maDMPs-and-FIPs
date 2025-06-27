@@ -1,5 +1,6 @@
 from urllib.parse import urlparse
 import validators
+import requests
 
 # Ask Tomasz if I should include more than these
 def is_known_open_license(name):
@@ -41,21 +42,56 @@ def check_completeness(dmp):
 def check_accuracy(dmp):
     issues = []
     datasets = dmp.get("dataset", [])
+
     for ds in datasets:
+        title = ds.get("title", "Unknown dataset")
+
+        # Check dataset identifier 
+        dataset_id = ds.get("dataset_id", {}).get("identifier", "")
+        if dataset_id:
+            if not validators.url(dataset_id):
+                issues.append(f"[{title}] Invalid dataset identifier format: {dataset_id}")
+            else:
+                try:
+                    r = requests.head(dataset_id, allow_redirects=True, timeout=5)
+                    if r.status_code != 200:
+                        issues.append(f"[{title}] Dataset identifier not resolvable (status {r.status_code}): {dataset_id}")
+                except Exception as e:
+                    issues.append(f"[{title}] Dataset identifier check error: {str(e)}")
+
         for dist in ds.get("distribution", []):
             # Check host URL
             host = dist.get("host", {})
             if host:
                 url = host.get("url", "")
-                if url and not validators.url(url):
-                    issues.append(f"Invalid host URL: {url}")
-            # Check license
+                if url:
+                    if not validators.url(url):
+                        issues.append(f"[{title}] Invalid host URL format: {url}")
+                    else:
+                        try:
+                            r = requests.head(url, allow_redirects=True, timeout=5)
+                            if r.status_code != 200:
+                                issues.append(f"[{title}] Host URL not resolvable (status {r.status_code}): {url}")
+                        except Exception as e:
+                            issues.append(f"[{title}] Host URL check error: {str(e)}")
+
+            # Check license URL
             licenses = dist.get("license", [])
             for lic in licenses:
-                url = lic.get("license_ref", "")
-                if url and not validators.url(url):
-                    issues.append(f"Invalid license URL: {url}")
-    return 1 if not issues else max(0, 1 - 0.2*len(issues)), issues
+                lic_url = lic.get("license_ref", "")
+                if lic_url:
+                    if not validators.url(lic_url):
+                        issues.append(f"[{title}] Invalid license URL format: {lic_url}")
+                    else:
+                        try:
+                            r = requests.head(lic_url, allow_redirects=True, timeout=5)
+                            if r.status_code != 200:
+                                issues.append(f"[{title}] License URL not resolvable (status {r.status_code}): {lic_url}")
+                        except Exception as e:
+                            issues.append(f"[{title}] License URL check error: {str(e)}")
+
+    score = 1 if not issues else max(0, 1 - 0.2 * len(issues))
+    return round(score, 2), issues
 
 def check_consistency(dmp):
     issues = []
@@ -98,7 +134,7 @@ def run_fairness_scoring(dmp):
     g, g_issues = check_guidance_compliance(dmp)
 
     results["completeness"] = {"score": round(c, 2), "issues": c_issues}
-    results["accuracy"] = {"score": round(a, 2), "issues": a_issues}
+    results["feasibility"] = {"score": round(a, 2), "issues": a_issues}
     results["consistency"] = {"score": round(cs, 2), "issues": cs_issues}
     results["guidance_compliance"] = {"score": round(g, 2), "issues": g_issues}
     results["total_score"] = round((c + a + cs + g) / 4, 2)
