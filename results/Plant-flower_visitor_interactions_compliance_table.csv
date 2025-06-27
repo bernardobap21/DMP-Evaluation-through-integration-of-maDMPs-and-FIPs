@@ -16,7 +16,7 @@ Which structured vocabularies do you use to annotate your metadata records?,data
 Which structured vocabularies do you use to encode your datasets?,dataset.metadata.metadata_standard_id.identifier,null,"Plant Pollinator Vocabulary, DwC",No
 "Which models, schema(s) do you use for your metadata records?",dataset.metadata.metadata_standard_id.type,null,"Relations Ontology, DwC",No
 "Which models, schema(s) do you use for your datasets?",dataset.metadata.metadata_standard_id.type,null,DwC-A,No
-Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""","CC0 1.0, CC-BY 4.0, CC BY-NC 4.0",Yes
-Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""","CC0 1.0, CC-BY 4.0, CC BY-NC 4.0",Yes
+Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,"""https://creativecommons.org""","CC0 1.0, CC-BY 4.0, CC BY-NC 4.0",No
+Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,"""https://creativecommons.org""","CC0 1.0, CC-BY 4.0, CC BY-NC 4.0",No
 Which metadata schemas do you use for describing the provenance of your metadata records?,dataset.data_quality_assurance,"[""Species identifications confirmed by taxonomists"", ""Data curated by REBIPP team"", ""FAIRfication followed WorldFAIR D10.2 guidelines""]",PROV-O,No
 Which metadata schemas do you use for describing the provenance of your datasets?,dataset.data_quality_assurance,"[""Species identifications confirmed by taxonomists"", ""Data curated by REBIPP team"", ""FAIRfication followed WorldFAIR D10.2 guidelines""]",PROV-O,No

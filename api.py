@@ -3,10 +3,11 @@ from Evaluator.evaluator import (
     load_dmp,
     evaluate_dmp_against_fip,
     summarize_results,
+    save_compliance_table,
 )
 from Evaluator.fairness_checks import run_fairness_scoring
 from Evaluator.validation_rules import validate_metadata_intentions
-#from Evaluator.planned_fairness import check_planned_fairness (need to check this)
+# from Evaluator.planned_fairness import check_planned_fairness (need to check this)
 from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
 import tempfile
@@ -54,6 +55,12 @@ async def evaluate(
         results = evaluate_dmp_against_fip(dmp, mapping)
         present, compliant, total = summarize_results(results)
 
+        # Compliance table 
+        compliance_path = os.path.join(tmpdir, "compliance_table.csv")
+        save_compliance_table(results, compliance_path)
+        with open(compliance_path, "r", encoding="utf-8") as cfile:
+            compliance_table = cfile.read()
+
         # Other results
         fairness_results = run_fairness_scoring(dmp)
         metadata_validation = validate_metadata_intentions(dmp)
@@ -64,6 +71,7 @@ async def evaluate(
         "summary": f"{present}/{total} fields present, {compliant}/{total} compliant\n",
         "fairness": fairness_results,
         "metadata_validation": metadata_validation,
-        "Mapping_to_FIP_Results": results,
+        "compliance_table": compliance_table,
+        # "Mapping_to_FIP_Results": results,
         #"planned_fairness": planned_fairness,
     }

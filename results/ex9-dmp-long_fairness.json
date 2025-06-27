@@ -1,0 +1,29 @@
+{
+  "completeness": {
+    "score": 0.88,
+    "issues": [
+      "contact.affiliation",
+      "dataset[0].metadata[0].metadata_standard_name"
+    ]
+  },
+  "feasibility": {
+    "score": 0.4,
+    "issues": [
+      "[Client application] Dataset identifier not resolvable (status 404): https://hdl.handle.net/0000/00.00000",
+      "[Image collection] Dataset identifier not resolvable (status 404): https://hdl.handle.net/0000/00.00000",
+      "[Interviews] Dataset identifier not resolvable (status 404): https://hdl.handle.net/0000/00.00000"
+    ]
+  },
+  "consistency": {
+    "score": 0.7,
+    "issues": [
+      "Client application is missing format.",
+      "Image collection is missing format."
+    ]
+  },
+  "guidance_compliance": {
+    "score": 1,
+    "issues": []
+  },
+  "total_score": 0.74
+}

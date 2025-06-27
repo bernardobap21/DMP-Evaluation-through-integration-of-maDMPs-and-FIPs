@@ -1,8 +1,12 @@
 {
   "completeness": {
-    "score": 0.8,
+    "score": 0.69,
     "issues": [
-      "dmp_id.identifier"
+      "dmp_id.identifier",
+      "contact.affiliation",
+      "dataset[0].distribution[0].byte_size",
+      "dataset[0].distribution[0].data_access",
+      "dataset[0].metadata[0].metadata_standard_name"
     ]
   },
   "feasibility": {
@@ -21,5 +25,5 @@
     "score": 1,
     "issues": []
   },
-  "total_score": 0.84
+  "total_score": 0.81
 }

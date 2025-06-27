@@ -11,5 +11,7 @@
 - Improve or add metadata for: Which structured vocabularies do you use to encode your datasets? (Field: dataset.metadata.metadata_standard_id.identifier, Compliance: Missing value)
 - Improve or add metadata for: Which models, schema(s) do you use for your metadata records? (Field: dataset.metadata.metadata_standard_id.type, Compliance: Missing value)
 - Improve or add metadata for: Which models, schema(s) do you use for your datasets? (Field: dataset.metadata.metadata_standard_id.type, Compliance: Missing value)
+- Improve or add metadata for: Which usage license do you use for your metadata records? (Field: dataset.distribution.license.license_ref, Compliance: Non-compliant)
+- Improve or add metadata for: Which usage license do you use for your datasets? (Field: dataset.distribution.license.license_ref, Compliance: Non-compliant)
 - Improve or add metadata for: Which metadata schemas do you use for describing the provenance of your metadata records? (Field: dataset.data_quality_assurance, Compliance: Non-compliant)
 - Improve or add metadata for: Which metadata schemas do you use for describing the provenance of your datasets? (Field: dataset.data_quality_assurance, Compliance: Non-compliant)

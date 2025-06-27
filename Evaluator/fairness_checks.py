@@ -18,13 +18,25 @@ def is_known_open_license(name):
     ]
     return any(keyword in name for keyword in keywords)
 
+################# Important fields should be declared
 def check_completeness(dmp):
     required_fields = [
         "dmp_id.identifier",
+        "title",
         "contact.name",
+        "contact.affiliation",
+        "contact.mbox",
         "dataset",
+        "dataset[0].title",
+        "dataset[0].description",
+        "dataset[0].dataset_id.identifier",
         "dataset[0].distribution",
+        "dataset[0].distribution[0].host",
         "dataset[0].distribution[0].license",
+        "dataset[0].distribution[0].format",
+        "dataset[0].distribution[0].byte_size",
+        "dataset[0].distribution[0].data_access",
+        "dataset[0].metadata[0].metadata_standard_name"
     ]
     missing = []
     for path in required_fields:
@@ -39,6 +51,7 @@ def check_completeness(dmp):
                 break
     return 1 - len(missing)/len(required_fields), missing
 
+########################
 def check_accuracy(dmp):
     issues = []
     datasets = dmp.get("dataset", [])
@@ -93,6 +106,7 @@ def check_accuracy(dmp):
     score = 1 if not issues else max(0, 1 - 0.2 * len(issues))
     return round(score, 2), issues
 
+#######################
 def check_consistency(dmp):
     issues = []
     for ds in dmp.get("dataset", []):
@@ -110,6 +124,7 @@ def check_consistency(dmp):
                 issues.append(f"{ds.get('title')} is missing format.")
     return 1 if not issues else max(0, 1 - 0.15*len(issues)), issues
 
+###########################
 def check_guidance_compliance(dmp):
     issues = []
     lang = dmp.get("language")
