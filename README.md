@@ -26,7 +26,7 @@ This will produce:
 
 * `*_compliance_table.csv` – table of FIP questions, to which maDMP they are mapped to (in case it is true), the given value for this field, what is the accepted/allowed values and whether each field is compliant to the FIP used for the evaluation or not.
 * `*_recommendations.txt` – short textual recommendations for missing fields
-* `*_fairness.json` – Scores for the following goals: Completeness, Feasibility (Accuracy, Availability and Consistency) and  Guidance compliance (this will be extended in the future)
+* `*_goals_checks.json` – Scores for the following goals: Completeness, Feasibility (Accuracy, Availability and Consistency) and  Guidance compliance (this will be extended in the future)
 * `*_metadata_validation.json` – validation of metadata against basic rules
 * `*_planned_fairness.json` – evaluation of the planned FAIRness of distributions (early stages of a DMP) (not yet functional)
 
@@ -59,6 +59,6 @@ The `scripts/` directory contains helper utilities:
 * `json_to_rdf.py` – convert a maDMP JSON file to a Turtle representation. (Not yet fully working)
 * `run_planned_fairness.py` – run the planned FAIRness evaluation and export the result in an OSTrails-compatible JSON-LD format. (Not yet fully working)
 
-The `Evaluator/` module includes FAIRness scoring (`fairness_checks.py`), metadata validation (`validation_rules.py`) and optional SPARQL-based checks in `rdf_evaluator.py` (this last one not yet fully working).
+The `Evaluator/` module includes Goals evaluation scoring (`goals_checks.py`), metadata validation (`validation_rules.py`) and optional SPARQL-based checks in `rdf_evaluator.py` (this last one not yet fully working).
 
 Mappings for different communities are stored under `FIP_Mapping/`.

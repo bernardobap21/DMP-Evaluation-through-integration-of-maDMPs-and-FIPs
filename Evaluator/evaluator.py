@@ -102,7 +102,7 @@ def save_recommendations(results, output_path):
 def save_compliance_table(results, output_path):
     with open(output_path, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(["FIP Question", "maDMP Field", "maDMP Value", "Accepted Values", "Compliant"])
+        writer.writerow(["FIP Question", "DCS Field", "maDMP Value", "Accepted Values", "Compliant"])
         for r in results:
             allowed_values = r["allowed_values"]
             if isinstance(allowed_values, list):

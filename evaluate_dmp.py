@@ -4,7 +4,7 @@ import json
 
 from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
-from Evaluator.fairness_checks import run_fairness_scoring
+from Evaluator.goals_checks import run_goals_scoring
 from Evaluator.validation_rules import validate_metadata_intentions
 from Evaluator.planned_fairness import check_planned_fairness
 from Evaluator.evaluator import (
@@ -56,13 +56,13 @@ def main():
     print(f"Saved recommendations to: {txt_output}")
 
     # Run FAIRness scoring and validation
-    fairness_results = run_fairness_scoring(dmp)
+    goals_results = run_goals_scoring(dmp)
 
-    fairness_output = os.path.join(args.output, f"{base_filename}_fairness.json")
-    with open(fairness_output, 'w', encoding='utf-8') as file:
-        json.dump(fairness_results, file, indent=2)
+    goals_output = os.path.join(args.output, f"{base_filename}_goals_check.json")
+    with open(goals_output, 'w', encoding='utf-8') as file:
+        json.dump(goals_results, file, indent=2)
 
-    print(f"FAIRness evaluation results saved to: {fairness_output}")
+    print(f"Goals evaluation results saved to: {goals_output}")
 
     # Validate metadata 
     metadata_issues = validate_metadata_intentions(dmp)

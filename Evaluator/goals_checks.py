@@ -141,7 +141,7 @@ def check_guidance_compliance(dmp):
                     issues.append(f"License '{lic_name}' may not be FAIR-compliant.")
     return 1 if not issues else max(0, 1 - 0.2 * len(issues)), issues
 
-def run_fairness_scoring(dmp):
+def run_goals_scoring(dmp):
     results = {}
     c, c_issues = check_completeness(dmp)
     a, a_issues = check_accuracy(dmp)

@@ -5,7 +5,7 @@ from Evaluator.evaluator import (
     summarize_results,
     save_compliance_table,
 )
-from Evaluator.fairness_checks import run_fairness_scoring
+from Evaluator.goals_checks import run_goals_scoring
 from Evaluator.validation_rules import validate_metadata_intentions
 # from Evaluator.planned_fairness import check_planned_fairness (need to check this)
 from FIP_Mapping.mapping import load_mapping
@@ -16,6 +16,30 @@ import os
 
 FIP_DIRECTORY = "FIP_Mapping"
 FIP_OPTIONS = [f for f in os.listdir(FIP_DIRECTORY) if f.endswith(".json")]
+
+def build_compliance_json(results):
+    table = []
+    for r in results:
+        allowed_values = r["allowed_values"]
+        if isinstance(allowed_values, list):
+            allowed_str = ", ".join(allowed_values)
+        else:
+            allowed_str = allowed_values
+
+        if allowed_values == "":
+            compliant = "No choice made by community"
+        else:
+            compliant = "Yes" if r["compliance_status"] == "Compliant" else "No"
+
+        table.append({
+            "FIP Question": r["FIP_question"],
+            "DCS Field": r["maDMP_field"],
+            "maDMP Value": r["field_value"],
+            "Accepted Values": allowed_str,
+            "Compliant": compliant,
+        })
+    return table
+
 
 app = FastAPI()
 
@@ -58,18 +82,19 @@ async def evaluate(
         # Compliance table 
         compliance_path = os.path.join(tmpdir, "compliance_table.csv")
         save_compliance_table(results, compliance_path)
-        with open(compliance_path, "r", encoding="utf-8") as cfile:
-            compliance_table = cfile.read()
+        compliance_table = build_compliance_json(results)
+        # with open(compliance_path, "r", encoding="utf-8") as cfile:
+          #  compliance_table = cfile.read()
 
         # Other results
-        fairness_results = run_fairness_scoring(dmp)
+        goals_results = run_goals_scoring(dmp)
         metadata_validation = validate_metadata_intentions(dmp)
         #planned_fairness = check_planned_fairness(dmp)
 
     # Return results as JSON
     return {
-        "summary": f"{present}/{total} fields present, {compliant}/{total} compliant\n",
-        "fairness": fairness_results,
+        "summary": f"{present}/{total} fields present, {compliant}/{total} compliant.",
+        "goals_checks": goals_results,
         "metadata_validation": metadata_validation,
         "compliance_table": compliance_table,
         # "Mapping_to_FIP_Results": results,
