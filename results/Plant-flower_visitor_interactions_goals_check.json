@@ -1,15 +1,23 @@
 {
   "completeness": {
-    "score": 0.69,
+    "score": 0.64,
     "issues": [
       "dmp_id.identifier",
-      "contact.affiliation",
-      "dataset[0].distribution[0].byte_size",
-      "dataset[0].distribution[0].data_access",
-      "dataset[0].metadata[0].metadata_standard_name"
+      "dmp_id.type",
+      "contact.contact_id.identifier",
+      "contact.contact_id.type",
+      "project.project_id.identifier",
+      "project.project_id.type",
+      "dataset.0.distribution.data_access",
+      "dataset.0.distribution.license.start_date",
+      "dataset.0.distribution.data_access"
     ]
   },
-  "feasibility": {
+  "accuracy": {
+    "score": 1,
+    "issues": []
+  },
+  "availability": {
     "score": 1,
     "issues": []
   },
@@ -21,9 +29,5 @@
       "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing format."
     ]
   },
-  "guidance_compliance": {
-    "score": 1,
-    "issues": []
-  },
-  "total_score": 0.81
+  "total_score": 0.8
 }
