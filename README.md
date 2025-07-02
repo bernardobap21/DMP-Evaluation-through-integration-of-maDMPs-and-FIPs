@@ -26,7 +26,7 @@ This will produce:
 
 * `*_compliance_table.csv` – table of FIP questions, to which maDMP they are mapped to (in case it is true), the given value for this field, what is the accepted/allowed values and whether each field is compliant to the FIP used for the evaluation or not.
 * `*_recommendations.txt` – short textual recommendations for missing fields
-* `*_goals_checks.json` – Scores for the following goals: Completeness, Feasibility (Accuracy, Availability and Consistency) and  Guidance compliance (this will be extended in the future)
+* `*_goals_checks.json` – Scores for the following goals: Completeness, Accuracy, Availability and Consistency.
 * `*_metadata_validation.json` – validation of metadata against basic rules
 * `*_planned_fairness.json` – evaluation of the planned FAIRness of distributions (early stages of a DMP) (not yet functional)
 
