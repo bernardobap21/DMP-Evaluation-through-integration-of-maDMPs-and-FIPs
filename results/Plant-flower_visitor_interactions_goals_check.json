@@ -13,27 +13,18 @@
     ]
   },
   "accuracy": {
-    "issues": [
-      1,
-      []
-    ]
+    "issues": []
   },
   "availability": {
     "issues": [
-      0.8,
-      [
-        "[Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)] License URL not resolvable (status 403): https://creativecommons.org/licenses/by/4.0/"
-      ]
+      "[Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)] License URL not resolvable (status 403): https://creativecommons.org/licenses/by/4.0/"
     ]
   },
   "consistency": {
     "issues": [
-      0.55,
-      [
-        "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing byte_size.",
-        "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing byte_size.",
-        "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing format."
-      ]
+      "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing byte_size.",
+      "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing byte_size.",
+      "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing format."
     ]
   }
 }

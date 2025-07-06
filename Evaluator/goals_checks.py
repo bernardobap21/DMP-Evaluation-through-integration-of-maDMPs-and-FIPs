@@ -146,8 +146,11 @@ def check_accuracy(dmp):
                 if lic_url and not validators.url(lic_url):
                     issues.append(f"[{title}] Invalid license URL format: {lic_url}")
 
-    score = 1 if not issues else max(0, 1 - 0.2 * len(issues))
-    return round(score, 2), issues
+    # score = 1 if not issues else max(0, 1 - 0.2 * len(issues))
+    # return round(score, 2), issues
+
+  
+    return issues
 
 ########################
 def check_availability(dmp):
@@ -198,8 +201,9 @@ def check_availability(dmp):
                     except Exception as e:
                         issues.append(f"[{title}] License URL check error: {str(e)}")
 
-    score = 1 if not issues else max(0, 1 - 0.2 * len(issues))
-    return round(score, 2), issues
+    # score = 1 if not issues else max(0, 1 - 0.2 * len(issues))
+    return issues
+    # return round(score, 2), issues
 
 #######################
 def check_consistency(dmp):
@@ -217,7 +221,8 @@ def check_consistency(dmp):
                 issues.append(f"{ds.get('title')} is missing byte_size.")
             if not dist.get("format"):
                 issues.append(f"{ds.get('title')} is missing format.")
-    return 1 if not issues else max(0, 1 - 0.15*len(issues)), issues
+    return issues
+    # return 1 if not issues else max(0, 1 - 0.15*len(issues)), issues
 
 ###########################
 """
