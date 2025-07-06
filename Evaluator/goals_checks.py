@@ -1,4 +1,3 @@
-from urllib.parse import urlparse
 import validators
 import requests
 
@@ -111,10 +110,11 @@ def check_completeness(dmp):
                 if not field_exists(md["metadata_standard_id"], "type"):
                     missing.append(f"dataset.{dataset_checked-1}.metadata.metadata_standard_id.type")
 
-    total_fields = len(required_fields_always) + (dataset_checked * 5)  # 5 requirrd dataset fields per dataset
-    completeness_score = 1 - len(missing) / max(1, total_fields)
+    # total_fields = len(required_fields_always) + (dataset_checked * 5)  # 5 requirrd dataset fields per dataset
+    # completeness_score = 1 - len(missing) / max(1, total_fields)
 
-    return round(completeness_score, 2), missing
+    # return round(completeness_score, 2), missing
+    return  missing
 
 
 
@@ -151,6 +151,7 @@ def check_accuracy(dmp):
 
 ########################
 def check_availability(dmp):
+    # are they accesible
     """Check that identifiers and URLs can be resolved online."""
     issues = []
     datasets = dmp.get("dataset", [])
@@ -239,17 +240,30 @@ def check_guidance_compliance(dmp):
 
 def run_goals_scoring(dmp):
     results = {}
+    """
     c, c_issues = check_completeness(dmp)
     a, a_issues = check_accuracy(dmp)
     av, av_issues = check_availability(dmp)
     cs, cs_issues = check_consistency(dmp)
+    """
+    c_issues = check_completeness(dmp)
+    a_issues = check_accuracy(dmp)
+    av_issues = check_availability(dmp)
+    cs_issues = check_consistency(dmp)
     # g, g_issues = check_guidance_compliance(dmp)
 
+    """"
     results["completeness"] = {"score": round(c, 2), "issues": c_issues}
     results["accuracy"] = {"score": round(a, 2), "issues": a_issues}
     results["availability"] = {"score": round(av, 2), "issues": av_issues}
     results["consistency"] = {"score": round(cs, 2), "issues": cs_issues}
     # results["guidance_compliance"] = {"score": round(g, 2), "issues": g_issues}
     results["total_score"] = round((c + a + av + cs) / 4, 2)
+    """
+
+    results["completeness"] = {"issues": c_issues}
+    results["accuracy"] = {"issues": a_issues}
+    results["availability"] = {"issues": av_issues}
+    results["consistency"] = {"issues": cs_issues}
 
     return results

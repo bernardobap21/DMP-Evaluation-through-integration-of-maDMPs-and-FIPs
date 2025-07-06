@@ -97,6 +97,7 @@ def check_planned_fairness(dmp):
             })
 
             # Supports versioning
+            """""
             num_tests += 1
             versioning = host.get("supports_versioning")
             if versioning == "yes":
@@ -116,6 +117,7 @@ def check_planned_fairness(dmp):
                 "score": score,
                 "comment": comment
             })
+            """""
 
     # Summary
     overall_score = round(total_score / num_tests, 2) if num_tests else 0

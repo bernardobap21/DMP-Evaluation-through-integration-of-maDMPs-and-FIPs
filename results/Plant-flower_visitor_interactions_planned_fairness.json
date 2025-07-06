@@ -1,6 +1,6 @@
 {
   "planned_fairness": {
-    "score": 0.2,
+    "score": 0.25,
     "test_results": [
       {
         "test_id": "planned_data_access",
@@ -35,14 +35,6 @@
         "comment": ""
       },
       {
-        "test_id": "planned_versioning",
-        "test_name": "Versioning Supported",
-        "test_description": "Checks if the planned host supports versioning",
-        "status": "fail",
-        "score": 0,
-        "comment": "Repository does not support versioning for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
-      },
-      {
         "test_id": "planned_data_access",
         "test_name": "Access Level Declared",
         "test_description": "Checks if data access level is properly declared",
@@ -73,14 +65,6 @@
         "status": "fail",
         "score": 0,
         "comment": "No PID system defined for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
-      },
-      {
-        "test_id": "planned_versioning",
-        "test_name": "Versioning Supported",
-        "test_description": "Checks if the planned host supports versioning",
-        "status": "fail",
-        "score": 0,
-        "comment": "Repository does not support versioning for 'Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)'"
       }
     ]
   }
