@@ -1,0 +1,264 @@
+{
+  "@context": "https://w3id.org/ftr/context.jsonld",
+  "@type": "ftr:TestResultSet",
+  "dcterms:identifier": "Plant-flower_visitor_interactions",
+  "dcterms:title": "Evaluation results for DMP: DMP for Buenos Aires Plant-Flower Visitor Interactions Dataset",
+  "ftr:hasMember": [
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP01.Q1",
+      "metric_label": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "test_id": "Test_FIP01.Q1",
+      "benchmark": [
+        "DOI",
+        "dPIDs"
+      ],
+      "comment": "Field status: Present; maDMP value: \"https://doi.org/10.5281/zenodo.10669877\"; compliance: Compliant",
+      "subject": "dataset.dataset_id.identifier"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP02.Q2",
+      "metric_label": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "test_id": "Test_FIP02.Q2",
+      "benchmark": [
+        "URI",
+        "DOI"
+      ],
+      "comment": "Field status: Present; maDMP value: \"https://doi.org/10.5281/zenodo.10669877\"; compliance: Compliant",
+      "subject": "dataset.dataset_id.identifier"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP03.Q3",
+      "metric_label": "Which metadata schemas do you use for findability?",
+      "test_id": "Test_FIP03.Q3",
+      "benchmark": [
+        "EML",
+        "Schema.org",
+        "DCAT",
+        "Dublin Core"
+      ],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "subject": "dataset.metadata.metadata_standard_id.identifier"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP04.Q4",
+      "metric_label": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "test_id": "Test_FIP04.Q4",
+      "benchmark": [
+        "DataCite"
+      ],
+      "comment": "Field status: Present; maDMP value: [\"doi\"]; compliance: Non-compliant",
+      "subject": "dataset.distribution.host.pid_system"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP05.Q5",
+      "metric_label": "In which search engines are your metadata records indexed?",
+      "test_id": "Test_FIP05.Q5",
+      "benchmark": [
+        "GBIF search engine",
+        "Global Biotic Interactions"
+      ],
+      "comment": "Field status: Present; maDMP value: \"https://zenodo.org/record/10669877\"; compliance: Non-compliant",
+      "subject": "dataset.distribution.access_url"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP06.Q6",
+      "metric_label": "In which search engines are your datasets indexed?",
+      "test_id": "Test_FIP06.Q6",
+      "benchmark": [
+        "GBIF search engine",
+        "Global Biotic Interactions"
+      ],
+      "comment": "Field status: Present; maDMP value: \"https://zenodo.org/record/10669877\"; compliance: Non-compliant",
+      "subject": "dataset.distribution.access_url"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP07.Q7",
+      "metric_label": "Which standardized communication protocol do you use for metadata records?",
+      "test_id": "Test_FIP07.Q7",
+      "benchmark": [
+        "HTTPS",
+        "REST"
+      ],
+      "comment": "Field status: Present; maDMP value: \"https://zenodo.org\"; compliance: Compliant",
+      "subject": "dataset.distribution.host.url"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP08.Q8",
+      "metric_label": "Which standardized communication protocol do you use for datasets?",
+      "test_id": "Test_FIP08.Q8",
+      "benchmark": [
+        "HTTPS",
+        "REST"
+      ],
+      "comment": "Field status: Present; maDMP value: \"https://zenodo.org\"; compliance: Compliant",
+      "subject": "dataset.distribution.host.url"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP09.Q9",
+      "metric_label": "Which authentication & authorisation technique do you use for metadata records?",
+      "test_id": "Test_FIP09.Q9",
+      "benchmark": [
+        "Open Data",
+        "Open",
+        "OAuth 2.0"
+      ],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "subject": "dataset.distribution.data_access"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP10.Q10",
+      "metric_label": "Which authentication & authorisation technique do you use for datasets?",
+      "test_id": "Test_FIP10.Q10",
+      "benchmark": [
+        "OAuth 2.0",
+        "GBIF local account",
+        "Open",
+        "Open Data"
+      ],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "subject": "dataset.distribution.data_access"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP11.Q11",
+      "metric_label": "Which metadata longevity plan do you use?",
+      "test_id": "Test_FIP11.Q11",
+      "benchmark": [],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
+      "subject": null
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP12.Q12",
+      "metric_label": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+      "test_id": "Test_FIP12.Q12",
+      "benchmark": [
+        "DwC-A",
+        "JSON",
+        "XMLS",
+        "RDFS"
+      ],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
+      "subject": null
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP13.Q13",
+      "metric_label": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+      "test_id": "Test_FIP13.Q13",
+      "benchmark": [
+        "DwC-A",
+        "JSON",
+        "XMLS",
+        "RDFS"
+      ],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
+      "subject": null
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP14.Q14",
+      "metric_label": "Which structured vocabularies do you use to annotate your metadata records?",
+      "test_id": "Test_FIP14.Q14",
+      "benchmark": [
+        "EML",
+        "DwC"
+      ],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "subject": "dataset.metadata.metadata_standard_id.identifier"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP15.Q15",
+      "metric_label": "Which structured vocabularies do you use to encode your datasets?",
+      "test_id": "Test_FIP15.Q15",
+      "benchmark": [
+        "Plant Pollinator Vocabulary",
+        "DwC"
+      ],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "subject": "dataset.metadata.metadata_standard_id.identifier"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP16.Q16",
+      "metric_label": "Which models, schema(s) do you use for your metadata records?",
+      "test_id": "Test_FIP16.Q16",
+      "benchmark": [
+        "Relations Ontology",
+        "DwC"
+      ],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "subject": "dataset.metadata.metadata_standard_id.type"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP17.Q17",
+      "metric_label": "Which models, schema(s) do you use for your datasets?",
+      "test_id": "Test_FIP17.Q17",
+      "benchmark": [
+        "DwC-A"
+      ],
+      "comment": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "subject": "dataset.metadata.metadata_standard_id.type"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP18.Q18",
+      "metric_label": "Which usage license do you use for your metadata records?",
+      "test_id": "Test_FIP18.Q18",
+      "benchmark": [
+        "CC0 1.0",
+        "CC-BY 4.0",
+        "CC BY-NC 4.0"
+      ],
+      "comment": "Field status: Present; maDMP value: \"https://creativecommons.org/licenses/by/4.0/\"; compliance: Compliant",
+      "subject": "dataset.distribution.license.license_ref"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP19.Q19",
+      "metric_label": "Which usage license do you use for your datasets?",
+      "test_id": "Test_FIP19.Q19",
+      "benchmark": [
+        "CC0 1.0",
+        "CC-BY 4.0",
+        "CC BY-NC 4.0"
+      ],
+      "comment": "Field status: Present; maDMP value: \"https://creativecommons.org/licenses/by/4.0/\"; compliance: Compliant",
+      "subject": "dataset.distribution.license.license_ref"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP20.Q20",
+      "metric_label": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+      "test_id": "Test_FIP20.Q20",
+      "benchmark": [
+        "PROV-O"
+      ],
+      "comment": "Field status: Present; maDMP value: [\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]; compliance: Non-compliant",
+      "subject": "dataset.data_quality_assurance"
+    },
+    {
+      "@type": "ftr:TestResult",
+      "metric_id": "FIP21.Q21",
+      "metric_label": "Which metadata schemas do you use for describing the provenance of your datasets?",
+      "test_id": "Test_FIP21.Q21",
+      "benchmark": [
+        "PROV-O"
+      ],
+      "comment": "Field status: Present; maDMP value: [\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]; compliance: Non-compliant",
+      "subject": "dataset.data_quality_assurance"
+    }
+  ]
+}

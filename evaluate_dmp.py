@@ -42,7 +42,11 @@ def main():
         benchmark = r["allowed_values"]
         if benchmark and not isinstance(benchmark, list):
             benchmark = [benchmark]
-        comment = f"Field status: {r['field_status']}; compliance: {r['compliance_status']}"
+        field_val = json.dumps(r.get("field_value"), ensure_ascii=False)
+        comment = (
+            f"Field status: {r['field_status']}; maDMP value: {field_val}; "
+            f"compliance: {r['compliance_status']}"
+        )
         ftr_ready.append({
             "metric_id": metric_id,
             "metric_label": r["FIP_question"],
