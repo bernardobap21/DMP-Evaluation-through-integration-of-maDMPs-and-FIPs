@@ -7,6 +7,7 @@ from FIP_Mapping.utils import transform_mapping
 from Evaluator.goals_checks import run_goals_scoring
 from Evaluator.validation_rules import validate_metadata_intentions
 from Evaluator.planned_fairness import check_planned_fairness
+from Evaluator.ostrails_formatter import export_fip_results
 from Evaluator.evaluator import (
     load_dmp,
     evaluate_dmp_against_fip,
@@ -34,7 +35,22 @@ def main():
 
     evaluation_results = evaluate_dmp_against_fip(dmp, mapping)
 
-   ####
+    # Transform into OSTrails TestResult format
+    ftr_ready = []
+    for idx, r in enumerate(evaluation_results, start=1):
+        metric_id = f"FIP{str(idx).zfill(2)}.Q{idx}"
+        benchmark = r["allowed_values"]
+        if benchmark and not isinstance(benchmark, list):
+            benchmark = [benchmark]
+        comment = f"Field status: {r['field_status']}; compliance: {r['compliance_status']}"
+        ftr_ready.append({
+            "metric_id": metric_id,
+            "metric_label": r["FIP_question"],
+            "test_id": f"Test_{metric_id}",
+            "benchmark": benchmark or [],
+            "comment": comment,
+            "subject": r["maDMP_field"],
+        })
 
 
     present, compliant, total = summarize_results(evaluation_results)
@@ -54,6 +70,15 @@ def main():
 
     #print(f"Saved evaluation report to: {csv_output}")
     print(f"Saved recommendations to: {txt_output}")
+
+    # Export JSON-LD according to OSTrails
+    fip_jsonld = export_fip_results(
+        ftr_ready,
+        dmp_id=base_filename,
+        dmp_title=dmp.get("title", base_filename),
+        output_dir=args.output,
+    )
+    print(f"OSTrails FIP results saved to: {fip_jsonld}")
 
     # Run FAIRness scoring and validation
     goals_results = run_goals_scoring(dmp)
