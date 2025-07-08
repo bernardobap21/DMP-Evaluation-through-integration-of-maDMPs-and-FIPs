@@ -39,21 +39,28 @@ def main():
     ftr_ready = []
     for idx, r in enumerate(evaluation_results, start=1):
         metric_id = f"FIP{str(idx).zfill(2)}.Q{idx}"
-        benchmark = r["allowed_values"]
+        benchmark = r.get("allowed_values", [])
         if benchmark and not isinstance(benchmark, list):
             benchmark = [benchmark]
+
         field_val = json.dumps(r.get("field_value"), ensure_ascii=False)
         comment = (
             f"Field status: {r['field_status']}; maDMP value: {field_val}; "
             f"compliance: {r['compliance_status']}"
         )
+
+        status = (
+            "pass" if r["field_status"] == "Present" and r["compliance_status"] == "Compliant" else "fail"
+        )
+
         ftr_ready.append({
             "metric_id": metric_id,
             "metric_label": r["FIP_question"],
             "test_id": f"Test_{metric_id}",
-            "benchmark": benchmark or [],
+            "benchmark": benchmark,
             "comment": comment,
             "subject": r["maDMP_field"],
+            "status": status,
         })
 
 
