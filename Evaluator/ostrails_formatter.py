@@ -94,10 +94,11 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
         graph.append(result_node)
         result_set["prov:hadMember"].append(result_uri)
 
-    out = {
-        "@context": "https://w3id.org/ftr/context.jsonld",
-        "@graph": graph,
-    }
+    out = {"@context": "https://w3id.org/ftr/context.jsonld"}
+    for node in graph:
+        node_id = node.get("@id")
+        if node_id:
+            out[node_id] = node
 
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, f"{dmp_id}_ostrails_results.jsonld")
