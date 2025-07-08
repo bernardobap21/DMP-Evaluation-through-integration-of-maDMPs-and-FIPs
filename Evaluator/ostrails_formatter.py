@@ -55,23 +55,22 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
     )
 
     algorithm_id = "#evaluation_algorithm"
-    graph.append(
-        {
-            "@id": algorithm_id,
-            "@type": ["ftr:Algorithm", "dcat:DataService", "prov:Agent"],
-            "dcterms:identifier": "ostrails-algorithm",
-            "dcterms:title": "maDMP Evaluation Algorithm",
-            "dcterms:description": "Algorithm that evaluates maDMP fields against a FIP",
-            "sio:is-implementation-of": "SIO_000233",
-            "dcterms:creator": org_id,
-        }
-    )
+    algorithm_node = {
+        "@id": algorithm_id,
+        "@type": ["ftr:Algorithm", "dcat:DataService", "prov:Agent"],
+        "dcterms:identifier": "ostrails-algorithm",
+        "dcterms:title": "maDMP Evaluation Algorithm",
+        "dcterms:description": "Algorithm that evaluates maDMP fields against a FIP",
+        "sio:is-implementation-of": [],
+        "dcterms:creator": org_id,
+    }
+    graph.append(algorithm_node)
 
     exec_id = "#test_execution"
     execution_activity = {
         "@id": exec_id,
         "@type": "ftr:TestExecutionActivity",
-        "prov:wasAssociatedWith": algorithm_id,
+        "prov:wasAssociatedWith": [],
         "prov:generated": [],
         "prov:used": dmp_entity_id,
     }
@@ -108,7 +107,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
             "dcterms:identifier": res["test_id"],
             "dcterms:title": res["metric_label"],
             "dcterms:description": f"Check field {res['subject']}",
-            "sio:is-implementation-of": "SIO_000233",
+            "sio:is-implementation-of": metric_uri,
             "ftr:testsMetric": metric_uri,
             "ftr:hasBenchmark": [],
         }
@@ -126,6 +125,9 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
             }
             graph.append(bench)
             test_node["ftr:hasBenchmark"].append(bench_uri)
+            algorithm_node["sio:is-implementation-of"].append(bench_uri)
+
+        execution_activity["prov:wasAssociatedWith"].append(test_uri)
 
         result_uri = f"#{res['test_id']}_result"
         result_node = {
