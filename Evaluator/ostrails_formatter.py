@@ -32,14 +32,61 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
     
     graph = []
 
+    dmp_entity_id = "#input_dmp"
+    graph.append(
+        {
+            "@id": dmp_entity_id,
+            "@type": "prov:Entity",
+            "dcterms:identifier": dmp_id,
+            "dcterms:title": dmp_title,
+            "dcterms:description": "Input maDMP",
+        }
+    )
+
+    org_id = "#evaluation_org"
+    graph.append(
+        {
+            "@id": org_id,
+            "@type": "vcard:Organization",
+            "vcard:fn": "OSTrails",
+            "vcard:organization-name": "OSTrails",
+            "vcard:hasEmail": "mailto:info@ostrails.org",
+        }
+    )
+
+    algorithm_id = "#evaluation_algorithm"
+    graph.append(
+        {
+            "@id": algorithm_id,
+            "@type": ["ftr:Algorithm", "dcat:DataService", "prov:Agent"],
+            "dcterms:identifier": "ostrails-algorithm",
+            "dcterms:title": "maDMP Evaluation Algorithm",
+            "dcterms:description": "Algorithm that evaluates maDMP fields against a FIP",
+            "sio:is-implementation-of": "SIO_000233",
+            "dcterms:creator": org_id,
+        }
+    )
+
+    exec_id = "#test_execution"
+    execution_activity = {
+        "@id": exec_id,
+        "@type": "ftr:TestExecutionActivity",
+        "prov:wasAssociatedWith": algorithm_id,
+        "prov:generated": [],
+        "prov:used": dmp_entity_id,
+    }
+
+
     result_set_id = f"#{dmp_id}_results"
     result_set = {
         "@id": result_set_id,
-        "@type": "ftr:TestResultSet",
+        "@type": ["ftr:TestResultSet", "prov:Entity", "prov:Collection"],
         "dcterms:identifier": dmp_id,
         "dcterms:title": f"Evaluation results for DMP: {dmp_title}",
         "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
         "prov:hadMember": [],
+        "prov:wasDerivedFrom": dmp_entity_id,
+        "prov:wasGeneratedBy": exec_id,
     }
     graph.append(result_set)
 
@@ -57,10 +104,11 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
         test_uri = f"#{res['test_id']}"
         test_node = {
             "@id": test_uri,
-            "@type": "ftr:Test",
+            "@type": ["ftr:Test", "dcat:DataService", "prov:Agent"],
             "dcterms:identifier": res["test_id"],
             "dcterms:title": res["metric_label"],
             "dcterms:description": f"Check field {res['subject']}",
+            "sio:is-implementation-of": "SIO_000233",
             "ftr:testsMetric": metric_uri,
             "ftr:hasBenchmark": [],
         }
@@ -74,6 +122,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
                 "dcterms:identifier": str(val),
                 "dcterms:title": str(val),
                 "dcterms:description": f"Allowed value: {val}",
+                "ftr:hasAssociatedMetric": metric_uri,
             }
             graph.append(bench)
             test_node["ftr:hasBenchmark"].append(bench_uri)
@@ -81,20 +130,24 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
         result_uri = f"#{res['test_id']}_result"
         result_node = {
             "@id": result_uri,
-            "@type": "ftr:TestResult",
-            "ftr:outputFromTest": test_uri,
+            "@type": ["ftr:TestResult", "prov:Entity"],
             "dcterms:identifier": res["test_id"],
             "dcterms:title": f"Result for {res['metric_id']}",
             "dcterms:description": res["comment"],
+            "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
             "prov:value": res["status"],
-            "ftr:status": res["status"],
-            "ftr:completion": "100",
             "ftr:log": res["comment"],
+            "ftr:completion": "100",
+            "ftr:outputFromTest": test_uri,
+            "prov:wasDerivedFrom": dmp_entity_id,
         }
         graph.append(result_node)
         result_set["prov:hadMember"].append(result_uri)
+        execution_activity["prov:generated"].append(result_uri)
 
-    out = {"@context": "https://w3id.org/ftr/context.jsonld"}
+    graph.append(execution_activity)
+
+    out = {}
     for node in graph:
         node_id = node.get("@id")
         if node_id:
