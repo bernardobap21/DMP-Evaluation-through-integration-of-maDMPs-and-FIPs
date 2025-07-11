@@ -89,7 +89,7 @@ def main():
         dmp_title=dmp.get("title", base_filename),
         output_dir=args.output,
     )
-    print(f"OSTrails FIP results saved to: {fip_jsonld}")
+    print(f"OSTrails Format results saved to: {fip_jsonld}")
 
     # Run FAIRness scoring and validation
     goals_results = run_goals_scoring(dmp)

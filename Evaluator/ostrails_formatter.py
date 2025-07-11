@@ -149,11 +149,21 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
 
     graph.append(execution_activity)
 
-    out = {}
-    for node in graph:
-        node_id = node.get("@id")
-        if node_id:
-            out[node_id] = node
+    out = {
+        "@context": {
+        "prov": "http://www.w3.org/ns/prov#",
+        "ftr": "https://w3id.org/ftr#",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "sio": "http://semanticscience.org/resource/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "doap": "http://usefulinc.com/ns/doap#",
+        "adms": "http://www.w3.org/ns/adms#",
+        "vivo": "http://vivoweb.org/ontology/core#",
+        "dpv": "http://www.w3id.org/dpv#",    
+    },
+        "@graph": graph,
+        
+    }
 
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, f"{dmp_id}_ostrails_results.jsonld")
