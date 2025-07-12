@@ -1,0 +1,200 @@
+{
+  "FIP_maDMP_Mapping": [
+    {
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your metadata records indexed?",
+      "maDMP_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "Not yet implemented - will be a institutional platform ",
+      "Allowed_values": []
+    },
+    {
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for datasets?",
+      "maDMP_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "HTTPS"
+      ]
+    },
+    {
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for metadata records?",
+      "maDMP_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "HTTPS"
+      ]
+    },
+    {
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "maDMP_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "DOI"
+      ]
+    },
+    {
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to encode your datasets?",
+      "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "EnvThes"
+      ]
+    },
+    {
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for datasets?",
+      "maDMP_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": []
+    },
+    {
+      "FAIR_principle": "F2",
+      "FIP_question": "Which metadata schemas do you use for findability?",
+      "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": []
+    },
+    {
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "maDMP_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "URI "
+      ]
+    },
+    {
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your metadata records?",
+      "maDMP_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": []
+    },
+    {
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
+      "maDMP_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "CEDAR workbench user account"
+      ]
+    },
+    {
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+      "maDMP_field": "",
+      "Mapping_status": null,
+      "Comments": "",
+      "Allowed_values": [
+        "CSV File Format "
+      ]
+    },
+    {
+      "FAIR_principle": "A2",
+      "FIP_question": "Which metadata longevity plan do you use?",
+      "maDMP_field": "",
+      "Mapping_status": null,
+      "Comments": "To be developed",
+      "Allowed_values": []
+    },
+    {
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your datasets?",
+      "maDMP_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "Schema.org Dataset"
+      ]
+    },
+    {
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your datasets indexed?",
+      "maDMP_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "PANGAEA Data Publisher"
+      ]
+    },
+    {
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your datasets?",
+      "maDMP_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "CC BY SA 4.0"
+      ]
+    },
+    {
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to annotate your metadata records?",
+      "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "EnvThes"
+      ]
+    },
+    {
+      "FAIR_principle": "F3",
+      "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "maDMP_field": "dataset.distribution.host.pid_system",
+      "Mapping_status": "Mapped",
+      "Comments": "At the moment there is only one direction link - metadata link to data  ",
+      "Allowed_values": []
+    },
+    {
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+      "maDMP_field": "",
+      "Mapping_status": null,
+      "Comments": "",
+      "Allowed_values": [
+        "JSON-LD"
+      ]
+    },
+    {
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your metadata records?",
+      "maDMP_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "CC BY 4.0"
+      ]
+    },
+    {
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your datasets?",
+      "maDMP_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": []
+    },
+    {
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+      "maDMP_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "Schema.org Dataset"
+      ]
+    }
+  ]
+}
