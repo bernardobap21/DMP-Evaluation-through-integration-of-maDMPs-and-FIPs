@@ -89,6 +89,10 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
     }
     graph.append(result_set)
 
+    ###
+    benchmarks = {}
+    ###
+
     for res in results:
         metric_uri = f"#{res['metric_id']}"
         metric = {
@@ -100,6 +104,24 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
         }
         graph.append(metric)
 
+        #####
+        principle = res.get("fair_principle")
+        bench_uri = None
+        if principle:
+            bench_uri = f"#{principle}_benchmark"
+            if principle not in benchmarks:
+                benchmarks[principle] = {
+                    "@id": bench_uri,
+                    "@type": "ftr:Benchmark",
+                    "dcterms:identifier": principle,
+                    "dcterms:title": principle,
+                    "dcterms:description": f"Metrics for FAIR principle {principle}",
+                    "ftr:hasAssociatedMetric": [],
+                }
+            if metric_uri not in benchmarks[principle]["ftr:hasAssociatedMetric"]:
+                benchmarks[principle]["ftr:hasAssociatedMetric"].append(metric_uri)
+        ####
+
         test_uri = f"#{res['test_id']}"
         test_node = {
             "@id": test_uri,
@@ -109,10 +131,13 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
             "dcterms:description": f"Check field {res['subject']}",
             "sio:is-implementation-of": metric_uri,
             "ftr:testsMetric": metric_uri,
-            "ftr:hasBenchmark": [],
+            ####
+            "ftr:hasBenchmark": [bench_uri] if bench_uri else [],
+            #"ftr:hasBenchmark": [],
         }
         graph.append(test_node)
 
+        """"
         for idx, val in enumerate(res.get("benchmark", []), start=1):
             bench_uri = f"#{res['test_id']}_benchmark_{idx}"
             bench = {
@@ -125,6 +150,10 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
             }
             graph.append(bench)
             test_node["ftr:hasBenchmark"].append(bench_uri)
+            """
+        ###
+        if bench_uri and bench_uri not in algorithm_node["sio:is-implementation-of"]:
+        ###
             algorithm_node["sio:is-implementation-of"].append(bench_uri)
 
         execution_activity["prov:wasAssociatedWith"].append(test_uri)
@@ -146,6 +175,11 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
         graph.append(result_node)
         result_set["prov:hadMember"].append(result_uri)
         execution_activity["prov:generated"].append(result_uri)
+    
+    ###
+    for bench in benchmarks.values():
+        graph.append(bench)
+    ###
 
     graph.append(execution_activity)
 

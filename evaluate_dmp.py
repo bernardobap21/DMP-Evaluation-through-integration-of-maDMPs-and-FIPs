@@ -42,6 +42,9 @@ def main():
         benchmark = r.get("allowed_values", [])
         if benchmark and not isinstance(benchmark, list):
             benchmark = [benchmark]
+        ###
+        fair_principle = r.get("FAIR_principle")
+        ###
 
         field_val = json.dumps(r.get("field_value"), ensure_ascii=False)
         comment = (
@@ -58,6 +61,9 @@ def main():
             "metric_label": r["FIP_question"],
             "test_id": f"Test_{metric_id}",
             "benchmark": benchmark,
+            ###
+            "fair_principle": fair_principle,
+            ###
             "comment": comment,
             "subject": r["maDMP_field"],
             "status": status,

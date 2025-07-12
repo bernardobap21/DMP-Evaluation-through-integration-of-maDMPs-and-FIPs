@@ -15,6 +15,8 @@ def evaluate_dmp_against_fip(dmp, mapping_dict):
         field_path = details.get("maDMP_field", "")
         allowed_values = details.get("Allowed_values", [])
         mapping_status = details.get("Mapping_status", "Unmapped")
+        ####
+        fair_principle = details.get("FAIR_principle")
 
         # Default values
         field_status = "Not Present"
@@ -28,6 +30,8 @@ def evaluate_dmp_against_fip(dmp, mapping_dict):
                 "field_value": None,
                 "allowed_values": allowed_values,
                 "mapping_status": mapping_status,
+                #####
+                "FAIR_principle": fair_principle,
                 "field_status": field_status,
                 "compliance_status": compliance_status
             })
@@ -58,6 +62,8 @@ def evaluate_dmp_against_fip(dmp, mapping_dict):
             "field_value": field_value,
             "allowed_values": allowed_values,
             "mapping_status": mapping_status,
+            #####
+            "FAIR_principle": fair_principle,
             "field_status": field_status,
             "compliance_status": compliance_status
         })

@@ -36,53 +36,18 @@
       "dcterms:title": "maDMP Evaluation Algorithm",
       "dcterms:description": "Algorithm that evaluates maDMP fields against a FIP",
       "sio:is-implementation-of": [
-        "#Test_FIP01.Q1_benchmark_1",
-        "#Test_FIP01.Q1_benchmark_2",
-        "#Test_FIP02.Q2_benchmark_1",
-        "#Test_FIP02.Q2_benchmark_2",
-        "#Test_FIP03.Q3_benchmark_1",
-        "#Test_FIP03.Q3_benchmark_2",
-        "#Test_FIP03.Q3_benchmark_3",
-        "#Test_FIP03.Q3_benchmark_4",
-        "#Test_FIP04.Q4_benchmark_1",
-        "#Test_FIP05.Q5_benchmark_1",
-        "#Test_FIP05.Q5_benchmark_2",
-        "#Test_FIP06.Q6_benchmark_1",
-        "#Test_FIP06.Q6_benchmark_2",
-        "#Test_FIP07.Q7_benchmark_1",
-        "#Test_FIP07.Q7_benchmark_2",
-        "#Test_FIP08.Q8_benchmark_1",
-        "#Test_FIP08.Q8_benchmark_2",
-        "#Test_FIP09.Q9_benchmark_1",
-        "#Test_FIP09.Q9_benchmark_2",
-        "#Test_FIP09.Q9_benchmark_3",
-        "#Test_FIP10.Q10_benchmark_1",
-        "#Test_FIP10.Q10_benchmark_2",
-        "#Test_FIP10.Q10_benchmark_3",
-        "#Test_FIP10.Q10_benchmark_4",
-        "#Test_FIP12.Q12_benchmark_1",
-        "#Test_FIP12.Q12_benchmark_2",
-        "#Test_FIP12.Q12_benchmark_3",
-        "#Test_FIP12.Q12_benchmark_4",
-        "#Test_FIP13.Q13_benchmark_1",
-        "#Test_FIP13.Q13_benchmark_2",
-        "#Test_FIP13.Q13_benchmark_3",
-        "#Test_FIP13.Q13_benchmark_4",
-        "#Test_FIP14.Q14_benchmark_1",
-        "#Test_FIP14.Q14_benchmark_2",
-        "#Test_FIP15.Q15_benchmark_1",
-        "#Test_FIP15.Q15_benchmark_2",
-        "#Test_FIP16.Q16_benchmark_1",
-        "#Test_FIP16.Q16_benchmark_2",
-        "#Test_FIP17.Q17_benchmark_1",
-        "#Test_FIP18.Q18_benchmark_1",
-        "#Test_FIP18.Q18_benchmark_2",
-        "#Test_FIP18.Q18_benchmark_3",
-        "#Test_FIP19.Q19_benchmark_1",
-        "#Test_FIP19.Q19_benchmark_2",
-        "#Test_FIP19.Q19_benchmark_3",
-        "#Test_FIP20.Q20_benchmark_1",
-        "#Test_FIP21.Q21_benchmark_1"
+        "#F1_benchmark",
+        "#F2_benchmark",
+        "#F3_benchmark",
+        "#F4_benchmark",
+        "#A1.1_benchmark",
+        "#A1.2_benchmark",
+        "#A2_benchmark",
+        "#I1_benchmark",
+        "#I2_benchmark",
+        "#I3_benchmark",
+        "#R1.1_benchmark",
+        "#R1.2_benchmark"
       ],
       "dcterms:creator": "#evaluation_org"
     },
@@ -142,25 +107,8 @@
       "sio:is-implementation-of": "#FIP01.Q1",
       "ftr:testsMetric": "#FIP01.Q1",
       "ftr:hasBenchmark": [
-        "#Test_FIP01.Q1_benchmark_1",
-        "#Test_FIP01.Q1_benchmark_2"
+        "#F1_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP01.Q1_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DOI",
-      "dcterms:title": "DOI",
-      "dcterms:description": "Allowed value: DOI",
-      "ftr:hasAssociatedMetric": "#FIP01.Q1"
-    },
-    {
-      "@id": "#Test_FIP01.Q1_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "dPIDs",
-      "dcterms:title": "dPIDs",
-      "dcterms:description": "Allowed value: dPIDs",
-      "ftr:hasAssociatedMetric": "#FIP01.Q1"
     },
     {
       "@id": "#Test_FIP01.Q1_result",
@@ -198,25 +146,8 @@
       "sio:is-implementation-of": "#FIP02.Q2",
       "ftr:testsMetric": "#FIP02.Q2",
       "ftr:hasBenchmark": [
-        "#Test_FIP02.Q2_benchmark_1",
-        "#Test_FIP02.Q2_benchmark_2"
+        "#F1_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP02.Q2_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "URI",
-      "dcterms:title": "URI",
-      "dcterms:description": "Allowed value: URI",
-      "ftr:hasAssociatedMetric": "#FIP02.Q2"
-    },
-    {
-      "@id": "#Test_FIP02.Q2_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DOI",
-      "dcterms:title": "DOI",
-      "dcterms:description": "Allowed value: DOI",
-      "ftr:hasAssociatedMetric": "#FIP02.Q2"
     },
     {
       "@id": "#Test_FIP02.Q2_result",
@@ -254,43 +185,8 @@
       "sio:is-implementation-of": "#FIP03.Q3",
       "ftr:testsMetric": "#FIP03.Q3",
       "ftr:hasBenchmark": [
-        "#Test_FIP03.Q3_benchmark_1",
-        "#Test_FIP03.Q3_benchmark_2",
-        "#Test_FIP03.Q3_benchmark_3",
-        "#Test_FIP03.Q3_benchmark_4"
+        "#F2_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP03.Q3_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "EML",
-      "dcterms:title": "EML",
-      "dcterms:description": "Allowed value: EML",
-      "ftr:hasAssociatedMetric": "#FIP03.Q3"
-    },
-    {
-      "@id": "#Test_FIP03.Q3_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Schema.org",
-      "dcterms:title": "Schema.org",
-      "dcterms:description": "Allowed value: Schema.org",
-      "ftr:hasAssociatedMetric": "#FIP03.Q3"
-    },
-    {
-      "@id": "#Test_FIP03.Q3_benchmark_3",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DCAT",
-      "dcterms:title": "DCAT",
-      "dcterms:description": "Allowed value: DCAT",
-      "ftr:hasAssociatedMetric": "#FIP03.Q3"
-    },
-    {
-      "@id": "#Test_FIP03.Q3_benchmark_4",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Dublin Core",
-      "dcterms:title": "Dublin Core",
-      "dcterms:description": "Allowed value: Dublin Core",
-      "ftr:hasAssociatedMetric": "#FIP03.Q3"
     },
     {
       "@id": "#Test_FIP03.Q3_result",
@@ -328,16 +224,8 @@
       "sio:is-implementation-of": "#FIP04.Q4",
       "ftr:testsMetric": "#FIP04.Q4",
       "ftr:hasBenchmark": [
-        "#Test_FIP04.Q4_benchmark_1"
+        "#F3_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP04.Q4_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DataCite",
-      "dcterms:title": "DataCite",
-      "dcterms:description": "Allowed value: DataCite",
-      "ftr:hasAssociatedMetric": "#FIP04.Q4"
     },
     {
       "@id": "#Test_FIP04.Q4_result",
@@ -375,25 +263,8 @@
       "sio:is-implementation-of": "#FIP05.Q5",
       "ftr:testsMetric": "#FIP05.Q5",
       "ftr:hasBenchmark": [
-        "#Test_FIP05.Q5_benchmark_1",
-        "#Test_FIP05.Q5_benchmark_2"
+        "#F4_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP05.Q5_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "GBIF search engine",
-      "dcterms:title": "GBIF search engine",
-      "dcterms:description": "Allowed value: GBIF search engine",
-      "ftr:hasAssociatedMetric": "#FIP05.Q5"
-    },
-    {
-      "@id": "#Test_FIP05.Q5_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Global Biotic Interactions",
-      "dcterms:title": "Global Biotic Interactions",
-      "dcterms:description": "Allowed value: Global Biotic Interactions",
-      "ftr:hasAssociatedMetric": "#FIP05.Q5"
     },
     {
       "@id": "#Test_FIP05.Q5_result",
@@ -431,25 +302,8 @@
       "sio:is-implementation-of": "#FIP06.Q6",
       "ftr:testsMetric": "#FIP06.Q6",
       "ftr:hasBenchmark": [
-        "#Test_FIP06.Q6_benchmark_1",
-        "#Test_FIP06.Q6_benchmark_2"
+        "#F4_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP06.Q6_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "GBIF search engine",
-      "dcterms:title": "GBIF search engine",
-      "dcterms:description": "Allowed value: GBIF search engine",
-      "ftr:hasAssociatedMetric": "#FIP06.Q6"
-    },
-    {
-      "@id": "#Test_FIP06.Q6_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Global Biotic Interactions",
-      "dcterms:title": "Global Biotic Interactions",
-      "dcterms:description": "Allowed value: Global Biotic Interactions",
-      "ftr:hasAssociatedMetric": "#FIP06.Q6"
     },
     {
       "@id": "#Test_FIP06.Q6_result",
@@ -487,25 +341,8 @@
       "sio:is-implementation-of": "#FIP07.Q7",
       "ftr:testsMetric": "#FIP07.Q7",
       "ftr:hasBenchmark": [
-        "#Test_FIP07.Q7_benchmark_1",
-        "#Test_FIP07.Q7_benchmark_2"
+        "#A1.1_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP07.Q7_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "HTTPS",
-      "dcterms:title": "HTTPS",
-      "dcterms:description": "Allowed value: HTTPS",
-      "ftr:hasAssociatedMetric": "#FIP07.Q7"
-    },
-    {
-      "@id": "#Test_FIP07.Q7_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "REST",
-      "dcterms:title": "REST",
-      "dcterms:description": "Allowed value: REST",
-      "ftr:hasAssociatedMetric": "#FIP07.Q7"
     },
     {
       "@id": "#Test_FIP07.Q7_result",
@@ -543,25 +380,8 @@
       "sio:is-implementation-of": "#FIP08.Q8",
       "ftr:testsMetric": "#FIP08.Q8",
       "ftr:hasBenchmark": [
-        "#Test_FIP08.Q8_benchmark_1",
-        "#Test_FIP08.Q8_benchmark_2"
+        "#A1.1_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP08.Q8_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "HTTPS",
-      "dcterms:title": "HTTPS",
-      "dcterms:description": "Allowed value: HTTPS",
-      "ftr:hasAssociatedMetric": "#FIP08.Q8"
-    },
-    {
-      "@id": "#Test_FIP08.Q8_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "REST",
-      "dcterms:title": "REST",
-      "dcterms:description": "Allowed value: REST",
-      "ftr:hasAssociatedMetric": "#FIP08.Q8"
     },
     {
       "@id": "#Test_FIP08.Q8_result",
@@ -599,34 +419,8 @@
       "sio:is-implementation-of": "#FIP09.Q9",
       "ftr:testsMetric": "#FIP09.Q9",
       "ftr:hasBenchmark": [
-        "#Test_FIP09.Q9_benchmark_1",
-        "#Test_FIP09.Q9_benchmark_2",
-        "#Test_FIP09.Q9_benchmark_3"
+        "#A1.2_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP09.Q9_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Open Data",
-      "dcterms:title": "Open Data",
-      "dcterms:description": "Allowed value: Open Data",
-      "ftr:hasAssociatedMetric": "#FIP09.Q9"
-    },
-    {
-      "@id": "#Test_FIP09.Q9_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Open",
-      "dcterms:title": "Open",
-      "dcterms:description": "Allowed value: Open",
-      "ftr:hasAssociatedMetric": "#FIP09.Q9"
-    },
-    {
-      "@id": "#Test_FIP09.Q9_benchmark_3",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "OAuth 2.0",
-      "dcterms:title": "OAuth 2.0",
-      "dcterms:description": "Allowed value: OAuth 2.0",
-      "ftr:hasAssociatedMetric": "#FIP09.Q9"
     },
     {
       "@id": "#Test_FIP09.Q9_result",
@@ -664,43 +458,8 @@
       "sio:is-implementation-of": "#FIP10.Q10",
       "ftr:testsMetric": "#FIP10.Q10",
       "ftr:hasBenchmark": [
-        "#Test_FIP10.Q10_benchmark_1",
-        "#Test_FIP10.Q10_benchmark_2",
-        "#Test_FIP10.Q10_benchmark_3",
-        "#Test_FIP10.Q10_benchmark_4"
+        "#A1.2_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP10.Q10_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "OAuth 2.0",
-      "dcterms:title": "OAuth 2.0",
-      "dcterms:description": "Allowed value: OAuth 2.0",
-      "ftr:hasAssociatedMetric": "#FIP10.Q10"
-    },
-    {
-      "@id": "#Test_FIP10.Q10_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "GBIF local account",
-      "dcterms:title": "GBIF local account",
-      "dcterms:description": "Allowed value: GBIF local account",
-      "ftr:hasAssociatedMetric": "#FIP10.Q10"
-    },
-    {
-      "@id": "#Test_FIP10.Q10_benchmark_3",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Open",
-      "dcterms:title": "Open",
-      "dcterms:description": "Allowed value: Open",
-      "ftr:hasAssociatedMetric": "#FIP10.Q10"
-    },
-    {
-      "@id": "#Test_FIP10.Q10_benchmark_4",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Open Data",
-      "dcterms:title": "Open Data",
-      "dcterms:description": "Allowed value: Open Data",
-      "ftr:hasAssociatedMetric": "#FIP10.Q10"
     },
     {
       "@id": "#Test_FIP10.Q10_result",
@@ -737,7 +496,9 @@
       "dcterms:description": "Check field None",
       "sio:is-implementation-of": "#FIP11.Q11",
       "ftr:testsMetric": "#FIP11.Q11",
-      "ftr:hasBenchmark": []
+      "ftr:hasBenchmark": [
+        "#A2_benchmark"
+      ]
     },
     {
       "@id": "#Test_FIP11.Q11_result",
@@ -775,43 +536,8 @@
       "sio:is-implementation-of": "#FIP12.Q12",
       "ftr:testsMetric": "#FIP12.Q12",
       "ftr:hasBenchmark": [
-        "#Test_FIP12.Q12_benchmark_1",
-        "#Test_FIP12.Q12_benchmark_2",
-        "#Test_FIP12.Q12_benchmark_3",
-        "#Test_FIP12.Q12_benchmark_4"
+        "#I1_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP12.Q12_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DwC-A",
-      "dcterms:title": "DwC-A",
-      "dcterms:description": "Allowed value: DwC-A",
-      "ftr:hasAssociatedMetric": "#FIP12.Q12"
-    },
-    {
-      "@id": "#Test_FIP12.Q12_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "JSON",
-      "dcterms:title": "JSON",
-      "dcterms:description": "Allowed value: JSON",
-      "ftr:hasAssociatedMetric": "#FIP12.Q12"
-    },
-    {
-      "@id": "#Test_FIP12.Q12_benchmark_3",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "XMLS",
-      "dcterms:title": "XMLS",
-      "dcterms:description": "Allowed value: XMLS",
-      "ftr:hasAssociatedMetric": "#FIP12.Q12"
-    },
-    {
-      "@id": "#Test_FIP12.Q12_benchmark_4",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "RDFS",
-      "dcterms:title": "RDFS",
-      "dcterms:description": "Allowed value: RDFS",
-      "ftr:hasAssociatedMetric": "#FIP12.Q12"
     },
     {
       "@id": "#Test_FIP12.Q12_result",
@@ -849,43 +575,8 @@
       "sio:is-implementation-of": "#FIP13.Q13",
       "ftr:testsMetric": "#FIP13.Q13",
       "ftr:hasBenchmark": [
-        "#Test_FIP13.Q13_benchmark_1",
-        "#Test_FIP13.Q13_benchmark_2",
-        "#Test_FIP13.Q13_benchmark_3",
-        "#Test_FIP13.Q13_benchmark_4"
+        "#I1_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP13.Q13_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DwC-A",
-      "dcterms:title": "DwC-A",
-      "dcterms:description": "Allowed value: DwC-A",
-      "ftr:hasAssociatedMetric": "#FIP13.Q13"
-    },
-    {
-      "@id": "#Test_FIP13.Q13_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "JSON",
-      "dcterms:title": "JSON",
-      "dcterms:description": "Allowed value: JSON",
-      "ftr:hasAssociatedMetric": "#FIP13.Q13"
-    },
-    {
-      "@id": "#Test_FIP13.Q13_benchmark_3",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "XMLS",
-      "dcterms:title": "XMLS",
-      "dcterms:description": "Allowed value: XMLS",
-      "ftr:hasAssociatedMetric": "#FIP13.Q13"
-    },
-    {
-      "@id": "#Test_FIP13.Q13_benchmark_4",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "RDFS",
-      "dcterms:title": "RDFS",
-      "dcterms:description": "Allowed value: RDFS",
-      "ftr:hasAssociatedMetric": "#FIP13.Q13"
     },
     {
       "@id": "#Test_FIP13.Q13_result",
@@ -923,25 +614,8 @@
       "sio:is-implementation-of": "#FIP14.Q14",
       "ftr:testsMetric": "#FIP14.Q14",
       "ftr:hasBenchmark": [
-        "#Test_FIP14.Q14_benchmark_1",
-        "#Test_FIP14.Q14_benchmark_2"
+        "#I2_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP14.Q14_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "EML",
-      "dcterms:title": "EML",
-      "dcterms:description": "Allowed value: EML",
-      "ftr:hasAssociatedMetric": "#FIP14.Q14"
-    },
-    {
-      "@id": "#Test_FIP14.Q14_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DwC",
-      "dcterms:title": "DwC",
-      "dcterms:description": "Allowed value: DwC",
-      "ftr:hasAssociatedMetric": "#FIP14.Q14"
     },
     {
       "@id": "#Test_FIP14.Q14_result",
@@ -979,25 +653,8 @@
       "sio:is-implementation-of": "#FIP15.Q15",
       "ftr:testsMetric": "#FIP15.Q15",
       "ftr:hasBenchmark": [
-        "#Test_FIP15.Q15_benchmark_1",
-        "#Test_FIP15.Q15_benchmark_2"
+        "#I2_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP15.Q15_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Plant Pollinator Vocabulary",
-      "dcterms:title": "Plant Pollinator Vocabulary",
-      "dcterms:description": "Allowed value: Plant Pollinator Vocabulary",
-      "ftr:hasAssociatedMetric": "#FIP15.Q15"
-    },
-    {
-      "@id": "#Test_FIP15.Q15_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DwC",
-      "dcterms:title": "DwC",
-      "dcterms:description": "Allowed value: DwC",
-      "ftr:hasAssociatedMetric": "#FIP15.Q15"
     },
     {
       "@id": "#Test_FIP15.Q15_result",
@@ -1035,25 +692,8 @@
       "sio:is-implementation-of": "#FIP16.Q16",
       "ftr:testsMetric": "#FIP16.Q16",
       "ftr:hasBenchmark": [
-        "#Test_FIP16.Q16_benchmark_1",
-        "#Test_FIP16.Q16_benchmark_2"
+        "#I3_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP16.Q16_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "Relations Ontology",
-      "dcterms:title": "Relations Ontology",
-      "dcterms:description": "Allowed value: Relations Ontology",
-      "ftr:hasAssociatedMetric": "#FIP16.Q16"
-    },
-    {
-      "@id": "#Test_FIP16.Q16_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DwC",
-      "dcterms:title": "DwC",
-      "dcterms:description": "Allowed value: DwC",
-      "ftr:hasAssociatedMetric": "#FIP16.Q16"
     },
     {
       "@id": "#Test_FIP16.Q16_result",
@@ -1091,16 +731,8 @@
       "sio:is-implementation-of": "#FIP17.Q17",
       "ftr:testsMetric": "#FIP17.Q17",
       "ftr:hasBenchmark": [
-        "#Test_FIP17.Q17_benchmark_1"
+        "#I3_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP17.Q17_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "DwC-A",
-      "dcterms:title": "DwC-A",
-      "dcterms:description": "Allowed value: DwC-A",
-      "ftr:hasAssociatedMetric": "#FIP17.Q17"
     },
     {
       "@id": "#Test_FIP17.Q17_result",
@@ -1138,34 +770,8 @@
       "sio:is-implementation-of": "#FIP18.Q18",
       "ftr:testsMetric": "#FIP18.Q18",
       "ftr:hasBenchmark": [
-        "#Test_FIP18.Q18_benchmark_1",
-        "#Test_FIP18.Q18_benchmark_2",
-        "#Test_FIP18.Q18_benchmark_3"
+        "#R1.1_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP18.Q18_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "CC0 1.0",
-      "dcterms:title": "CC0 1.0",
-      "dcterms:description": "Allowed value: CC0 1.0",
-      "ftr:hasAssociatedMetric": "#FIP18.Q18"
-    },
-    {
-      "@id": "#Test_FIP18.Q18_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "CC-BY 4.0",
-      "dcterms:title": "CC-BY 4.0",
-      "dcterms:description": "Allowed value: CC-BY 4.0",
-      "ftr:hasAssociatedMetric": "#FIP18.Q18"
-    },
-    {
-      "@id": "#Test_FIP18.Q18_benchmark_3",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "CC BY-NC 4.0",
-      "dcterms:title": "CC BY-NC 4.0",
-      "dcterms:description": "Allowed value: CC BY-NC 4.0",
-      "ftr:hasAssociatedMetric": "#FIP18.Q18"
     },
     {
       "@id": "#Test_FIP18.Q18_result",
@@ -1203,34 +809,8 @@
       "sio:is-implementation-of": "#FIP19.Q19",
       "ftr:testsMetric": "#FIP19.Q19",
       "ftr:hasBenchmark": [
-        "#Test_FIP19.Q19_benchmark_1",
-        "#Test_FIP19.Q19_benchmark_2",
-        "#Test_FIP19.Q19_benchmark_3"
+        "#R1.1_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP19.Q19_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "CC0 1.0",
-      "dcterms:title": "CC0 1.0",
-      "dcterms:description": "Allowed value: CC0 1.0",
-      "ftr:hasAssociatedMetric": "#FIP19.Q19"
-    },
-    {
-      "@id": "#Test_FIP19.Q19_benchmark_2",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "CC-BY 4.0",
-      "dcterms:title": "CC-BY 4.0",
-      "dcterms:description": "Allowed value: CC-BY 4.0",
-      "ftr:hasAssociatedMetric": "#FIP19.Q19"
-    },
-    {
-      "@id": "#Test_FIP19.Q19_benchmark_3",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "CC BY-NC 4.0",
-      "dcterms:title": "CC BY-NC 4.0",
-      "dcterms:description": "Allowed value: CC BY-NC 4.0",
-      "ftr:hasAssociatedMetric": "#FIP19.Q19"
     },
     {
       "@id": "#Test_FIP19.Q19_result",
@@ -1268,16 +848,8 @@
       "sio:is-implementation-of": "#FIP20.Q20",
       "ftr:testsMetric": "#FIP20.Q20",
       "ftr:hasBenchmark": [
-        "#Test_FIP20.Q20_benchmark_1"
+        "#R1.2_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP20.Q20_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "PROV-O",
-      "dcterms:title": "PROV-O",
-      "dcterms:description": "Allowed value: PROV-O",
-      "ftr:hasAssociatedMetric": "#FIP20.Q20"
     },
     {
       "@id": "#Test_FIP20.Q20_result",
@@ -1315,16 +887,8 @@
       "sio:is-implementation-of": "#FIP21.Q21",
       "ftr:testsMetric": "#FIP21.Q21",
       "ftr:hasBenchmark": [
-        "#Test_FIP21.Q21_benchmark_1"
+        "#R1.2_benchmark"
       ]
-    },
-    {
-      "@id": "#Test_FIP21.Q21_benchmark_1",
-      "@type": "ftr:Benchmark",
-      "dcterms:identifier": "PROV-O",
-      "dcterms:title": "PROV-O",
-      "dcterms:description": "Allowed value: PROV-O",
-      "ftr:hasAssociatedMetric": "#FIP21.Q21"
     },
     {
       "@id": "#Test_FIP21.Q21_result",
@@ -1341,6 +905,135 @@
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP21.Q21",
       "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#F1_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "F1",
+      "dcterms:title": "F1",
+      "dcterms:description": "Metrics for FAIR principle F1",
+      "ftr:hasAssociatedMetric": [
+        "#FIP01.Q1",
+        "#FIP02.Q2"
+      ]
+    },
+    {
+      "@id": "#F2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "F2",
+      "dcterms:title": "F2",
+      "dcterms:description": "Metrics for FAIR principle F2",
+      "ftr:hasAssociatedMetric": [
+        "#FIP03.Q3"
+      ]
+    },
+    {
+      "@id": "#F3_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "F3",
+      "dcterms:title": "F3",
+      "dcterms:description": "Metrics for FAIR principle F3",
+      "ftr:hasAssociatedMetric": [
+        "#FIP04.Q4"
+      ]
+    },
+    {
+      "@id": "#F4_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "F4",
+      "dcterms:title": "F4",
+      "dcterms:description": "Metrics for FAIR principle F4",
+      "ftr:hasAssociatedMetric": [
+        "#FIP05.Q5",
+        "#FIP06.Q6"
+      ]
+    },
+    {
+      "@id": "#A1.1_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "A1.1",
+      "dcterms:title": "A1.1",
+      "dcterms:description": "Metrics for FAIR principle A1.1",
+      "ftr:hasAssociatedMetric": [
+        "#FIP07.Q7",
+        "#FIP08.Q8"
+      ]
+    },
+    {
+      "@id": "#A1.2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "A1.2",
+      "dcterms:title": "A1.2",
+      "dcterms:description": "Metrics for FAIR principle A1.2",
+      "ftr:hasAssociatedMetric": [
+        "#FIP09.Q9",
+        "#FIP10.Q10"
+      ]
+    },
+    {
+      "@id": "#A2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "A2",
+      "dcterms:title": "A2",
+      "dcterms:description": "Metrics for FAIR principle A2",
+      "ftr:hasAssociatedMetric": [
+        "#FIP11.Q11"
+      ]
+    },
+    {
+      "@id": "#I1_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "I1",
+      "dcterms:title": "I1",
+      "dcterms:description": "Metrics for FAIR principle I1",
+      "ftr:hasAssociatedMetric": [
+        "#FIP12.Q12",
+        "#FIP13.Q13"
+      ]
+    },
+    {
+      "@id": "#I2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "I2",
+      "dcterms:title": "I2",
+      "dcterms:description": "Metrics for FAIR principle I2",
+      "ftr:hasAssociatedMetric": [
+        "#FIP14.Q14",
+        "#FIP15.Q15"
+      ]
+    },
+    {
+      "@id": "#I3_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "I3",
+      "dcterms:title": "I3",
+      "dcterms:description": "Metrics for FAIR principle I3",
+      "ftr:hasAssociatedMetric": [
+        "#FIP16.Q16",
+        "#FIP17.Q17"
+      ]
+    },
+    {
+      "@id": "#R1.1_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "R1.1",
+      "dcterms:title": "R1.1",
+      "dcterms:description": "Metrics for FAIR principle R1.1",
+      "ftr:hasAssociatedMetric": [
+        "#FIP18.Q18",
+        "#FIP19.Q19"
+      ]
+    },
+    {
+      "@id": "#R1.2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "R1.2",
+      "dcterms:title": "R1.2",
+      "dcterms:description": "Metrics for FAIR principle R1.2",
+      "ftr:hasAssociatedMetric": [
+        "#FIP20.Q20",
+        "#FIP21.Q21"
+      ]
     },
     {
       "@id": "#test_execution",
