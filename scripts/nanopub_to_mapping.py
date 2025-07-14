@@ -1,11 +1,12 @@
 import argparse
 import json
 import os
+import re
 from urllib.parse import urldefrag
 
 import requests
 from rdflib import ConjunctiveGraph, URIRef
-from rdflib.namespace import RDF, RDFS
+from rdflib.namespace import RDF, RDFS, DC
 
 # Map FIP question URIs to FAIR principle, maDMP field and question text
 QUESTION_MAP = {
@@ -145,6 +146,16 @@ def get_label(uri: str) -> str:
         return label
     return ""
 
+def get_fip_label(uri: str) -> str:
+    g = fetch_graph(uri)
+    fip_type = URIRef("https://w3id.org/fair/fip/terms/FAIR-Implementation-Profile")
+    for subj in g.subjects(RDF.type, fip_type):
+        label = g.value(subj, RDFS.label) or g.value(subj, DC.title)
+        if label:
+            text = str(label)
+            return re.sub(r"[^\w.-]", "_", text.strip())
+    return "unknown"
+
 
 def process_declaration(uri: str):
     g = fetch_graph(uri)
@@ -194,8 +205,8 @@ def main():
     os.makedirs(args.output, exist_ok=True)
     mapping = build_mapping(args.uri)
 
-    # derive filename from uri last part
-    name = args.uri.rstrip("/").split("/")[-1] + "_mapping.json"
+    label = get_fip_label(args.uri)
+    name = f"fip_madmp_{label}.json"
     path = os.path.join(args.output, name)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(mapping, f, indent=2)
