@@ -173,6 +173,7 @@ def process_declaration(uri: str):
             allowed.append(get_label(str(val)))
     comment = g.value(subj, CONSIDERATIONS)
     return {
+        "Question_URI": question_uri,
         "FAIR_principle": info.get("principle", ""),
         "FIP_question": info.get("text", question_uri),
         "maDMP_field": info.get("madmp", ""),
@@ -190,10 +191,19 @@ def build_mapping(main_uri: str):
     index_uri = str(index_node)
     idx_graph = fetch_graph(index_uri)
     declarations = [str(u) for u in idx_graph.objects(None, INCLUDES)]
-    mapping = []
+    mapping_dict = {}
     for d in declarations:
-        mapping.append(process_declaration(d))
-    return {"FIP_maDMP_Mapping": mapping}
+        result = process_declaration(d)
+        mapping_dict[result["Question_URI"]] = result
+
+    ordered = []
+    for q_uri in QUESTION_MAP.keys():
+        if q_uri in mapping_dict:
+            ordered.append(mapping_dict.pop(q_uri))
+
+    # append any remaining entries not in QUESTION_MAP
+    ordered.extend(mapping_dict.values())
+    return {"FIP_maDMP_Mapping": ordered}
 
 
 def main():

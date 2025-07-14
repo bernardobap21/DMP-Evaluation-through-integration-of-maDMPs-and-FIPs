@@ -1,0 +1,28 @@
+{
+  "completeness": {
+    "issues": [
+      "dmp_id.identifier",
+      "dmp_id.type",
+      "contact.contact_id.identifier",
+      "contact.contact_id.type",
+      "project.project_id.identifier",
+      "project.project_id.type",
+      "dataset.0.distribution.data_access",
+      "dataset.0.distribution.license.start_date",
+      "dataset.0.distribution.data_access"
+    ]
+  },
+  "accuracy": {
+    "issues": []
+  },
+  "availability": {
+    "issues": []
+  },
+  "consistency": {
+    "issues": [
+      "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing byte_size.",
+      "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing byte_size.",
+      "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires) is missing format."
+    ]
+  }
+}

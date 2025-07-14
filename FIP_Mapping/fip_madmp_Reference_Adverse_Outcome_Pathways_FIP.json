@@ -8,7 +8,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "URI "
+        "AOP-WIKI-ID "
       ]
     },
     {
@@ -37,7 +37,7 @@
       "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
       "maDMP_field": "dataset.distribution.host.pid_system",
       "Mapping_status": "Mapped",
-      "Comments": "At the moment there is only one direction link - metadata link to data  ",
+      "Comments": "",
       "Allowed_values": []
     },
     {
@@ -46,8 +46,10 @@
       "FIP_question": "In which search engines are your metadata records indexed?",
       "maDMP_field": "dataset.distribution.access_url",
       "Mapping_status": "Mapped",
-      "Comments": "Not yet implemented - will be a institutional platform ",
-      "Allowed_values": []
+      "Comments": "",
+      "Allowed_values": [
+        "Adverse Outcome Pathway Knowledge Base"
+      ]
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
@@ -57,7 +59,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "PANGAEA Data Publisher"
+        "Adverse Outcome Pathway Wiki"
       ]
     },
     {
@@ -89,9 +91,7 @@
       "maDMP_field": "dataset.distribution.data_access",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "CEDAR workbench user account"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
@@ -108,7 +108,7 @@
       "FIP_question": "Which metadata longevity plan do you use?",
       "maDMP_field": "",
       "Mapping_status": null,
-      "Comments": "To be developed",
+      "Comments": "",
       "Allowed_values": []
     },
     {
@@ -119,7 +119,7 @@
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
-        "JSON-LD"
+        "XMLS"
       ]
     },
     {
@@ -130,7 +130,7 @@
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
-        "CSV File Format "
+        "XMLS"
       ]
     },
     {
@@ -140,9 +140,7 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "EnvThes"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
@@ -151,9 +149,7 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "EnvThes"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
@@ -181,7 +177,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "CC BY 4.0"
+        "CC BY SA 4.0"
       ]
     },
     {
@@ -202,9 +198,7 @@
       "maDMP_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "Schema.org Dataset"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
@@ -213,9 +207,7 @@
       "maDMP_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "Schema.org Dataset"
-      ]
+      "Allowed_values": []
     }
   ]
 }
