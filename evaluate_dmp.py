@@ -7,7 +7,7 @@ from FIP_Mapping.utils import transform_mapping
 from Evaluator.goals_checks import run_goals_scoring
 from Evaluator.validation_rules import validate_metadata_intentions
 from Evaluator.planned_fairness import check_planned_fairness
-from Evaluator.ostrails_formatter import export_fip_results
+from Evaluator.ostrails_formatter import export_fip_results, DEFAULT_VERSION
 from Evaluator.evaluator import (
     load_dmp,
     evaluate_dmp_against_fip,
@@ -32,6 +32,10 @@ def main():
     dmp = load_dmp(args.input)
     mapping_raw = load_mapping(args.mapping)
     mapping = transform_mapping(mapping_raw)
+    metric_versions = {
+        item["FIP_question"]: item.get("Metric_version", DEFAULT_VERSION)
+        for item in mapping_raw.get("FIP_maDMP_Mapping", [])
+    }
 
     evaluation_results = evaluate_dmp_against_fip(dmp, mapping)
 
@@ -67,6 +71,7 @@ def main():
             "comment": comment,
             "subject": r["maDMP_field"],
             "status": status,
+            "metric_version": metric_versions.get(r["FIP_question"], DEFAULT_VERSION),
         })
 
 

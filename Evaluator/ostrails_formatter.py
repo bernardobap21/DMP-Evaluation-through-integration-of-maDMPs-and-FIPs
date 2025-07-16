@@ -117,6 +117,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
     ###
 
     for res in results:
+        metric_version = res.get("metric_version", DEFAULT_VERSION)
         metric_uri = f"#{res['metric_id']}"
         metric = {
             "@id": metric_uri,
@@ -124,7 +125,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
             "dcterms:identifier": res["metric_id"],
             "dcterms:title": res["metric_label"],
             "dcterms:description": res["metric_label"],
-            "dcat:version": DEFAULT_VERSION,
+            "dcat:version": metric_version,
         }
         graph.append(metric)
 
@@ -140,7 +141,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
                     "dcterms:identifier": principle,
                     "dcterms:title": BENCHMARK_TITLES.get(principle, principle),
                     "dcterms:description": f"Metrics for FAIR principle {principle}",
-                    "dcat:version": DEFAULT_VERSION,
+                    "dcat:version": metric_version,
                     "ftr:hasAssociatedMetric": [],
                 }
             if metric_uri not in benchmarks[principle]["ftr:hasAssociatedMetric"]:
@@ -155,7 +156,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
             "dcterms:title": res["metric_label"],
             "dcterms:description": f"Check field {res['subject']}",
             "dcterms:license": DEFAULT_LICENSE,
-            "dcat:version": DEFAULT_VERSION,
+            "dcat:version": metric_version,
             "sio:is-implementation-of": metric_uri,
             "ftr:testsMetric": metric_uri,
             ####
@@ -173,12 +174,12 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
                 "dcterms:identifier": str(val),
                 "dcterms:title": str(val),
                 "dcterms:description": f"Allowed value: {val}",
-                "dcat:version": DEFAULT_VERSION,
+                "dcat:version": metric_version,
                 "ftr:hasAssociatedMetric": metric_uri,
             }
             graph.append(bench)
             test_node["ftr:hasBenchmark"].append(bench_uri)
-            """
+        """
         ###
         if bench_uri and bench_uri not in algorithm_node["sio:is-implementation-of"]:
         ###

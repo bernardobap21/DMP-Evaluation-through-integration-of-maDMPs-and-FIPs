@@ -1,22 +1,22 @@
 FIP Question,DCS Field,maDMP Value,Accepted Values,Compliant
-"What globally unique, persistent, resolvable identifiers do you use for metadata records?",dataset.dataset_id.identifier,"""https://doi.org/10.5281/zenodo.10669877""",AOP-WIKI-ID ,No
+"What globally unique, persistent, resolvable identifiers do you use for metadata records?",dataset.dataset_id.identifier,"""https://doi.org/10.5281/zenodo.10669877""",DOI,Yes
 "What globally unique, persistent, resolvable identifiers do you use for datasets?",dataset.dataset_id.identifier,"""https://doi.org/10.5281/zenodo.10669877""",DOI,Yes
-Which metadata schemas do you use for findability?,dataset.metadata.metadata_standard_id.identifier,null,,No
+Which metadata schemas do you use for findability?,dataset.metadata.metadata_standard_id.identifier,null,NetCDF CF-1.11,No
 What is the technology that links the persistent identifiers of your data to the metadata description?,dataset.distribution.host.pid_system,"[""doi""]",,No
-In which search engines are your metadata records indexed?,dataset.distribution.access_url,"""https://zenodo.org/record/10669877""",Adverse Outcome Pathway Knowledge Base,No
-In which search engines are your datasets indexed?,dataset.distribution.access_url,"""https://zenodo.org/record/10669877""",Adverse Outcome Pathway Wiki,No
-Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,"""https://zenodo.org""",HTTPS,Yes
-Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,"""https://zenodo.org""",HTTPS,Yes
-Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,null,,No
-Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,null,,No
+In which search engines are your metadata records indexed?,dataset.distribution.access_url,"""https://zenodo.org/record/10669877""",EHN-THREDDS ,No
+In which search engines are your datasets indexed?,dataset.distribution.access_url,"""https://zenodo.org/record/10669877""",CMDS ,No
+Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,"""https://zenodo.org""",OPeNDAP,No
+Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,"""https://zenodo.org""",WMS,No
+Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,null,Open Data,No
+Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,null,EHN-THREDDS-LA ,No
 Which metadata longevity plan do you use?,,null,,No
-Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,,null,XMLS,No
-Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,,null,XMLS,No
-Which structured vocabularies do you use to annotate your metadata records?,dataset.metadata.metadata_standard_id.identifier,null,,No
-Which structured vocabularies do you use to encode your datasets?,dataset.metadata.metadata_standard_id.identifier,null,,No
+Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,,null,NetCDF,No
+Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,,null,NetCDF,No
+Which structured vocabularies do you use to annotate your metadata records?,dataset.metadata.metadata_standard_id.identifier,null,NetCDF CF-1.11,No
+Which structured vocabularies do you use to encode your datasets?,dataset.metadata.metadata_standard_id.identifier,null,CF SN ,No
 "Which models, schema(s) do you use for your metadata records?",dataset.metadata.metadata_standard_id.type,null,,No
 "Which models, schema(s) do you use for your datasets?",dataset.metadata.metadata_standard_id.type,null,,No
-Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""",CC BY SA 4.0,No
-Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""",CC BY SA 4.0,No
-Which metadata schemas do you use for describing the provenance of your metadata records?,dataset.data_quality_assurance,"[""Species identifications confirmed by taxonomists"", ""Data curated by REBIPP team"", ""FAIRfication followed WorldFAIR D10.2 guidelines""]",,No
-Which metadata schemas do you use for describing the provenance of your datasets?,dataset.data_quality_assurance,"[""Species identifications confirmed by taxonomists"", ""Data curated by REBIPP team"", ""FAIRfication followed WorldFAIR D10.2 guidelines""]",,No
+Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""",CC BY 4.0,No
+Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,"""https://creativecommons.org/licenses/by/4.0/""",CC BY 4.0,No
+Which metadata schemas do you use for describing the provenance of your metadata records?,dataset.data_quality_assurance,"[""Species identifications confirmed by taxonomists"", ""Data curated by REBIPP team"", ""FAIRfication followed WorldFAIR D10.2 guidelines""]",NetCDF CF-1.11,No
+Which metadata schemas do you use for describing the provenance of your datasets?,dataset.data_quality_assurance,"[""Species identifications confirmed by taxonomists"", ""Data curated by REBIPP team"", ""FAIRfication followed WorldFAIR D10.2 guidelines""]",NetCDF CF-1.11,No
