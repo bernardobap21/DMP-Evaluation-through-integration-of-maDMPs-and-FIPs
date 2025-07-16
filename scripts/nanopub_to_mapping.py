@@ -6,7 +6,7 @@ from urllib.parse import urldefrag
 
 import requests
 from rdflib import ConjunctiveGraph, URIRef
-from rdflib.namespace import RDF, RDFS, DC
+from rdflib.namespace import RDF, RDFS, DC, Namespace
 
 # Map FIP question URIs to FAIR principle, maDMP field and question text
 QUESTION_MAP = {
@@ -125,6 +125,7 @@ REFERS_TO = URIRef("https://w3id.org/fair/fip/terms/refers-to-question")
 CURRENT_USE = URIRef("https://w3id.org/fair/fip/terms/declares-current-use-of")
 PLANNED_USE = URIRef("https://w3id.org/fair/fip/terms/declares-planned-use-of")
 CONSIDERATIONS = URIRef("https://w3id.org/fair/fip/terms/considerations")
+SCHEMA = Namespace("https://schema.org/")
 
 
 def fetch_graph(uri: str) -> ConjunctiveGraph:
@@ -172,6 +173,7 @@ def process_declaration(uri: str):
         for val in g.objects(subj, p):
             allowed.append(get_label(str(val)))
     comment = g.value(subj, CONSIDERATIONS)
+    version = g.value(subj, SCHEMA.version)
     return {
         "Question_URI": question_uri,
         "FAIR_principle": info.get("principle", ""),
@@ -180,6 +182,7 @@ def process_declaration(uri: str):
         "Mapping_status": "Mapped" if info.get("madmp") else None,
         "Comments": str(comment) if comment else "",
         "Allowed_values": [v for v in allowed if v],
+        "Metric_version": str(version) if version else "",
     }
 
 

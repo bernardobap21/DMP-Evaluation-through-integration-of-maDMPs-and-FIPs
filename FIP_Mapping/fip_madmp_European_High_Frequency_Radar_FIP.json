@@ -6,10 +6,11 @@
       "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
       "maDMP_field": "dataset.dataset_id.identifier",
       "Mapping_status": "Mapped",
-      "Comments": "",
+      "Comments": "DOI are assigned to HFR networks: this means that the DOI direct to the landing pages of each network. The landing page contains textual and partial metadata and a link to the catalogs hosting the data. Datasets have no assigned DOIs because they are Near Real Time datasets, i.e. they constantly grow in time (living datasets). Data are stored in netCDF format, so they contain all the exhaustive metadata.",
       "Allowed_values": [
-        "AOP-WIKI-ID "
-      ]
+        "DOI"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
@@ -20,7 +21,8 @@
       "Comments": "",
       "Allowed_values": [
         "DOI"
-      ]
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
@@ -29,7 +31,10 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [
+        "NetCDF CF-1.11"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F3",
@@ -37,8 +42,9 @@
       "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
       "maDMP_field": "dataset.distribution.host.pid_system",
       "Mapping_status": "Mapped",
-      "Comments": "",
-      "Allowed_values": []
+      "Comments": "HFR data are stored in netCDF format, thus metadata and data reside in the same digital object, i.e. the netCDF file. Anyway no explicit identifier is reported in metadata to identify data and no explicit identifier is reported in the data to identify related metadata.",
+      "Allowed_values": [],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
@@ -48,8 +54,9 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "Adverse Outcome Pathway Knowledge Base"
-      ]
+        "EHN-THREDDS "
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
@@ -59,8 +66,9 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "Adverse Outcome Pathway Wiki"
-      ]
+        "CMDS "
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-MD",
@@ -70,8 +78,9 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "HTTPS"
-      ]
+        "OPeNDAP"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-D",
@@ -81,8 +90,9 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "HTTPS"
-      ]
+        "WMS"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-MD",
@@ -90,8 +100,11 @@
       "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
       "maDMP_field": "dataset.distribution.data_access",
       "Mapping_status": "Mapped",
-      "Comments": "",
-      "Allowed_values": []
+      "Comments": "Metadata are always accessible and discoverable.",
+      "Allowed_values": [
+        "Open Data"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
@@ -100,7 +113,10 @@
       "maDMP_field": "dataset.distribution.data_access",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [
+        "EHN-THREDDS-LA "
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A2",
@@ -109,7 +125,8 @@
       "maDMP_field": "",
       "Mapping_status": null,
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-MD",
@@ -119,8 +136,9 @@
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
-        "XMLS"
-      ]
+        "NetCDF"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
@@ -130,8 +148,9 @@
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
-        "XMLS"
-      ]
+        "NetCDF"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
@@ -140,7 +159,10 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [
+        "NetCDF CF-1.11"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
@@ -149,7 +171,10 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [
+        "CF SN "
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
@@ -158,7 +183,8 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.type",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-D",
@@ -167,7 +193,8 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.type",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
@@ -177,8 +204,9 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "CC BY SA 4.0"
-      ]
+        "CC BY 4.0"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
@@ -188,8 +216,9 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "CC BY SA 4.0"
-      ]
+        "CC BY 4.0"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-MD",
@@ -198,7 +227,10 @@
       "maDMP_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [
+        "NetCDF CF-1.11"
+      ],
+      "Metric_version": "1.0.0"
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
@@ -207,7 +239,10 @@
       "maDMP_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [
+        "NetCDF CF-1.11"
+      ],
+      "Metric_version": "1.0.0"
     }
   ]
 }
