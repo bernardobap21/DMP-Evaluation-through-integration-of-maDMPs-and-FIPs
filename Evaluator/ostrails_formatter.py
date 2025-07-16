@@ -2,6 +2,10 @@ import json
 from datetime import datetime
 import os
 
+DEFAULT_VERSION = "1.0.0"
+DEFAULT_LICENSE = "https://creativecommons.org/publicdomain/zero/1.0/"
+DEFAULT_REPOSITORY = "https://github.com/bernardobap21/DMP-Evaluation"
+
 def export_planned_fairness(test_results, dmp_id, output_path):
     output = {
         "@context": "https://w3id.org/ostrails/fair-assessment/context",
@@ -61,6 +65,9 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
         "dcterms:identifier": "ostrails-algorithm",
         "dcterms:title": "maDMP Evaluation Algorithm",
         "dcterms:description": "Algorithm that evaluates maDMP fields against a FIP",
+        "dcterms:license": DEFAULT_LICENSE,
+        "dcat:version": DEFAULT_VERSION,
+        "doap:repository": DEFAULT_REPOSITORY,
         "sio:is-implementation-of": [],
         "dcterms:creator": org_id,
     }
@@ -101,6 +108,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
             "dcterms:identifier": res["metric_id"],
             "dcterms:title": res["metric_label"],
             "dcterms:description": res["metric_label"],
+            "dcat:version": DEFAULT_VERSION,
         }
         graph.append(metric)
 
@@ -116,6 +124,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
                     "dcterms:identifier": principle,
                     "dcterms:title": principle,
                     "dcterms:description": f"Metrics for FAIR principle {principle}",
+                    "dcat:version": DEFAULT_VERSION,
                     "ftr:hasAssociatedMetric": [],
                 }
             if metric_uri not in benchmarks[principle]["ftr:hasAssociatedMetric"]:
@@ -129,6 +138,8 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
             "dcterms:identifier": res["test_id"],
             "dcterms:title": res["metric_label"],
             "dcterms:description": f"Check field {res['subject']}",
+            "dcterms:license": DEFAULT_LICENSE,
+            "dcat:version": DEFAULT_VERSION,
             "sio:is-implementation-of": metric_uri,
             "ftr:testsMetric": metric_uri,
             ####
@@ -146,6 +157,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
                 "dcterms:identifier": str(val),
                 "dcterms:title": str(val),
                 "dcterms:description": f"Allowed value: {val}",
+                "dcat:version": DEFAULT_VERSION,
                 "ftr:hasAssociatedMetric": metric_uri,
             }
             graph.append(bench)
