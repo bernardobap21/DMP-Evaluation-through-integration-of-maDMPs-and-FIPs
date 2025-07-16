@@ -976,7 +976,7 @@
       "@id": "#F1_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "F1",
-      "dcterms:title": "F1",
+      "dcterms:title": "Identifier type",
       "dcterms:description": "Metrics for FAIR principle F1",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -988,7 +988,7 @@
       "@id": "#F2_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "F2",
-      "dcterms:title": "F2",
+      "dcterms:title": "Metadata schema",
       "dcterms:description": "Metrics for FAIR principle F2",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -999,7 +999,7 @@
       "@id": "#F3_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "F3",
-      "dcterms:title": "F3",
+      "dcterms:title": "Metadata-data linking schema",
       "dcterms:description": "Metrics for FAIR principle F3",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -1010,7 +1010,7 @@
       "@id": "#F4_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "F4",
-      "dcterms:title": "F4",
+      "dcterms:title": "Registry (searchable repository)",
       "dcterms:description": "Metrics for FAIR principle F4",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -1022,7 +1022,7 @@
       "@id": "#A1.1_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "A1.1",
-      "dcterms:title": "A1.1",
+      "dcterms:title": "Communication protocol",
       "dcterms:description": "Metrics for FAIR principle A1.1",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -1034,7 +1034,7 @@
       "@id": "#A1.2_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "A1.2",
-      "dcterms:title": "A1.2",
+      "dcterms:title": "Authentication and authorization service",
       "dcterms:description": "Metrics for FAIR principle A1.2",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -1046,7 +1046,7 @@
       "@id": "#A2_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "A2",
-      "dcterms:title": "A2",
+      "dcterms:title": "Metadata repository",
       "dcterms:description": "Metrics for FAIR principle A2",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -1057,7 +1057,7 @@
       "@id": "#I1_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "I1",
-      "dcterms:title": "I1",
+      "dcterms:title": "Knowledge representation language",
       "dcterms:description": "Metrics for FAIR principle I1",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -1069,7 +1069,7 @@
       "@id": "#I2_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "I2",
-      "dcterms:title": "I2",
+      "dcterms:title": "Structured vocabulary",
       "dcterms:description": "Metrics for FAIR principle I2",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -1081,7 +1081,7 @@
       "@id": "#I3_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "I3",
-      "dcterms:title": "I3",
+      "dcterms:title": "Qualified reference mechanism",
       "dcterms:description": "Metrics for FAIR principle I3",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -1093,7 +1093,7 @@
       "@id": "#R1.1_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "R1.1",
-      "dcterms:title": "R1.1",
+      "dcterms:title": "Data usage license",
       "dcterms:description": "Metrics for FAIR principle R1.1",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [
@@ -1105,7 +1105,7 @@
       "@id": "#R1.2_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "R1.2",
-      "dcterms:title": "R1.2",
+      "dcterms:title": "Provenance model",
       "dcterms:description": "Metrics for FAIR principle R1.2",
       "dcat:version": "1.0.0",
       "ftr:hasAssociatedMetric": [

@@ -6,6 +6,22 @@ DEFAULT_VERSION = "1.0.0"
 DEFAULT_LICENSE = "https://creativecommons.org/publicdomain/zero/1.0/"
 DEFAULT_REPOSITORY = "https://github.com/bernardobap21/DMP-Evaluation"
 
+# Mapping from FAIR principles to human readable benchmark titles
+BENCHMARK_TITLES = {
+    "F1": "Identifier type",
+    "F2": "Metadata schema",
+    "F3": "Metadata-data linking schema",
+    "F4": "Registry (searchable repository)",
+    "A1.1": "Communication protocol",
+    "A1.2": "Authentication and authorization service",
+    "A2": "Metadata repository",
+    "I1": "Knowledge representation language",
+    "I2": "Structured vocabulary",
+    "I3": "Qualified reference mechanism",
+    "R1.1": "Data usage license",
+    "R1.2": "Provenance model",
+}
+
 def export_planned_fairness(test_results, dmp_id, output_path):
     output = {
         "@context": "https://w3id.org/ostrails/fair-assessment/context",
@@ -122,7 +138,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
                     "@id": bench_uri,
                     "@type": "ftr:Benchmark",
                     "dcterms:identifier": principle,
-                    "dcterms:title": principle,
+                    "dcterms:title": BENCHMARK_TITLES.get(principle, principle),
                     "dcterms:description": f"Metrics for FAIR principle {principle}",
                     "dcat:version": DEFAULT_VERSION,
                     "ftr:hasAssociatedMetric": [],
