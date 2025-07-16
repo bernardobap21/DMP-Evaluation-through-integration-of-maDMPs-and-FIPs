@@ -222,7 +222,9 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
         "doap": "http://usefulinc.com/ns/doap#",
         "adms": "http://www.w3.org/ns/adms#",
         "vivo": "http://vivoweb.org/ontology/core#",
-        "dpv": "http://www.w3id.org/dpv#",    
+        "dpv": "http://www.w3id.org/dpv#",  
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "dqv": "http://www.w3.org/ns/dqv#"  
     },
         "@graph": graph,
         
