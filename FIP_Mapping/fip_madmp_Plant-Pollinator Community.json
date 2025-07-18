@@ -1,4 +1,5 @@
-{
+{   
+    "FIP_Version": "v.0.0.1",
     "FIP_maDMP_Mapping": [
         {
             "FAIR_principle": "F1",
@@ -6,8 +7,7 @@
             "maDMP_field": "dataset.dataset_id.identifier",
             "Mapping_status": "Mapped",
             "Comments": "Clearly mapped",
-            "Allowed_values": ["DOI",  "dPIDs"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["DOI",  "dPIDs"]
         },
         {
             "FAIR_principle": "F1",
@@ -15,8 +15,7 @@
             "maDMP_field": "dataset.dataset_id.identifier",
             "Mapping_status": "Mapped",
             "Comments": "Clearly mapped. But it's strange that always separate datasets and metadata records",
-            "Allowed_values": ["URI",  "DOI"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["URI",  "DOI"]
         },
         {
             "FAIR_principle": "F2",
@@ -24,8 +23,7 @@
             "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
             "Mapping_status": "Mapped",
             "Comments": "Could also be dataset.metadata.metadata_standard_id.type",
-            "Allowed_values": ["EML",  "Schema.org", "DCAT", "Dublin Core"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["EML",  "Schema.org", "DCAT", "Dublin Core"]
         },
         {
             "FAIR_principle": "F3",
@@ -33,8 +31,7 @@
             "maDMP_field": "dataset.distribution.host.pid_system",
             "Mapping_status": "Mapped",
             "Comments": "Term from Controlled Vocabulary. Like DOI",
-            "Allowed_values": ["DataCite"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["DataCite"]
         },
         {
             "FAIR_principle": "F4",
@@ -42,8 +39,7 @@
             "maDMP_field": "dataset.distribution.access_url",
             "Mapping_status": "Mapped",
             "Comments": "No field explicitly covers search engine indexing",
-            "Allowed_values": ["GBIF search engine",  "Global Biotic Interactions"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["GBIF search engine",  "Global Biotic Interactions"]
         },
         {
             "FAIR_principle": "F4",
@@ -51,8 +47,7 @@
             "maDMP_field": "dataset.distribution.access_url",
             "Mapping_status": "Mapped",
             "Comments": "No field explicitly covers search engine indexing",
-            "Allowed_values": ["GBIF search engine",  "Global Biotic Interactions"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["GBIF search engine",  "Global Biotic Interactions"]
         },
         {
             "FAIR_principle": "A1.1",
@@ -60,8 +55,7 @@
             "maDMP_field": "dataset.distribution.host.url",
             "Mapping_status": "Mapped",
             "Comments": "Maybe not. I'm inferring this. could also be dataset.distribution.host.host_id_type",
-            "Allowed_values": ["HTTPS",  "REST"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["HTTPS",  "REST"]
         },
         {
             "FAIR_principle": "A1.1",
@@ -69,8 +63,7 @@
             "maDMP_field": "dataset.distribution.host.url",
             "Mapping_status": "Mapped",
             "Comments": "Maybe not. I'm inferring this. could also be dataset.distribution.host.host_id_type",
-            "Allowed_values": ["HTTPS",  "REST"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["HTTPS",  "REST"]
         },
         {
             "FAIR_principle": "A1.2",
@@ -78,8 +71,7 @@
             "maDMP_field": "dataset.distribution.data_access",
             "Mapping_status": "Partially Mapped",
             "Comments": "Just tells if it's open, shared or closed",
-            "Allowed_values": ["Open Data", "Open", "OAuth 2.0"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["Open Data", "Open", "OAuth 2.0"]
         },
         {
             "FAIR_principle": "A1.2",
@@ -87,8 +79,7 @@
             "maDMP_field": "dataset.distribution.data_access",
             "Mapping_status": "Partially Mapped",
             "Comments": "Just tells if it's open, shared or closed",
-            "Allowed_values": ["OAuth 2.0", "GBIF local account", "Open", "Open Data"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["OAuth 2.0", "GBIF local account", "Open", "Open Data"]
         },
         {
             "FAIR_principle": "A2",
@@ -96,8 +87,7 @@
             "maDMP_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "project.end or something with host like backup_type, backup_frequency or distribution.available_until",
-            "Allowed_values": "" ,
-            "Metric_version": "1.0.0"
+            "Allowed_values": "" 
         },
         {
             "FAIR_principle": "I1",
@@ -105,8 +95,7 @@
             "maDMP_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "Explicit semantic representation languages not explicitly detailed",
-            "Allowed_values": ["DwC-A", "JSON", "XMLS", "RDFS"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["DwC-A", "JSON", "XMLS", "RDFS"]
         },
         {
             "FAIR_principle": "I1",
@@ -114,8 +103,7 @@
             "maDMP_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "Explicit semantic representation languages not explicitly detailed",
-            "Allowed_values": ["DwC-A", "JSON", "XMLS", "RDFS"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["DwC-A", "JSON", "XMLS", "RDFS"]
         },
         {
             "FAIR_principle": "I2",
@@ -123,8 +111,7 @@
             "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
             "Mapping_status": "Partially Mapped",
             "Comments": "The example value is http://www.dublincore.org/specifications/dublin-core/dcmi-terms/ which could help to partially infer something",
-            "Allowed_values": ["EML", "DwC"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["EML", "DwC"]
         },
         {
             "FAIR_principle": "I2",
@@ -132,8 +119,7 @@
             "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
             "Mapping_status": "Partially Mapped",
             "Comments": "The example value is http://www.dublincore.org/specifications/dublin-core/dcmi-terms/ which could help to partially infer something",
-            "Allowed_values": ["Plant Pollinator Vocabulary", "DwC"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["Plant Pollinator Vocabulary", "DwC"]
         },
         {
             "FAIR_principle": "I3",
@@ -141,8 +127,7 @@
             "maDMP_field": "dataset.metadata.metadata_standard_id.type",
             "Mapping_status": "Mapped",
             "Comments": "Gives the term from the controlled vocabulary",
-            "Allowed_values": ["Relations Ontology", "DwC"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["Relations Ontology", "DwC"]
         },
         {
             "FAIR_principle": "I3",
@@ -150,8 +135,7 @@
             "maDMP_field": "dataset.metadata.metadata_standard_id.type",
             "Mapping_status": "Mapped",
             "Comments": "Gives the term from the controlled vocabulary",
-            "Allowed_values": ["DwC-A"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["DwC-A"]
         },
         {
             "FAIR_principle": "R1.1",
@@ -159,8 +143,7 @@
             "maDMP_field": "dataset.distribution.license.license_ref",
             "Mapping_status": "Mapped",
             "Comments": "Could also be dataset.distribution.license.license_name",
-            "Allowed_values": ["CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0"]
         },
         {
             "FAIR_principle": "R1.1",
@@ -168,8 +151,7 @@
             "maDMP_field": "dataset.distribution.license.license_ref",
             "Mapping_status": "Mapped",
             "Comments": "Could also be dataset.distribution.license.license_name",
-            "Allowed_values": ["CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0"]
         },
         {
             "FAIR_principle": "R1.2",
@@ -177,8 +159,7 @@
             "maDMP_field": "dataset.data_quality_assurance",
             "Mapping_status": "Not Mapped",
             "Comments": "Ask Tomasz about this field",
-            "Allowed_values": ["PROV-O"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["PROV-O"]
         },
         {
             "FAIR_principle": "R1.2",
@@ -186,8 +167,7 @@
             "maDMP_field": "dataset.data_quality_assurance",
             "Mapping_status": "Not Mapped",
             "Comments": "Ask Tomasz about this field",
-            "Allowed_values": ["PROV-O"],
-            "Metric_version": "1.0.0"
+            "Allowed_values": ["PROV-O"]
         }
     ]
 }

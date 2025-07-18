@@ -1,5 +1,5 @@
 {
-  "FIP_Version": "1.0.0",
+  "FIP_Version": "",
   "FIP_maDMP_Mapping": [
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
@@ -7,9 +7,9 @@
       "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
       "maDMP_field": "dataset.dataset_id.identifier",
       "Mapping_status": "Mapped",
-      "Comments": "DOI are assigned to HFR networks: this means that the DOI direct to the landing pages of each network. The landing page contains textual and partial metadata and a link to the catalogs hosting the data. Datasets have no assigned DOIs because they are Near Real Time datasets, i.e. they constantly grow in time (living datasets). Data are stored in netCDF format, so they contain all the exhaustive metadata.",
+      "Comments": "",
       "Allowed_values": [
-        "DOI"
+        "Handle System"
       ]
     },
     {
@@ -20,7 +20,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "DOI"
+        "Handle System"
       ]
     },
     {
@@ -31,7 +31,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "NetCDF CF-1.11"
+        "Dublin Core"
       ]
     },
     {
@@ -40,8 +40,10 @@
       "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
       "maDMP_field": "dataset.distribution.host.pid_system",
       "Mapping_status": "Mapped",
-      "Comments": "HFR data are stored in netCDF format, thus metadata and data reside in the same digital object, i.e. the netCDF file. Anyway no explicit identifier is reported in metadata to identify data and no explicit identifier is reported in the data to identify related metadata.",
-      "Allowed_values": []
+      "Comments": "",
+      "Allowed_values": [
+        "FEDORA-O2O "
+      ]
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
@@ -51,7 +53,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "EHN-THREDDS "
+        "Europeana"
       ]
     },
     {
@@ -62,7 +64,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "CMDS "
+        "UBL-DC_REG "
       ]
     },
     {
@@ -73,7 +75,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "OPeNDAP"
+        "OAI-PMH Schema "
       ]
     },
     {
@@ -84,7 +86,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "WMS"
+        "OAI-PMH Schema "
       ]
     },
     {
@@ -93,9 +95,9 @@
       "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
       "maDMP_field": "dataset.distribution.data_access",
       "Mapping_status": "Mapped",
-      "Comments": "Metadata are always accessible and discoverable.",
+      "Comments": "",
       "Allowed_values": [
-        "Open Data"
+        "ULCN "
       ]
     },
     {
@@ -106,7 +108,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "EHN-THREDDS-LA "
+        "ULCN "
       ]
     },
     {
@@ -126,7 +128,7 @@
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
-        "NetCDF"
+        "RDF/XML "
       ]
     },
     {
@@ -137,7 +139,7 @@
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
-        "NetCDF"
+        "Tag Image File Format (TIFF)"
       ]
     },
     {
@@ -148,7 +150,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
-        "NetCDF CF-1.11"
+        "NTA "
       ]
     },
     {
@@ -158,9 +160,7 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "CF SN "
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
@@ -169,7 +169,9 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.type",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [
+        "Europeana Data Model for Cultural Heritage (EDM)"
+      ]
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-D",
@@ -178,7 +180,9 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.type",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": []
+      "Allowed_values": [
+        "Europeana Data Model for Cultural Heritage (EDM)"
+      ]
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
@@ -186,9 +190,9 @@
       "FIP_question": "Which usage license do you use for your metadata records?",
       "maDMP_field": "dataset.distribution.license.license_ref",
       "Mapping_status": "Mapped",
-      "Comments": "",
+      "Comments": "Other Creative Commons licenses are under consideration.",
       "Allowed_values": [
-        "CC BY 4.0"
+        "CC0 1.0"
       ]
     },
     {
@@ -197,9 +201,9 @@
       "FIP_question": "Which usage license do you use for your datasets?",
       "maDMP_field": "dataset.distribution.license.license_ref",
       "Mapping_status": "Mapped",
-      "Comments": "",
+      "Comments": "Other Creative Commons licenses are under consideration.",
       "Allowed_values": [
-        "CC BY 4.0"
+        "CC0 1.0"
       ]
     },
     {
@@ -208,10 +212,8 @@
       "FIP_question": "Which metadata schemas do you use for describing the provenance of your metadata records?",
       "maDMP_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
-      "Comments": "",
-      "Allowed_values": [
-        "NetCDF CF-1.11"
-      ]
+      "Comments": "Internal system is used",
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
@@ -219,10 +221,8 @@
       "FIP_question": "Which metadata schemas do you use for describing the provenance of your datasets?",
       "maDMP_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
-      "Comments": "",
-      "Allowed_values": [
-        "NetCDF CF-1.11"
-      ]
+      "Comments": "Internal system is used",
+      "Allowed_values": []
     }
   ]
 }

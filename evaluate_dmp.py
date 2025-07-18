@@ -32,14 +32,7 @@ def main():
     dmp = load_dmp(args.input)
     mapping_raw = load_mapping(args.mapping)
     mapping = transform_mapping(mapping_raw)
-    metric_version = next(
-        (
-            item.get("Metric_version")
-            for item in mapping_raw.get("FIP_maDMP_Mapping", [])
-            if item.get("Metric_version")
-        ),
-        DEFAULT_VERSION,
-    )
+    fip_version = mapping_raw.get("FIP_Version", DEFAULT_VERSION)
 
     evaluation_results = evaluate_dmp_against_fip(dmp, mapping)
 
@@ -102,7 +95,7 @@ def main():
         dmp_id=base_filename,
         dmp_title=dmp.get("title", base_filename),
         output_dir=args.output,
-        metric_version=metric_version,
+        metric_version=fip_version,
     )
     print(f"OSTrails Format results saved to: {fip_jsonld}")
 

@@ -1,5 +1,5 @@
 {
-  "FIP_Version": "1.0.0",
+  "FIP_Version": "v.0.0.1",
   "FIP_maDMP_Mapping": [
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
@@ -7,10 +7,8 @@
       "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
       "maDMP_field": "dataset.dataset_id.identifier",
       "Mapping_status": "Mapped",
-      "Comments": "DOI are assigned to HFR networks: this means that the DOI direct to the landing pages of each network. The landing page contains textual and partial metadata and a link to the catalogs hosting the data. Datasets have no assigned DOIs because they are Near Real Time datasets, i.e. they constantly grow in time (living datasets). Data are stored in netCDF format, so they contain all the exhaustive metadata.",
-      "Allowed_values": [
-        "DOI"
-      ]
+      "Comments": "",
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
@@ -19,9 +17,7 @@
       "maDMP_field": "dataset.dataset_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "DOI"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
@@ -30,9 +26,7 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "NetCDF CF-1.11"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F3",
@@ -40,7 +34,7 @@
       "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
       "maDMP_field": "dataset.distribution.host.pid_system",
       "Mapping_status": "Mapped",
-      "Comments": "HFR data are stored in netCDF format, thus metadata and data reside in the same digital object, i.e. the netCDF file. Anyway no explicit identifier is reported in metadata to identify data and no explicit identifier is reported in the data to identify related metadata.",
+      "Comments": "",
       "Allowed_values": []
     },
     {
@@ -50,9 +44,7 @@
       "maDMP_field": "dataset.distribution.access_url",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "EHN-THREDDS "
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
@@ -61,9 +53,7 @@
       "maDMP_field": "dataset.distribution.access_url",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "CMDS "
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-MD",
@@ -72,9 +62,7 @@
       "maDMP_field": "dataset.distribution.host.url",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "OPeNDAP"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-D",
@@ -83,9 +71,7 @@
       "maDMP_field": "dataset.distribution.host.url",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "WMS"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-MD",
@@ -93,10 +79,8 @@
       "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
       "maDMP_field": "dataset.distribution.data_access",
       "Mapping_status": "Mapped",
-      "Comments": "Metadata are always accessible and discoverable.",
-      "Allowed_values": [
-        "Open Data"
-      ]
+      "Comments": "",
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
@@ -105,9 +89,7 @@
       "maDMP_field": "dataset.distribution.data_access",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "EHN-THREDDS-LA "
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A2",
@@ -125,9 +107,7 @@
       "maDMP_field": "",
       "Mapping_status": null,
       "Comments": "",
-      "Allowed_values": [
-        "NetCDF"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
@@ -136,9 +116,7 @@
       "maDMP_field": "",
       "Mapping_status": null,
       "Comments": "",
-      "Allowed_values": [
-        "NetCDF"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
@@ -147,9 +125,7 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "NetCDF CF-1.11"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
@@ -158,9 +134,7 @@
       "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "CF SN "
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
@@ -187,9 +161,7 @@
       "maDMP_field": "dataset.distribution.license.license_ref",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "CC BY 4.0"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
@@ -209,9 +181,7 @@
       "maDMP_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "NetCDF CF-1.11"
-      ]
+      "Allowed_values": []
     },
     {
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
@@ -220,9 +190,7 @@
       "maDMP_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
       "Comments": "",
-      "Allowed_values": [
-        "NetCDF CF-1.11"
-      ]
+      "Allowed_values": []
     }
   ]
 }

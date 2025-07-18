@@ -1,4 +1,5 @@
-from fastapi import FastAPI, UploadFile, File, Query
+from fastapi import FastAPI, UploadFile, File, Query, Body
+import json
 from Evaluator.evaluator import (
     load_dmp,
     evaluate_dmp_against_fip,
@@ -10,12 +11,33 @@ from Evaluator.validation_rules import validate_metadata_intentions
 # from Evaluator.planned_fairness import check_planned_fairness (need to check this)
 from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
+from scripts.nanopub_to_mapping import build_mapping, get_fip_label
 import tempfile
 import os
 
 
 FIP_DIRECTORY = "FIP_Mapping"
-FIP_OPTIONS = [f for f in os.listdir(FIP_DIRECTORY) if f.endswith(".json")]
+
+
+def get_fip_options():
+    """Return a list of available FIP mapping JSON files."""
+    return [f for f in os.listdir(FIP_DIRECTORY) if f.endswith(".json")]
+
+
+# List used for Query enum. Updated when new mappings are uploaded.
+FIP_OPTIONS = get_fip_options()
+fip_query = Query(..., enum=FIP_OPTIONS)
+
+def convert_nanopub_to_mapping(url: str) -> str:
+    """Fetch a nanopublication and store the generated mapping."""
+    mapping = build_mapping(url)
+    label = get_fip_label(url)
+    os.makedirs(FIP_DIRECTORY, exist_ok=True)
+    filename = f"fip_madmp_{label}.json"
+    path = os.path.join(FIP_DIRECTORY, filename)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(mapping, f, indent=2)
+    return filename
 
 def build_compliance_json(results):
     table = []
@@ -48,11 +70,37 @@ app = FastAPI()
 def read_root():
     return {"Welcome": "Your DMP Evaluation API is running!"}
 
+""""
+@app.get("/fip-options/")
+def list_fip_options():
+    # Return the available FIP mapping files.
+    return {"options": get_fip_options()}
+"""
+
+
+@app.post("/upload_fip/")
+async def upload_fip(uri: str = Body(..., embed=True)):
+    """Fetch a FIP nanopublication and store it as a mapping JSON."""
+    mapping = build_mapping(uri)
+    label = get_fip_label(uri)
+    filename = f"fip_madmp_{label}.json"
+    dest_path = os.path.join(FIP_DIRECTORY, filename)
+    with open(dest_path, "w", encoding="utf-8") as out_file:
+        json.dump(mapping, out_file, indent=2)
+
+    # Recalculate options so the evaluate endpoint dropdown updates
+    global FIP_OPTIONS, fip_query
+    FIP_OPTIONS[:] = get_fip_options()
+    fip_query.enum = FIP_OPTIONS
+    app.openapi_schema = None
+
+    return {"filename": filename, "detail": "Uploaded"}
+
 
 @app.post("/evaluate/")
 async def evaluate(
     maDMP_file: UploadFile = File(...),
-    fip_mapping_file: str = Query(..., enum=FIP_OPTIONS),
+    fip_mapping_file: str = fip_query,
 ):
 
     # Validate uploaded DMP file
@@ -61,9 +109,15 @@ async def evaluate(
             "error": f"Invalid file type: {maDMP_file.filename}. Only .json files are allowed."
         }
     
+    options = get_fip_options()
+    if fip_mapping_file not in options:
+        return {
+            "error": f"Mapping file '{fip_mapping_file}' not found.",
+            "available": options,
+        }
+    
     with tempfile.TemporaryDirectory() as tmpdir:
         dmp_path = os.path.join(tmpdir, maDMP_file.filename)
-        #mapping_path = os.path.join(tmpdir, fip_mapping_file.filename)
 
         with open(dmp_path, "wb") as buffer:
             buffer.write(await maDMP_file.read())
@@ -100,3 +154,5 @@ async def evaluate(
         # "Mapping_to_FIP_Results": results,
         #"planned_fairness": planned_fairness,
     }
+
+

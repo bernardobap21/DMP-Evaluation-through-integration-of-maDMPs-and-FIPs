@@ -174,7 +174,7 @@ def process_declaration(uri: str):
             allowed.append(get_label(str(val)))
     comment = g.value(subj, CONSIDERATIONS)
     version = g.value(subj, SCHEMA.version)
-    return {
+    data = {
         "Question_URI": question_uri,
         "FAIR_principle": info.get("principle", ""),
         "FIP_question": info.get("text", question_uri),
@@ -182,8 +182,8 @@ def process_declaration(uri: str):
         "Mapping_status": "Mapped" if info.get("madmp") else None,
         "Comments": str(comment) if comment else "",
         "Allowed_values": [v for v in allowed if v],
-        "Metric_version": str(version) if version else "",
     }
+    return data, (str(version) if version else None)
 
 
 def build_mapping(main_uri: str):
@@ -195,8 +195,11 @@ def build_mapping(main_uri: str):
     idx_graph = fetch_graph(index_uri)
     declarations = [str(u) for u in idx_graph.objects(None, INCLUDES)]
     mapping_dict = {}
+    fip_version = ""
     for d in declarations:
-        result = process_declaration(d)
+        result, version = process_declaration(d)
+        if not fip_version and version:
+            fip_version = version
         mapping_dict[result["Question_URI"]] = result
 
     ordered = []
@@ -206,7 +209,7 @@ def build_mapping(main_uri: str):
 
     # append any remaining entries not in QUESTION_MAP
     ordered.extend(mapping_dict.values())
-    return {"FIP_maDMP_Mapping": ordered}
+    return {"FIP_Version": fip_version, "FIP_maDMP_Mapping": ordered}
 
 
 def main():
