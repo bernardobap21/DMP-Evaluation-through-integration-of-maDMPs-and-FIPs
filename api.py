@@ -79,7 +79,15 @@ def list_fip_options():
 
 
 @app.post("/upload_fip/")
-async def upload_fip(uri: str = Body(..., embed=True)):
+async def upload_fip(
+    uri: str = Body(
+        ...,
+        embed=False,
+        title="Insert nanopublication link",
+        description="Nanopublication URL",
+        example="",
+    ),
+):
     """Fetch a FIP nanopublication and store it as a mapping JSON."""
     mapping = build_mapping(uri)
     label = get_fip_label(uri)

@@ -129,7 +129,7 @@
       "dcterms:description": "Field status: Present; maDMP value: \"https://doi.org/10.5281/zenodo.10669877\"; compliance: Compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "pass",
-      "ftr:log": "Field status: Present; maDMP value: \"https://doi.org/10.5281/zenodo.10669877\"; compliance: Compliant",
+      "ftr:log": "https://doi.org/10.5281/zenodo.10669877",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP01.Q1",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -171,7 +171,7 @@
       "dcterms:description": "Field status: Present; maDMP value: \"https://doi.org/10.5281/zenodo.10669877\"; compliance: Compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "pass",
-      "ftr:log": "Field status: Present; maDMP value: \"https://doi.org/10.5281/zenodo.10669877\"; compliance: Compliant",
+      "ftr:log": "https://doi.org/10.5281/zenodo.10669877",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP02.Q2",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -213,7 +213,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP03.Q3",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -255,7 +255,7 @@
       "dcterms:description": "Field status: Present; maDMP value: [\"doi\"]; compliance: Non-compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Present; maDMP value: [\"doi\"]; compliance: Non-compliant",
+      "ftr:log": "[\"doi\"]",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP04.Q4",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -297,7 +297,7 @@
       "dcterms:description": "Field status: Present; maDMP value: \"https://zenodo.org/record/10669877\"; compliance: Non-compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Present; maDMP value: \"https://zenodo.org/record/10669877\"; compliance: Non-compliant",
+      "ftr:log": "https://zenodo.org/record/10669877",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP05.Q5",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -339,7 +339,7 @@
       "dcterms:description": "Field status: Present; maDMP value: \"https://zenodo.org/record/10669877\"; compliance: Non-compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Present; maDMP value: \"https://zenodo.org/record/10669877\"; compliance: Non-compliant",
+      "ftr:log": "https://zenodo.org/record/10669877",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP06.Q6",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -381,7 +381,7 @@
       "dcterms:description": "Field status: Present; maDMP value: \"https://zenodo.org\"; compliance: Compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "pass",
-      "ftr:log": "Field status: Present; maDMP value: \"https://zenodo.org\"; compliance: Compliant",
+      "ftr:log": "https://zenodo.org",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP07.Q7",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -423,7 +423,7 @@
       "dcterms:description": "Field status: Present; maDMP value: \"https://zenodo.org\"; compliance: Compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "pass",
-      "ftr:log": "Field status: Present; maDMP value: \"https://zenodo.org\"; compliance: Compliant",
+      "ftr:log": "https://zenodo.org",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP08.Q8",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -465,7 +465,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP09.Q9",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -507,7 +507,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP10.Q10",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -549,7 +549,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP11.Q11",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -591,7 +591,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP12.Q12",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -633,7 +633,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP13.Q13",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -675,7 +675,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP14.Q14",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -717,7 +717,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP15.Q15",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -759,7 +759,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP16.Q16",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -801,7 +801,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "ftr:log": null,
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP17.Q17",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -843,7 +843,7 @@
       "dcterms:description": "Field status: Present; maDMP value: \"https://creativecommons.org/licenses/by/4.0/\"; compliance: Compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "pass",
-      "ftr:log": "Field status: Present; maDMP value: \"https://creativecommons.org/licenses/by/4.0/\"; compliance: Compliant",
+      "ftr:log": "https://creativecommons.org/licenses/by/4.0/",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP18.Q18",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -885,7 +885,7 @@
       "dcterms:description": "Field status: Present; maDMP value: \"https://creativecommons.org/licenses/by/4.0/\"; compliance: Compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "pass",
-      "ftr:log": "Field status: Present; maDMP value: \"https://creativecommons.org/licenses/by/4.0/\"; compliance: Compliant",
+      "ftr:log": "https://creativecommons.org/licenses/by/4.0/",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP19.Q19",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -927,7 +927,7 @@
       "dcterms:description": "Field status: Present; maDMP value: [\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]; compliance: Non-compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Present; maDMP value: [\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]; compliance: Non-compliant",
+      "ftr:log": "[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP20.Q20",
       "prov:wasDerivedFrom": "#input_dmp"
@@ -969,7 +969,7 @@
       "dcterms:description": "Field status: Present; maDMP value: [\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]; compliance: Non-compliant",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": "fail",
-      "ftr:log": "Field status: Present; maDMP value: [\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]; compliance: Non-compliant",
+      "ftr:log": "[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]",
       "ftr:completion": "100",
       "ftr:outputFromTest": "#Test_FIP21.Q21",
       "prov:wasDerivedFrom": "#input_dmp"

@@ -196,7 +196,7 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir, metric_version=DE
             "dcterms:description": res["comment"],
             "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
             "prov:value": res["status"],
-            "ftr:log": res["comment"],
+            "ftr:log": res.get("log_value"),
             "ftr:completion": "100",
             "ftr:outputFromTest": test_uri,
             "prov:wasDerivedFrom": dmp_entity_id,

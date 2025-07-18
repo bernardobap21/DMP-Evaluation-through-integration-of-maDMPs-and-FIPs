@@ -31,6 +31,10 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
+        "BIBFRAME 2.0",
+        "MARC21 Format for Bibliographic Data",
+        "Europeana Data Model for Cultural Heritage (EDM)",
+        "Metadata Object Description Schema",
         "Dublin Core"
       ]
     },
@@ -53,6 +57,15 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
+        "GBooks ",
+        "HetGeheugen ",
+        "Delpher",
+        "Allmaps",
+        "WOL ",
+        "UBL-DC_REG ",
+        "WorldCat ",
+        "Biblissima ",
+        "PrimoVE ",
         "Europeana"
       ]
     },
@@ -64,6 +77,11 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
+        "GBooks ",
+        "WOL ",
+        "HetGeheugen ",
+        "Delpher",
+        "Europeana",
         "UBL-DC_REG "
       ]
     },
@@ -97,6 +115,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
+        "ICAR ",
         "ULCN "
       ]
     },
@@ -108,6 +127,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
+        "ICAR ",
         "ULCN "
       ]
     },
@@ -128,6 +148,10 @@
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
+        "eXtensible Markup Language (XML)",
+        "MARC21 Format for Bibliographic Data",
+        "TXT ",
+        "JSON-LD",
         "RDF/XML "
       ]
     },
@@ -139,6 +163,11 @@
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
+        "JPEG File Format",
+        "Portable Document Format (PDF)",
+        "MP3 ",
+        "WAV ",
+        "International Image Interoperability Framework (IIIF)",
         "Tag Image File Format (TIFF)"
       ]
     },
@@ -150,6 +179,11 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
+        "AST ",
+        "TGN ",
+        "Getty Art & Architecture Thesaurus (AAT)",
+        "BCL ",
+        "Library of Congress Name Authority File (LCNAF)",
         "NTA "
       ]
     },
@@ -170,6 +204,11 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
+        "International Image Interoperability Framework (IIIF)",
+        "EAD Encoded Archival Description",
+        "Metadata Object Description Schema",
+        "MARC21 Format for Bibliographic Data",
+        "Dublin Core",
         "Europeana Data Model for Cultural Heritage (EDM)"
       ]
     },
@@ -179,8 +218,9 @@
       "FIP_question": "Which models, schema(s) do you use for your datasets?",
       "maDMP_field": "dataset.metadata.metadata_standard_id.type",
       "Mapping_status": "Mapped",
-      "Comments": "",
+      "Comments": "The IIIF collections option is used for the datasets, see https://iiif.io/api/presentation/3.0/#51-collection",
       "Allowed_values": [
+        "International Image Interoperability Framework (IIIF)",
         "Europeana Data Model for Cultural Heritage (EDM)"
       ]
     },

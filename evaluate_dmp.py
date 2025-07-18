@@ -12,9 +12,8 @@ from Evaluator.evaluator import (
     load_dmp,
     evaluate_dmp_against_fip,
     summarize_results,
-    save_evaluation_results,
     save_recommendations,
-    save_compliance_table 
+    save_compliance_table, 
 )
 
 
@@ -53,6 +52,12 @@ def main():
             f"compliance: {r['compliance_status']}"
         )
 
+        log_val = r.get("field_value")
+        if isinstance(log_val, (dict, list)):
+            log_val = json.dumps(log_val, ensure_ascii=False)
+        elif log_val is not None:
+            log_val = str(log_val)
+
         status = (
             "pass" if r["field_status"] == "Present" and r["compliance_status"] == "Compliant" else "fail"
         )
@@ -66,6 +71,7 @@ def main():
             "fair_principle": fair_principle,
             ###
             "comment": comment,
+            "log_value": log_val,
             "subject": r["maDMP_field"],
             "status": status,
         })

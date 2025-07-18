@@ -200,7 +200,20 @@ def build_mapping(main_uri: str):
         result, version = process_declaration(d)
         if not fip_version and version:
             fip_version = version
-        mapping_dict[result["Question_URI"]] = result
+        q_uri = result["Question_URI"]
+        if q_uri in mapping_dict:
+            existing = mapping_dict[q_uri]
+            # merge allowed values, avoiding duplicates and preserving order
+            for val in result["Allowed_values"]:
+                if val not in existing["Allowed_values"]:
+                    existing["Allowed_values"].append(val)
+            if result["Comments"]:
+                if existing["Comments"]:
+                    existing["Comments"] += " | " + result["Comments"]
+                else:
+                    existing["Comments"] = result["Comments"]
+        else:
+            mapping_dict[q_uri] = result
 
     ordered = []
     for q_uri in QUESTION_MAP.keys():
