@@ -1,5 +1,7 @@
 # Recognize formats and vocabularies
 import re
+from urllib.parse import urlparse, urlunparse
+import requests
 
 # Checks for metadata 
 def check_access_vs_license(dataset):
@@ -51,13 +53,59 @@ def validate_metadata_intentions(dmp):
 
     return issues
 
+def _normalize_url(url: str) -> str:
+    """Normalize a URL for comparison."""
+    if not isinstance(url, str):
+        return ""
+    url = url.strip()
+    parsed = urlparse(url)
+    scheme = parsed.scheme.lower()
+    netloc = parsed.netloc.lower()
+    path = parsed.path.rstrip('/')
+    if path.endswith('/legalcode'):
+        path = path[:-9].rstrip('/')
+    return urlunparse((scheme, netloc, path, '', '', ''))
+
+_SPDX_CACHE = None
+
+
+def _to_spdx_id(label: str) -> str:
+    """Convert common license labels to SPDX identifiers."""
+    return label.strip().replace(" ", "-")
+
+
+def is_license_compliant(madmp_url: str, spdx_id: str) -> bool:
+    """Check if the given URL corresponds to the SPDX license."""
+    global _SPDX_CACHE
+    if _SPDX_CACHE is None:
+        try:
+            resp = requests.get("https://spdx.org/licenses/licenses.json", timeout=10)
+            _SPDX_CACHE = resp.json()
+        except Exception:
+            return False
+
+    data = _SPDX_CACHE
+    spdx_id = _to_spdx_id(spdx_id)
+    
+
+    for lic in data.get("licenses", []):
+        if lic.get("licenseId") == spdx_id:
+            normalized_input = _normalize_url(madmp_url)
+            for url in lic.get("seeAlso", []):
+                if normalized_input == _normalize_url(url):
+                    return True
+            break
+    return False
+
+
 
 def detect_identifier_type(identifier, allowed_values=None):
     if not isinstance(identifier, str):
         return "Unknown"
 
     # Normalize
-    identifier = identifier.strip().lower()
+    raw_identifier = identifier.strip()
+    lower_identifier = raw_identifier.lower()
 
     # Patterns
     patterns = {
@@ -73,16 +121,21 @@ def detect_identifier_type(identifier, allowed_values=None):
     # If allowed_values are provided, prioritize matching these first
     if allowed_values:
         for val in allowed_values:
+            if is_license_compliant(raw_identifier, val):
+                return val
             pattern = patterns.get(val)
-            if pattern and re.match(pattern, identifier, re.I):
+            if pattern and re.match(pattern, lower_identifier, re.I):
                 return val
 
+    """""
     # CC license URLs
     cc_license_patterns = {
         "CC-BY 4.0": r"^https?://creativecommons\.org/licenses/by/4\.0/?$",
         "CC0 1.0": r"^https?://creativecommons\.org/publicdomain/zero/1\.0/?$",
+       
         "CC BY-NC 4.0": r"^https?://creativecommons\.org/licenses/by-nc/4\.0/?$",
     }
+    """
 
     known_labels = [
         "Schema.org", "DCAT", "Dublin Core", "DataCite", "GBIF search engine",
@@ -92,19 +145,21 @@ def detect_identifier_type(identifier, allowed_values=None):
         "CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0", "PROV-O"
     ]
 
+    """"
     # CC license URLs first 
     for label, pattern in cc_license_patterns.items():
         if re.match(pattern, identifier, re.I):
             return label
+    """
 
     # Match patterns
     for id_type, pattern in patterns.items():
-        if re.match(pattern, identifier, re.I):
+        if re.match(pattern, lower_identifier, re.I):
             return id_type
 
     # Exact match to label
     for label in known_labels:
-        if identifier == label.strip().lower():
+        if lower_identifier == label.strip().lower():
             return label
 
     return "Unknown"

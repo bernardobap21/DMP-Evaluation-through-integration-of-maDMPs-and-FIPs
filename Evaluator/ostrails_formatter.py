@@ -48,7 +48,7 @@ def export_planned_fairness(test_results, dmp_id, output_path):
     print(f"Planned FAIRness (OSTrails format) saved to {output_path}")
 
 
-def export_fip_results(results, dmp_id, dmp_title, output_dir):
+def export_fip_results(results, dmp_id, dmp_title, output_dir, metric_version=DEFAULT_VERSION):
     
     graph = []
 
@@ -117,7 +117,6 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir):
     ###
 
     for res in results:
-        metric_version = res.get("metric_version", DEFAULT_VERSION)
         metric_uri = f"#{res['metric_id']}"
         metric = {
             "@id": metric_uri,
