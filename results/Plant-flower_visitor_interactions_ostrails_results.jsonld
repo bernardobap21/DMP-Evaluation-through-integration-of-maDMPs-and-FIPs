@@ -38,7 +38,7 @@
       "dcterms:title": "maDMP Evaluation Algorithm",
       "dcterms:description": "Algorithm that evaluates maDMP fields against a FIP",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "doap:repository": "https://github.com/bernardobap21/DMP-Evaluation",
       "sio:is-implementation-of": [
         "#F1_benchmark",
@@ -98,7 +98,7 @@
       "dcterms:identifier": "FIP01.Q1",
       "dcterms:title": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
       "dcterms:description": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP01.Q1",
@@ -111,7 +111,7 @@
       "dcterms:title": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
       "dcterms:description": "dataset.dataset_id.identifier",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP01.Q1",
       "ftr:testsMetric": "#FIP01.Q1",
       "ftr:hasBenchmark": [
@@ -140,7 +140,7 @@
       "dcterms:identifier": "FIP02.Q2",
       "dcterms:title": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
       "dcterms:description": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP02.Q2",
@@ -153,7 +153,7 @@
       "dcterms:title": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
       "dcterms:description": "dataset.dataset_id.identifier",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP02.Q2",
       "ftr:testsMetric": "#FIP02.Q2",
       "ftr:hasBenchmark": [
@@ -182,7 +182,7 @@
       "dcterms:identifier": "FIP03.Q3",
       "dcterms:title": "Which metadata schemas do you use for findability?",
       "dcterms:description": "Which metadata schemas do you use for findability?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP03.Q3",
@@ -195,7 +195,7 @@
       "dcterms:title": "Which metadata schemas do you use for findability?",
       "dcterms:description": "dataset.metadata.metadata_standard_id.identifier",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP03.Q3",
       "ftr:testsMetric": "#FIP03.Q3",
       "ftr:hasBenchmark": [
@@ -224,7 +224,7 @@
       "dcterms:identifier": "FIP04.Q4",
       "dcterms:title": "What is the technology that links the persistent identifiers of your data to the metadata description?",
       "dcterms:description": "What is the technology that links the persistent identifiers of your data to the metadata description?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP04.Q4",
@@ -237,7 +237,7 @@
       "dcterms:title": "What is the technology that links the persistent identifiers of your data to the metadata description?",
       "dcterms:description": "dataset.distribution.host.pid_system",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP04.Q4",
       "ftr:testsMetric": "#FIP04.Q4",
       "ftr:hasBenchmark": [
@@ -266,7 +266,7 @@
       "dcterms:identifier": "FIP05.Q5",
       "dcterms:title": "In which search engines are your metadata records indexed?",
       "dcterms:description": "In which search engines are your metadata records indexed?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP05.Q5",
@@ -279,7 +279,7 @@
       "dcterms:title": "In which search engines are your metadata records indexed?",
       "dcterms:description": "dataset.distribution.access_url",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP05.Q5",
       "ftr:testsMetric": "#FIP05.Q5",
       "ftr:hasBenchmark": [
@@ -308,7 +308,7 @@
       "dcterms:identifier": "FIP06.Q6",
       "dcterms:title": "In which search engines are your datasets indexed?",
       "dcterms:description": "In which search engines are your datasets indexed?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP06.Q6",
@@ -321,7 +321,7 @@
       "dcterms:title": "In which search engines are your datasets indexed?",
       "dcterms:description": "dataset.distribution.access_url",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP06.Q6",
       "ftr:testsMetric": "#FIP06.Q6",
       "ftr:hasBenchmark": [
@@ -350,7 +350,7 @@
       "dcterms:identifier": "FIP07.Q7",
       "dcterms:title": "Which standardized communication protocol do you use for metadata records?",
       "dcterms:description": "Which standardized communication protocol do you use for metadata records?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP07.Q7",
@@ -363,7 +363,7 @@
       "dcterms:title": "Which standardized communication protocol do you use for metadata records?",
       "dcterms:description": "dataset.distribution.host.url",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP07.Q7",
       "ftr:testsMetric": "#FIP07.Q7",
       "ftr:hasBenchmark": [
@@ -392,7 +392,7 @@
       "dcterms:identifier": "FIP08.Q8",
       "dcterms:title": "Which standardized communication protocol do you use for datasets?",
       "dcterms:description": "Which standardized communication protocol do you use for datasets?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP08.Q8",
@@ -405,7 +405,7 @@
       "dcterms:title": "Which standardized communication protocol do you use for datasets?",
       "dcterms:description": "dataset.distribution.host.url",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP08.Q8",
       "ftr:testsMetric": "#FIP08.Q8",
       "ftr:hasBenchmark": [
@@ -434,7 +434,7 @@
       "dcterms:identifier": "FIP09.Q9",
       "dcterms:title": "Which authentication & authorisation technique do you use for metadata records?",
       "dcterms:description": "Which authentication & authorisation technique do you use for metadata records?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP09.Q9",
@@ -447,7 +447,7 @@
       "dcterms:title": "Which authentication & authorisation technique do you use for metadata records?",
       "dcterms:description": "dataset.distribution.data_access",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP09.Q9",
       "ftr:testsMetric": "#FIP09.Q9",
       "ftr:hasBenchmark": [
@@ -476,7 +476,7 @@
       "dcterms:identifier": "FIP10.Q10",
       "dcterms:title": "Which authentication & authorisation technique do you use for datasets?",
       "dcterms:description": "Which authentication & authorisation technique do you use for datasets?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP10.Q10",
@@ -489,7 +489,7 @@
       "dcterms:title": "Which authentication & authorisation technique do you use for datasets?",
       "dcterms:description": "dataset.distribution.data_access",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP10.Q10",
       "ftr:testsMetric": "#FIP10.Q10",
       "ftr:hasBenchmark": [
@@ -518,7 +518,7 @@
       "dcterms:identifier": "FIP11.Q11",
       "dcterms:title": "Which metadata longevity plan do you use?",
       "dcterms:description": "Which metadata longevity plan do you use?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP11.Q11",
@@ -531,7 +531,7 @@
       "dcterms:title": "Which metadata longevity plan do you use?",
       "dcterms:description": "None",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP11.Q11",
       "ftr:testsMetric": "#FIP11.Q11",
       "ftr:hasBenchmark": [
@@ -560,7 +560,7 @@
       "dcterms:identifier": "FIP12.Q12",
       "dcterms:title": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
       "dcterms:description": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP12.Q12",
@@ -573,7 +573,7 @@
       "dcterms:title": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
       "dcterms:description": "None",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP12.Q12",
       "ftr:testsMetric": "#FIP12.Q12",
       "ftr:hasBenchmark": [
@@ -602,7 +602,7 @@
       "dcterms:identifier": "FIP13.Q13",
       "dcterms:title": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
       "dcterms:description": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP13.Q13",
@@ -615,7 +615,7 @@
       "dcterms:title": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
       "dcterms:description": "None",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP13.Q13",
       "ftr:testsMetric": "#FIP13.Q13",
       "ftr:hasBenchmark": [
@@ -644,7 +644,7 @@
       "dcterms:identifier": "FIP14.Q14",
       "dcterms:title": "Which structured vocabularies do you use to annotate your metadata records?",
       "dcterms:description": "Which structured vocabularies do you use to annotate your metadata records?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP14.Q14",
@@ -657,7 +657,7 @@
       "dcterms:title": "Which structured vocabularies do you use to annotate your metadata records?",
       "dcterms:description": "dataset.metadata.metadata_standard_id.identifier",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP14.Q14",
       "ftr:testsMetric": "#FIP14.Q14",
       "ftr:hasBenchmark": [
@@ -686,7 +686,7 @@
       "dcterms:identifier": "FIP15.Q15",
       "dcterms:title": "Which structured vocabularies do you use to encode your datasets?",
       "dcterms:description": "Which structured vocabularies do you use to encode your datasets?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP15.Q15",
@@ -699,7 +699,7 @@
       "dcterms:title": "Which structured vocabularies do you use to encode your datasets?",
       "dcterms:description": "dataset.metadata.metadata_standard_id.identifier",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP15.Q15",
       "ftr:testsMetric": "#FIP15.Q15",
       "ftr:hasBenchmark": [
@@ -728,7 +728,7 @@
       "dcterms:identifier": "FIP16.Q16",
       "dcterms:title": "Which models, schema(s) do you use for your metadata records?",
       "dcterms:description": "Which models, schema(s) do you use for your metadata records?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP16.Q16",
@@ -741,7 +741,7 @@
       "dcterms:title": "Which models, schema(s) do you use for your metadata records?",
       "dcterms:description": "dataset.metadata.metadata_standard_id.type",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP16.Q16",
       "ftr:testsMetric": "#FIP16.Q16",
       "ftr:hasBenchmark": [
@@ -770,7 +770,7 @@
       "dcterms:identifier": "FIP17.Q17",
       "dcterms:title": "Which models, schema(s) do you use for your datasets?",
       "dcterms:description": "Which models, schema(s) do you use for your datasets?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP17.Q17",
@@ -783,7 +783,7 @@
       "dcterms:title": "Which models, schema(s) do you use for your datasets?",
       "dcterms:description": "dataset.metadata.metadata_standard_id.type",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP17.Q17",
       "ftr:testsMetric": "#FIP17.Q17",
       "ftr:hasBenchmark": [
@@ -812,7 +812,7 @@
       "dcterms:identifier": "FIP18.Q18",
       "dcterms:title": "Which usage license do you use for your metadata records?",
       "dcterms:description": "Which usage license do you use for your metadata records?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP18.Q18",
@@ -825,7 +825,7 @@
       "dcterms:title": "Which usage license do you use for your metadata records?",
       "dcterms:description": "dataset.distribution.license.license_ref",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP18.Q18",
       "ftr:testsMetric": "#FIP18.Q18",
       "ftr:hasBenchmark": [
@@ -854,7 +854,7 @@
       "dcterms:identifier": "FIP19.Q19",
       "dcterms:title": "Which usage license do you use for your datasets?",
       "dcterms:description": "Which usage license do you use for your datasets?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP19.Q19",
@@ -867,7 +867,7 @@
       "dcterms:title": "Which usage license do you use for your datasets?",
       "dcterms:description": "dataset.distribution.license.license_ref",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP19.Q19",
       "ftr:testsMetric": "#FIP19.Q19",
       "ftr:hasBenchmark": [
@@ -896,7 +896,7 @@
       "dcterms:identifier": "FIP20.Q20",
       "dcterms:title": "Which metadata schemas do you use for describing the provenance of your metadata records?",
       "dcterms:description": "Which metadata schemas do you use for describing the provenance of your metadata records?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP20.Q20",
@@ -909,7 +909,7 @@
       "dcterms:title": "Which metadata schemas do you use for describing the provenance of your metadata records?",
       "dcterms:description": "dataset.data_quality_assurance",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP20.Q20",
       "ftr:testsMetric": "#FIP20.Q20",
       "ftr:hasBenchmark": [
@@ -938,7 +938,7 @@
       "dcterms:identifier": "FIP21.Q21",
       "dcterms:title": "Which metadata schemas do you use for describing the provenance of your datasets?",
       "dcterms:description": "Which metadata schemas do you use for describing the provenance of your datasets?",
-      "dcat:version": "v.0.0.1"
+      "dcat:version": ""
     },
     {
       "@id": "#Test_FIP21.Q21",
@@ -951,7 +951,7 @@
       "dcterms:title": "Which metadata schemas do you use for describing the provenance of your datasets?",
       "dcterms:description": "dataset.data_quality_assurance",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "sio:is-implementation-of": "#FIP21.Q21",
       "ftr:testsMetric": "#FIP21.Q21",
       "ftr:hasBenchmark": [
@@ -980,7 +980,7 @@
       "dcterms:identifier": "F1",
       "dcterms:title": "Identifier type",
       "dcterms:description": "Metrics for FAIR principle F1",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP01.Q1",
         "#FIP02.Q2"
@@ -992,7 +992,7 @@
       "dcterms:identifier": "F2",
       "dcterms:title": "Metadata schema",
       "dcterms:description": "Metrics for FAIR principle F2",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP03.Q3"
       ]
@@ -1003,7 +1003,7 @@
       "dcterms:identifier": "F3",
       "dcterms:title": "Metadata-data linking schema",
       "dcterms:description": "Metrics for FAIR principle F3",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP04.Q4"
       ]
@@ -1014,7 +1014,7 @@
       "dcterms:identifier": "F4",
       "dcterms:title": "Registry (searchable repository)",
       "dcterms:description": "Metrics for FAIR principle F4",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP05.Q5",
         "#FIP06.Q6"
@@ -1026,7 +1026,7 @@
       "dcterms:identifier": "A1.1",
       "dcterms:title": "Communication protocol",
       "dcterms:description": "Metrics for FAIR principle A1.1",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP07.Q7",
         "#FIP08.Q8"
@@ -1038,7 +1038,7 @@
       "dcterms:identifier": "A1.2",
       "dcterms:title": "Authentication and authorization service",
       "dcterms:description": "Metrics for FAIR principle A1.2",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP09.Q9",
         "#FIP10.Q10"
@@ -1050,7 +1050,7 @@
       "dcterms:identifier": "A2",
       "dcterms:title": "Metadata repository",
       "dcterms:description": "Metrics for FAIR principle A2",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP11.Q11"
       ]
@@ -1061,7 +1061,7 @@
       "dcterms:identifier": "I1",
       "dcterms:title": "Knowledge representation language",
       "dcterms:description": "Metrics for FAIR principle I1",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP12.Q12",
         "#FIP13.Q13"
@@ -1073,7 +1073,7 @@
       "dcterms:identifier": "I2",
       "dcterms:title": "Structured vocabulary",
       "dcterms:description": "Metrics for FAIR principle I2",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP14.Q14",
         "#FIP15.Q15"
@@ -1085,7 +1085,7 @@
       "dcterms:identifier": "I3",
       "dcterms:title": "Qualified reference mechanism",
       "dcterms:description": "Metrics for FAIR principle I3",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP16.Q16",
         "#FIP17.Q17"
@@ -1097,7 +1097,7 @@
       "dcterms:identifier": "R1.1",
       "dcterms:title": "Data usage license",
       "dcterms:description": "Metrics for FAIR principle R1.1",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP18.Q18",
         "#FIP19.Q19"
@@ -1109,7 +1109,7 @@
       "dcterms:identifier": "R1.2",
       "dcterms:title": "Provenance model",
       "dcterms:description": "Metrics for FAIR principle R1.2",
-      "dcat:version": "v.0.0.1",
+      "dcat:version": "",
       "ftr:hasAssociatedMetric": [
         "#FIP20.Q20",
         "#FIP21.Q21"

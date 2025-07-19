@@ -7,8 +7,9 @@
       "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
       "maDMP_field": "dataset.dataset_id.identifier",
       "Mapping_status": "Mapped",
-      "Comments": "",
+      "Comments": "The implementation of DOI for AOP references is considered.",
       "Allowed_values": [
+        "DOI",
         "AOP-WIKI-ID "
       ]
     },
@@ -20,6 +21,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
+        "AOP-WIKI-ID ",
         "DOI"
       ]
     },
@@ -49,6 +51,7 @@
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
+        "Adverse Outcome Pathway Wiki",
         "Adverse Outcome Pathway Knowledge Base"
       ]
     },
