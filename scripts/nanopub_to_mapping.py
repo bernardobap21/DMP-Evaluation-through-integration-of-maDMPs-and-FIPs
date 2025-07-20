@@ -178,7 +178,7 @@ def process_declaration(uri: str):
         "Question_URI": question_uri,
         "FAIR_principle": info.get("principle", ""),
         "FIP_question": info.get("text", question_uri),
-        "maDMP_field": info.get("madmp", ""),
+        "DCS_field": info.get("madmp", ""),
         "Mapping_status": "Mapped" if info.get("madmp") else None,
         "Comments": str(comment) if comment else "",
         "Allowed_values": [v for v in allowed if v],

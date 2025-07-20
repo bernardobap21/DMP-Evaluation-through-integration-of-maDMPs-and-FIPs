@@ -48,17 +48,22 @@ def build_compliance_json(results):
         else:
             allowed_str = allowed_values
 
+        comp = r.get("compliance_list") or r.get("compliance_status")
         if allowed_values == "":
             compliant = "No choice made by community"
         else:
-            compliant = "Yes" if r["compliance_status"] == "Compliant" else "No"
+            if isinstance(comp, list):
+                entries = ["Yes" if c == "Compliant" else "No" for c in comp]
+                compliant = f"[{', '.join(entries)}]"
+            else:
+                compliant = "Yes" if comp == "Compliant" else "No"
 
         table.append({
             "FIP Question": r["FIP_question"],
-            "DCS Field": r["maDMP_field"],
+            "DCS Field": r["DCS_field"],
             "maDMP Value": r["field_value"],
             "Accepted Values": allowed_str,
-            "Compliant": compliant,
+            "Compliant": compliant,  
         })
     return table
 

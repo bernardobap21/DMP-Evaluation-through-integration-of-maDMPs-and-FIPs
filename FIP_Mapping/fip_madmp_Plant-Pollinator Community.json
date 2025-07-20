@@ -4,7 +4,7 @@
         {
             "FAIR_principle": "F1",
             "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
-            "maDMP_field": "dataset.dataset_id.identifier",
+            "DCS_field": "dataset.dataset_id.identifier",
             "Mapping_status": "Mapped",
             "Comments": "Clearly mapped",
             "Allowed_values": ["DOI",  "dPIDs"]
@@ -12,7 +12,7 @@
         {
             "FAIR_principle": "F1",
             "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
-            "maDMP_field": "dataset.dataset_id.identifier",
+            "DCS_field": "dataset.dataset_id.identifier",
             "Mapping_status": "Mapped",
             "Comments": "Clearly mapped. But it's strange that always separate datasets and metadata records",
             "Allowed_values": ["URI",  "DOI"]
@@ -20,7 +20,7 @@
         {
             "FAIR_principle": "F2",
             "FIP_question": "Which metadata schemas do you use for findability?", 
-            "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
+            "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
             "Mapping_status": "Mapped",
             "Comments": "Could also be dataset.metadata.metadata_standard_id.type",
             "Allowed_values": ["EML",  "Schema.org", "DCAT", "Dublin Core"]
@@ -28,7 +28,7 @@
         {
             "FAIR_principle": "F3",
             "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
-            "maDMP_field": "dataset.distribution.host.pid_system",
+            "DCS_field": "dataset.distribution.host.pid_system",
             "Mapping_status": "Mapped",
             "Comments": "Term from Controlled Vocabulary. Like DOI",
             "Allowed_values": ["DataCite"]
@@ -36,7 +36,7 @@
         {
             "FAIR_principle": "F4",
             "FIP_question": "In which search engines are your metadata records indexed?",
-            "maDMP_field": "dataset.distribution.access_url",
+            "DCS_field": "dataset.distribution.access_url",
             "Mapping_status": "Mapped",
             "Comments": "No field explicitly covers search engine indexing",
             "Allowed_values": ["GBIF search engine",  "Global Biotic Interactions"]
@@ -44,7 +44,7 @@
         {
             "FAIR_principle": "F4",
             "FIP_question": "In which search engines are your datasets indexed?",
-            "maDMP_field": "dataset.distribution.access_url",
+            "DCS_field": "dataset.distribution.access_url",
             "Mapping_status": "Mapped",
             "Comments": "No field explicitly covers search engine indexing",
             "Allowed_values": ["GBIF search engine",  "Global Biotic Interactions"]
@@ -52,7 +52,7 @@
         {
             "FAIR_principle": "A1.1",
             "FIP_question": "Which standardized communication protocol do you use for metadata records?",
-            "maDMP_field": "dataset.distribution.host.url",
+            "DCS_field": "dataset.distribution.host.url",
             "Mapping_status": "Mapped",
             "Comments": "Maybe not. I'm inferring this. could also be dataset.distribution.host.host_id_type",
             "Allowed_values": ["HTTPS",  "REST"]
@@ -60,7 +60,7 @@
         {
             "FAIR_principle": "A1.1",
             "FIP_question": "Which standardized communication protocol do you use for datasets?",
-            "maDMP_field": "dataset.distribution.host.url",
+            "DCS_field": "dataset.distribution.host.url",
             "Mapping_status": "Mapped",
             "Comments": "Maybe not. I'm inferring this. could also be dataset.distribution.host.host_id_type",
             "Allowed_values": ["HTTPS",  "REST"]
@@ -68,7 +68,7 @@
         {
             "FAIR_principle": "A1.2",
             "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
-            "maDMP_field": "dataset.distribution.data_access",
+            "DCS_field": "dataset.distribution.data_access",
             "Mapping_status": "Partially Mapped",
             "Comments": "Just tells if it's open, shared or closed",
             "Allowed_values": ["Open Data", "Open", "OAuth 2.0"]
@@ -76,7 +76,7 @@
         {
             "FAIR_principle": "A1.2",
             "FIP_question": "Which authentication & authorisation technique do you use for datasets?",
-            "maDMP_field": "dataset.distribution.data_access",
+            "DCS_field": "dataset.distribution.data_access",
             "Mapping_status": "Partially Mapped",
             "Comments": "Just tells if it's open, shared or closed",
             "Allowed_values": ["OAuth 2.0", "GBIF local account", "Open", "Open Data"]
@@ -84,7 +84,7 @@
         {
             "FAIR_principle": "A2",
             "FIP_question": "Which metadata longevity plan do you use?",
-            "maDMP_field": "",
+            "DCS_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "project.end or something with host like backup_type, backup_frequency or distribution.available_until",
             "Allowed_values": "" 
@@ -92,7 +92,7 @@
         {
             "FAIR_principle": "I1",
             "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
-            "maDMP_field": "",
+            "DCS_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "Explicit semantic representation languages not explicitly detailed",
             "Allowed_values": ["DwC-A", "JSON", "XMLS", "RDFS"]
@@ -100,7 +100,7 @@
         {
             "FAIR_principle": "I1",
             "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
-            "maDMP_field": "",
+            "DCS_field": "",
             "Mapping_status": "Not Mapped",
             "Comments": "Explicit semantic representation languages not explicitly detailed",
             "Allowed_values": ["DwC-A", "JSON", "XMLS", "RDFS"]
@@ -108,7 +108,7 @@
         {
             "FAIR_principle": "I2",
             "FIP_question": "Which structured vocabularies do you use to annotate your metadata records?",
-            "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
+            "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
             "Mapping_status": "Partially Mapped",
             "Comments": "The example value is http://www.dublincore.org/specifications/dublin-core/dcmi-terms/ which could help to partially infer something",
             "Allowed_values": ["EML", "DwC"]
@@ -116,7 +116,7 @@
         {
             "FAIR_principle": "I2",
             "FIP_question": "Which structured vocabularies do you use to encode your datasets?",
-            "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
+            "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
             "Mapping_status": "Partially Mapped",
             "Comments": "The example value is http://www.dublincore.org/specifications/dublin-core/dcmi-terms/ which could help to partially infer something",
             "Allowed_values": ["Plant Pollinator Vocabulary", "DwC"]
@@ -124,7 +124,7 @@
         {
             "FAIR_principle": "I3",
             "FIP_question": "Which models, schema(s) do you use for your metadata records?",
-            "maDMP_field": "dataset.metadata.metadata_standard_id.type",
+            "DCS_field": "dataset.metadata.metadata_standard_id.type",
             "Mapping_status": "Mapped",
             "Comments": "Gives the term from the controlled vocabulary",
             "Allowed_values": ["Relations Ontology", "DwC"]
@@ -132,7 +132,7 @@
         {
             "FAIR_principle": "I3",
             "FIP_question": "Which models, schema(s) do you use for your datasets?",
-            "maDMP_field": "dataset.metadata.metadata_standard_id.type",
+            "DCS_field": "dataset.metadata.metadata_standard_id.type",
             "Mapping_status": "Mapped",
             "Comments": "Gives the term from the controlled vocabulary",
             "Allowed_values": ["DwC-A"]
@@ -140,7 +140,7 @@
         {
             "FAIR_principle": "R1.1",
             "FIP_question": "Which usage license do you use for your metadata records?",
-            "maDMP_field": "dataset.distribution.license.license_ref",
+            "DCS_field": "dataset.distribution.license.license_ref",
             "Mapping_status": "Mapped",
             "Comments": "Could also be dataset.distribution.license.license_name",
             "Allowed_values": ["CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0"]
@@ -148,7 +148,7 @@
         {
             "FAIR_principle": "R1.1",
             "FIP_question": "Which usage license do you use for your datasets?",
-            "maDMP_field": "dataset.distribution.license.license_ref",
+            "DCS_field": "dataset.distribution.license.license_ref",
             "Mapping_status": "Mapped",
             "Comments": "Could also be dataset.distribution.license.license_name",
             "Allowed_values": ["CC0 1.0", "CC-BY 4.0", "CC BY-NC 4.0"]
@@ -156,7 +156,7 @@
         {
             "FAIR_principle": "R1.2",
             "FIP_question": "Which metadata schemas do you use for describing the provenance of your metadata records?",
-            "maDMP_field": "dataset.data_quality_assurance",
+            "DCS_field": "dataset.data_quality_assurance",
             "Mapping_status": "Not Mapped",
             "Comments": "Ask Tomasz about this field",
             "Allowed_values": ["PROV-O"]
@@ -164,7 +164,7 @@
         {
             "FAIR_principle": "R1.2",
             "FIP_question": "Which metadata schemas do you use for describing the provenance of your datasets?",
-            "maDMP_field": "dataset.data_quality_assurance",
+            "DCS_field": "dataset.data_quality_assurance",
             "Mapping_status": "Not Mapped",
             "Comments": "Ask Tomasz about this field",
             "Allowed_values": ["PROV-O"]

@@ -188,6 +188,8 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir, metric_version=DE
         execution_activity["prov:wasAssociatedWith"].append(test_uri)
 
         result_uri = f"#{res['test_id']}_result"
+        status = res["status"]
+        log_value = res.get("log_value")
         result_node = {
             "@id": result_uri,
             "@type": ["ftr:TestResult", "prov:Entity"],
@@ -195,8 +197,8 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir, metric_version=DE
             "dcterms:title": f"Result for {res['metric_id']}",
             "dcterms:description": res["comment"],
             "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
-            "prov:value": res["status"],
-            "ftr:log": res.get("log_value"),
+            "prov:value": status,
+            "ftr:log": log_value,
             "ftr:completion": "100",
             "ftr:outputFromTest": test_uri,
             "prov:wasDerivedFrom": dmp_entity_id,

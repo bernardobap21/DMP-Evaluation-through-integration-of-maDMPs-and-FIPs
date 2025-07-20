@@ -2,6 +2,28 @@ import json
 import csv
 from .validation_rules import is_allowed_value
 
+def _collect_values(data, path_parts):
+    """Recursively collect all values for the given path parts."""
+    if not path_parts:
+        return [data]
+
+    key = path_parts[0]
+    remaining = path_parts[1:]
+
+    results = []
+    if isinstance(data, dict):
+        if key in data:
+            results.extend(_collect_values(data[key], remaining))
+    elif isinstance(data, list):
+        for item in data:
+            if isinstance(item, (dict, list)):
+                if isinstance(item, dict) and key not in item:
+                    continue
+                value = item[key] if isinstance(item, dict) else item
+                results.extend(_collect_values(value, remaining))
+    return results
+
+
 def load_dmp(file_path):
     with open(file_path, 'r') as file:
         dmp = json.load(file)
@@ -12,7 +34,7 @@ def load_dmp(file_path):
 def evaluate_dmp_against_fip(dmp, mapping_dict):
     results = []
     for question, details in mapping_dict.items():
-        field_path = details.get("maDMP_field", "")
+        field_path = details.get("DCS_field") or details.get("maDMP_field", "")
         allowed_values = details.get("Allowed_values", [])
         mapping_status = details.get("Mapping_status", "Unmapped")
         ####
@@ -26,7 +48,7 @@ def evaluate_dmp_against_fip(dmp, mapping_dict):
         if not field_path:
             results.append({
                 "FIP_question": question,
-                "maDMP_field": None,
+                "DCS_field": None,
                 "field_value": None,
                 "allowed_values": allowed_values,
                 "mapping_status": mapping_status,
@@ -37,42 +59,51 @@ def evaluate_dmp_against_fip(dmp, mapping_dict):
             })
             continue
 
-        # Get field value
-        value = dmp
-        for key in field_path.split('.'):
-            if isinstance(value, dict) and key in value:
-                value = value[key]
-            elif isinstance(value, list) and len(value) > 0 and isinstance(value[0], dict):
-                value = value[0].get(key)
-            else:
-                value = None
-                break
+        # Extract all matching values
+        values = _collect_values(dmp, field_path.split('.')) if field_path else []
 
-        if value is not None:
+        if values:
             field_status = "Present"
-            field_value = value
+            field_value = values
             if allowed_values:
-                compliance_status = "Compliant" if is_allowed_value(value, allowed_values) else "Non-compliant"
-        elif allowed_values:
-            compliance_status = "Missing value"
+                compliance_list = [
+                    "Compliant" if is_allowed_value(v, allowed_values) else "Non-compliant"
+                    for v in values
+                ]
+                compliance_status = "Compliant" if all(cs == "Compliant" for cs in compliance_list) else "Non-compliant"
+            else:
+                compliance_list = []
+        else:
+            compliance_list = []
+            if allowed_values:
+                compliance_status = "Missing value"
 
         results.append({
             "FIP_question": question,
-            "maDMP_field": field_path,
+            "DCS_field": field_path,
             "field_value": field_value,
             "allowed_values": allowed_values,
             "mapping_status": mapping_status,
             #####
             "FAIR_principle": fair_principle,
             "field_status": field_status,
-            "compliance_status": compliance_status
+            "compliance_status": compliance_status,
+            "compliance_list": compliance_list
         })
 
     return results
 
 def summarize_results(results):
     present = sum(1 for r in results if r["field_status"] == "Present")
-    compliant = sum(1 for r in results if r["compliance_status"] == "Compliant")
+    compliant = 0
+    for r in results:
+        cs = r.get("compliance_status")
+        if isinstance(cs, list):
+            if cs and all(x == "Compliant" for x in cs):
+                compliant += 1
+        else:
+            if cs == "Compliant":
+                compliant += 1
     total = len(results)
     #print(f"{present}/{total} fields present in the maDMP.")
     #print(f"{compliant}/{total} fields compliant with allowed values.")
@@ -95,7 +126,7 @@ def save_recommendations(results, output_path):
     for r in results:
         if r["field_status"] != "Present" or r["compliance_status"] == "Non-compliant":
             recommendations.append(
-                f"- Improve or add metadata for: {r['FIP_question']} (Field: {r['maDMP_field']}, "
+                f"- Improve or add metadata for: {r['FIP_question']} (Field: {r['DCS_field']}, "
                 f"Compliance: {r['compliance_status']})"
             )
     if not recommendations:
@@ -116,14 +147,20 @@ def save_compliance_table(results, output_path):
             else:
                 allowed_str = allowed_values
 
+            comp = r.get("compliance_list") or r.get("compliance_status")
             if allowed_values == "":
                 compliant = "No choice made by community"
             else:
-                compliant = "Yes" if r["compliance_status"] == "Compliant" else "No"
+                if isinstance(comp, list):
+                    entries = ["Yes" if c == "Compliant" else "No" for c in comp]
+                    compliant = f"[{', '.join(entries)}]"
+                else:
+                    compliant = "Yes" if comp == "Compliant" else "No"
+
 
             writer.writerow([
                 r["FIP_question"],
-                r["maDMP_field"],
+                r["DCS_field"],
                 json.dumps(r["field_value"], ensure_ascii=False),
                 allowed_str,
                 compliant

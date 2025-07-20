@@ -2,7 +2,7 @@ def transform_mapping(mapping_data):
     return {
         item["FIP_question"]: {
             "FAIR_principle": item["FAIR_principle"],
-            "maDMP_field": item["maDMP_field"],
+            "DCS_field": item.get("DCS_field", item.get("maDMP_field", "")),
             "Mapping_status": item["Mapping_status"],
             "Comments": item["Comments"],
             "Allowed_values": item.get("Allowed_values", [])

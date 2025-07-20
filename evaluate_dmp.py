@@ -52,15 +52,24 @@ def main():
             f"compliance: {r['compliance_status']}"
         )
 
-        log_val = r.get("field_value")
-        if isinstance(log_val, (dict, list)):
-            log_val = json.dumps(log_val, ensure_ascii=False)
-        elif log_val is not None:
-            log_val = str(log_val)
+        values = r.get("field_value")
+        if not isinstance(values, list):
+            values = [values]
 
-        status = (
-            "pass" if r["field_status"] == "Present" and r["compliance_status"] == "Compliant" else "fail"
-        )
+        comp_list = r.get("compliance_list") or r.get("compliance_status")
+        if not isinstance(comp_list, list):
+            comp_list = [comp_list]
+
+        log_val = []
+        status_vals = []
+        for val, comp in zip(values, comp_list):
+            if isinstance(val, (dict, list)):
+                log_val.append(json.dumps(val, ensure_ascii=False))
+            else:
+                log_val.append(str(val))
+            status_vals.append(
+                "pass" if r["field_status"] == "Present" and comp == "Compliant" else "fail"
+            )
 
         ftr_ready.append({
             "metric_id": metric_id,
@@ -72,8 +81,8 @@ def main():
             ###
             "comment": comment,
             "log_value": log_val,
-            "subject": r["maDMP_field"],
-            "status": status,
+            "subject": r["DCS_field"],
+            "status": status_vals,
         })
 
 

@@ -5,7 +5,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
       "FAIR_principle": "F1",
       "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
-      "maDMP_field": "dataset.dataset_id.identifier",
+      "DCS_field": "dataset.dataset_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "DOI are assigned to HFR networks: this means that the DOI direct to the landing pages of each network. The landing page contains textual and partial metadata and a link to the catalogs hosting the data. Datasets have no assigned DOIs because they are Near Real Time datasets, i.e. they constantly grow in time (living datasets). Data are stored in netCDF format, so they contain all the exhaustive metadata.",
       "Allowed_values": [
@@ -16,7 +16,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
       "FAIR_principle": "F1",
       "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
-      "maDMP_field": "dataset.dataset_id.identifier",
+      "DCS_field": "dataset.dataset_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -27,7 +27,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
       "FAIR_principle": "F2",
       "FIP_question": "Which metadata schemas do you use for findability?",
-      "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -40,7 +40,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F3",
       "FAIR_principle": "F3",
       "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
-      "maDMP_field": "dataset.distribution.host.pid_system",
+      "DCS_field": "dataset.distribution.host.pid_system",
       "Mapping_status": "Mapped",
       "Comments": "HFR data are stored in netCDF format, thus metadata and data reside in the same digital object, i.e. the netCDF file. Anyway no explicit identifier is reported in metadata to identify data and no explicit identifier is reported in the data to identify related metadata.",
       "Allowed_values": []
@@ -49,7 +49,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
       "FAIR_principle": "F4",
       "FIP_question": "In which search engines are your metadata records indexed?",
-      "maDMP_field": "dataset.distribution.access_url",
+      "DCS_field": "dataset.distribution.access_url",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -62,7 +62,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
       "FAIR_principle": "F4",
       "FIP_question": "In which search engines are your datasets indexed?",
-      "maDMP_field": "dataset.distribution.access_url",
+      "DCS_field": "dataset.distribution.access_url",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -75,7 +75,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-MD",
       "FAIR_principle": "A1.1",
       "FIP_question": "Which standardized communication protocol do you use for metadata records?",
-      "maDMP_field": "dataset.distribution.host.url",
+      "DCS_field": "dataset.distribution.host.url",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -89,7 +89,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-D",
       "FAIR_principle": "A1.1",
       "FIP_question": "Which standardized communication protocol do you use for datasets?",
-      "maDMP_field": "dataset.distribution.host.url",
+      "DCS_field": "dataset.distribution.host.url",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -103,7 +103,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-MD",
       "FAIR_principle": "A1.2",
       "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
-      "maDMP_field": "dataset.distribution.data_access",
+      "DCS_field": "dataset.distribution.data_access",
       "Mapping_status": "Mapped",
       "Comments": "Metadata are always accessible and discoverable.",
       "Allowed_values": [
@@ -114,7 +114,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
       "FAIR_principle": "A1.2",
       "FIP_question": "Which authentication & authorisation technique do you use for datasets?",
-      "maDMP_field": "dataset.distribution.data_access",
+      "DCS_field": "dataset.distribution.data_access",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -127,7 +127,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A2",
       "FAIR_principle": "A2",
       "FIP_question": "Which metadata longevity plan do you use?",
-      "maDMP_field": "",
+      "DCS_field": "",
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": []
@@ -136,7 +136,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-MD",
       "FAIR_principle": "I1",
       "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
-      "maDMP_field": "",
+      "DCS_field": "",
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
@@ -148,7 +148,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
       "FAIR_principle": "I1",
       "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
-      "maDMP_field": "",
+      "DCS_field": "",
       "Mapping_status": null,
       "Comments": "",
       "Allowed_values": [
@@ -160,7 +160,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
       "FAIR_principle": "I2",
       "FIP_question": "Which structured vocabularies do you use to annotate your metadata records?",
-      "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -176,7 +176,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
       "FAIR_principle": "I2",
       "FIP_question": "Which structured vocabularies do you use to encode your datasets?",
-      "maDMP_field": "dataset.metadata.metadata_standard_id.identifier",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -192,7 +192,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
       "FAIR_principle": "I3",
       "FIP_question": "Which models, schema(s) do you use for your metadata records?",
-      "maDMP_field": "dataset.metadata.metadata_standard_id.type",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": []
@@ -201,7 +201,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-D",
       "FAIR_principle": "I3",
       "FIP_question": "Which models, schema(s) do you use for your datasets?",
-      "maDMP_field": "dataset.metadata.metadata_standard_id.type",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": []
@@ -210,7 +210,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
       "FAIR_principle": "R1.1",
       "FIP_question": "Which usage license do you use for your metadata records?",
-      "maDMP_field": "dataset.distribution.license.license_ref",
+      "DCS_field": "dataset.distribution.license.license_ref",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -221,7 +221,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
       "FAIR_principle": "R1.1",
       "FIP_question": "Which usage license do you use for your datasets?",
-      "maDMP_field": "dataset.distribution.license.license_ref",
+      "DCS_field": "dataset.distribution.license.license_ref",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -232,7 +232,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-MD",
       "FAIR_principle": "R1.2",
       "FIP_question": "Which metadata schemas do you use for describing the provenance of your metadata records?",
-      "maDMP_field": "dataset.data_quality_assurance",
+      "DCS_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
@@ -243,7 +243,7 @@
       "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
       "FAIR_principle": "R1.2",
       "FIP_question": "Which metadata schemas do you use for describing the provenance of your datasets?",
-      "maDMP_field": "dataset.data_quality_assurance",
+      "DCS_field": "dataset.data_quality_assurance",
       "Mapping_status": "Mapped",
       "Comments": "",
       "Allowed_values": [
