@@ -1,10 +1,11 @@
 import json
 from rdflib import Graph, Namespace, Literal, RDF, URIRef
-from urllib.parse import quote  
+from urllib.parse import quote
 
 DMP = Namespace("http://example.org/dmp#")
 
-def json_to_rdf(json_path, rdf_path):
+def json_to_rdf(json_path, rdf_path, triple_store_path=None):
+    """Convert a maDMP JSON file to Turtle and optionally an RDF triple store."""
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -53,10 +54,50 @@ def json_to_rdf(json_path, rdf_path):
 
     # Save RDF as Turtle (.ttl)
     g.serialize(destination=rdf_path, format='turtle')
-    print(f" RDF saved successfully at {rdf_path}")
+    print(f"RDF saved successfully at {rdf_path}")
+
+    if triple_store_path:
+        g.serialize(destination=triple_store_path, format='nt')
+        print(f"Triple store saved at {triple_store_path}")
+
+
+def jsonld_to_triples(jsonld_path, ttl_path, triple_store_path):
+    """Parse a JSON-LD document and store it as Turtle and N-Triples."""
+
+    g = Graph()
+    with open(jsonld_path, 'r', encoding='utf-8') as fh:
+        data = json.load(fh)
+
+    g.parse(data=json.dumps(data), format='json-ld')
+
+    g.serialize(destination=ttl_path, format='turtle')
+    g.serialize(destination=triple_store_path, format='nt')
+    print(f"Converted {jsonld_path} to {ttl_path} and {triple_store_path}")
 
 if __name__ == "__main__":
-    json_to_rdf(
-        "C:/Users/berni/OneDrive - TU Wien/THESIS/Code/DMP-Evaluation/examples/ex9-dmp-long.json",
-        "C:/Users/berni/OneDrive - TU Wien/THESIS/Code/DMP-Evaluation/examples/ex9-dmp-long.ttl"
+    import argparse
+    import os
+
+    parser = argparse.ArgumentParser(
+        description="Convert a maDMP JSON or JSON-LD file to RDF formats"
     )
+    parser.add_argument(
+        "input",
+        help="Path to the input JSON or JSON-LD file",
+    )
+    parser.add_argument(
+        "output_dir",
+        help="Directory to store the converted .ttl and .nt files",
+    )
+    args = parser.parse_args()
+
+    os.makedirs(args.output_dir, exist_ok=True)
+
+    base = os.path.splitext(os.path.basename(args.input))[0]
+    ttl_path = os.path.join(args.output_dir, base + ".ttl")
+    nt_path = os.path.join(args.output_dir, base + ".nt")
+
+    if args.input.endswith(".jsonld"):
+        jsonld_to_triples(args.input, ttl_path, nt_path)
+    else:
+        json_to_rdf(args.input, ttl_path, nt_path)

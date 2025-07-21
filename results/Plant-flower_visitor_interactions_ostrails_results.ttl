@@ -1,0 +1,844 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#A1.1_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle A1.1" ;
+    dcterms:identifier "A1.1" ;
+    dcterms:title "Communication protocol" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP07.Q7",
+        "#FIP08.Q8" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#A1.2_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle A1.2" ;
+    dcterms:identifier "A1.2" ;
+    dcterms:title "Authentication and authorization service" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP09.Q9",
+        "#FIP10.Q10" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#A2_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle A2" ;
+    dcterms:identifier "A2" ;
+    dcterms:title "Metadata repository" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP11.Q11" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#F1_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle F1" ;
+    dcterms:identifier "F1" ;
+    dcterms:title "Identifier type" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP01.Q1",
+        "#FIP02.Q2" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#F2_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle F2" ;
+    dcterms:identifier "F2" ;
+    dcterms:title "Metadata schema" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP03.Q3" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#F3_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle F3" ;
+    dcterms:identifier "F3" ;
+    dcterms:title "Metadata-data linking schema" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP04.Q4" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#F4_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle F4" ;
+    dcterms:identifier "F4" ;
+    dcterms:title "Registry (searchable repository)" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP05.Q5",
+        "#FIP06.Q6" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP01.Q1> a dqv:Metric ;
+    dcterms:description "What globally unique, persistent, resolvable identifiers do you use for metadata records?" ;
+    dcterms:identifier "FIP01.Q1" ;
+    dcterms:title "What globally unique, persistent, resolvable identifiers do you use for metadata records?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP02.Q2> a dqv:Metric ;
+    dcterms:description "What globally unique, persistent, resolvable identifiers do you use for datasets?" ;
+    dcterms:identifier "FIP02.Q2" ;
+    dcterms:title "What globally unique, persistent, resolvable identifiers do you use for datasets?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP03.Q3> a dqv:Metric ;
+    dcterms:description "Which metadata schemas do you use for findability?" ;
+    dcterms:identifier "FIP03.Q3" ;
+    dcterms:title "Which metadata schemas do you use for findability?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP04.Q4> a dqv:Metric ;
+    dcterms:description "What is the technology that links the persistent identifiers of your data to the metadata description?" ;
+    dcterms:identifier "FIP04.Q4" ;
+    dcterms:title "What is the technology that links the persistent identifiers of your data to the metadata description?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP05.Q5> a dqv:Metric ;
+    dcterms:description "In which search engines are your metadata records indexed?" ;
+    dcterms:identifier "FIP05.Q5" ;
+    dcterms:title "In which search engines are your metadata records indexed?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP06.Q6> a dqv:Metric ;
+    dcterms:description "In which search engines are your datasets indexed?" ;
+    dcterms:identifier "FIP06.Q6" ;
+    dcterms:title "In which search engines are your datasets indexed?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP07.Q7> a dqv:Metric ;
+    dcterms:description "Which standardized communication protocol do you use for metadata records?" ;
+    dcterms:identifier "FIP07.Q7" ;
+    dcterms:title "Which standardized communication protocol do you use for metadata records?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP08.Q8> a dqv:Metric ;
+    dcterms:description "Which standardized communication protocol do you use for datasets?" ;
+    dcterms:identifier "FIP08.Q8" ;
+    dcterms:title "Which standardized communication protocol do you use for datasets?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP09.Q9> a dqv:Metric ;
+    dcterms:description "Which authentication & authorisation technique do you use for metadata records?" ;
+    dcterms:identifier "FIP09.Q9" ;
+    dcterms:title "Which authentication & authorisation technique do you use for metadata records?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP10.Q10> a dqv:Metric ;
+    dcterms:description "Which authentication & authorisation technique do you use for datasets?" ;
+    dcterms:identifier "FIP10.Q10" ;
+    dcterms:title "Which authentication & authorisation technique do you use for datasets?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP11.Q11> a dqv:Metric ;
+    dcterms:description "Which metadata longevity plan do you use?" ;
+    dcterms:identifier "FIP11.Q11" ;
+    dcterms:title "Which metadata longevity plan do you use?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP12.Q12> a dqv:Metric ;
+    dcterms:description "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?" ;
+    dcterms:identifier "FIP12.Q12" ;
+    dcterms:title "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP13.Q13> a dqv:Metric ;
+    dcterms:description "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?" ;
+    dcterms:identifier "FIP13.Q13" ;
+    dcterms:title "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP14.Q14> a dqv:Metric ;
+    dcterms:description "Which structured vocabularies do you use to annotate your metadata records?" ;
+    dcterms:identifier "FIP14.Q14" ;
+    dcterms:title "Which structured vocabularies do you use to annotate your metadata records?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP15.Q15> a dqv:Metric ;
+    dcterms:description "Which structured vocabularies do you use to encode your datasets?" ;
+    dcterms:identifier "FIP15.Q15" ;
+    dcterms:title "Which structured vocabularies do you use to encode your datasets?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP16.Q16> a dqv:Metric ;
+    dcterms:description "Which models, schema(s) do you use for your metadata records?" ;
+    dcterms:identifier "FIP16.Q16" ;
+    dcterms:title "Which models, schema(s) do you use for your metadata records?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP17.Q17> a dqv:Metric ;
+    dcterms:description "Which models, schema(s) do you use for your datasets?" ;
+    dcterms:identifier "FIP17.Q17" ;
+    dcterms:title "Which models, schema(s) do you use for your datasets?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP18.Q18> a dqv:Metric ;
+    dcterms:description "Which usage license do you use for your metadata records?" ;
+    dcterms:identifier "FIP18.Q18" ;
+    dcterms:title "Which usage license do you use for your metadata records?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP19.Q19> a dqv:Metric ;
+    dcterms:description "Which usage license do you use for your datasets?" ;
+    dcterms:identifier "FIP19.Q19" ;
+    dcterms:title "Which usage license do you use for your datasets?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP20.Q20> a dqv:Metric ;
+    dcterms:description "Which metadata schemas do you use for describing the provenance of your metadata records?" ;
+    dcterms:identifier "FIP20.Q20" ;
+    dcterms:title "Which metadata schemas do you use for describing the provenance of your metadata records?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#FIP21.Q21> a dqv:Metric ;
+    dcterms:description "Which metadata schemas do you use for describing the provenance of your datasets?" ;
+    dcterms:identifier "FIP21.Q21" ;
+    dcterms:title "Which metadata schemas do you use for describing the provenance of your datasets?" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#I1_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle I1" ;
+    dcterms:identifier "I1" ;
+    dcterms:title "Knowledge representation language" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP12.Q12",
+        "#FIP13.Q13" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#I2_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle I2" ;
+    dcterms:identifier "I2" ;
+    dcterms:title "Structured vocabulary" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP14.Q14",
+        "#FIP15.Q15" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#I3_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle I3" ;
+    dcterms:identifier "I3" ;
+    dcterms:title "Qualified reference mechanism" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP16.Q16",
+        "#FIP17.Q17" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Plant-flower_visitor_interactions_results> a prov:Collection,
+        prov:Entity,
+        ftr:TestResultSet ;
+    dcterms:identifier "Plant-flower_visitor_interactions" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Evaluation results for DMP: DMP for Buenos Aires Plant-Flower Visitor Interactions Dataset" ;
+    prov:hadMember "#Test_FIP01.Q1_result",
+        "#Test_FIP02.Q2_result",
+        "#Test_FIP03.Q3_result",
+        "#Test_FIP04.Q4_result",
+        "#Test_FIP05.Q5_result",
+        "#Test_FIP06.Q6_result",
+        "#Test_FIP07.Q7_result",
+        "#Test_FIP08.Q8_result",
+        "#Test_FIP09.Q9_result",
+        "#Test_FIP10.Q10_result",
+        "#Test_FIP11.Q11_result",
+        "#Test_FIP12.Q12_result",
+        "#Test_FIP13.Q13_result",
+        "#Test_FIP14.Q14_result",
+        "#Test_FIP15.Q15_result",
+        "#Test_FIP16.Q16_result",
+        "#Test_FIP17.Q17_result",
+        "#Test_FIP18.Q18_result",
+        "#Test_FIP19.Q19_result",
+        "#Test_FIP20.Q20_result",
+        "#Test_FIP21.Q21_result" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    prov:wasGeneratedBy "#test_execution" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#R1.1_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle R1.1" ;
+    dcterms:identifier "R1.1" ;
+    dcterms:title "Data usage license" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP18.Q18",
+        "#FIP19.Q19" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#R1.2_benchmark> a ftr:Benchmark ;
+    dcterms:description "Metrics for FAIR principle R1.2" ;
+    dcterms:identifier "R1.2" ;
+    dcterms:title "Provenance model" ;
+    dcat:version "" ;
+    ftr:hasAssociatedMetric "#FIP20.Q20",
+        "#FIP21.Q21" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP01.Q1> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.dataset_id.identifier" ;
+    dcterms:identifier "Test_FIP01.Q1" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "What globally unique, persistent, resolvable identifiers do you use for metadata records?" ;
+    sio:is-implementation-of "#FIP01.Q1" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#F1_benchmark" ;
+    ftr:testsMetric "#FIP01.Q1" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP01.Q1_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [\"https://doi.org/10.5281/zenodo.10669877\"]; compliance: Compliant" ;
+    dcterms:identifier "Test_FIP01.Q1" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP01.Q1" ;
+    prov:value "pass" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "https://doi.org/10.5281/zenodo.10669877" ;
+    ftr:outputFromTest "#Test_FIP01.Q1" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP02.Q2> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.dataset_id.identifier" ;
+    dcterms:identifier "Test_FIP02.Q2" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "What globally unique, persistent, resolvable identifiers do you use for datasets?" ;
+    sio:is-implementation-of "#FIP02.Q2" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#F1_benchmark" ;
+    ftr:testsMetric "#FIP02.Q2" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP02.Q2_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [\"https://doi.org/10.5281/zenodo.10669877\"]; compliance: Compliant" ;
+    dcterms:identifier "Test_FIP02.Q2" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP02.Q2" ;
+    prov:value "pass" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "https://doi.org/10.5281/zenodo.10669877" ;
+    ftr:outputFromTest "#Test_FIP02.Q2" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP03.Q3> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.metadata.metadata_standard_id.identifier" ;
+    dcterms:identifier "Test_FIP03.Q3" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which metadata schemas do you use for findability?" ;
+    sio:is-implementation-of "#FIP03.Q3" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#F2_benchmark" ;
+    ftr:testsMetric "#FIP03.Q3" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP03.Q3_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Missing value" ;
+    dcterms:identifier "Test_FIP03.Q3" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP03.Q3" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP03.Q3" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP04.Q4> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.distribution.host.pid_system" ;
+    dcterms:identifier "Test_FIP04.Q4" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "What is the technology that links the persistent identifiers of your data to the metadata description?" ;
+    sio:is-implementation-of "#FIP04.Q4" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#F3_benchmark" ;
+    ftr:testsMetric "#FIP04.Q4" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP04.Q4_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [[\"doi\"]]; compliance: Non-compliant" ;
+    dcterms:identifier "Test_FIP04.Q4" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP04.Q4" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "[\"doi\"]" ;
+    ftr:outputFromTest "#Test_FIP04.Q4" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP05.Q5> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.distribution.access_url" ;
+    dcterms:identifier "Test_FIP05.Q5" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "In which search engines are your metadata records indexed?" ;
+    sio:is-implementation-of "#FIP05.Q5" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#F4_benchmark" ;
+    ftr:testsMetric "#FIP05.Q5" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP05.Q5_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [\"https://zenodo.org/record/10669877\", \"https://globalbioticinteractions.org/worldfair/\"]; compliance: Non-compliant" ;
+    dcterms:identifier "Test_FIP05.Q5" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP05.Q5" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "https://globalbioticinteractions.org/worldfair/",
+        "https://zenodo.org/record/10669877" ;
+    ftr:outputFromTest "#Test_FIP05.Q5" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP06.Q6> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.distribution.access_url" ;
+    dcterms:identifier "Test_FIP06.Q6" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "In which search engines are your datasets indexed?" ;
+    sio:is-implementation-of "#FIP06.Q6" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#F4_benchmark" ;
+    ftr:testsMetric "#FIP06.Q6" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP06.Q6_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [\"https://zenodo.org/record/10669877\", \"https://globalbioticinteractions.org/worldfair/\"]; compliance: Non-compliant" ;
+    dcterms:identifier "Test_FIP06.Q6" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP06.Q6" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "https://globalbioticinteractions.org/worldfair/",
+        "https://zenodo.org/record/10669877" ;
+    ftr:outputFromTest "#Test_FIP06.Q6" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP07.Q7> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.distribution.host.url" ;
+    dcterms:identifier "Test_FIP07.Q7" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which standardized communication protocol do you use for metadata records?" ;
+    sio:is-implementation-of "#FIP07.Q7" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#A1.1_benchmark" ;
+    ftr:testsMetric "#FIP07.Q7" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP07.Q7_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [\"https://zenodo.org\", \"https://globalbioticinteractions.org\"]; compliance: Compliant" ;
+    dcterms:identifier "Test_FIP07.Q7" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP07.Q7" ;
+    prov:value "pass" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "https://globalbioticinteractions.org",
+        "https://zenodo.org" ;
+    ftr:outputFromTest "#Test_FIP07.Q7" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP08.Q8> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.distribution.host.url" ;
+    dcterms:identifier "Test_FIP08.Q8" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which standardized communication protocol do you use for datasets?" ;
+    sio:is-implementation-of "#FIP08.Q8" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#A1.1_benchmark" ;
+    ftr:testsMetric "#FIP08.Q8" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP08.Q8_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [\"https://zenodo.org\", \"https://globalbioticinteractions.org\"]; compliance: Compliant" ;
+    dcterms:identifier "Test_FIP08.Q8" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP08.Q8" ;
+    prov:value "pass" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "https://globalbioticinteractions.org",
+        "https://zenodo.org" ;
+    ftr:outputFromTest "#Test_FIP08.Q8" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP09.Q9> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.distribution.data_access" ;
+    dcterms:identifier "Test_FIP09.Q9" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which authentication & authorisation technique do you use for metadata records?" ;
+    sio:is-implementation-of "#FIP09.Q9" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#A1.2_benchmark" ;
+    ftr:testsMetric "#FIP09.Q9" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP09.Q9_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Missing value" ;
+    dcterms:identifier "Test_FIP09.Q9" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP09.Q9" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP09.Q9" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP10.Q10> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.distribution.data_access" ;
+    dcterms:identifier "Test_FIP10.Q10" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which authentication & authorisation technique do you use for datasets?" ;
+    sio:is-implementation-of "#FIP10.Q10" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#A1.2_benchmark" ;
+    ftr:testsMetric "#FIP10.Q10" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP10.Q10_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Missing value" ;
+    dcterms:identifier "Test_FIP10.Q10" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP10.Q10" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP10.Q10" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP11.Q11> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "None" ;
+    dcterms:identifier "Test_FIP11.Q11" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which metadata longevity plan do you use?" ;
+    sio:is-implementation-of "#FIP11.Q11" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#A2_benchmark" ;
+    ftr:testsMetric "#FIP11.Q11" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP11.Q11_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Not Applicable" ;
+    dcterms:identifier "Test_FIP11.Q11" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP11.Q11" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP11.Q11" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP12.Q12> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "None" ;
+    dcterms:identifier "Test_FIP12.Q12" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?" ;
+    sio:is-implementation-of "#FIP12.Q12" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#I1_benchmark" ;
+    ftr:testsMetric "#FIP12.Q12" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP12.Q12_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Not Applicable" ;
+    dcterms:identifier "Test_FIP12.Q12" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP12.Q12" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP12.Q12" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP13.Q13> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "None" ;
+    dcterms:identifier "Test_FIP13.Q13" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?" ;
+    sio:is-implementation-of "#FIP13.Q13" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#I1_benchmark" ;
+    ftr:testsMetric "#FIP13.Q13" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP13.Q13_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Not Applicable" ;
+    dcterms:identifier "Test_FIP13.Q13" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP13.Q13" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP13.Q13" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP14.Q14> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.metadata.metadata_standard_id.identifier" ;
+    dcterms:identifier "Test_FIP14.Q14" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which structured vocabularies do you use to annotate your metadata records?" ;
+    sio:is-implementation-of "#FIP14.Q14" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#I2_benchmark" ;
+    ftr:testsMetric "#FIP14.Q14" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP14.Q14_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Missing value" ;
+    dcterms:identifier "Test_FIP14.Q14" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP14.Q14" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP14.Q14" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP15.Q15> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.metadata.metadata_standard_id.identifier" ;
+    dcterms:identifier "Test_FIP15.Q15" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which structured vocabularies do you use to encode your datasets?" ;
+    sio:is-implementation-of "#FIP15.Q15" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#I2_benchmark" ;
+    ftr:testsMetric "#FIP15.Q15" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP15.Q15_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Missing value" ;
+    dcterms:identifier "Test_FIP15.Q15" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP15.Q15" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP15.Q15" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP16.Q16> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.metadata.metadata_standard_id.type" ;
+    dcterms:identifier "Test_FIP16.Q16" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which models, schema(s) do you use for your metadata records?" ;
+    sio:is-implementation-of "#FIP16.Q16" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#I3_benchmark" ;
+    ftr:testsMetric "#FIP16.Q16" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP16.Q16_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Missing value" ;
+    dcterms:identifier "Test_FIP16.Q16" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP16.Q16" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP16.Q16" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP17.Q17> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.metadata.metadata_standard_id.type" ;
+    dcterms:identifier "Test_FIP17.Q17" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which models, schema(s) do you use for your datasets?" ;
+    sio:is-implementation-of "#FIP17.Q17" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#I3_benchmark" ;
+    ftr:testsMetric "#FIP17.Q17" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP17.Q17_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Not Present; maDMP value: null; compliance: Missing value" ;
+    dcterms:identifier "Test_FIP17.Q17" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP17.Q17" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "None" ;
+    ftr:outputFromTest "#Test_FIP17.Q17" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP18.Q18> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.distribution.license.license_ref" ;
+    dcterms:identifier "Test_FIP18.Q18" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which usage license do you use for your metadata records?" ;
+    sio:is-implementation-of "#FIP18.Q18" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#R1.1_benchmark" ;
+    ftr:testsMetric "#FIP18.Q18" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP18.Q18_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [\"https://creativecommons.org/licenses/by/4.0/\"]; compliance: Compliant" ;
+    dcterms:identifier "Test_FIP18.Q18" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP18.Q18" ;
+    prov:value "pass" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "https://creativecommons.org/licenses/by/4.0/" ;
+    ftr:outputFromTest "#Test_FIP18.Q18" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP19.Q19> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.distribution.license.license_ref" ;
+    dcterms:identifier "Test_FIP19.Q19" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which usage license do you use for your datasets?" ;
+    sio:is-implementation-of "#FIP19.Q19" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#R1.1_benchmark" ;
+    ftr:testsMetric "#FIP19.Q19" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP19.Q19_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [\"https://creativecommons.org/licenses/by/4.0/\"]; compliance: Compliant" ;
+    dcterms:identifier "Test_FIP19.Q19" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP19.Q19" ;
+    prov:value "pass" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "https://creativecommons.org/licenses/by/4.0/" ;
+    ftr:outputFromTest "#Test_FIP19.Q19" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP20.Q20> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.data_quality_assurance" ;
+    dcterms:identifier "Test_FIP20.Q20" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which metadata schemas do you use for describing the provenance of your metadata records?" ;
+    sio:is-implementation-of "#FIP20.Q20" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#R1.2_benchmark" ;
+    ftr:testsMetric "#FIP20.Q20" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP20.Q20_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]]; compliance: Non-compliant" ;
+    dcterms:identifier "Test_FIP20.Q20" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP20.Q20" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]" ;
+    ftr:outputFromTest "#Test_FIP20.Q20" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP21.Q21> a dcat:DataService,
+        prov:Agent,
+        ftr:Test ;
+    dcterms:description "dataset.data_quality_assurance" ;
+    dcterms:identifier "Test_FIP21.Q21" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Which metadata schemas do you use for describing the provenance of your datasets?" ;
+    sio:is-implementation-of "#FIP21.Q21" ;
+    dcat:version "" ;
+    ftr:hasBenchmark "#R1.2_benchmark" ;
+    ftr:testsMetric "#FIP21.Q21" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP21.Q21_result> a prov:Entity,
+        ftr:TestResult ;
+    dcterms:description "Field status: Present; maDMP value: [[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]]; compliance: Non-compliant" ;
+    dcterms:identifier "Test_FIP21.Q21" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "Result for FIP21.Q21" ;
+    prov:value "fail" ;
+    prov:wasDerivedFrom "#input_dmp" ;
+    ftr:completion "100" ;
+    ftr:log "[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]" ;
+    ftr:outputFromTest "#Test_FIP21.Q21" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#evaluation_algorithm> a dcat:DataService,
+        prov:Agent,
+        ftr:Algorithm ;
+    dcterms:creator "#evaluation_org" ;
+    dcterms:description "Algorithm that evaluates maDMP fields against a FIP" ;
+    dcterms:identifier "ostrails-algorithm" ;
+    dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
+    dcterms:title "maDMP Evaluation Algorithm" ;
+    sio:is-implementation-of "#A1.1_benchmark",
+        "#A1.2_benchmark",
+        "#A2_benchmark",
+        "#F1_benchmark",
+        "#F2_benchmark",
+        "#F3_benchmark",
+        "#F4_benchmark",
+        "#I1_benchmark",
+        "#I2_benchmark",
+        "#I3_benchmark",
+        "#R1.1_benchmark",
+        "#R1.2_benchmark" ;
+    doap:repository "https://github.com/bernardobap21/DMP-Evaluation" ;
+    dcat:version "" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#evaluation_org> a vcard:Organization ;
+    vcard:fn "OSTrails" ;
+    vcard:hasEmail "mailto:info@ostrails.org" ;
+    vcard:organization-name "OSTrails" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#input_dmp> a prov:Entity ;
+    dcterms:description "Input maDMP" ;
+    dcterms:identifier "Plant-flower_visitor_interactions" ;
+    dcterms:title "DMP for Buenos Aires Plant-Flower Visitor Interactions Dataset" .
+
+<file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#test_execution> a ftr:TestExecutionActivity ;
+    prov:generated "#Test_FIP01.Q1_result",
+        "#Test_FIP02.Q2_result",
+        "#Test_FIP03.Q3_result",
+        "#Test_FIP04.Q4_result",
+        "#Test_FIP05.Q5_result",
+        "#Test_FIP06.Q6_result",
+        "#Test_FIP07.Q7_result",
+        "#Test_FIP08.Q8_result",
+        "#Test_FIP09.Q9_result",
+        "#Test_FIP10.Q10_result",
+        "#Test_FIP11.Q11_result",
+        "#Test_FIP12.Q12_result",
+        "#Test_FIP13.Q13_result",
+        "#Test_FIP14.Q14_result",
+        "#Test_FIP15.Q15_result",
+        "#Test_FIP16.Q16_result",
+        "#Test_FIP17.Q17_result",
+        "#Test_FIP18.Q18_result",
+        "#Test_FIP19.Q19_result",
+        "#Test_FIP20.Q20_result",
+        "#Test_FIP21.Q21_result" ;
+    prov:used "#input_dmp" ;
+    prov:wasAssociatedWith "#Test_FIP01.Q1",
+        "#Test_FIP02.Q2",
+        "#Test_FIP03.Q3",
+        "#Test_FIP04.Q4",
+        "#Test_FIP05.Q5",
+        "#Test_FIP06.Q6",
+        "#Test_FIP07.Q7",
+        "#Test_FIP08.Q8",
+        "#Test_FIP09.Q9",
+        "#Test_FIP10.Q10",
+        "#Test_FIP11.Q11",
+        "#Test_FIP12.Q12",
+        "#Test_FIP13.Q13",
+        "#Test_FIP14.Q14",
+        "#Test_FIP15.Q15",
+        "#Test_FIP16.Q16",
+        "#Test_FIP17.Q17",
+        "#Test_FIP18.Q18",
+        "#Test_FIP19.Q19",
+        "#Test_FIP20.Q20",
+        "#Test_FIP21.Q21" .
+
