@@ -4,8 +4,8 @@ from urllib.parse import quote
 
 DMP = Namespace("http://example.org/dmp#")
 
-def json_to_rdf(json_path, rdf_path, triple_store_path=None):
-    """Convert a maDMP JSON file to Turtle and optionally an RDF triple store."""
+def json_to_rdf(json_path, rdf_path):
+    """Convert a maDMP JSON file to a Turtle representation."""
     with open(json_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
@@ -56,13 +56,8 @@ def json_to_rdf(json_path, rdf_path, triple_store_path=None):
     g.serialize(destination=rdf_path, format='turtle')
     print(f"RDF saved successfully at {rdf_path}")
 
-    if triple_store_path:
-        g.serialize(destination=triple_store_path, format='nt')
-        print(f"Triple store saved at {triple_store_path}")
-
-
-def jsonld_to_triples(jsonld_path, ttl_path, triple_store_path):
-    """Parse a JSON-LD document and store it as Turtle and N-Triples."""
+def jsonld_to_triples(jsonld_path, ttl_path):
+    """Parse a JSON-LD document and store it as Turtle."""
 
     g = Graph()
     with open(jsonld_path, 'r', encoding='utf-8') as fh:
@@ -71,8 +66,7 @@ def jsonld_to_triples(jsonld_path, ttl_path, triple_store_path):
     g.parse(data=json.dumps(data), format='json-ld')
 
     g.serialize(destination=ttl_path, format='turtle')
-    g.serialize(destination=triple_store_path, format='nt')
-    print(f"Converted {jsonld_path} to {ttl_path} and {triple_store_path}")
+    print(f"Converted {jsonld_path} to {ttl_path}")
 
 if __name__ == "__main__":
     import argparse
@@ -87,7 +81,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "output_dir",
-        help="Directory to store the converted .ttl and .nt files",
+        help="Directory to store the converted .ttl file",
     )
     args = parser.parse_args()
 
@@ -95,9 +89,8 @@ if __name__ == "__main__":
 
     base = os.path.splitext(os.path.basename(args.input))[0]
     ttl_path = os.path.join(args.output_dir, base + ".ttl")
-    nt_path = os.path.join(args.output_dir, base + ".nt")
 
     if args.input.endswith(".jsonld"):
-        jsonld_to_triples(args.input, ttl_path, nt_path)
+        jsonld_to_triples(args.input, ttl_path)
     else:
-        json_to_rdf(args.input, ttl_path, nt_path)
+        json_to_rdf(args.input, ttl_path)
