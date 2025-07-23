@@ -113,10 +113,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP01.Q1",
-      "ftr:testsMetric": "#FIP01.Q1",
-      "ftr:hasBenchmark": [
-        "#F1_benchmark"
-      ]
+      "ftr:testMetric": "#FIP01.Q1"
     },
     {
       "@id": "#Test_FIP01.Q1_result",
@@ -159,10 +156,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP02.Q2",
-      "ftr:testsMetric": "#FIP02.Q2",
-      "ftr:hasBenchmark": [
-        "#F1_benchmark"
-      ]
+      "ftr:testMetric": "#FIP02.Q2"
     },
     {
       "@id": "#Test_FIP02.Q2_result",
@@ -205,10 +199,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP03.Q3",
-      "ftr:testsMetric": "#FIP03.Q3",
-      "ftr:hasBenchmark": [
-        "#F2_benchmark"
-      ]
+      "ftr:testMetric": "#FIP03.Q3"
     },
     {
       "@id": "#Test_FIP03.Q3_result",
@@ -251,10 +242,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP04.Q4",
-      "ftr:testsMetric": "#FIP04.Q4",
-      "ftr:hasBenchmark": [
-        "#F3_benchmark"
-      ]
+      "ftr:testMetric": "#FIP04.Q4"
     },
     {
       "@id": "#Test_FIP04.Q4_result",
@@ -297,10 +285,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP05.Q5",
-      "ftr:testsMetric": "#FIP05.Q5",
-      "ftr:hasBenchmark": [
-        "#F4_benchmark"
-      ]
+      "ftr:testMetric": "#FIP05.Q5"
     },
     {
       "@id": "#Test_FIP05.Q5_result",
@@ -345,10 +330,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP06.Q6",
-      "ftr:testsMetric": "#FIP06.Q6",
-      "ftr:hasBenchmark": [
-        "#F4_benchmark"
-      ]
+      "ftr:testMetric": "#FIP06.Q6"
     },
     {
       "@id": "#Test_FIP06.Q6_result",
@@ -393,10 +375,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP07.Q7",
-      "ftr:testsMetric": "#FIP07.Q7",
-      "ftr:hasBenchmark": [
-        "#A1.1_benchmark"
-      ]
+      "ftr:testMetric": "#FIP07.Q7"
     },
     {
       "@id": "#Test_FIP07.Q7_result",
@@ -441,10 +420,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP08.Q8",
-      "ftr:testsMetric": "#FIP08.Q8",
-      "ftr:hasBenchmark": [
-        "#A1.1_benchmark"
-      ]
+      "ftr:testMetric": "#FIP08.Q8"
     },
     {
       "@id": "#Test_FIP08.Q8_result",
@@ -489,10 +465,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP09.Q9",
-      "ftr:testsMetric": "#FIP09.Q9",
-      "ftr:hasBenchmark": [
-        "#A1.2_benchmark"
-      ]
+      "ftr:testMetric": "#FIP09.Q9"
     },
     {
       "@id": "#Test_FIP09.Q9_result",
@@ -535,10 +508,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP10.Q10",
-      "ftr:testsMetric": "#FIP10.Q10",
-      "ftr:hasBenchmark": [
-        "#A1.2_benchmark"
-      ]
+      "ftr:testMetric": "#FIP10.Q10"
     },
     {
       "@id": "#Test_FIP10.Q10_result",
@@ -581,10 +551,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP11.Q11",
-      "ftr:testsMetric": "#FIP11.Q11",
-      "ftr:hasBenchmark": [
-        "#A2_benchmark"
-      ]
+      "ftr:testMetric": "#FIP11.Q11"
     },
     {
       "@id": "#Test_FIP11.Q11_result",
@@ -627,10 +594,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP12.Q12",
-      "ftr:testsMetric": "#FIP12.Q12",
-      "ftr:hasBenchmark": [
-        "#I1_benchmark"
-      ]
+      "ftr:testMetric": "#FIP12.Q12"
     },
     {
       "@id": "#Test_FIP12.Q12_result",
@@ -673,10 +637,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP13.Q13",
-      "ftr:testsMetric": "#FIP13.Q13",
-      "ftr:hasBenchmark": [
-        "#I1_benchmark"
-      ]
+      "ftr:testMetric": "#FIP13.Q13"
     },
     {
       "@id": "#Test_FIP13.Q13_result",
@@ -719,10 +680,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP14.Q14",
-      "ftr:testsMetric": "#FIP14.Q14",
-      "ftr:hasBenchmark": [
-        "#I2_benchmark"
-      ]
+      "ftr:testMetric": "#FIP14.Q14"
     },
     {
       "@id": "#Test_FIP14.Q14_result",
@@ -765,10 +723,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP15.Q15",
-      "ftr:testsMetric": "#FIP15.Q15",
-      "ftr:hasBenchmark": [
-        "#I2_benchmark"
-      ]
+      "ftr:testMetric": "#FIP15.Q15"
     },
     {
       "@id": "#Test_FIP15.Q15_result",
@@ -811,10 +766,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP16.Q16",
-      "ftr:testsMetric": "#FIP16.Q16",
-      "ftr:hasBenchmark": [
-        "#I3_benchmark"
-      ]
+      "ftr:testMetric": "#FIP16.Q16"
     },
     {
       "@id": "#Test_FIP16.Q16_result",
@@ -857,10 +809,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP17.Q17",
-      "ftr:testsMetric": "#FIP17.Q17",
-      "ftr:hasBenchmark": [
-        "#I3_benchmark"
-      ]
+      "ftr:testMetric": "#FIP17.Q17"
     },
     {
       "@id": "#Test_FIP17.Q17_result",
@@ -903,10 +852,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP18.Q18",
-      "ftr:testsMetric": "#FIP18.Q18",
-      "ftr:hasBenchmark": [
-        "#R1.1_benchmark"
-      ]
+      "ftr:testMetric": "#FIP18.Q18"
     },
     {
       "@id": "#Test_FIP18.Q18_result",
@@ -949,10 +895,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP19.Q19",
-      "ftr:testsMetric": "#FIP19.Q19",
-      "ftr:hasBenchmark": [
-        "#R1.1_benchmark"
-      ]
+      "ftr:testMetric": "#FIP19.Q19"
     },
     {
       "@id": "#Test_FIP19.Q19_result",
@@ -995,10 +938,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP20.Q20",
-      "ftr:testsMetric": "#FIP20.Q20",
-      "ftr:hasBenchmark": [
-        "#R1.2_benchmark"
-      ]
+      "ftr:testMetric": "#FIP20.Q20"
     },
     {
       "@id": "#Test_FIP20.Q20_result",
@@ -1041,10 +981,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "dcat:version": "",
       "sio:is-implementation-of": "#FIP21.Q21",
-      "ftr:testsMetric": "#FIP21.Q21",
-      "ftr:hasBenchmark": [
-        "#R1.2_benchmark"
-      ]
+      "ftr:testMetric": "#FIP21.Q21"
     },
     {
       "@id": "#Test_FIP21.Q21_result",

@@ -265,8 +265,7 @@
     dcterms:title "What globally unique, persistent, resolvable identifiers do you use for metadata records?" ;
     sio:is-implementation-of "#FIP01.Q1" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#F1_benchmark" ;
-    ftr:testsMetric "#FIP01.Q1" .
+    ftr:testMetric "#FIP01.Q1" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP01.Q1_result> a prov:Entity,
         ftr:TestResult ;
@@ -289,8 +288,7 @@
     dcterms:title "What globally unique, persistent, resolvable identifiers do you use for datasets?" ;
     sio:is-implementation-of "#FIP02.Q2" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#F1_benchmark" ;
-    ftr:testsMetric "#FIP02.Q2" .
+    ftr:testMetric "#FIP02.Q2" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP02.Q2_result> a prov:Entity,
         ftr:TestResult ;
@@ -313,8 +311,7 @@
     dcterms:title "Which metadata schemas do you use for findability?" ;
     sio:is-implementation-of "#FIP03.Q3" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#F2_benchmark" ;
-    ftr:testsMetric "#FIP03.Q3" .
+    ftr:testMetric "#FIP03.Q3" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP03.Q3_result> a prov:Entity,
         ftr:TestResult ;
@@ -337,8 +334,7 @@
     dcterms:title "What is the technology that links the persistent identifiers of your data to the metadata description?" ;
     sio:is-implementation-of "#FIP04.Q4" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#F3_benchmark" ;
-    ftr:testsMetric "#FIP04.Q4" .
+    ftr:testMetric "#FIP04.Q4" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP04.Q4_result> a prov:Entity,
         ftr:TestResult ;
@@ -361,8 +357,7 @@
     dcterms:title "In which search engines are your metadata records indexed?" ;
     sio:is-implementation-of "#FIP05.Q5" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#F4_benchmark" ;
-    ftr:testsMetric "#FIP05.Q5" .
+    ftr:testMetric "#FIP05.Q5" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP05.Q5_result> a prov:Entity,
         ftr:TestResult ;
@@ -386,8 +381,7 @@
     dcterms:title "In which search engines are your datasets indexed?" ;
     sio:is-implementation-of "#FIP06.Q6" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#F4_benchmark" ;
-    ftr:testsMetric "#FIP06.Q6" .
+    ftr:testMetric "#FIP06.Q6" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP06.Q6_result> a prov:Entity,
         ftr:TestResult ;
@@ -411,8 +405,7 @@
     dcterms:title "Which standardized communication protocol do you use for metadata records?" ;
     sio:is-implementation-of "#FIP07.Q7" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#A1.1_benchmark" ;
-    ftr:testsMetric "#FIP07.Q7" .
+    ftr:testMetric "#FIP07.Q7" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP07.Q7_result> a prov:Entity,
         ftr:TestResult ;
@@ -436,8 +429,7 @@
     dcterms:title "Which standardized communication protocol do you use for datasets?" ;
     sio:is-implementation-of "#FIP08.Q8" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#A1.1_benchmark" ;
-    ftr:testsMetric "#FIP08.Q8" .
+    ftr:testMetric "#FIP08.Q8" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP08.Q8_result> a prov:Entity,
         ftr:TestResult ;
@@ -461,8 +453,7 @@
     dcterms:title "Which authentication & authorisation technique do you use for metadata records?" ;
     sio:is-implementation-of "#FIP09.Q9" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#A1.2_benchmark" ;
-    ftr:testsMetric "#FIP09.Q9" .
+    ftr:testMetric "#FIP09.Q9" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP09.Q9_result> a prov:Entity,
         ftr:TestResult ;
@@ -485,8 +476,7 @@
     dcterms:title "Which authentication & authorisation technique do you use for datasets?" ;
     sio:is-implementation-of "#FIP10.Q10" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#A1.2_benchmark" ;
-    ftr:testsMetric "#FIP10.Q10" .
+    ftr:testMetric "#FIP10.Q10" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP10.Q10_result> a prov:Entity,
         ftr:TestResult ;
@@ -509,8 +499,7 @@
     dcterms:title "Which metadata longevity plan do you use?" ;
     sio:is-implementation-of "#FIP11.Q11" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#A2_benchmark" ;
-    ftr:testsMetric "#FIP11.Q11" .
+    ftr:testMetric "#FIP11.Q11" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP11.Q11_result> a prov:Entity,
         ftr:TestResult ;
@@ -533,8 +522,7 @@
     dcterms:title "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?" ;
     sio:is-implementation-of "#FIP12.Q12" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#I1_benchmark" ;
-    ftr:testsMetric "#FIP12.Q12" .
+    ftr:testMetric "#FIP12.Q12" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP12.Q12_result> a prov:Entity,
         ftr:TestResult ;
@@ -557,8 +545,7 @@
     dcterms:title "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?" ;
     sio:is-implementation-of "#FIP13.Q13" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#I1_benchmark" ;
-    ftr:testsMetric "#FIP13.Q13" .
+    ftr:testMetric "#FIP13.Q13" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP13.Q13_result> a prov:Entity,
         ftr:TestResult ;
@@ -581,8 +568,7 @@
     dcterms:title "Which structured vocabularies do you use to annotate your metadata records?" ;
     sio:is-implementation-of "#FIP14.Q14" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#I2_benchmark" ;
-    ftr:testsMetric "#FIP14.Q14" .
+    ftr:testMetric "#FIP14.Q14" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP14.Q14_result> a prov:Entity,
         ftr:TestResult ;
@@ -605,8 +591,7 @@
     dcterms:title "Which structured vocabularies do you use to encode your datasets?" ;
     sio:is-implementation-of "#FIP15.Q15" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#I2_benchmark" ;
-    ftr:testsMetric "#FIP15.Q15" .
+    ftr:testMetric "#FIP15.Q15" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP15.Q15_result> a prov:Entity,
         ftr:TestResult ;
@@ -629,8 +614,7 @@
     dcterms:title "Which models, schema(s) do you use for your metadata records?" ;
     sio:is-implementation-of "#FIP16.Q16" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#I3_benchmark" ;
-    ftr:testsMetric "#FIP16.Q16" .
+    ftr:testMetric "#FIP16.Q16" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP16.Q16_result> a prov:Entity,
         ftr:TestResult ;
@@ -653,8 +637,7 @@
     dcterms:title "Which models, schema(s) do you use for your datasets?" ;
     sio:is-implementation-of "#FIP17.Q17" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#I3_benchmark" ;
-    ftr:testsMetric "#FIP17.Q17" .
+    ftr:testMetric "#FIP17.Q17" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP17.Q17_result> a prov:Entity,
         ftr:TestResult ;
@@ -677,8 +660,7 @@
     dcterms:title "Which usage license do you use for your metadata records?" ;
     sio:is-implementation-of "#FIP18.Q18" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#R1.1_benchmark" ;
-    ftr:testsMetric "#FIP18.Q18" .
+    ftr:testMetric "#FIP18.Q18" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP18.Q18_result> a prov:Entity,
         ftr:TestResult ;
@@ -701,8 +683,7 @@
     dcterms:title "Which usage license do you use for your datasets?" ;
     sio:is-implementation-of "#FIP19.Q19" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#R1.1_benchmark" ;
-    ftr:testsMetric "#FIP19.Q19" .
+    ftr:testMetric "#FIP19.Q19" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP19.Q19_result> a prov:Entity,
         ftr:TestResult ;
@@ -725,8 +706,7 @@
     dcterms:title "Which metadata schemas do you use for describing the provenance of your metadata records?" ;
     sio:is-implementation-of "#FIP20.Q20" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#R1.2_benchmark" ;
-    ftr:testsMetric "#FIP20.Q20" .
+    ftr:testMetric "#FIP20.Q20" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP20.Q20_result> a prov:Entity,
         ftr:TestResult ;
@@ -749,8 +729,7 @@
     dcterms:title "Which metadata schemas do you use for describing the provenance of your datasets?" ;
     sio:is-implementation-of "#FIP21.Q21" ;
     dcat:version "" ;
-    ftr:hasBenchmark "#R1.2_benchmark" ;
-    ftr:testsMetric "#FIP21.Q21" .
+    ftr:testMetric "#FIP21.Q21" .
 
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP21.Q21_result> a prov:Entity,
         ftr:TestResult ;
