@@ -158,9 +158,9 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir, metric_version=DE
             "dcterms:license": DEFAULT_LICENSE,
             "dcat:version": metric_version,
             "sio:is-implementation-of": metric_uri,
-            "ftr:testsMetric": metric_uri,
+            "ftr:testMetric": metric_uri,
             ####
-            "ftr:hasBenchmark": [bench_uri] if bench_uri else [],
+            #"ftr:hasBenchmark": [bench_uri] if bench_uri else [],
             #"ftr:hasBenchmark": [],
         }
         graph.append(test_node)
