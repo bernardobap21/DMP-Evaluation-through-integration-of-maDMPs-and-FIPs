@@ -8,7 +8,14 @@ This repository contains a prototype framework for evaluating Data Management Pl
 
 ## Installation
 
-Install the required packages with:
+First clone the repository and move into the project directory:
+
+```bash
+git clone https://github.com/bernardobap21/DMP-Evaluation.git
+cd DMP-Evaluation
+```
+
+Then install the required packages with:
 
 ```bash
 pip install -r requirements.txt
@@ -16,7 +23,7 @@ pip install -r requirements.txt
 
 ## Running the evaluator
 
-The main script `evaluate_dmp.py` compares a maDMP file with the FIP mapping and generates several reports. An example with a maDMP and a FIP (both available in the repository) of how it can be executed is:
+After installing the dependencies you can run the evaluator. The script `evaluate_dmp.py` compares a maDMP file with a chosen FIP mapping and generates several reports. An example using the included files is:
 
 ```bash
 python  evaluate_dmp.py --input examples/Plant-flower_visitor_interactions.json --mapping FIP_Mapping/fip_madmp_Plant-Pollinator Community.json --output results
@@ -37,10 +44,9 @@ An HTTP API exposing the same evaluation logic is provided in `api.py`. Start it
 ```bash
 python -m uvicorn api:app --reload
 ```
+The server will run on `http://127.0.0.1:8000`. Open `http://127.0.0.1:8000/docs` in your browser to access the interactive documentation. You can upload your maDMP file and pick a FIP mapping from the dropdown to run an evaluation directly from the web UI.
 
-The API is available locally at `http://127.0.0.1:8000/docs`.
-
-Or in the web at  `https://dmp-evaluation.onrender.com/docs#/default/evaluate_evaluate__post`.
+The API is also available on the web at  `https://dmp-evaluation.onrender.com/docs#/default/evaluate_evaluate__post`.
 
 Click the Try it out button and then, upload your maDMP file and select one of the available FIPs for the evaluation from the dropdown.
 

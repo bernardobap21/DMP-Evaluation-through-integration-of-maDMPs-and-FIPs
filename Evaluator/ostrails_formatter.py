@@ -10,7 +10,7 @@ DEFAULT_REPOSITORY = "https://github.com/bernardobap21/DMP-Evaluation"
 BENCHMARK_TITLES = {
     "F1": "Identifier type",
     "F2": "Metadata schema",
-    "F3": "Metadata-data linking schema",
+    "F3": "Metadata-Data linking mechanism",
     "F4": "Registry (searchable repository)",
     "A1.1": "Communication protocol",
     "A1.2": "Authentication and authorization service",
@@ -148,20 +148,24 @@ def export_fip_results(results, dmp_id, dmp_title, output_dir, metric_version=DE
         ####
 
         test_uri = f"#{res['test_id']}"
+        allowed_vals = res.get("benchmark", [])
+        if not isinstance(allowed_vals, list):
+            allowed_vals = [allowed_vals] if allowed_vals else []
+
+        description = (
+            f"DCS field: {res['subject']}; allowed_value from the community: "
+            f"{json.dumps(allowed_vals, ensure_ascii=False)}"
+        )
         test_node = {
             "@id": test_uri,
             "@type": ["ftr:Test", "dcat:DataService", "prov:Agent"],
             "dcterms:identifier": res["test_id"],
             "dcterms:title": res["metric_label"],
-            #dcterms:description": f"Check field {res['subject']}",
-            "dcterms:description": f"{res['subject']}",
+            "dcterms:description": description,
             "dcterms:license": DEFAULT_LICENSE,
             "dcat:version": metric_version,
             "sio:is-implementation-of": metric_uri,
             "ftr:testMetric": metric_uri,
-            ####
-            #"ftr:hasBenchmark": [bench_uri] if bench_uri else [],
-            #"ftr:hasBenchmark": [],
         }
         graph.append(test_node)
 
