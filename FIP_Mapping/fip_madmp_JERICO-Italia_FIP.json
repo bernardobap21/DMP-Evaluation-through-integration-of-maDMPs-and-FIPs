@@ -1,0 +1,331 @@
+{
+  "FIP_Version": "1.0.0",
+  "FIP_maDMP_Mapping": [
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "DOI",
+        "DataCite DOI Resolution Service"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "DataCite DOI Resolution Service",
+        "DOI"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
+      "FAIR_principle": "F2",
+      "FIP_question": "Which metadata schemas do you use for findability?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "IOOS-NGDAC-MS ",
+        "DataCite Metadata Scheme",
+        "OceanGliders-MS ",
+        "EHN-HFRv-MS ",
+        "NetCDF CF-1.10",
+        "NetCDF CF-1.6",
+        "ACDD ",
+        "EMSO Metadata Schema",
+        "ISO 19115",
+        "EGO-GLIDER-MS ",
+        "NetCDF CF-1.7",
+        "iFDO ",
+        "NetCDF CF-1.11",
+        "CMS-INSTAC-MS "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F3",
+      "FAIR_principle": "F3",
+      "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "DCS_field": "dataset.distribution.host.pid_system",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your metadata records indexed?",
+      "DCS_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "IT-IOOS ",
+        "FAIRsharing.XrXzcm",
+        "EMSO OGS ERDDAP SERVER",
+        "CMDS ",
+        "EHN-THREDDS ",
+        "PANGAEA Data Publisher",
+        "SEANOE - SEA scieNtific Open data Edition",
+        "Zenodo",
+        "EHN-ERDDAP ",
+        "LTER-Italy-DR "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your datasets indexed?",
+      "DCS_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "IT-IOOS ",
+        "EMSO OGS ERDDAP SERVER",
+        "EHN-ERDDAP ",
+        "LTER-Italy-DR ",
+        "EHN-THREDDS ",
+        "SEANOE - SEA scieNtific Open data Edition",
+        "CMDS ",
+        "FAIRsharing.XrXzcm",
+        "Zenodo",
+        "PANGAEA Data Publisher"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-MD",
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for metadata records?",
+      "DCS_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "OPeNDAP",
+        "HTTPS",
+        "WMS",
+        "WCS",
+        "OAI-PMH Schema "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-D",
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for datasets?",
+      "DCS_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "WCS",
+        "OAI-PMH Schema ",
+        "OPeNDAP",
+        "HTTPS",
+        "WMS"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-MD",
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
+      "DCS_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "Open Data",
+        "LDAP",
+        "EMSO-OGS-ERDDAP-LA ",
+        "OAuth",
+        "EGI Checkin",
+        "ORCID-AAI "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for datasets?",
+      "DCS_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "SDN-MID-Service",
+        "EGI Checkin",
+        "EMSO-OGS-ERDDAP-LA ",
+        "Open Data",
+        "EHN-THREDDS-LA ",
+        "EHN-ERDDAP-LA ",
+        "OAuth",
+        "PANGAEA-LA ",
+        "ORCID-AAI ",
+        "LDAP"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A2",
+      "FAIR_principle": "A2",
+      "FIP_question": "Which metadata longevity plan do you use?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "",
+      "Allowed_values": [
+        "ZMPP ",
+        "PANGAEA-MPP ",
+        "ITINERIS Data Management Plan"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-MD",
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "",
+      "Allowed_values": [
+        "NetCDF",
+        "eXtensible Markup Language (XML)",
+        "NetCDF OceanSITES",
+        "JSON",
+        "JSON-LD"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "",
+      "Allowed_values": [
+        "CSV File Format ",
+        "NetCDF OceanSITES",
+        "JSON",
+        "JSON-LD",
+        "eXtensible Markup Language (XML)",
+        "NetCDF"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to annotate your metadata records?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "NetCDF CF-1.6",
+        "NetCDF CF-1.11",
+        "GCMD",
+        "EnvThes",
+        "NetCDF CF-1.7",
+        "SDM MD",
+        "WIGOS",
+        "NVS",
+        "NetCDF CF-1.10",
+        "CF SN "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to encode your datasets?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "GCMD",
+        "SDM MD",
+        "NetCDF CF-1.11",
+        "WIGOS",
+        "EnvThes",
+        "NetCDF CF-1.7",
+        "NVS",
+        "CF SN ",
+        "NetCDF CF-1.10",
+        "NetCDF CF-1.6"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your metadata records?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "ISO 8601 data and time format",
+        "ISO 19115",
+        "PROV-O"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-D",
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your datasets?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "PROV-O",
+        "ISO 8601 data and time format",
+        "ISO 19115"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your metadata records?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "CC0 1.0",
+        "CC BY 4.0"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your datasets?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "CC BY 4.0"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-MD",
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+      "DCS_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "NetCDF CF-1.11",
+        "NetCDF CF-1.7",
+        "PROV-O",
+        "NetCDF CF-1.10",
+        "NetCDF CF-1.6"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your datasets?",
+      "DCS_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "NetCDF CF-1.7",
+        "NetCDF CF-1.10",
+        "NetCDF CF-1.11",
+        "PROV-O",
+        "NetCDF CF-1.6"
+      ]
+    }
+  ]
+}

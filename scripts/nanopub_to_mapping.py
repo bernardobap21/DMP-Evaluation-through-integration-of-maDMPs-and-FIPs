@@ -129,10 +129,36 @@ SCHEMA = Namespace("https://schema.org/")
 
 
 def fetch_graph(uri: str) -> ConjunctiveGraph:
-    resp = requests.get(uri, headers={"Accept": "application/trig"})
-    resp.raise_for_status()
+    """Retrieve the RDF graph for the given URI.
+
+    The nanopublication registry primarily serves TriG, but some referenced
+    resources might only be available in other RDF serialisations (e.g.
+    Turtle) or not as RDF at all.  In order to be robust we attempt to parse
+    the returned content as TriG first and fall back to a few other common
+    formats before giving up and returning an empty graph.
+    """
+
+    resp = requests.get(
+        uri,
+        headers={"Accept": "application/trig, text/turtle;q=0.9, application/ld+json;q=0.8, */*;q=0.1"},
+    )
+    try:
+        resp.raise_for_status()
+    except Exception:
+        return ConjunctiveGraph()
+
+    ctype = resp.headers.get("Content-Type", "").split(";")[0]
+    if "html" in ctype.lower():
+        return ConjunctiveGraph()
+    
     g = ConjunctiveGraph()
-    g.parse(data=resp.text, format="trig")
+    for fmt in ("trig", "turtle", "nquads", "xml", "json-ld"):
+        try:
+            g.parse(data=resp.text, format=fmt)
+            break
+        except Exception:
+            g = ConjunctiveGraph()
+            continue
     return g
 
 
@@ -141,11 +167,15 @@ def get_label(uri: str) -> str:
     g = fetch_graph(base)
     label = g.value(URIRef(uri), RDFS.label)
     if label:
-        label = str(label)
-        if "|" in label:
-            label = label.split("|")[0]
-        return label
-    return ""
+        text = str(label)
+        if "|" in text:
+            text = text.split("|")[0]
+        return text
+    # Fallback: use fragment or last path segment when no label could be
+    # retrieved (e.g. non-RDF resources such as DOIs)
+    if frag:
+        return frag
+    return base.rsplit("/", 1)[-1]
 
 def get_fip_label(uri: str) -> str:
     g = fetch_graph(uri)
