@@ -48,7 +48,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#F3_benchmark> a ftr:Benchmark ;
     dcterms:description "Metrics for FAIR principle F3" ;
     dcterms:identifier "F3" ;
-    dcterms:title "Metadata-data linking schema" ;
+    dcterms:title "Metadata-Data linking mechanism" ;
     dcat:version "" ;
     ftr:hasAssociatedMetric "#FIP04.Q4" .
 
@@ -259,7 +259,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP01.Q1> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.dataset_id.identifier" ;
+    dcterms:description "DCS field: dataset.dataset_id.identifier; allowed_value from the community: [\"DOI\"]" ;
     dcterms:identifier "Test_FIP01.Q1" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "What globally unique, persistent, resolvable identifiers do you use for metadata records?" ;
@@ -282,7 +282,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP02.Q2> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.dataset_id.identifier" ;
+    dcterms:description "DCS field: dataset.dataset_id.identifier; allowed_value from the community: [\"DOI\", \"URI \"]" ;
     dcterms:identifier "Test_FIP02.Q2" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "What globally unique, persistent, resolvable identifiers do you use for datasets?" ;
@@ -305,7 +305,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP03.Q3> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.metadata.metadata_standard_id.identifier" ;
+    dcterms:description "DCS field: dataset.metadata.metadata_standard_id.identifier; allowed_value from the community: [\"EML\"]" ;
     dcterms:identifier "Test_FIP03.Q3" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which metadata schemas do you use for findability?" ;
@@ -328,7 +328,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP04.Q4> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.distribution.host.pid_system" ;
+    dcterms:description "DCS field: dataset.distribution.host.pid_system; allowed_value from the community: [\"DataCite\"]" ;
     dcterms:identifier "Test_FIP04.Q4" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "What is the technology that links the persistent identifiers of your data to the metadata description?" ;
@@ -351,7 +351,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP05.Q5> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.distribution.access_url" ;
+    dcterms:description "DCS field: dataset.distribution.access_url; allowed_value from the community: [\"Global Biotic Interactions\", \"GBIF search engine\"]" ;
     dcterms:identifier "Test_FIP05.Q5" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "In which search engines are your metadata records indexed?" ;
@@ -375,7 +375,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP06.Q6> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.distribution.access_url" ;
+    dcterms:description "DCS field: dataset.distribution.access_url; allowed_value from the community: [\"GBIF search engine\", \"Global Biotic Interactions\"]" ;
     dcterms:identifier "Test_FIP06.Q6" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "In which search engines are your datasets indexed?" ;
@@ -399,7 +399,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP07.Q7> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.distribution.host.url" ;
+    dcterms:description "DCS field: dataset.distribution.host.url; allowed_value from the community: [\"HTTPS\", \"REST\"]" ;
     dcterms:identifier "Test_FIP07.Q7" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which standardized communication protocol do you use for metadata records?" ;
@@ -423,7 +423,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP08.Q8> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.distribution.host.url" ;
+    dcterms:description "DCS field: dataset.distribution.host.url; allowed_value from the community: [\"HTTPS\", \"REST\"]" ;
     dcterms:identifier "Test_FIP08.Q8" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which standardized communication protocol do you use for datasets?" ;
@@ -447,7 +447,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP09.Q9> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.distribution.data_access" ;
+    dcterms:description "DCS field: dataset.distribution.data_access; allowed_value from the community: [\"OAuth\", \"Open Data\"]" ;
     dcterms:identifier "Test_FIP09.Q9" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which authentication & authorisation technique do you use for metadata records?" ;
@@ -470,7 +470,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP10.Q10> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.distribution.data_access" ;
+    dcterms:description "DCS field: dataset.distribution.data_access; allowed_value from the community: [\"GBIF local account\", \"OAuth\", \"Open Data\"]" ;
     dcterms:identifier "Test_FIP10.Q10" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which authentication & authorisation technique do you use for datasets?" ;
@@ -493,7 +493,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP11.Q11> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "None" ;
+    dcterms:description "DCS field: None; allowed_value from the community: []" ;
     dcterms:identifier "Test_FIP11.Q11" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which metadata longevity plan do you use?" ;
@@ -516,7 +516,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP12.Q12> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "None" ;
+    dcterms:description "DCS field: None; allowed_value from the community: [\"DwC-A\", \"XMLS\", \"RDFS\", \"JSON\"]" ;
     dcterms:identifier "Test_FIP12.Q12" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?" ;
@@ -539,7 +539,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP13.Q13> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "None" ;
+    dcterms:description "DCS field: None; allowed_value from the community: [\"JSON\", \"DwC-A\", \"RDFS\", \"XMLS\"]" ;
     dcterms:identifier "Test_FIP13.Q13" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?" ;
@@ -562,7 +562,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP14.Q14> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.metadata.metadata_standard_id.identifier" ;
+    dcterms:description "DCS field: dataset.metadata.metadata_standard_id.identifier; allowed_value from the community: [\"EML\", \"Darwin Core\"]" ;
     dcterms:identifier "Test_FIP14.Q14" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which structured vocabularies do you use to annotate your metadata records?" ;
@@ -585,7 +585,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP15.Q15> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.metadata.metadata_standard_id.identifier" ;
+    dcterms:description "DCS field: dataset.metadata.metadata_standard_id.identifier; allowed_value from the community: [\"Plant Pollinator Vocabulary\", \"Darwin Core\"]" ;
     dcterms:identifier "Test_FIP15.Q15" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which structured vocabularies do you use to encode your datasets?" ;
@@ -608,7 +608,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP16.Q16> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.metadata.metadata_standard_id.type" ;
+    dcterms:description "DCS field: dataset.metadata.metadata_standard_id.type; allowed_value from the community: [\"Darwin Core\", \"Relations Ontology\"]" ;
     dcterms:identifier "Test_FIP16.Q16" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which models, schema(s) do you use for your metadata records?" ;
@@ -631,7 +631,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP17.Q17> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.metadata.metadata_standard_id.type" ;
+    dcterms:description "DCS field: dataset.metadata.metadata_standard_id.type; allowed_value from the community: [\"DwC-A\"]" ;
     dcterms:identifier "Test_FIP17.Q17" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which models, schema(s) do you use for your datasets?" ;
@@ -654,7 +654,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP18.Q18> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.distribution.license.license_ref" ;
+    dcterms:description "DCS field: dataset.distribution.license.license_ref; allowed_value from the community: [\"CC BY 4.0\", \"CC0 1.0\", \"CC BY-NC 4.0 \"]" ;
     dcterms:identifier "Test_FIP18.Q18" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which usage license do you use for your metadata records?" ;
@@ -677,7 +677,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP19.Q19> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.distribution.license.license_ref" ;
+    dcterms:description "DCS field: dataset.distribution.license.license_ref; allowed_value from the community: [\"CC BY 4.0\", \"CC0 1.0\", \"CC BY-NC 4.0 \"]" ;
     dcterms:identifier "Test_FIP19.Q19" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which usage license do you use for your datasets?" ;
@@ -700,7 +700,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP20.Q20> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.data_quality_assurance" ;
+    dcterms:description "DCS field: dataset.data_quality_assurance; allowed_value from the community: [\"PROV-O\"]" ;
     dcterms:identifier "Test_FIP20.Q20" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which metadata schemas do you use for describing the provenance of your metadata records?" ;
@@ -723,7 +723,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#Test_FIP21.Q21> a dcat:DataService,
         prov:Agent,
         ftr:Test ;
-    dcterms:description "dataset.data_quality_assurance" ;
+    dcterms:description "DCS field: dataset.data_quality_assurance; allowed_value from the community: [\"PROV-O\"]" ;
     dcterms:identifier "Test_FIP21.Q21" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Which metadata schemas do you use for describing the provenance of your datasets?" ;

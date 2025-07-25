@@ -73,11 +73,11 @@ if __name__ == "__main__":
     import os
 
     parser = argparse.ArgumentParser(
-        description="Convert a maDMP JSON or JSON-LD file to RDF formats"
+        description="Convert a JSON-LD file to Turtle (.ttl) RDF format"
     )
     parser.add_argument(
         "input",
-        help="Path to the input JSON or JSON-LD file",
+        help="Path to the input JSON-LD file",
     )
     parser.add_argument(
         "output_dir",
@@ -90,7 +90,4 @@ if __name__ == "__main__":
     base = os.path.splitext(os.path.basename(args.input))[0]
     ttl_path = os.path.join(args.output_dir, base + ".ttl")
 
-    if args.input.endswith(".jsonld"):
-        jsonld_to_triples(args.input, ttl_path)
-    else:
-        json_to_rdf(args.input, ttl_path)
+    jsonld_to_triples(args.input, ttl_path)
