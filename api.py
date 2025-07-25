@@ -1,16 +1,9 @@
 from fastapi import FastAPI, UploadFile, File, Query, Body
-from fastapi.responses import StreamingResponse
 import json
-import io
-import zipfile
 from Evaluator.evaluator import (
     load_dmp,
     evaluate_dmp_against_fip,
-    summarize_results,
 )
-from Evaluator.goals_checks import run_goals_scoring
-from Evaluator.validation_rules import validate_metadata_intentions
-# from Evaluator.planned_fairness import check_planned_fairness (need to check this)
 from Evaluator.ostrails_formatter import export_fip_results, DEFAULT_VERSION
 from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
@@ -147,19 +140,9 @@ async def evaluate(
 
         # Evaluate
         results = evaluate_dmp_against_fip(dmp, mapping)
-        present, compliant, total = summarize_results(results)
-
-        # Compliance table 
-        
-        compliance_table = build_compliance_json(results)
         
 
-        # Other results
-        goals_results = run_goals_scoring(dmp)
-        metadata_validation = validate_metadata_intentions(dmp)
-        
-
-    # Build OSTrails results
+        # Build OSTrails results
         base_filename = os.path.splitext(maDMP_file.filename)[0]
         fip_version = mapping_raw.get("FIP_Version", DEFAULT_VERSION)
         ftr_ready = []
@@ -217,23 +200,11 @@ async def evaluate(
         )
 
         with open(jsonld_path, "r", encoding="utf-8") as fh:
-            ostrails_jsonld = fh.read()
+            ostrails_jsonld = json.load(fh)
 
-        # Build zip archive in memory
-        zip_buffer = io.BytesIO()
-        with zipfile.ZipFile(zip_buffer, "w") as zipf:
-            zipf.writestr(f"{base_filename}_compliance_table.json", json.dumps(compliance_table, indent=2))
-            zipf.writestr(f"{base_filename}_goals_check.json", json.dumps(goals_results, indent=2))
-            zipf.writestr(
-                f"{base_filename}_metadata_validation.json", json.dumps(metadata_validation, indent=2)
-            )
-            zipf.writestr(f"{base_filename}_ostrails_results.jsonld", ostrails_jsonld)
-
-        zip_buffer.seek(0)
-
-    headers = {
-        "Content-Disposition": f"attachment; filename={base_filename}_evaluation.zip"
+    return {
+        "Mapping used": mapping_raw,
+        "OSTrails compliant result": ostrails_jsonld,
     }
-    return StreamingResponse(zip_buffer, media_type="application/zip", headers=headers)
 
 
