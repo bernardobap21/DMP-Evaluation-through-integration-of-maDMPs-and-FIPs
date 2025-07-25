@@ -5,7 +5,7 @@ import re
 from urllib.parse import urldefrag
 
 import requests
-from rdflib import ConjunctiveGraph, URIRef
+from rdflib import Dataset, URIRef
 from rdflib.namespace import RDF, RDFS, DC, Namespace
 
 # Mapping of FIP question URIs to FAIR principles, maDMP field and question text
@@ -128,7 +128,7 @@ CONSIDERATIONS = URIRef("https://w3id.org/fair/fip/terms/considerations")
 SCHEMA = Namespace("https://schema.org/")
 
 
-def fetch_graph(uri: str) -> ConjunctiveGraph:
+def fetch_graph(uri: str) -> Dataset:
     """Retrieve the RDF graph for the given URI.
 
     The nanopublication registry primarily serves TriG, but some referenced
@@ -145,19 +145,19 @@ def fetch_graph(uri: str) -> ConjunctiveGraph:
     try:
         resp.raise_for_status()
     except Exception:
-        return ConjunctiveGraph()
+        return Dataset(default_union=True)
 
     ctype = resp.headers.get("Content-Type", "").split(";")[0]
     if "html" in ctype.lower():
-        return ConjunctiveGraph()
+        return Dataset(default_union=True)
     
-    g = ConjunctiveGraph()
+    g = Dataset(default_union=True)
     for fmt in ("trig", "turtle", "nquads", "xml", "json-ld"):
         try:
             g.parse(data=resp.text, format=fmt)
             break
         except Exception:
-            g = ConjunctiveGraph()
+            g = Dataset(default_union=True)
             continue
     return g
 
