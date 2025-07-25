@@ -1,0 +1,246 @@
+{
+  "FIP_Version": "1.0.0",
+  "FIP_maDMP_Mapping": [
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "We don't have explicit PIDs for metadata records at the moment but are exploring options.",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "ePIC implementation considered for ELN documents. | DOIs are available for dataset exports via third party services, direct implementation considered for ELN documents.",
+      "Allowed_values": [
+        "ePIC",
+        "RSpaceGID ",
+        "DOI"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
+      "FAIR_principle": "F2",
+      "FIP_question": "Which metadata schemas do you use for findability?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "DataCite Schema 4.5 is planned, web-based schemas are explored.",
+      "Allowed_values": [
+        "DataCite Metadata Scheme"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F3",
+      "FAIR_principle": "F3",
+      "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "DCS_field": "dataset.distribution.host.pid_system",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "RO-Crate ",
+        "FDO"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your metadata records indexed?",
+      "DCS_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "Published pages can be indexed by webcrawlers.",
+      "Allowed_values": [
+        "Google Search"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your datasets indexed?",
+      "DCS_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "Published pages can be indexed by webcrawlers.",
+      "Allowed_values": [
+        "FAIRsharing.3epmpp",
+        "Google Search",
+        "Zenodo",
+        "The Dataverse Project",
+        "Figshare",
+        "FAIRsharing.wkggtx"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-MD",
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for metadata records?",
+      "DCS_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "REST",
+        "HTTPS"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-D",
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for datasets?",
+      "DCS_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "REST",
+        "HTTPS"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-MD",
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
+      "DCS_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "OAuth",
+        "LDAP",
+        "OIDC ",
+        "SAML2"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for datasets?",
+      "DCS_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "SAML2",
+        "LDAP",
+        "OAuth",
+        "OIDC "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A2",
+      "FAIR_principle": "A2",
+      "FIP_question": "Which metadata longevity plan do you use?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "",
+      "Allowed_values": [
+        "SSMP "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-MD",
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "As part of general RO-Crate support (https://www.researchobject.org/ro-crate/).",
+      "Allowed_values": [
+        "JSON",
+        "JSON-LD",
+        "eXtensible Markup Language (XML)"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "As part of general RO-Crate support (https://www.researchobject.org/ro-crate/).",
+      "Allowed_values": [
+        "eXtensible Markup Language (XML)",
+        "JSON-LD",
+        "JSON"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to annotate your metadata records?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "RSpace users can create or import custom controlled vocabularies/ontologies. Controlled vocabularies/ontologies can be employed as tags on the document level. See: https://documentation.researchspace.com/article/8ujmvpa1no-tagging-documents#controlled_vocabularies_ontologies. Users can also directly use terms from BioPortal ontologies through an integration.",
+      "Allowed_values": [
+        "BPOnto "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to encode your datasets?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "RSpace users can create or import custom controlled vocabularies/ontologies. Controlled vocabularies/ontologies can be employed as tags on the document level. See: https://documentation.researchspace.com/article/8ujmvpa1no-tagging-documents#controlled_vocabularies_ontologies. Users can also directly use terms from BioPortal ontologies through an integration.",
+      "Allowed_values": [
+        "BPOnto "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your metadata records?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "DataCite Metadata Scheme"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-D",
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your datasets?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": [
+        "DataCite Metadata Scheme"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your metadata records?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "Plan to implement license declarations for RSpace objects, but it would be up to the user to select a given license.",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your datasets?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "Plan to implement license declarations for RSpace objects, but it would be up to the user to select a given license.",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-MD",
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+      "DCS_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "RSpace audit trail allows reconstruction of earlier versions. Planned adoption of an interoperable provenance standard.",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your datasets?",
+      "DCS_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "RSpace audit trail allows reconstruction of earlier versions. Planned adoption of an interoperable provenance standard.",
+      "Allowed_values": []
+    }
+  ]
+}

@@ -8,7 +8,7 @@ import requests
 from rdflib import ConjunctiveGraph, URIRef
 from rdflib.namespace import RDF, RDFS, DC, Namespace
 
-# Map FIP question URIs to FAIR principle, maDMP field and question text
+# Mapping of FIP question URIs to FAIR principles, maDMP field and question text
 QUESTION_MAP = {
     "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD": {
         "principle": "F1",
@@ -171,8 +171,6 @@ def get_label(uri: str) -> str:
         if "|" in text:
             text = text.split("|")[0]
         return text
-    # Fallback: use fragment or last path segment when no label could be
-    # retrieved (e.g. non-RDF resources such as DOIs)
     if frag:
         return frag
     return base.rsplit("/", 1)[-1]
