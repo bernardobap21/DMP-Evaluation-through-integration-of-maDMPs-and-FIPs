@@ -1030,7 +1030,7 @@
       "@id": "#F3_benchmark",
       "@type": "ftr:Benchmark",
       "dcterms:identifier": "F3",
-      "dcterms:title": "Metadata-data linking schema",
+      "dcterms:title": "Metadata-Data linking mechanism",
       "dcterms:description": "Metrics for FAIR principle F3",
       "dcat:version": "",
       "ftr:hasAssociatedMetric": [
