@@ -1,0 +1,239 @@
+{
+  "FIP_Version": "",
+  "FIP_maDMP_Mapping": [
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "Our federated metadata handling system relays the metadata PIDs (given to JSON-LD records) from our partners. The PID services used are diverse, including PURLs run by trusted and sustained organisations (e.g. OBO Foundry), DOIs, W3IDs, and IDs issued by trusted aggregators (e.g. OBIS). Not all metadata records integrated into our knowledge graph are assigned PIDs, a scenario we are gradually changing now that metadata records exist for use in Ocean InfoHub and ODIS. | Our federated metadata handling system relays the metadata PIDs (given to JSON-LD records) from our partners. The PID services used are diverse, including PURLs run by trusted and sustained organisations (e.g. OBO Foundry), DOIs, W3IDs, and IDs issued by trusted aggregators (e.g. OBIS). Not all metadata records integrated into our knowledge graph are assigned PIDs, a scenario we are gradually changing now that metadata records exist for use in Ocean InfoHub and ODIS. | Our federated metadata handling system relays the metadata PIDs (given to JSON-LD records) from our partners. The PID services used are diverse, including PURLs run by trusted and sustained organisations (e.g. OBO Foundry), DOIs, W3IDs, and IDs issued by trusted aggregators (e.g. OBIS). Not all metadata records integrated into our knowledge graph are assigned PIDs, a scenario we are gradually changing now that metadata records exist for use in Ocean InfoHub and ODIS.",
+      "Allowed_values": [
+        "DOI",
+        "W3ID ",
+        "PURL"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
+      "FAIR_principle": "F2",
+      "FIP_question": "Which metadata schemas do you use for findability?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "Our federated metadata handling system relays the metadata PIDs (given to JSON-LD records) from our partners. The PID services used are diverse, including PURLs run by trusted and sustained organisations (e.g. OBO Foundry), DOIs, W3IDs, and IDs issued by trusted aggregators (e.g. OBIS). Not all metadata records integrated into our knowledge graph are assigned PIDs, a scenario we are gradually changing now that metadata records exist for use in Ocean InfoHub and ODIS.",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F3",
+      "FAIR_principle": "F3",
+      "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "DCS_field": "dataset.distribution.host.pid_system",
+      "Mapping_status": "Mapped",
+      "Comments": "Our federated metadata handling system relays the data-focused PIDs (given to the datasets described by our ODIS-Arch compliant JSON-LD records) from our partners. The PID services used are diverse, including PURLs run by trusted and sustained organisations (e.g. OBO Foundry), DOIs, W3IDs, and IDs issued by trusted aggregators (e.g. OBIS). We encourage the use of both human- and machine-friendly PIDs, or those with content negotiation enabled.",
+      "Allowed_values": [
+        "OIH "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your metadata records indexed?",
+      "DCS_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "Members of our federation publish their own records as JSON-LD following the ODIS Arch specifications. These are harvested by Ocean InfoHub (for searchability and integration), but are also visible to all schema.org crawlers, including those from Google. Ocean InfoHub provides both a web front-end and a SPARQL endpoint for querying our knowledge graph. | Members of our federation publish their own records as JSON-LD following the ODIS Arch specifications. These are harvested by Ocean InfoHub (for searchability and integration), but are also visible to all schema.org crawlers, including those from Google. Ocean InfoHub provides both a web front-end and a SPARQL endpoint for querying our knowledge graph.",
+      "Allowed_values": [
+        "OBIS ",
+        "ODIS: IOC Ocean Data and Information System Catalogue of Sources"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your datasets indexed?",
+      "DCS_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "The partners we federate use or maintain a wide range of services to publish the datasets they administer. Our knowledge graph technology does not republish the datasets, but links to the human-friendly distribution points (e.g. landing pages) and - where the partners provide it - the direct download distribution and its associated MIMEtype.",
+      "Allowed_values": [
+        "ODIS: IOC Ocean Data and Information System Catalogue of Sources"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-MD",
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for metadata records?",
+      "DCS_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "All exchanges use foundational web architecture and TCP/IP protocols, HTTP, HTTPS. Further details are provided here: https://book.oceaninfohub.org/content.html | All exchanges use foundational web architecture and TCP/IP protocols, HTTP, HTTPS. Further details are provided here: https://book.oceaninfohub.org/content.html",
+      "Allowed_values": [
+        "HTTPS",
+        "HTTP "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-D",
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for datasets?",
+      "DCS_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "TCP/IP family protocols, HTTP, HTTPS. Further details are provided here: https://book.oceaninfohub.org/content.html | TCP/IP family protocols, HTTP, HTTPS. Further details are provided here: https://book.oceaninfohub.org/content.html",
+      "Allowed_values": [
+        "HTTPS",
+        "HTTP "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-MD",
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
+      "DCS_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "Not Applicable - (meta)data shared do not require authorisation / authentication",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for datasets?",
+      "DCS_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "Not Applicable as OIH does not store any data, but rather links to the locations of the data as hosted by providers.",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A2",
+      "FAIR_principle": "A2",
+      "FIP_question": "Which metadata longevity plan do you use?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "We have the ability to preserve and version metadata shared by all partners in ODIS via our OIH indexer. We have not yet co-designed a policy with our stakeholders on the governance of this solution. There may be sensitivities on what should be archived and preserved for security, traditional/indigenous knowledge, conservation/protection, and other concerns.",
+      "Allowed_values": [
+        "OIH "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-MD",
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "Our federated stakeholders will all use schema.org and JSON Schema as lightweight KR languages. We provide guidance on how to embed more expressive KR languages in schema.org JSON-LD records, including the SKOS-level NERC vocabularies and OBO Foundry OWL ontologies. See more detaIls here: https://book.oceaninfohub.org/foundation/foundation.html | Our federated stakeholders will all use schema.org and JSON Schema as lightweight KR languages. We provide guidance on how to embed more expressive KR languages in schema.org JSON-LD records, including the SKOS-level NERC vocabularies and OBO Foundry OWL ontologies. See more detaIls here: https://book.oceaninfohub.org/foundation/foundation.html | Our federated stakeholders will all use schema.org and JSON Schema as lightweight KR languages. We provide guidance on how to embed more expressive KR languages in schema.org JSON-LD records, including the SKOS-level NERC vocabularies and OBO Foundry OWL ontologies. See more detaIls here: https://book.oceaninfohub.org/foundation/foundation.html",
+      "Allowed_values": [
+        "JSON Schema ",
+        "SKOS",
+        "OWL"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "Not applicable as OIH does not handle data only metadata. NA - our solution is driven by metadata sharing. While access to datasets is provided (via links to the providers), we do not constrain what KR solutions stakeholders use on their data. Common semantics include the NERC vocabularies/SKOS resources and the Climate and Forecasting Variables, as well as environmentally-focused KR solutions from ESIP and OBO (GCMD, SWEET, ENVO).",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to annotate your metadata records?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "Our solution is driven by metadata sharing. While access to datasets is provided (see responses F subprinciples), we do not constrain what KR solutions stakeholders use on their data. Common semantics include the NERC vocabularies/SKOS resources and the Climate and Forecasting Variables, as well as environmentally-focused KR solutions from ESIP and OBO (GCMD, SWEET, ENVO). | Our solution is driven by metadata sharing. While access to datasets is provided (see responses F subprinciples), we do not constrain what KR solutions stakeholders use on their data. Common semantics include the NERC vocabularies/SKOS resources and the Climate and Forecasting Variables, as well as environmentally-focused KR solutions from ESIP and OBO (GCMD, SWEET, ENVO). | Our solution is driven by metadata sharing. While access to datasets is provided (see responses F subprinciples), we do not constrain what KR solutions stakeholders use on their data. Common semantics include the NERC vocabularies/SKOS resources and the Climate and Forecasting Variables, as well as environmentally-focused KR solutions from ESIP and OBO (GCMD, SWEET, ENVO). | Our federated stakeholders will all use schema.org and JSON Schema as lightweight KR languages. We provide guidance on how to embed more expressive KR languages in schema.org JSON-LD records, including the SKOS-level NERC vocabularies and OBO Foundry OWL ontologies.  | Our solution is driven by metadata sharing. While access to datasets is provided (see responses F subprinciples), we do not constrain what KR solutions stakeholders use on their data. Common semantics include the NERC vocabularies/SKOS resources and the Climate and Forecasting Variables, as well as environmentally-focused KR solutions from ESIP and OBO (GCMD, SWEET, ENVO).",
+      "Allowed_values": [
+        "NVS",
+        "SWEET ",
+        "ENVO ",
+        "JSON Schema ",
+        "GCMD"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to encode your datasets?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "Our solution is driven by metadata sharing. While access to datasets is provided (see responses F subprinciples), we do not constrain what KR solutions stakeholders use on their data. Common semantics include the NERC vocabularies/SKOS resources and the Climate and Forecasting Variables, as well as environmentally-focused KR solutions from ESIP and OBO (GCMD, SWEET, ENVO). | The terminology resources recommended do, themselves, follow the FAIR Principles to a high degree, with some exceptions.  | Our solution is driven by metadata sharing. While access to datasets is provided (see responses F subprinciples), we do not constrain what KR solutions stakeholders use on their data. Common semantics include the NERC vocabularies/SKOS resources and the Climate and Forecasting Variables, as well as environmentally-focused KR solutions from ESIP and OBO (GCMD, SWEET, ENVO).",
+      "Allowed_values": [
+        "GCMD",
+        "JSON Schema ",
+        "ENVO "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your metadata records?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "We use schema.org serialised in JSON-LD, based on guidance from the Earth Science Information Partners' Science on Schema Cluster. We have expanded this with regularised patterns in the ODIS Architecture (ODIS-Arch) to increase consistency and actionability.",
+      "Allowed_values": [
+        "OIH "
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-D",
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your datasets?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "OIH does not constrain the semantic qualifications or data linking practices of our partners.",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your metadata records?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "All metadata records are released openly on the web. The partners which share these may annotate them with license information, if they so wish",
+      "Allowed_values": [
+        "CC BY 4.0"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your datasets?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "The partners in our federation are free to declare the license they release data under in the JSON-LD metadata documents they share with us and each other",
+      "Allowed_values": [
+        "CC BY SA 4.0"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-MD",
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+      "DCS_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "schema.org fields which align closely to PROV-O. We inject a provenance block upon harvesting the metadata from our partners, to add to the chain of provenance. As the complexity of our digital ecosystem grows, we will consider separating the provenance graphs (which will also grow in size and complexity) and using PIDs to reference them. https://book.oceaninfohub.org/indexing/prov/ | Schema.org fields which align closely to PROV-O. We inject a provenance block upon harvesting the metadata from our partners, to add to the chain of provenance. As the complexity of our digital ecosystem grows, we will consider separating the provenance graphs (which will also grow in size and complexity) and using PIDs to reference them. https://book.oceaninfohub.org/indexing/prov/",
+      "Allowed_values": [
+        "Schema.org",
+        "PROV-O"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your datasets?",
+      "DCS_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "At this time, we do not constrain the provenance information of our partners datasets. However, stakeholders can express the provenance of their dataset in the JSON-LD documents they share using schema.org fields, which align well with PROV-O. https://book.oceaninfohub.org/indexing/prov/ | At this time, we do not constrain the provenance information of our partners datasets. However, stakeholders can express the provenance of their dataset in the JSON-LD documents they share using schema.org fields, which align well with PROV-O. https://book.oceaninfohub.org/indexing/prov/ ",
+      "Allowed_values": [
+        "PROV-O",
+        "Schema.org Dataset"
+      ]
+    }
+  ]
+}
