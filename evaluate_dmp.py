@@ -117,7 +117,7 @@ def main():
     )
     print(f"OSTrails Format results saved to: {fip_jsonld}")
 
-    # Run FAIRness scoring and validation
+    # Run goals checks validation
     goals_results = run_goals_scoring(dmp)
 
     goals_output = os.path.join(args.output, f"{base_filename}_goals_check.json")
@@ -133,7 +133,7 @@ def main():
     with open(validation_output, 'w', encoding='utf-8') as file:
         json.dump(metadata_issues, file, indent=2)
 
-    print(f"Metadata intention validation results saved to: {validation_output}")    
+    print(f"Metadata validation results saved to: {validation_output}")    
 
 if __name__ == "__main__":
     main()
