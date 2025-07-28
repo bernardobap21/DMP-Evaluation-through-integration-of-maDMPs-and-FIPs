@@ -1,4 +1,4 @@
-FIP Question,DCS Field,maDMP Value,Accepted Values,Compliant
+FIP Question,DCS Field,maDMP Value,Allowed Values,Compliant
 "What globally unique, persistent, resolvable identifiers do you use for metadata records?",dataset.dataset_id.identifier,"[""https://doi.org/10.5281/zenodo.10669877""]",DOI,[Yes]
 "What globally unique, persistent, resolvable identifiers do you use for datasets?",dataset.dataset_id.identifier,"[""https://doi.org/10.5281/zenodo.10669877""]","DOI, URI ",[Yes]
 Which metadata schemas do you use for findability?,dataset.metadata.metadata_standard_id.identifier,null,EML,No
