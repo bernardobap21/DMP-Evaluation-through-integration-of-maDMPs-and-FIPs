@@ -3,7 +3,6 @@ import json
 import os
 import re
 from urllib.parse import urldefrag
-
 import requests
 from rdflib import Dataset, URIRef
 from rdflib.namespace import RDF, RDFS, DC, Namespace
