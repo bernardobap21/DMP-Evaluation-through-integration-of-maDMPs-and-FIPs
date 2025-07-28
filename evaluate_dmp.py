@@ -67,9 +67,13 @@ def main():
                 log_val.append(json.dumps(val, ensure_ascii=False))
             else:
                 log_val.append(str(val))
-            status_vals.append(
-                "pass" if r["field_status"] == "Present" and comp == "Compliant" else "fail"
-            )
+            if not r.get("allowed_values"):
+                status_vals.append("indeterminate")
+            else:
+                status_vals.append(
+                    "pass" if r["field_status"] == "Present" and comp == "Compliant" else "fail"
+                )
+
 
         ftr_ready.append({
             "metric_id": metric_id,

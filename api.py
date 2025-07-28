@@ -173,9 +173,12 @@ async def evaluate(
                     log_val.append(json.dumps(val, ensure_ascii=False))
                 else:
                     log_val.append(str(val))
-                status_vals.append(
-                    "pass" if r["field_status"] == "Present" and comp == "Compliant" else "fail"
-                )
+                if not r.get("allowed_values"):
+                    status_vals.append("indeterminate")
+                else:
+                    status_vals.append(
+                        "pass" if r["field_status"] == "Present" and comp == "Compliant" else "fail"
+                    )
 
             ftr_ready.append(
                 {
@@ -202,9 +205,12 @@ async def evaluate(
         with open(jsonld_path, "r", encoding="utf-8") as fh:
             ostrails_jsonld = json.load(fh)
 
+        compliance_table = build_compliance_json(results)
+
     return {
         "Mapping used": mapping_raw,
         "OSTrails compliant result": ostrails_jsonld,
+        "Compliance table": compliance_table,
     }
 
 

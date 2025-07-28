@@ -564,7 +564,7 @@
       "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": [
-        "fail"
+        "indeterminate"
       ],
       "ftr:log": [
         "None"
