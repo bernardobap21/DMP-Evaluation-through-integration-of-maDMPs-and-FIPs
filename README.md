@@ -48,7 +48,7 @@ The server will run on `http://127.0.0.1:8000`. Open `http://127.0.0.1:8000/docs
 
 The API is also available on the web at  `https://dmp-evaluation.onrender.com/docs#/default/evaluate_evaluate__post`.
 
-Click the Try it out button and then, upload your maDMP file and select one of the available FIPs for the evaluation from the dropdown or add a new FIP mapping by using the upload FIP tool. Just paste the linkt to the nanopublication between the quotes ("") and the mapping will be added to the dropdown of the evaluation tool. 
+Click the **Try it out** out button and then, upload your maDMP file and select one of the available FIPs for the evaluation from the dropdown or add a new FIP mapping by using the upload FIP tool; To achieve this, just paste the linkt to the nanopublication between the quotes ("") and the mapping will be added to the dropdown of the evaluation tool. 
 
 This will return in the `Response body`:
 

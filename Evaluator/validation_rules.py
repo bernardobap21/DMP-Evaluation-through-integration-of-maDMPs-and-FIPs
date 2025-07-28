@@ -110,9 +110,11 @@ def detect_identifier_type(identifier, allowed_values=None):
     # Patterns
     patterns = {
         "DOI": r"^https?://doi\.org/10\.\d{4,9}/[-._;()/:a-z0-9]+$",
+        "Crossref (DOI)": r"^https?://doi\.crossref\.org/10\.\d{4,9}/[-._;()/:a-z0-9]+$",
         "URI": r"^https?://[^\s]+$",
         "HTTPS": r"^https://.*$",
         "B2HANDLE": r"^hdl:\d+/.+$",
+        "Handle": r"^https:\/\/hdl\.handle\.net\/\d+\/[A-Za-z0-9.\-]+$",
         "dPIDs": r"^[a-f0-9-]{36}$",
         "UUID": r"^[a-f0-9-]{36}$",
         "REST": r"^(GET|POST|PUT|DELETE).*"

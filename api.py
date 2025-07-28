@@ -71,13 +71,6 @@ app = FastAPI()
 def read_root():
     return {"Welcome": "Your DMP Evaluation API is running!"}
 
-""""
-@app.get("/fip-options/")
-def list_fip_options():
-    # Return the available FIP mapping files.
-    return {"options": get_fip_options()}
-"""
-
 
 @app.post("/upload_fip/")
 async def upload_fip(
@@ -86,7 +79,7 @@ async def upload_fip(
         embed=False,
         title="Insert nanopublication link",
         description="Nanopublication URL",
-        example="",
+        example="Paste the nanopublication URL here between quotes", 
     ),
 ):
     """Fetch a FIP nanopublication and store it as a mapping JSON."""
