@@ -148,7 +148,7 @@ def save_compliance_table(results, output_path):
                 allowed_str = allowed_values
 
             comp = r.get("compliance_list") or r.get("compliance_status")
-            if allowed_values == "":
+            if not allowed_values:
                 compliant = "No choice made by community"
             else:
                 if isinstance(comp, list):

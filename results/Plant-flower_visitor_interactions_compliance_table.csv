@@ -9,7 +9,7 @@ Which standardized communication protocol do you use for metadata records?,datas
 Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,"[""https://zenodo.org"", ""https://globalbioticinteractions.org""]","HTTPS, REST","[Yes, Yes]"
 Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,null,"OAuth, Open Data",No
 Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,null,"GBIF local account, OAuth, Open Data",No
-Which metadata longevity plan do you use?,,null,,No
+Which metadata longevity plan do you use?,,null,,No choice made by community
 Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,,null,"DwC-A, XMLS, RDFS, JSON",No
 Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,,null,"JSON, DwC-A, RDFS, XMLS",No
 Which structured vocabularies do you use to annotate your metadata records?,dataset.metadata.metadata_standard_id.identifier,null,"EML, Darwin Core",No
