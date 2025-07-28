@@ -299,7 +299,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": [
         "fail",
-        "fail"
+        "pass"
       ],
       "ftr:log": [
         "https://zenodo.org/record/10669877",
@@ -344,7 +344,7 @@
       "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
       "prov:value": [
         "fail",
-        "fail"
+        "pass"
       ],
       "ftr:log": [
         "https://zenodo.org/record/10669877",

@@ -114,10 +114,15 @@ def detect_identifier_type(identifier, allowed_values=None):
         "URI": r"^https?://[^\s]+$",
         "HTTPS": r"^https://.*$",
         "B2HANDLE": r"^hdl:\d+/.+$",
-        "Handle": r"^https:\/\/hdl\.handle\.net\/\d+\/[A-Za-z0-9.\-]+$",
         "dPIDs": r"^[a-f0-9-]{36}$",
         "UUID": r"^[a-f0-9-]{36}$",
-        "REST": r"^(GET|POST|PUT|DELETE).*"
+        "REST": r"^(GET|POST|PUT|DELETE).*",
+        ### Additional patterns
+        "EML": r"^https?://eml\.arizona\.edu/.*$",
+        "Schema.org": r"^https?://schema\.org/.*$",
+        "DataCite": r"^https?://datacite\.org/.*$",
+        "Handle": r"^https:\/\/hdl\.handle\.net\/\d+\/[A-Za-z0-9.\-]+$",
+        "GBIF search engine": r"https://globalbioticinteractions.org/.*$",
     }
 
     # If allowed_values are provided, prioritize matching these first
