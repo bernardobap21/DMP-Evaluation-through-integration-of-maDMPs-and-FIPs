@@ -35,7 +35,7 @@ This will produce:
 * `*_recommendations.txt` – short textual recommendations for missing fields
 * `*_goals_checks.json` – Scores for the following goals: Completeness, Accuracy, Availability and Consistency.
 * `*_metadata_validation.json` – validation of metadata against basic rules
-* `*_planned_fairness.json` – evaluation of the planned FAIRness of distributions (early stages of a DMP) (not yet functional)
+* `*_ostrails_results.jsonld` – evaluation of the maDMP following the OSTrails FAIR Test Results vocabulary.
 
 ## Starting the API
 

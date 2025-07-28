@@ -6,7 +6,6 @@ from FIP_Mapping.mapping import load_mapping
 from FIP_Mapping.utils import transform_mapping
 from Evaluator.goals_checks import run_goals_scoring
 from Evaluator.validation_rules import validate_metadata_intentions
-from Evaluator.planned_fairness import check_planned_fairness
 from Evaluator.ostrails_formatter import export_fip_results, DEFAULT_VERSION
 from Evaluator.evaluator import (
     load_dmp,
@@ -134,17 +133,7 @@ def main():
     with open(validation_output, 'w', encoding='utf-8') as file:
         json.dump(metadata_issues, file, indent=2)
 
-    print(f"Metadata intention validation results saved to: {validation_output}")
-
-    # Check planned FAIRness
-    planned_result = check_planned_fairness(dmp)
-    planned_output = os.path.join(args.output, f"{base_filename}_planned_fairness.json")
-    with open(planned_output, 'w') as f:
-        json.dump(planned_result, f, indent=2)
-
-    print(f"Planned FAIRness evaluation results saved to: {planned_output}")
-
-       
+    print(f"Metadata intention validation results saved to: {validation_output}")    
 
 if __name__ == "__main__":
     main()
