@@ -74,7 +74,7 @@ def build_compliance_json(results):
 
 # app = FastAPI()
 app = FastAPI(
-    title="maDMP Evaluation API using Fair Implementation Profiles (FIPs)",
+    title="maDMP Evaluation using Fair Implementation Profiles (FIPs) API",
     description="""
 # Overview
 
