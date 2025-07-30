@@ -74,11 +74,30 @@ def build_compliance_json(results):
 
 # app = FastAPI()
 app = FastAPI(
-    title="DMP Evaluation API using Fair Implementation Profiles (FIPs)",
-    description=(
-        "Evaluate machine-actionable Data Management Plans (maDMPs) "
-        "using FAIR Implementation Profile (FIP) mappings."
-    ),
+    title="maDMP Evaluation API using Fair Implementation Profiles (FIPs)",
+    description="""
+# Overview
+
+This API evaluates machine-actionable Data Management Plans (maDMPs) against FAIR Implementation Profiles (FIPs). It provides the following outputs:
+
+- Mapping used for evaluation: JSON file with the mapping of the maDMP fields to the FIP questions \n
+- Compliance results for each FIP question: JSON-ld following the FAIR Test Results vocabulary guidelines from the OSTrails project. \n
+- Human-readable compliance table: JSON with the summary of compliance status.
+
+# Key Features
+- `Get`: Check the API status. \n
+- `Upload_fip`: Upload the link from a nanopublication to create a new mapping file (Some mappings are already available in the dropdown). \n
+- `Evaluate`: Submit a maDMP JSON file and select a FIP mapping to evaluate compliance (from the maDMP fields to their related FIP questions).
+
+
+# Example Workflow
+**1.** Fetch a nanopublication and create a mapping using the `upload_fip` endpoint. \n
+**2.** Then submit a maDMP JSON file using the `evaluate` endpoint. \n
+**3.** Receive a detailed evaluation response (pass/fail/indeterminate results within each Test Result) and a human-readable compliance table. \n
+**4.** (Optional) Download the response clicking the `Download` button on the bottom right of the response. \n
+
+See [GitHub Repository](https://github.com/bernardobap21/DMP-Evaluation) for examples and setup (README).
+""",
     version="0.0.1",
     openapi_tags=tags_metadata,
 )
@@ -87,7 +106,7 @@ app = FastAPI(
 # @app.get("/")
 @app.get("/", summary="API status", tags=["maDMP"])
 def read_root():
-    """Show a welcome message to verify the API is available."""
+    """Run to verify the API is available."""
     return {"Welcome": "Your DMP Evaluation API is running!"}
 
 
