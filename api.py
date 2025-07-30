@@ -14,6 +14,14 @@ import os
 
 FIP_DIRECTORY = "FIP_Mapping"
 
+# Group endpoints under a single tag in the interactive docs
+tags_metadata = [
+    {
+        "name": "maDMP",
+        "description": "maDMP evaluation-related endpoints",
+    }
+]
+
 
 def get_fip_options():
     """Return a list of available FIP mapping JSON files."""
@@ -64,15 +72,32 @@ def build_compliance_json(results):
     return table
 
 
-app = FastAPI()
+# app = FastAPI()
+app = FastAPI(
+    title="DMP Evaluation API using Fair Implementation Profiles (FIPs)",
+    description=(
+        "Evaluate machine-actionable Data Management Plans (maDMPs) "
+        "using FAIR Implementation Profile (FIP) mappings."
+    ),
+    version="0.0.1",
+    openapi_tags=tags_metadata,
+)
 
 
-@app.get("/")
+# @app.get("/")
+@app.get("/", summary="API status", tags=["maDMP"])
 def read_root():
+    """Show a welcome message to verify the API is available."""
     return {"Welcome": "Your DMP Evaluation API is running!"}
 
 
-@app.post("/upload_fip/")
+# @app.post("/upload_fip/")
+@app.post(
+    "/upload_fip/",
+    summary="Upload a FIP to create a mapping between the questions to create a FIP and the maDMP fields from the RDA Standard",
+    description="Fetch a nanopublication and store the resulting mapping JSON.",
+    tags=["maDMP"],
+)
 async def upload_fip(
     uri: str = Body(
         ...,
@@ -82,7 +107,15 @@ async def upload_fip(
         example="Paste the nanopublication URL here between quotes", 
     ),
 ):
-    """Fetch a FIP nanopublication and store it as a mapping JSON."""
+    # """Fetch a FIP nanopublication and store it as a mapping JSON."""
+    """Add a FAIR Implementation Profile mapping.
+
+    The endpoint accepts a nanopublication URL containing a FIP. The
+    nanopublication is fetched and converted into a mapping JSON file
+    stored under :mod:`FIP_Mapping`. Once uploaded the mapping becomes
+    available in the ``fip_mapping_file`` dropdown of the evaluation
+    endpoint.
+    """
     mapping = build_mapping(uri)
     label = get_fip_label(uri)
     filename = f"fip_madmp_{label}.json"
@@ -99,11 +132,33 @@ async def upload_fip(
     return {"filename": filename, "detail": "Uploaded"}
 
 
-@app.post("/evaluate/")
+# @app.post("/evaluate/")
+@app.post(
+    "/evaluate/",
+    summary="Evaluate a maDMP using a FIP mapping. If a desired FIP mapping is not available, upload it first on the upload_fip endpoint.",
+    description="Upload a maDMP file and select a mapping to obtain a compliance assessment.",
+    tags=["maDMP"],
+)
 async def evaluate(
     maDMP_file: UploadFile = File(...),
     fip_mapping_file: str = fip_query,
 ):
+    
+    """Evaluate a maDMP file using a selected FIP mapping.
+
+    Parameters
+    ----------
+    maDMP_file: UploadFile
+        JSON file following the maDMP schema.
+    fip_mapping_file: str
+        Name of a mapping file located in ``FIP_Mapping``.
+
+    Returns
+    -------
+    dict
+        Mapping details, an OSTrails compliant JSON-LD with the evaluation
+        results and a human readable compliance table.
+    """
 
     # Validate uploaded DMP file
     if not maDMP_file.filename.endswith(".json"):
