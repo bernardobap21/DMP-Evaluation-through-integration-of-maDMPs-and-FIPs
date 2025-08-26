@@ -11,16 +11,17 @@ BENCHMARK_TITLES = {
     "F1": "Identifier type",
     "F2": "Metadata schema",
     "F3": "Metadata-Data linking mechanism",
-    "F4": "Registry (searchable repository)",
+    "F4": "Search Engines",
     "A1.1": "Communication protocol",
-    "A1.2": "Authentication and authorization service",
-    "A2": "Metadata repository",
+    "A1.2": "Authentication and authorization technique",
+    "A2": "Metadata longevity",
     "I1": "Knowledge representation language",
-    "I2": "Structured vocabulary",
-    "I3": "Qualified reference mechanism",
+    "I2": "Structured vocabularies",
+    "I3": "Metadata/data schema",
     "R1.1": "Data usage license",
     "R1.2": "Provenance model",
 }
+
 
 def export_fip_results(results, dmp_id, dmp_title, output_dir, metric_version=DEFAULT_VERSION):
     
