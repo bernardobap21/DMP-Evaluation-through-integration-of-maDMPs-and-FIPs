@@ -66,6 +66,9 @@ def main():
                 log_val.append(json.dumps(val, ensure_ascii=False))
             else:
                 log_val.append(str(val))
+            if r.get("compliance_status") == "Not Applicable":
+                status_vals.append("indeterminate")
+                continue
             if not r.get("allowed_values"):
                 status_vals.append("indeterminate")
             else:
