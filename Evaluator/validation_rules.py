@@ -69,6 +69,11 @@ def _normalize_url(url: str) -> str:
 _SPDX_CACHE = None
 
 
+# Mapping of canonical allowed values to accepted synonyms
+_SYNONYM_MAP = {
+    "open data": {"open", "open data"},
+}
+
 def _to_spdx_id(label: str) -> str:
     """Convert common license labels to SPDX identifiers."""
     return label.strip().replace(" ", "-")
@@ -128,6 +133,9 @@ def detect_identifier_type(identifier, allowed_values=None):
     # If allowed_values are provided, prioritize matching these first
     if allowed_values:
         for val in allowed_values:
+            synonyms = _SYNONYM_MAP.get(val.lower())
+            if synonyms and lower_identifier in synonyms:
+                return val
             if is_license_compliant(raw_identifier, val):
                 return val
             pattern = patterns.get(val)
@@ -137,7 +145,7 @@ def detect_identifier_type(identifier, allowed_values=None):
 
     known_labels = [
         "Schema.org", "DCAT", "Dublin Core", "DataCite", "GBIF search engine",
-        "Global Biotic Interactions", "Open Data", "Open", "open", "OAuth 2.0", "GBIF local account",
+        "Global Biotic Interactions", "Open Data", "Open", "OAuth 2.0", "GBIF local account",
         "DwC-A", "JSON", "XMLS", "RDFS", "EML", "DwC",
         "Plant Pollinator Vocabulary", "Relations Ontology", "PROV-O",
     ]

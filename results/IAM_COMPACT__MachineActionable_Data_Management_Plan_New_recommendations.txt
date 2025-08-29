@@ -3,7 +3,6 @@
 - Improve or add metadata for: What is the technology that links the persistent identifiers of your data to the metadata description? (Field: dataset.distribution.host.pid_system, Compliance: Non-compliant)
 - Improve or add metadata for: In which search engines are your metadata records indexed? (Field: dataset.distribution.access_url, Compliance: Missing value)
 - Improve or add metadata for: In which search engines are your datasets indexed? (Field: dataset.distribution.access_url, Compliance: Not Applicable)
-- Improve or add metadata for: Which authentication & authorisation technique do you use for metadata records? (Field: dataset.distribution.data_access, Compliance: Non-compliant)
 - Improve or add metadata for: Which metadata longevity plan do you use? (Field: None, Compliance: Not Applicable)
 - Improve or add metadata for: Which knowledge representation languages (allowing machine interoperation) do you use for metadata records? (Field: None, Compliance: Not Applicable)
 - Improve or add metadata for: Which knowledge representation languages (allowing machine interoperation) do you use for datasets? (Field: None, Compliance: Not Applicable)
