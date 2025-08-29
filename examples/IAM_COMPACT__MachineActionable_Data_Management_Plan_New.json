@@ -1,0 +1,1299 @@
+{
+    "dmp": {
+        "contact": {
+            "contact_id": {
+                "identifier": "945729ea-d950-4de1-9939-793fe7c4db13",
+                "type": "other"
+            },
+            "mbox": "nfrilingou@epu.ntua.gr",
+            "name": "Natasha Frilingou"
+        },
+        "contributor": [
+            {
+                "contributor_id": {
+                    "identifier": "0000-0003-1376-7529",
+                    "type": "other"
+                },
+                "name": "Alaa Al Khourdajie (orcid: 0000-0003-1376-7529)",
+                "role": [
+                    "Researchers"
+                ]
+            },
+            {
+                "contributor_id": {
+                    "identifier": "0000-0002-3656-4874",
+                    "type": "other"
+                },
+                "name": "Konstantinos Koasidis (orcid:0000-0002-3656-4874)",
+                "role": [
+                    "Researchers"
+                ]
+            },
+            {
+                "contributor_id": {
+                    "identifier": "0000-0001-9120-564X",
+                    "type": "other"
+                },
+                "name": "Dirk-Jan van de Ven (orcid:0000-0001-9120-564X)",
+                "role": [
+                    "Researchers"
+                ]
+            },
+            {
+                "contributor_id": {
+                    "identifier": "0000-0002-6795-3848",
+                    "type": "other"
+                },
+                "name": "Alexandros Nikas (orcid:0000-0002-6795-3848)",
+                "role": [
+                    "Researchers"
+                ]
+            },
+            {
+                "contributor_id": {
+                    "identifier": "0000-0003-4718-0064",
+                    "type": "other"
+                },
+                "name": "shivika mittal (orcid:0000-0003-4718-0064)",
+                "role": [
+                    "Researchers"
+                ]
+            },
+            {
+                "contributor_id": {
+                    "identifier": "0000-0002-9677-9543",
+                    "type": "other"
+                },
+                "name": "Anastasios Karamaneas (orcid:0000-0002-9677-9543)",
+                "role": [
+                    "Researchers"
+                ]
+            },
+            {
+                "contributor_id": {
+                    "identifier": "dd11b5b5-b8ec-4fe8-8659-6c69113516b4",
+                    "type": "other"
+                },
+                "mbox": "salexandrou@epu.ntua.gr",
+                "name": "Stratis Alexandrou",
+                "role": [
+                    "Owner"
+                ]
+            },
+            {
+                "contributor_id": {
+                    "identifier": "71c382fc-37c9-44a6-985f-4e6ecda5f7c0",
+                    "type": "other"
+                },
+                "mbox": "anikas@epu.ntua.gr",
+                "name": "Alexandros Nikas",
+                "role": [
+                    "Viewer"
+                ]
+            },
+            {
+                "contributor_id": {
+                    "identifier": "2e89d360-003b-47dd-b30c-d6ee75bed5f7",
+                    "type": "other"
+                },
+                "mbox": "nfrilingou@epu.ntua.gr",
+                "name": "Natasha Frilingou",
+                "role": [
+                    "Owner"
+                ]
+            },
+            {
+                "contributor_id": {
+                    "identifier": "0692564f-70fa-4409-a36c-5e4498c400be",
+                    "type": "other"
+                },
+                "mbox": "gxexakis@holisticsa.gr",
+                "name": "Georgios Xexakis",
+                "role": [
+                    "Owner"
+                ]
+            }
+        ],
+        "cost": [
+            {
+                "description": "Zenodo is free of charge",
+                "value": 0.0
+            },
+            {
+                "description": "Zenodo is free of charge",
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "description": "Zenodo is free of charge",
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "description": "We will post them in Zenodo where hosting is free.",
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "description": "We will post them in Zenodo where hosting is free.",
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "description": "Zenodo is free of charge",
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "description": "&#160;We will post them in Zenodo where hosting is free",
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "description": "Zenodo is free of charge",
+                "value": 0.0
+            },
+            {
+                "description": "Zenodo is used which is free of charge<br>",
+                "value": 0.0
+            },
+            {
+                "description": "Zenodo is free of charge",
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "description": "We will post them in Zenodo where hosting is free.",
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "description": "Zenodo is free of charge",
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            },
+            {
+                "value": 0.0
+            }
+        ],
+        "created": "2025-08-08T10:51:51.830825Z",
+        "dataset": [
+            {
+                "dataset_id": {
+                    "identifier": "07ad7b29-bd1c-429b-8a92-b3abbda7d727",
+                    "type": "other"
+                },
+                "description": "<div>\n<div>\n<div>\n<div>This dataset contains the underlying input data, and modelling results for the journal article \"Analysis of the competition between land, energy and food using the<br>TERRA module of WILIAM System Dynamics IAM\" in Renewable and Sustainable Energy Reviews by Mediavilla et al (DOI: https://doi.org/10.1016/j.rser.2025.115651)<br><br></div>\n</div>\n</div>\n</div>",
+                "distribution": [
+                    {
+                        "format": [
+                            "Mediavilla_et_al_2025_RSER_dataset.zip"
+                        ]
+                    },
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "description": "Repository hosted by Zenodo",
+                            "url": "https://doi.org/10.5281/zenodo.15148054"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Mediavilla_et_al_2025_RSER_dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Mediavilla_et_al_2025_RSER_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "0e8f1d49-2a74-45f0-8ce8-39c11adbfab9",
+                    "type": "other"
+                },
+                "description": "<p>This dataset ensures accessibility, interoperability, and reusability adhering to the FAIR principles,. It was used to analyze the Climate, Land, Energy, and Water Systems (CLEWs) nexus in Ethiopia using the OSeMOSYS modeling tool. It supported the IAM compact deliverable D5.9 titled \"Climate action in the sustainability spectrum\". All the data are open source and can support future research and applications.</p>",
+                "distribution": [
+                    {
+                        "format": [
+                            "Data_CLEW_Ethiopia_Final_v2.0_IAMcompact.xlsx"
+                        ]
+                    },
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "description": "Repository hosted by Zenodo",
+                            "url": "https://doi.org/10.5281/zenodo.15684541"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Ethiopia CLEWs data IAM compact"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Ethiopia CLEWs data IAM compact",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "22f69f0f-414b-4dff-903b-b6bc9d7c7fb5",
+                    "type": "other"
+                },
+                "description": "<p>This dataset contains the underling raw data of IAM COMPACT \"Study 1 - Fit-for-55\".</p>\n<p>This study aims to answer the research question, \"how does the implementation of the updated national energy and climate plan compare to the cost-optimal EU plan?\" However, due to delays in the release of the National Energy and Climate Plans (NECPs) by EU member states and limitations in the models used to represent specific national policies, this study compares cost-optimal model scenarios to achieve the EU emissions mitigation targets with EU-wide modelling of the Fit-for-55 policy package. The first scenario includes sector-level policies outlined in the Fit-for-55 policy packages, while the second scenario imposes emissions constraints on overall GHG and CO<sub>2</sub> emissions without including any sectoral policies, in order to compare the cost-effective measures with sectoral policies.</p>\n<p>Results of the study have been documented in D4.5 National regional global mitigation pathways (DOI <a href=\"../doi/10.5281/zenodo.13767329\">10.5281/zenodo.13767329</a>)</p>",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/13839879"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "IAM_COMPACT_Study_1_Fit_for_55"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "IAM_COMPACT_Study_1_Fit_for_55",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "230996eb-68be-4cef-9a21-54bfb2c52ed1",
+                    "type": "other"
+                },
+                "description": "<p dir=\"auto\">This repository includes the visualisation code for Figure 1 and Figure 2 in the paper that establishes criteria for 'abated' fossil fuel and industrial process emissions. The paper proposes four key benchmark criteria:</p>\n<ol>\n<li>CO\u2082 capture rates of &ge;95%</li>\n<li>Permanent storage of captured emissions</li>\n<li>Reducing upstream and end-use fugitive methane emissions to &le;0.5% (targeting 0.2%)</li>\n<li>Counterbalancing remaining emissions using permanent carbon dioxide removal</li>\n</ol>",
+                "distribution": [
+                    {
+                        "format": [
+                            "Bataille_et_al_2025_EGYCC_dataset.zip"
+                        ]
+                    },
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "description": "Repository hosted by Zenodo",
+                            "url": "https://zenodo.org"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Bataille_et_al_2025_EGYCC_dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Bataille_et_al_2025_EGYCC_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "24a20d6c-4cac-4492-942c-5e20c4b32b14",
+                    "type": "other"
+                },
+                "description": "This database serves as a general overview of energy and climate policies and policy targets in G20 countries, with the purpose of feeding IAMs and ESMs.&#160;The viability of applying policies may vary by model, and the type of inputs may vary from the ones displayed. Therefore, sources are included for each policy for modellers to find out the required details when necessary. In some cases, the overview displays &#34;aspirational targets&#34; apart from regular targets. This is because some stated targets are significantly far away from real-world advancement and the achievement of the &#34;aspirational target&#34; may therefore be unlikely according to tertairy sources (e.g. Climate Action Tracker). <br>For corrections and additional policies not included, contact Dirk-Jan van de Ven: dj.vandeven@bc3research.org",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/12648253"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "IAM_COMPACT_Climate_Policy_Database"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "IAM_COMPACT_Climate_Policy_Database",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "4325d304-c990-4e76-b07c-245f71580624",
+                    "type": "other"
+                },
+                "description": "<p>This dataset contains the LEAP and OSeMOSYS output data for the manuscript Karamaneas et al., submitted to Renewable &amp; Sustainable Energy Transition in September 2022.</p>",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "title": "Karamaneas et al_RSETR_2022_DATASET"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Karamaneas_et_al_2022_RSETR_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "65a605df-3e7a-40ed-8131-413e715f293c",
+                    "type": "other"
+                },
+                "description": "This dataset contains the underlying IAM output data for the journal article\u00a0by Moreno et al. currently in revision in Nature Communications Earth and Environment titled \"Long-term sustainable development prospects of EU decarbonisation pathways: a multi-model study\".",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://doi/10.5281/zenodo.10072816"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Moreno et al_2023_Long-term_SDGsEU_Dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Moreno et al_2023_Long-term_SDGsEU_Dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "6c4bdd96-a940-43e6-9528-44d4a8d62182",
+                    "type": "other"
+                },
+                "description": "<div>This dataset contains the underlying modelling results and figures for the journal article \"<span>A window of (missed) opportunity? A comprehensive stocktake and energy-system impact assessment of global COVID-19 recovery packages\" by Zisarou et al.</span></div>",
+                "distribution": [
+                    {
+                        "format": [
+                            "Zisarou_et_al_Recovery_packages_dataset.zip"
+                        ]
+                    },
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "description": "Repository hosted by Zenodo",
+                            "url": "https://zenodo.org"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Zisarou_et_al_Recovery_packages_dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Zisarou_et_al_Recovery_packages_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "72466057-bbf1-47fc-826e-a3d17803d8ef",
+                    "type": "other"
+                },
+                "description": "<p>This dataset contains the underlying data (IAM outputs, feasibility assessment, temperature projections) for the journal article&nbsp;by van de Ven et al. currently in revision in Nature Climate Change, titled &quot;A multi-model analysis of post-Glasgow climate targets and feasibility challenges&quot;.</p>",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "title": "van de Ven et al_2023_postGlasgow_NCC_Dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Van_de_Ven_et_al_2023_NCC_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "73bc8061-0bf2-4d0a-adc8-4aee3118cd77",
+                    "type": "other"
+                },
+                "description": "<div>\n<div>\n<div>\n<div>This dataset contains the underlying input data, and modelling results for the journal article \"Analysis of the competition between land, energy and food using the<br>TERRA module of WILIAM System Dynamics IAM\" in Renewable and Sustainable Energy Reviews by Mediavilla et al (DOI: https://doi.org/10.1016/j.rser.2025.115651)<br><br></div>\n</div>\n</div>\n</div>",
+                "distribution": [
+                    {
+                        "format": [
+                            "Mediavilla_et_al_2025_RSER_dataset.zip"
+                        ]
+                    },
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "description": "Repository hosted by Zenodo",
+                            "url": "https://zenodo.org"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Mediavilla_et_al_2025_RSER_dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Mediavilla_et_al_2025_RSER_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "73d994c4-2505-4fda-a55b-81dd61834665",
+                    "type": "other"
+                },
+                "description": "<p>This dataset contains the underling raw data of IAM COMPACT \"Study 3 - Geopolitics\".&nbsp;</p>\n<p>This study aims to respond to the research question &ldquo;What are the different cost, energy security and resilience metrics and how do they compare for different scenarios?&rdquo; (it groups 4 policy questions)&nbsp;by assessing the effectiveness of transformational responses to Climate Change through a comparative analysis of socio-economic outcomes across different resilience scenarios. </p>\n<p>Disruptive events pose significant risks to socio-economic systems, necessitating a comprehensive framework to understand and address their potential impacts. Part of this study builds upon van Ginkel et al. proposed dimensions of transformational response and resilience to socio-economic impact, to create a novel matrix for exploring climate-related extremes and their socio-economic consequences.</p>\n<p>The resulting scenario matrix yields four distinct narratives: Business as Usual, Unadaptive Transformation, Incremental Resilience, and Effective Transformation. These narratives represent varying combinations of transformational response and resilience to socio-economic impacts, offering a nuanced perspective on potential future pathways. The Business as Usual scenario depicts a society with low transformation and resilience, while the Unadaptive Transformation narrative illustrates the pitfalls of narrow focus in climate change mitigation efforts. Incremental Resilience represents a society that achieves high resilience through expanding existing capacities rather than transformative changes. Finally, the Effective Transformation scenario embodies the ideal resilient future, characterized by significant, well-rounded transformations and high resilience to socio-economic impacts.</p>\n<p>This framework provides a valuable tool for policymakers, researchers, and stakeholders to assess the complex interplay between climate change tipping points and socio-economic systems, facilitating more informed decision-making and strategy development in the face of climate uncertainties.</p>\n<div></div>\n<p>Results of the study have been documented in D5.4 - Modelling out-of-ordinary extremes (DOI <a href=\"../doi/10.5281/zenodo.13840866\">10.5281/zenodo.13840866</a>)</p>",
+                "distribution": [
+                    {},
+                    {
+                        "byte_size": 339400
+                    },
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "title": "IAM_COMPACT_Study_3_Geopolitics"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "IAM_COMPACT_Study_3_Geopolitics",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "770cc4f5-5be1-4d71-b73a-f2c8f83d1cdb",
+                    "type": "other"
+                },
+                "description": "<p>This dataset contains the underling raw data of IAM COMPACT \"Study 2 - Energy security, resilience, flexibility, costs, and environmental indicators in renewable energy systems\".</p>\n<p>This study aims to respond to the research question &ldquo;Evaluating energy system flexibility, energy security, energy system resilience in baseline, renewable, and cost-optimal scenarios&rdquo;. It focuses on exploring methods and tools for modelling and comparing future energy systems in form of scenarios and uses a set of parameters to assess flexibility, resilience, costs, prices, etc. in renewable energy scenarios.&nbsp;To cover all the required areas, a comprehensive literature review is carried out so as to define indicators for evaluating renewable energy systems. These indicators are also refined with feedback from policy-makers and stakeholders.</p>\n<p>Three scenarios were created for the EU:</p>\n<ul>\n<li>Baseline 2050, based on current commitments and projections</li>\n<li>1.5 Tech 2050, assuming ambitious measures to meet with the 1.5&ordm;C increase of the Paris agreement; and</li>\n<li>Smart Energy Europe 2050, designed with a 100% renewable energy system.&nbsp;&nbsp;</li>\n</ul>\n<p>Results of the study have been documented in D4.9 &ndash; European sub-national deep dives (DOI <a href=\"../doi/10.5281/zenodo.13784964\">10.5281/zenodo.13784964</a>)</p>",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/13840850"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "IAM_COMPACT_Study_2_Energy_security"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "IAM_COMPACT_Study_2_Energy_security",
+                "type": "DMP Dataset"
+            },
+            {
+                "data_quality_assurance": [
+                    "Data conform to format specification"
+                ],
+                "dataset_id": {
+                    "identifier": "784a1c69-7aa9-4e5d-8db1-acf6c9bd18fc",
+                    "type": "other"
+                },
+                "description": "This dataset contains the underlying raw modelling data for the journal article by Boitier et al., 2023 published in Joule\u00a0in November 2023.",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "description": "&#160;The OpenAIRE project, in the vanguard of the open access and open data movements in Europe was commissioned by the EC to support their nascent Open Data policy by providing a catch-all repository for EC funded research. CERN, an OpenAIRE partner and pioneer in open source, open access and open data, provided this capability and Zenodo was launched in May 2013. <br>",
+                            "url": "https://zenodo.org/records/10044337"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "Boitier et al_2023_JOULE_DATASET"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "no",
+                "sensitive_data": "no",
+                "title": "Boitier_et_al_2023_JOULE_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "8b3b8259-2c2e-4fdf-acb2-249b7d4d2075",
+                    "type": "other"
+                },
+                "description": "This dataset contains the script for Figure 1 in the perspective paper:  Reisinger, A., Cowie, A. L., Geden, O., & Al Khourdajie, A. (2024). Science-based targets miss the mark. Communications Earth & Environment - Nature.\u00a0https://doi.org/10.1038/s43247-024-01535-z",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/12801799"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "Reisinger_et_al_2024_Commun_Earth_Environ_dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Reisinger_et_al_2024_Commun_Earth_Environ_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "9f968296-f03f-49d5-b72b-19cc88ad2ecc",
+                    "type": "other"
+                },
+                "description": "This dataset contains the underlying raw modelling data for the journal article by Koutsandreas et al., 2023 published in Energy Strategy Reviews in November 2023.",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {},
+                    {},
+                    {},
+                    {
+                        "title": "Koutsandreas_et_al_2023_ESR_dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "metadata": [
+                    {
+                        "description": "https://doi/10.5281/zenodo.10362363"
+                    }
+                ],
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Koutsandreas_et_al_2023_ESR_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "b282755a-f728-4d0a-8cfb-34ee038c708d",
+                    "type": "other"
+                },
+                "description": "This dataset contains the underlying raw modelling data for the journal article by Al Khourdajie et al., 2024 published in Energy and Climate Change in February 2024.",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://doi.org/10.5281/zenodo.10640622"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Al_Khourdajie_et_al_2024_JEGYCC_dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "no",
+                "sensitive_data": "no",
+                "title": "Al_Khourdajie_et_al_2024_JEGYCC_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "bbd5ebc2-eb87-4258-bdfe-e0090900b88f",
+                    "type": "other"
+                },
+                "description": "<p>This dataset contains the underling raw data of IAM COMPACT \"Study 7 - Behavioural changes\".</p>\n<p>The study addresses the impact of behavioural change on diets, buildings, and mobility&nbsp;<span>(Frilingou et al., 2024)</span>. This study aims to understand the economic ramifications arising from shifts in behaviour and social innovation within the context of the energy transition as conceptualized in Task 5.5, emphasizing the relevance of behavioural change as an added social value resulting from policy implementation, rather than solely focusing on cost or effectiveness evaluation.&nbsp;</p>\n<p>Initially, study 7 carries out a contextualisation of behavioural change by a literature review and an analysis of the behaviour-related policy representation in IAM COMPACT models (based on D4.1 methodology application). Next, it collects and processes stakeholders&rsquo; questions and propositions on behavioural changes and classifies them according to sectors and models which can respond to them. Finally, four scenarios are created from applying different policies, yielding outputs in the fields of energy, climate and land.</p>\n<p>Results of the study have been documented in D5.6 - Behaviour, social and disruptive innovation (DOI <a href=\"../doi/10.5281/zenodo.12751959\">10.5281/zenodo.12751959</a>)</p>",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/13840914"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "IAM_COMPACT_Study_7_Behavioural_changes"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "IAM_COMPACT_Study_7_Behavioural_changes",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "bed1fe22-15d5-4677-8409-21e8ca87871e",
+                    "type": "other"
+                },
+                "description": "<h2>Description</h2>\n<p>This repository contains all data and code to extend the&nbsp;<a href=\"../records/10148587\" target=\"_blank\" rel=\"noopener\">hybrid-units version of EXIOBASE</a> to account for new innovative steelmaking routes envisaged to be deployed in the EU to meet decarbonization targets for the steel industry. The new model was built by adopting the <a href=\"https://doi.org/10.5334/jors.473\">MARIO</a> open-source framework.&nbsp; &nbsp;</p>\n<p>The database is an improved version of the one described in the following open-access paper (DOI: <a href=\"https://doi.org/10.1088/1748-9326/ad5bf1\">https://doi.org/10.1088/1748-9326/ad5bf1</a>)</p>\n<h2>What's new</h2>\n<ul>\n<li>The new technologies have been characterized for all regions, assuming each inventory to be the same in all regions but differentiated by regional import patterns of each commodity.</li>\n<li>A slight aggregation on electricity production activities and commodities have been also performed, to nowcast electricity production mixes to 2024 based on <a href=\"https://ember-climate.org/data/data-tools/data-explorer/\">Ember data.</a> Data from Ember have been rearranged to calculate electricity mixes by year and Exiobase regions</li>\n<li>The list of steel production technologies have been extended. Full list in the table below</li>\n</ul>\n<p>The database implements in the EU the following new activities and commodities:</p>\n<table>\n<tbody>\n<tr>\n<td><strong>New activities</strong></td>\n<td><strong>New commodities</strong></td>\n</tr>\n<tr>\n<td>Manufacturing of steam reformer</td>\n<td>Steam reformer</td>\n</tr>\n<tr>\n<td>Manufacturing of electrolyser</td>\n<td>Electrolyser</td>\n</tr>\n<tr>\n<td>Hydrogen production with steam reforming</td>\n<td>Steam reforming hydrogen</td>\n</tr>\n<tr>\n<td>Hydrogen production with electrolysis</td>\n<td>Electrolysis hydrogen</td>\n</tr>\n<tr>\n<td>DRI-EAF-NG</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>DRI-EAF-NG-CCS</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>DRI-EAF-COAL</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>DRI-EAF-COAL-CCS</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>DRI-EAF-H2</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>DRI-EAF-BECCS</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>DRI-SAF-BOF-NG</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>DRI-SAF-BOF-H2</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>DRI-SAF-BOF-BECCS</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>SR-BOF</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>SR-BOF-CCS</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>BF-BOF-CCS-73%</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>BF-BOF-CCS-86%</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>BF-BOF-BECCSmax</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>BF-BOF-BECCSmin</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>AEL-EAF</td>\n<td>&nbsp;</td>\n</tr>\n<tr>\n<td>MOE</td>\n<td>&nbsp;</td>\n</tr>\n</tbody>\n</table>\n<h2>Instructions</h2>\n<p>To use the database, please install MARIO following the <a href=\"https://mario-suite.readthedocs.io/en/latest/intro.html#installation\">instructions.</a> The database can be parsed by using the following command<br><br></p>\n<div>\n<div>db = mario.parse_from_txt(</div>\n<div>&nbsp; &nbsp; &nbsp;path='PATH/TO/THE/FOLDER/WHERE/DATA/FROM/THIS/REPOSITORY/ARE/STORED',</div>\n<div>&nbsp; &nbsp; &nbsp;mode='coefficients',</div>\n<div>&nbsp; &nbsp; &nbsp;table='SUT',</div>\n<div>)</div>\n</div>\n<p>&nbsp;</p>",
+                "distribution": [
+                    {
+                        "format": [
+                            "Y.txt"
+                        ]
+                    },
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "description": "Repository hosted by Zenodo",
+                            "url": "https://zenodo.org"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Exiobase HYBRID | Green steel version"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Exiobase HYBRID | Green steel version",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "c783953a-c320-424d-bca9-571cfd99990c",
+                    "type": "other"
+                },
+                "description": "This dataset contains Nationally Determined Contributions (NDCs) for 2030, and new long-term strategies (LTSs) for 2050, which were put in place in the run-up to, during, and after the COP26 conference.&#160; <br>NDC targets reflect the level of short-term ambition to which most countries are dedicated to through law or policy, but with risks of falling short if dedication is not high enough and/or changes occur in the political landscape. <br>Long-term targets (LTT) reflect the level of longer-term ambition which many countries have stated to fulfil their part in mitigating climate change, but in most cases not backed with an actual policy agenda. These will come on top of pledged NDC targets, to create another increased level of proposed ambition. These pledges will be included for each separate model region as a linear pathway from the 2030 NDC target (NDC_LTT). &#160;&#160;   &#160;",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/12648186"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "IAM_COMPACT_NDCs_LTTs_Database"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "IAM_COMPACT_NDCs_LTTs_Database",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "d1ef92e1-1329-4293-b46b-11343f5b66c4",
+                    "type": "other"
+                },
+                "description": "<p><span>The global recovery database was created to provide a comprehensive and reliable repository of information and data on the economic green recovery measures implemented by governments worldwide in response to the COVID-19 pandemic. This entailed activities such as data collection, classification, and analysis to gather, categorise, and organise the green recovery packages and to examine their potential impacts on the low-carbon transition. The development of the database is based on a rigorous approach to identify and synthesize data from diverse, reputable sources. These sources were systematically examined, ensuring a broad and representative dataset of almost all countries globally. Specifically, the announced measures that are included in the developed database, account for 86% of global population and 94% of global GDP.&nbsp;</span></p>\n<p>&nbsp;</p>",
+                "distribution": [
+                    {
+                        "format": [
+                            "Database_Recovery_Packages.xlsx"
+                        ]
+                    },
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "description": "Repository hosted by Zenodo",
+                            "url": "https://zenodo.org"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "IAM_COMPACT_Recovery_Packages_Database"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "IAM_COMPACT_Recovery_Packages_Database",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "d7834def-5a5e-4123-b6da-80cfc43e415c",
+                    "type": "other"
+                },
+                "description": "<p>This dataset contains the underling raw data of IAM COMPACT \"Study 4 - EU Industry\".</p>\n<p>The study started from stakeholders&rsquo; questions around relocation of European Industries and associated impacts on costs, sustainability and labour and condensed these into two sub-studies:</p>\n<ol>\n<li>The first one analysed the European steel industry and a potential relocation thereof to other world regions because of high energy and CO2 prices in the EU.</li>\n<li>The second one addressed &ndash; in the context of potential re-shoring of critical net-zero technologies to the EU &ndash; the raw material demand for upscaling solar and wind technologies in four global regions, including the EU (section 3 of D4.7 (Holtz et al., 2023)).</li>\n</ol>\n<p>The first sub-study on the EU steel industry involved the soft-linking of several models to assess the potential impact of different degrees of trade restrictions for steel. Three scenarios are analysed in each of which all countries implement their current climate policies and achieve the GHG emissions reduction targets set in their respective NDCs and in their long-term targets, but different steel-related trade constraints are assumed in the three scenarios:</p>\n<ul>\n<li>&ldquo;NDC_LTT&rdquo; scenario: no trade restriction</li>\n<li>&ldquo;CBAM&rdquo; scenario: steel imports to the EU are penalized based on their CO2 footprint</li>\n<li>&ldquo;INDEPENDENCE&rdquo; scenario: steel production levels in the EU may not drop below the level of 2019 (which is guaranteed by subsidies provided for steel production)</li>\n</ul>\n<p>The second sub-study on raw material demand for upscaling solar and wind technologies builds on the three scenarios of the steel-related study (see above). Results from GCAM on renewables upscaling were used as an input to some modules of WILIAM which allowed to calculate the raw materials demands implied, which were then compared to current annual extraction and the known global reserves.</p>\n<p>The GCAM model was used to develop scenarios for the steel production in different global regions considering trade and trade restrictions and all other model applications in this study built on these results. The three steel-related scenarios analysed with GCAM all build on the NDC_LTT scenario of study 1 used for the comparison of EU Fit-for-55 policy to a cost-optimal scenario (section 3 of D4.5 (Mittal et al., 2023)). Therefore, all policies included in the NDC_LTT scenario of Study 1 are implicitly included in Study 4 scenarios as well. However, these were not analysed specifically in Study 4. The policy measures explicitly addressed in Study 4 are related to steel trade. Furthermore, the CO2 price resulting from GCAM was used as an input by the WISEE EDM-I bottom-up steel model.</p>\n<div>Results of the study have been documented in D4.7 - Sectoral and cross-sectoral analysis (DOI <a href=\"../doi/10.5281/zenodo.13839232\">10.5281/zenodo.13839232</a>)</div>",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/13840887"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "IAM_COMPACT_Study_4_EU_Industry"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "IAM_COMPACT_Study_4_EU_Industry",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "e620050e-f221-4938-99b4-7e222770bcb0",
+                    "type": "other"
+                },
+                "description": "This dataset contains the underlying data for the following publication: Gambhir, A., Mittal, S., Lamboll, R., Bernie, D., Gohar, L., Hawkes, A., Koberle, A.C., Rogelj, J., &amp; Lowe, J. (2023) Adjusting climate change mitigation pathways in light of adverse new information. Nature Communications. Full details of methods used to create the dataset are provided within this publication.<br><br>The dataset was created by Imperial College London and does not contain third party inputs.",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {},
+                    {},
+                    {},
+                    {},
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Gambhir_et_al_2023_Nat_Commun_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "ecd608fd-7eeb-43eb-bbb4-bedb76e2c956",
+                    "type": "other"
+                },
+                "description": "This dataset contains the underline raw data for the journal article by Fragkos et al., 2024 published in Climate in June 2024.",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/11622856"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "Fragkos_et_al_2024_Climate_dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Fragkos_et_al_2024_Climate_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "ee863789-3305-45f1-bbd0-a9365617009e",
+                    "type": "other"
+                },
+                "description": "<div>\n<div>\n<div>This dataset contains the underlying input data, modelling results, and figures for the journal article on cost of capital by Frilingou et al., 2025. Version 3 features an update of the file<em> Data S2 - Subsidies_allocation</em> in the <strong>Input data</strong> folder from csv to xlsx format, to document the calculation of subsidy allocation more comprehensively. It also adds Figure S3 in the <strong>Figures </strong>folder.</div>\n</div>\n</div>",
+                "distribution": [
+                    {
+                        "format": [
+                            "CoC_dataset.zip"
+                        ]
+                    },
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "description": "Repository hosted by Zenodo",
+                            "url": "https://zenodo.org"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Frilingou_et_al_2025_CoC_dataset"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Frilingou_et_al_2025_CoC_dataset",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "f2c3e8cb-baca-4855-b9d3-4ae36574717b",
+                    "type": "other"
+                },
+                "description": "This repository contains all data and code to extend the hybrid-units version of EXIOBASE to account for new innovative steelmaking routes envisaged to be deployed in the EU to meet decarbonization targets for the steel industry. The new model was built by adopting the MARIO open-source framework.   &#10;<div>&#10;</div><div>The database is an improved version of the one described in the following open-access paper (DOI: https://doi.org/10.1088/1748-9326/ad5bf1)</div>",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/15586337"
+                        }
+                    },
+                    {},
+                    {},
+                    {
+                        "title": "Exiobase HYBRID extended to model innovative steelmaking routes | Global version (beta)"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "Exiobase HYBRID extended to model innovative steelmaking routes | Global version (beta)",
+                "type": "DMP Dataset"
+            },
+            {
+                "dataset_id": {
+                    "identifier": "ff6573a7-1833-425e-ac3f-3f7a227d0be1",
+                    "type": "other"
+                },
+                "description": "<p>This dataset contains the underling raw data of IAM COMPACT \"Study 6 - Interest rates\".</p>\n<p>Models used to assess decarbonisation pathways typically assume a uniform cost of capital; such assumption, however, does not do justice to real-world conditions and may therefore lead to inaccurate policy recommendations. The study&nbsp;aims to explore how non-uniform weighted average cost of capital (WACC), i.e., the discount rate a company uses to estimate its net present value, could influence global decarbonisation pathways.&nbsp;</p>\n<p>The study builds on empirically calibrated WACC values by region and technology in global IAMs and expands the modelling analysis by exploring stakeholder-driven pathways of de-risking clean energy technologies and risking fossil fuels. As one of the largest uncertainties lies in the way WACC values are expected to evolve over time, the empirical estimates of baseline WACC values are combined with an expert-based approach to produce forward-looking scenarios of evolving WACCs over time. The study also attempts to incorporate a corrective justice dimension in its narratives, by assessing the impacts of risk underwriting for low-carbon investments through taxing corporate windfall profits for 2022 and distributing the revenue as subsidies towards high-risk regions.</p>\n<p>Results of the study have been documented in D5.6 - Behaviour, social and disruptive innovation (DOI <a href=\"../doi/10.5281/zenodo.12751959\">10.5281/zenodo.12751959</a>)</p>",
+                "distribution": [
+                    {},
+                    {},
+                    {
+                        "host": {
+                            "pid_system": [
+                                "doi"
+                            ]
+                        }
+                    },
+                    {
+                        "host": {
+                            "url": "https://zenodo.org/records/13840901"
+                        }
+                    },
+                    {},
+                    {
+                        "host": {
+                            "support_versioning": "yes"
+                        }
+                    },
+                    {
+                        "title": "IAM_COMPACT_Study_6_Interest_rates"
+                    },
+                    {
+                        "data_access": "open"
+                    },
+                    {},
+                    {}
+                ],
+                "language": "eng",
+                "personal_data": "unknown",
+                "sensitive_data": "no",
+                "title": "IAM_COMPACT_Study_6_Interest_rates",
+                "type": "DMP Dataset"
+            }
+        ],
+        "description": "<div align=\"justify\"><b>About this machine-actionable data management plan (maDMP)</b><br></div><div align=\"justify\">The open maDMP will guide all data collection, processing, production, and storage of the Horizon Europe IAM COMPACT project (Grant Agreement No. 101056306). The maDMP in ARGOS describes all datasets that will be created, managed, and curated in the context of the project. All datasets will be stored in the project's community in Zenodo (https://zenodo.org/communities/iam-compact) and linked to the maDMP in ARGOS. In parallel, a report has been published in December 2023 with general guidelines for all project datasets, including a description of expected project data, FAIR data handing, data security, resources, and ethical aspects. This report (Deliverable 3.2 of the project) will serve as a guide for all consortium partners on how to manage datasets and how to update the maDMP in ARGOS with adequate descriptions and metadata for these datasets, and will be updated again towards the end of the project (Deliverable D3.3).<br></div><div align=\"justify\"><br></div><div align=\"justify\"><div><span><b>About the project</b></span></div><div><span>IAM COMPACT is an EU-funded research project under the Horizon Europe framework programme aimed at effectively supporting the assessment of global climate goals, progress, and feasibility space, as well as the design of the next round of NDCs and policy planning beyond 2030 for major emitters and non-high-income countries. In particular, the project will use a diverse ensemble of models, tools, and insights from social sciences and operations research, and will integrate bodies of knowledge to co-create the research process and enhance transparency, robustness, and policy relevance. It will notably explore the role of structural changes in major emitting sectors and of political, behaviour, and social aspects in mitigation, as well as quantify factors promoting or hindering climate neutrality.<br></span></div></div>",
+        "dmp_id": {
+            "identifier": "3aa0dc55-c653-49db-a3b3-3463510f26af",
+            "type": "other"
+        },
+        "ethical_issues_exist": "no",
+        "language": "eng",
+        "modified": "2025-08-08T12:19:31.974537Z",
+        "project": [
+            {
+                "description": "There is a gap between current climate policies and the Paris Agreement\u2019s objectives. The difference refers to the current level of global greenhouse gas emissions and the emissions reductions required. This highlights the need for increased ambition and stronger climate action from all countries to bridge this gap and avoid the worst impacts of climate change. With this in mind, the EU-funded IAM COMPACT project will design a multi-dimensional set of policy measures using a diverse ensemble of models, tools and insights from various fields. The project will involve non-scientists in the modelling process. It will also support the assessment of global climate goals, progress, and feasibility space.",
+                "end": "2023-12-05",
+                "funding": [
+                    {
+                        "funder_id": {
+                            "identifier": "85f2ae6b7ac34684ba81349f9b3195cf",
+                            "type": "fundref"
+                        },
+                        "grant_id": {
+                            "identifier": "corda_____he::101056306",
+                            "type": "other"
+                        }
+                    }
+                ],
+                "start": "2023-12-05",
+                "title": "Expanding Integrated Assessment Modelling: Comprehensive and Comprehensible Science for Sustainable, Co-Created Climate Action"
+            }
+        ],
+        "title": "IAM COMPACT - Machine-Actionable Data Management Plan New"
+    }
+}

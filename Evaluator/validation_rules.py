@@ -137,7 +137,7 @@ def detect_identifier_type(identifier, allowed_values=None):
 
     known_labels = [
         "Schema.org", "DCAT", "Dublin Core", "DataCite", "GBIF search engine",
-        "Global Biotic Interactions", "Open Data", "Open", "OAuth 2.0", "GBIF local account",
+        "Global Biotic Interactions", "Open Data", "Open", "open", "OAuth 2.0", "GBIF local account",
         "DwC-A", "JSON", "XMLS", "RDFS", "EML", "DwC",
         "Plant Pollinator Vocabulary", "Relations Ontology", "PROV-O",
     ]
