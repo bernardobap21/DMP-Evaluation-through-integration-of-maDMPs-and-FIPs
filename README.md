@@ -1,4 +1,4 @@
-# DMP-Evaluation
+# Automating DMP-Evaluation 
 
 This repository contains a prototype framework for evaluating Data Management Plans (DMPs) by integrating machine-actionable Data Management Plans (maDMPs) and FAIR Implementation Profiles (FIPs). It contains the implementation and results from the Master Thesis *Automating Data Management Plan Evaluation Through the Integration of Machine-Actionable Data Management Plans and FAIR Implementation Profiles*
 
