@@ -61,7 +61,9 @@ python -m uvicorn api:app --reload
 ```
 The server will run on `http://127.0.0.1:8000`. Open `http://127.0.0.1:8000/docs` in your browser to access the interactive documentation. You can upload your maDMP file and pick a FIP mapping from the dropdown to run an evaluation directly from the web UI. It is also possible to add a new FIP mapping by providing its nanopublication link.
 
-The API is also available on the web at  `https://dmp-evaluation.onrender.com/docs#/default/docs`.
+**The API is also available on the web at:**  
+[https://dmp-evaluation.onrender.com/docs#/default/docs](https://dmp-evaluation.onrender.com/docs#/default/docs)
+
 
 Using the `Upload_fip` endpoint: Upload the link from a nanopublication to create a new mapping file (Some mappings are already available in the dropdown). 
     - Click the **Try it out**  button and paste a FIP link (nanopublication) between the quotes.
