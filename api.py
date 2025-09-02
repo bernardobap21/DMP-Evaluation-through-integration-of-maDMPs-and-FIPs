@@ -14,7 +14,7 @@ import os
 
 FIP_DIRECTORY = "FIP_Mapping"
 
-# Group endpoints under a single tag in the interactive docs
+# Group endpoints
 tags_metadata = [
     {
         "name": "maDMP",
@@ -24,16 +24,14 @@ tags_metadata = [
 
 
 def get_fip_options():
-    """Return a list of available FIP mapping JSON files."""
-    return [f for f in os.listdir(FIP_DIRECTORY) if f.endswith(".json")]
+    return [f for f in os.listdir(FIP_DIRECTORY) if f.endswith(".json")] # Return a list of available FIP mapping JSON files
 
 
 # List used for Query enum. Updated when new mappings are uploaded.
 FIP_OPTIONS = get_fip_options()
 fip_query = Query(..., enum=FIP_OPTIONS)
 
-def convert_nanopub_to_mapping(url: str) -> str:
-    """Fetch a nanopublication and store the generated mapping."""
+def convert_nanopub_to_mapping(url: str) -> str: # Fetch a nanopublication and store the generated mapping.
     mapping = build_mapping(url)
     label = get_fip_label(url)
     os.makedirs(FIP_DIRECTORY, exist_ok=True)
@@ -96,7 +94,7 @@ This API evaluates machine-actionable Data Management Plans (maDMPs) against FAI
 **3.** Receive a detailed evaluation response (pass/fail/indeterminate results within each Test Result) and a human-readable compliance table. \n
 **4.** (Optional) Download the response clicking the `Download` button on the bottom right of the response. \n
 
-See [GitHub Repository](https://github.com/bernardobap21/DMP-Evaluation) for examples and setup (README).
+See [GitHub Repository](https://github.com/bernardobap21/DMP-Evaluation-through-integration-of-maDMPs-and-FIPs.git) for examples and setup (README).
 """,
     version="0.0.1",
     openapi_tags=tags_metadata,
@@ -106,8 +104,7 @@ See [GitHub Repository](https://github.com/bernardobap21/DMP-Evaluation) for exa
 # @app.get("/")
 @app.get("/", summary="API status", tags=["maDMP"])
 def read_root():
-    """Run to verify the API is available."""
-    return {"Welcome": "Your DMP Evaluation API is running!"}
+    return {"Welcome": "Your DMP Evaluation API is running!"} # Run to verify the API is available.
 
 
 # @app.post("/upload_fip/")
@@ -126,15 +123,7 @@ async def upload_fip(
         example="Paste the nanopublication URL here between quotes", 
     ),
 ):
-    # """Fetch a FIP nanopublication and store it as a mapping JSON."""
-    """Add a FAIR Implementation Profile mapping.
-
-    The endpoint accepts a nanopublication URL containing a FIP. The
-    nanopublication is fetched and converted into a mapping JSON file
-    stored under :mod:`FIP_Mapping`. Once uploaded the mapping becomes
-    available in the ``fip_mapping_file`` dropdown of the evaluation
-    endpoint.
-    """
+    """Fetch a nanopublication and store the resulting mapping JSON."""
     mapping = build_mapping(uri)
     label = get_fip_label(uri)
     filename = f"fip_madmp_{label}.json"
