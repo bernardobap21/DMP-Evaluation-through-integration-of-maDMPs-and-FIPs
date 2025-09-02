@@ -19,7 +19,7 @@ The evaluation framework integrates **machine-actionable DMPs (maDMPs)** with **
 
 This conceptual framework serves as the foundation for optimizing such evaluations, saving time, effort and ensuring reproducibility.
 
-![Conceptual Framework](conceptual_framework_final.png)
+![Conceptual Framework](./images/conceptual_framework_final.png)
 
 ## Installation
 
