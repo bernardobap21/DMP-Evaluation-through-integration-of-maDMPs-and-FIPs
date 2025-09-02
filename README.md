@@ -98,7 +98,8 @@ The `Evaluator/` module includes Goals evaluation scoring (`goals_checks.py`) an
 
 Mappings for different communities are stored under `FIP_Mapping/`.
 
-A jupyter notebook is provided under `notebookks/` to demonstrate how the tool could implement semantic validation (SPARQL queries).
+The repository also includes a [Jupyter notebook](notebooks/sparql_explorer.ipynb) demonstrating how semanti validation can be achieved by querying the evaluation results using SPARQL.  
+
 
 ## License
 
