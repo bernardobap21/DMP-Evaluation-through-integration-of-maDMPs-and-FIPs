@@ -41,7 +41,7 @@ pip install -r requirements.txt
 After installing the dependencies you can run the evaluator. The script `evaluate_dmp.py` compares a maDMP file with a chosen FIP mapping and generates several reports. An example using the included files is:
 
 ```bash
-python  evaluate_dmp.py --input examples/Plant-flower_visitor_interactions.json --mapping FIP_Mapping/fip_madmp_WorldFAIR_WP10_Plant-Pollinator_FIP01_.json --output results
+python  evaluate_dmp.py --input examples/Plant-flower_visitor_interactions.json --mapping FIP_Mapping/fip_madmp_WorldFAIR_WP10_Plant-Pollinator_FIP01.json --output results
 ```
 
 This will produce:
