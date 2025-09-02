@@ -15,7 +15,7 @@ This repository contains a prototype framework for evaluating Data Management Pl
 
 
 ## Framework overview
-The evaluation framework integrates **machine-actionable DMPs (maDMPs)** with **FAIR Implementation Profiles (FIPs)** to enable automated assessment of **Data Management Plans (DMP)**. The evaluator compares fields from a maDMP against community expectations stored in a FIP, returning compliance tables, quality checks, and FAIR Test Results in [OSTrails](https://ostrails.github.io/FAIR_assessment_output_specification/release/1.1.0/index-en.html) format.  
+The evaluation framework integrates **machine-actionable DMPs (maDMPs)** with **FAIR Implementation Profiles (FIPs)** to enable automated assessment of **Data Management Plans (DMP)**. The evaluator compares fields from a maDMP against community expectations stored in a FIP, returning compliance tables, quality checks, and FAIR Test Results in [OSTrails](https://ostrails.github.io/FAIR_testing_resource_vocabulary/release/1.1.0/index-en.html) format.  
 
 This conceptual framework serves as the foundation for optimizing such evaluations, saving time, effort and ensuring reproducibility.
 
