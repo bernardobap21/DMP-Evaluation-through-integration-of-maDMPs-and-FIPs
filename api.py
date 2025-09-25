@@ -24,7 +24,9 @@ tags_metadata = [
 
 
 def get_fip_options():
-    return [f for f in os.listdir(FIP_DIRECTORY) if f.endswith(".json")] # Return a list of available FIP mapping JSON files
+    return sorted(
+        f for f in os.listdir(FIP_DIRECTORY) if f.endswith(".json")
+    )
 
 
 # List used for Query enum. Updated when new mappings are uploaded.
