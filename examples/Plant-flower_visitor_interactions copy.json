@@ -1,0 +1,112 @@
+{
+  "dmp": {
+    "title": "DMP for Buenos Aires Plant-Flower Visitor Interactions Dataset",
+    "description": "This Data Management Plan outlines management, sharing, and preservation of a plant–flower visitor dataset collected in Buenos Aires County, Argentina, as part of the WorldFAIR WP10 Plant-Pollinator case study. The dataset is hosted on Zenodo and indexed by GloBI.",
+    "language": "eng",
+    "contact": {
+      "name": "Rocío Ana González-Vaquero",
+      "mbox": "mailto:rocio.gonzalez@uba.ar"
+    },
+    "contributor": [
+      {
+        "name": "Rocío Ana González-Vaquero",
+        "role": ["DataGenerator"]
+      },
+      {
+        "name": "Mariano Devoto",
+        "role": ["DataCurator"]
+      },
+      {
+        "name": "WorldFAIR WP10 Team",
+        "role": ["HostingInstitution"]
+      }
+    ],
+    "created": "2024-02-16",
+    "modified": "2025-06-18",
+    "dataset": [
+      {
+        "title": "Plant-Flower Visitor Interactions Recorded in Argentina (Buenos Aires)",
+        "description": "Dataset of 522 plant–flower visitor interaction records from 21 sites in Buenos Aires county, Argentina. Records collected in 2018 by field surveys, curated and FAIR-ified under REBIPP and SALURBAL guidance. Indexed in GloBI and hosted on Zenodo.",
+        "type": "Observation data",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "data_quality_assurance": [
+          "Species identifications confirmed by taxonomists",
+          "Data curated by REBIPP team",
+          "FAIRfication followed WorldFAIR D10.2 guidelines"
+        ],
+        "dataset_id": {
+          "identifier": "",
+          "type": ""
+        },
+        "distribution": [
+          {
+            "title": "Zenodo Repository",
+            "access_url": "",
+            "license" : [ {
+              "license_ref" : "https://creativecommons.org/licenses/by/4.0/"
+          } ],
+            "format": ["csv"],
+            "host": {
+              "title": "Zenodo",
+              "url": "https://zenodo.org",
+              "pid_system": ["doi"]
+            },
+            "availability": "public"
+          },
+          {
+            "title": "Global Biotic Interactions (Indexing)",
+            "access_url": "https://globalbioticinteractions.org/worldfair/",
+            "host": {
+              "title": "GloBI",
+              "url": "https://globalbioticinteractions.org"
+            },
+            "availability": "public"
+          }
+        ]
+      }
+    ],
+    "technical_resources": [
+      "Zenodo repository infrastructure (CERN)",
+      "GloBI metadata indexing pipeline"
+    ],
+    "metadata": [
+      {
+        "metadata_standard_id": {
+          "identifier": "https://dwc.tdwg.org/",
+          "type": "url"
+        },
+        "metadata_standard_name": "Darwin Core",
+        "description": "Used to structure biodiversity interaction data for interoperability."
+      }
+    ],
+    "ethical_issues_exist": "no",
+    "preservation_statement": "Zenodo provides long-term preservation with persistent DOI. GloBI indexes metadata to ensure continued access and discoverability.",
+    "storage": [
+      {
+        "storage_location": "Zenodo (CERN, Switzerland)",
+        "storage_type": "repository",
+        "backup_type": "redundant_storage",
+        "security_classification": "open"
+      }
+    ],
+    "project": [
+      {
+        "title": "Plant-Flower Visitor Pilot Study – WorldFAIR WP10",
+        "description": "Field study collecting interaction data in Argentina under the Brazil-led REBIPP/GloBI plant-pollinator pilot. Aligned with WorldFAIR's agricultural biodiversity FAIR guidelines.",
+        "funding": [
+          {
+            "funder_id": {
+              "identifier": "10.5281/zenodo.10688865",
+              "type": "other"
+            },
+            "grant_id": {
+              "identifier": "WorldFAIR WP10 Pilot",
+              "type": "other"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1199 @@
+{
+  "@context": {
+    "prov": "http://www.w3.org/ns/prov#",
+    "ftr": "https://w3id.org/ftr#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "sio": "http://semanticscience.org/resource/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "doap": "http://usefulinc.com/ns/doap#",
+    "adms": "http://www.w3.org/ns/adms#",
+    "vivo": "http://vivoweb.org/ontology/core#",
+    "dpv": "http://www.w3id.org/dpv#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "dqv": "http://www.w3.org/ns/dqv#"
+  },
+  "@graph": [
+    {
+      "@id": "#input_dmp",
+      "@type": "prov:Entity",
+      "dcterms:identifier": "Plant-flower_visitor_interactions copy",
+      "dcterms:title": "DMP for Buenos Aires Plant-Flower Visitor Interactions Dataset",
+      "dcterms:description": "Input maDMP"
+    },
+    {
+      "@id": "#evaluation_org",
+      "@type": "vcard:Organization",
+      "vcard:fn": "OSTrails",
+      "vcard:organization-name": "OSTrails",
+      "vcard:hasEmail": "mailto:info@ostrails.org"
+    },
+    {
+      "@id": "#evaluation_algorithm",
+      "@type": [
+        "ftr:Algorithm",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "ostrails-algorithm",
+      "dcterms:title": "maDMP Evaluation Algorithm",
+      "dcterms:description": "Algorithm that evaluates maDMP fields against a FIP",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "doap:repository": "https://github.com/bernardobap21/DMP-Evaluation",
+      "sio:is-implementation-of": [
+        "#F1_benchmark",
+        "#F2_benchmark",
+        "#F3_benchmark",
+        "#F4_benchmark",
+        "#A1.1_benchmark",
+        "#A1.2_benchmark",
+        "#A2_benchmark",
+        "#I1_benchmark",
+        "#I2_benchmark",
+        "#I3_benchmark",
+        "#R1.1_benchmark",
+        "#R1.2_benchmark"
+      ],
+      "dcterms:creator": "#evaluation_org"
+    },
+    {
+      "@id": "#Plant-flower_visitor_interactions copy_results",
+      "@type": [
+        "ftr:TestResultSet",
+        "prov:Entity",
+        "prov:Collection"
+      ],
+      "dcterms:identifier": "Plant-flower_visitor_interactions copy",
+      "dcterms:title": "Evaluation results for DMP: DMP for Buenos Aires Plant-Flower Visitor Interactions Dataset",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:hadMember": [
+        "#Test_FIP01.Q1_result",
+        "#Test_FIP02.Q2_result",
+        "#Test_FIP03.Q3_result",
+        "#Test_FIP04.Q4_result",
+        "#Test_FIP05.Q5_result",
+        "#Test_FIP06.Q6_result",
+        "#Test_FIP07.Q7_result",
+        "#Test_FIP08.Q8_result",
+        "#Test_FIP09.Q9_result",
+        "#Test_FIP10.Q10_result",
+        "#Test_FIP11.Q11_result",
+        "#Test_FIP12.Q12_result",
+        "#Test_FIP13.Q13_result",
+        "#Test_FIP14.Q14_result",
+        "#Test_FIP15.Q15_result",
+        "#Test_FIP16.Q16_result",
+        "#Test_FIP17.Q17_result",
+        "#Test_FIP18.Q18_result",
+        "#Test_FIP19.Q19_result",
+        "#Test_FIP20.Q20_result",
+        "#Test_FIP21.Q21_result"
+      ],
+      "prov:wasDerivedFrom": "#input_dmp",
+      "prov:wasGeneratedBy": "#test_execution"
+    },
+    {
+      "@id": "#FIP01.Q1",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP01.Q1",
+      "dcterms:title": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "dcterms:description": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP01.Q1",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP01.Q1",
+      "dcterms:title": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "dcterms:description": "DCS field: dataset.dataset_id.identifier; allowed_value from the community: [\"DOI\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP01.Q1",
+      "ftr:testMetric": "#FIP01.Q1"
+    },
+    {
+      "@id": "#Test_FIP01.Q1_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP01.Q1",
+      "dcterms:title": "Result for FIP01.Q1",
+      "dcterms:description": "Field status: Present; maDMP value: [\"\"]; compliance: Non-compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        ""
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP01.Q1",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP02.Q2",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP02.Q2",
+      "dcterms:title": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "dcterms:description": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP02.Q2",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP02.Q2",
+      "dcterms:title": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "dcterms:description": "DCS field: dataset.dataset_id.identifier; allowed_value from the community: [\"DOI\", \"URI \"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP02.Q2",
+      "ftr:testMetric": "#FIP02.Q2"
+    },
+    {
+      "@id": "#Test_FIP02.Q2_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP02.Q2",
+      "dcterms:title": "Result for FIP02.Q2",
+      "dcterms:description": "Field status: Present; maDMP value: [\"\"]; compliance: Non-compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        ""
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP02.Q2",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP03.Q3",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP03.Q3",
+      "dcterms:title": "Which metadata schemas do you use for findability?",
+      "dcterms:description": "Which metadata schemas do you use for findability?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP03.Q3",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP03.Q3",
+      "dcterms:title": "Which metadata schemas do you use for findability?",
+      "dcterms:description": "DCS field: dataset.metadata.metadata_standard_id.identifier; allowed_value from the community: [\"EML\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP03.Q3",
+      "ftr:testMetric": "#FIP03.Q3"
+    },
+    {
+      "@id": "#Test_FIP03.Q3_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP03.Q3",
+      "dcterms:title": "Result for FIP03.Q3",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP03.Q3",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP04.Q4",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP04.Q4",
+      "dcterms:title": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "dcterms:description": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP04.Q4",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP04.Q4",
+      "dcterms:title": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "dcterms:description": "DCS field: dataset.distribution.host.pid_system; allowed_value from the community: [\"DataCite\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP04.Q4",
+      "ftr:testMetric": "#FIP04.Q4"
+    },
+    {
+      "@id": "#Test_FIP04.Q4_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP04.Q4",
+      "dcterms:title": "Result for FIP04.Q4",
+      "dcterms:description": "Field status: Present; maDMP value: [[\"doi\"]]; compliance: Non-compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "[\"doi\"]"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP04.Q4",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP05.Q5",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP05.Q5",
+      "dcterms:title": "In which search engines are your metadata records indexed?",
+      "dcterms:description": "In which search engines are your metadata records indexed?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP05.Q5",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP05.Q5",
+      "dcterms:title": "In which search engines are your metadata records indexed?",
+      "dcterms:description": "DCS field: dataset.distribution.access_url; allowed_value from the community: [\"Global Biotic Interactions\", \"GBIF search engine\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP05.Q5",
+      "ftr:testMetric": "#FIP05.Q5"
+    },
+    {
+      "@id": "#Test_FIP05.Q5_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP05.Q5",
+      "dcterms:title": "Result for FIP05.Q5",
+      "dcterms:description": "Field status: Present; maDMP value: [\"\", \"https://globalbioticinteractions.org/worldfair/\"]; compliance: Non-compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail",
+        "pass"
+      ],
+      "ftr:log": [
+        "",
+        "https://globalbioticinteractions.org/worldfair/"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP05.Q5",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP06.Q6",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP06.Q6",
+      "dcterms:title": "In which search engines are your datasets indexed?",
+      "dcterms:description": "In which search engines are your datasets indexed?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP06.Q6",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP06.Q6",
+      "dcterms:title": "In which search engines are your datasets indexed?",
+      "dcterms:description": "DCS field: dataset.distribution.access_url; allowed_value from the community: [\"GBIF search engine\", \"Global Biotic Interactions\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP06.Q6",
+      "ftr:testMetric": "#FIP06.Q6"
+    },
+    {
+      "@id": "#Test_FIP06.Q6_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP06.Q6",
+      "dcterms:title": "Result for FIP06.Q6",
+      "dcterms:description": "Field status: Present; maDMP value: [\"\", \"https://globalbioticinteractions.org/worldfair/\"]; compliance: Non-compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail",
+        "pass"
+      ],
+      "ftr:log": [
+        "",
+        "https://globalbioticinteractions.org/worldfair/"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP06.Q6",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP07.Q7",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP07.Q7",
+      "dcterms:title": "Which standardized communication protocol do you use for metadata records?",
+      "dcterms:description": "Which standardized communication protocol do you use for metadata records?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP07.Q7",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP07.Q7",
+      "dcterms:title": "Which standardized communication protocol do you use for metadata records?",
+      "dcterms:description": "DCS field: dataset.distribution.host.url; allowed_value from the community: [\"HTTPS\", \"REST\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP07.Q7",
+      "ftr:testMetric": "#FIP07.Q7"
+    },
+    {
+      "@id": "#Test_FIP07.Q7_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP07.Q7",
+      "dcterms:title": "Result for FIP07.Q7",
+      "dcterms:description": "Field status: Present; maDMP value: [\"https://zenodo.org\", \"https://globalbioticinteractions.org\"]; compliance: Compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "pass",
+        "pass"
+      ],
+      "ftr:log": [
+        "https://zenodo.org",
+        "https://globalbioticinteractions.org"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP07.Q7",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP08.Q8",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP08.Q8",
+      "dcterms:title": "Which standardized communication protocol do you use for datasets?",
+      "dcterms:description": "Which standardized communication protocol do you use for datasets?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP08.Q8",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP08.Q8",
+      "dcterms:title": "Which standardized communication protocol do you use for datasets?",
+      "dcterms:description": "DCS field: dataset.distribution.host.url; allowed_value from the community: [\"HTTPS\", \"REST\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP08.Q8",
+      "ftr:testMetric": "#FIP08.Q8"
+    },
+    {
+      "@id": "#Test_FIP08.Q8_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP08.Q8",
+      "dcterms:title": "Result for FIP08.Q8",
+      "dcterms:description": "Field status: Present; maDMP value: [\"https://zenodo.org\", \"https://globalbioticinteractions.org\"]; compliance: Compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "pass",
+        "pass"
+      ],
+      "ftr:log": [
+        "https://zenodo.org",
+        "https://globalbioticinteractions.org"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP08.Q8",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP09.Q9",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP09.Q9",
+      "dcterms:title": "Which authentication & authorisation technique do you use for metadata records?",
+      "dcterms:description": "Which authentication & authorisation technique do you use for metadata records?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP09.Q9",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP09.Q9",
+      "dcterms:title": "Which authentication & authorisation technique do you use for metadata records?",
+      "dcterms:description": "DCS field: dataset.distribution.data_access; allowed_value from the community: [\"OAuth\", \"Open Data\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP09.Q9",
+      "ftr:testMetric": "#FIP09.Q9"
+    },
+    {
+      "@id": "#Test_FIP09.Q9_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP09.Q9",
+      "dcterms:title": "Result for FIP09.Q9",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP09.Q9",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP10.Q10",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP10.Q10",
+      "dcterms:title": "Which authentication & authorisation technique do you use for datasets?",
+      "dcterms:description": "Which authentication & authorisation technique do you use for datasets?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP10.Q10",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP10.Q10",
+      "dcterms:title": "Which authentication & authorisation technique do you use for datasets?",
+      "dcterms:description": "DCS field: dataset.distribution.data_access; allowed_value from the community: [\"GBIF local account\", \"OAuth\", \"Open Data\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP10.Q10",
+      "ftr:testMetric": "#FIP10.Q10"
+    },
+    {
+      "@id": "#Test_FIP10.Q10_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP10.Q10",
+      "dcterms:title": "Result for FIP10.Q10",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP10.Q10",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP11.Q11",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP11.Q11",
+      "dcterms:title": "Which metadata longevity plan do you use?",
+      "dcterms:description": "Which metadata longevity plan do you use?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP11.Q11",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP11.Q11",
+      "dcterms:title": "Which metadata longevity plan do you use?",
+      "dcterms:description": "DCS field: None; allowed_value from the community: []",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP11.Q11",
+      "ftr:testMetric": "#FIP11.Q11"
+    },
+    {
+      "@id": "#Test_FIP11.Q11_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP11.Q11",
+      "dcterms:title": "Result for FIP11.Q11",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "indeterminate"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP11.Q11",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP12.Q12",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP12.Q12",
+      "dcterms:title": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+      "dcterms:description": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP12.Q12",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP12.Q12",
+      "dcterms:title": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+      "dcterms:description": "DCS field: None; allowed_value from the community: [\"DwC-A\", \"XMLS\", \"RDFS\", \"JSON\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP12.Q12",
+      "ftr:testMetric": "#FIP12.Q12"
+    },
+    {
+      "@id": "#Test_FIP12.Q12_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP12.Q12",
+      "dcterms:title": "Result for FIP12.Q12",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "indeterminate"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP12.Q12",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP13.Q13",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP13.Q13",
+      "dcterms:title": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+      "dcterms:description": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP13.Q13",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP13.Q13",
+      "dcterms:title": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+      "dcterms:description": "DCS field: None; allowed_value from the community: [\"JSON\", \"DwC-A\", \"RDFS\", \"XMLS\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP13.Q13",
+      "ftr:testMetric": "#FIP13.Q13"
+    },
+    {
+      "@id": "#Test_FIP13.Q13_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP13.Q13",
+      "dcterms:title": "Result for FIP13.Q13",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Not Applicable",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "indeterminate"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP13.Q13",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP14.Q14",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP14.Q14",
+      "dcterms:title": "Which structured vocabularies do you use to annotate your metadata records?",
+      "dcterms:description": "Which structured vocabularies do you use to annotate your metadata records?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP14.Q14",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP14.Q14",
+      "dcterms:title": "Which structured vocabularies do you use to annotate your metadata records?",
+      "dcterms:description": "DCS field: dataset.metadata.metadata_standard_id.identifier; allowed_value from the community: [\"EML\", \"Darwin Core\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP14.Q14",
+      "ftr:testMetric": "#FIP14.Q14"
+    },
+    {
+      "@id": "#Test_FIP14.Q14_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP14.Q14",
+      "dcterms:title": "Result for FIP14.Q14",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP14.Q14",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP15.Q15",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP15.Q15",
+      "dcterms:title": "Which structured vocabularies do you use to encode your datasets?",
+      "dcterms:description": "Which structured vocabularies do you use to encode your datasets?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP15.Q15",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP15.Q15",
+      "dcterms:title": "Which structured vocabularies do you use to encode your datasets?",
+      "dcterms:description": "DCS field: dataset.metadata.metadata_standard_id.identifier; allowed_value from the community: [\"Plant Pollinator Vocabulary\", \"Darwin Core\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP15.Q15",
+      "ftr:testMetric": "#FIP15.Q15"
+    },
+    {
+      "@id": "#Test_FIP15.Q15_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP15.Q15",
+      "dcterms:title": "Result for FIP15.Q15",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP15.Q15",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP16.Q16",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP16.Q16",
+      "dcterms:title": "Which models, schema(s) do you use for your metadata records?",
+      "dcterms:description": "Which models, schema(s) do you use for your metadata records?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP16.Q16",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP16.Q16",
+      "dcterms:title": "Which models, schema(s) do you use for your metadata records?",
+      "dcterms:description": "DCS field: dataset.metadata.metadata_standard_id.type; allowed_value from the community: [\"Darwin Core\", \"Relations Ontology\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP16.Q16",
+      "ftr:testMetric": "#FIP16.Q16"
+    },
+    {
+      "@id": "#Test_FIP16.Q16_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP16.Q16",
+      "dcterms:title": "Result for FIP16.Q16",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP16.Q16",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP17.Q17",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP17.Q17",
+      "dcterms:title": "Which models, schema(s) do you use for your datasets?",
+      "dcterms:description": "Which models, schema(s) do you use for your datasets?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP17.Q17",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP17.Q17",
+      "dcterms:title": "Which models, schema(s) do you use for your datasets?",
+      "dcterms:description": "DCS field: dataset.metadata.metadata_standard_id.type; allowed_value from the community: [\"DwC-A\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP17.Q17",
+      "ftr:testMetric": "#FIP17.Q17"
+    },
+    {
+      "@id": "#Test_FIP17.Q17_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP17.Q17",
+      "dcterms:title": "Result for FIP17.Q17",
+      "dcterms:description": "Field status: Not Present; maDMP value: null; compliance: Missing value",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "None"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP17.Q17",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP18.Q18",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP18.Q18",
+      "dcterms:title": "Which usage license do you use for your metadata records?",
+      "dcterms:description": "Which usage license do you use for your metadata records?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP18.Q18",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP18.Q18",
+      "dcterms:title": "Which usage license do you use for your metadata records?",
+      "dcterms:description": "DCS field: dataset.distribution.license.license_ref; allowed_value from the community: [\"CC BY 4.0\", \"CC0 1.0\", \"CC BY-NC 4.0 \"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP18.Q18",
+      "ftr:testMetric": "#FIP18.Q18"
+    },
+    {
+      "@id": "#Test_FIP18.Q18_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP18.Q18",
+      "dcterms:title": "Result for FIP18.Q18",
+      "dcterms:description": "Field status: Present; maDMP value: [\"https://creativecommons.org/licenses/by/4.0/\"]; compliance: Compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "pass"
+      ],
+      "ftr:log": [
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP18.Q18",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP19.Q19",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP19.Q19",
+      "dcterms:title": "Which usage license do you use for your datasets?",
+      "dcterms:description": "Which usage license do you use for your datasets?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP19.Q19",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP19.Q19",
+      "dcterms:title": "Which usage license do you use for your datasets?",
+      "dcterms:description": "DCS field: dataset.distribution.license.license_ref; allowed_value from the community: [\"CC BY 4.0\", \"CC0 1.0\", \"CC BY-NC 4.0 \"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP19.Q19",
+      "ftr:testMetric": "#FIP19.Q19"
+    },
+    {
+      "@id": "#Test_FIP19.Q19_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP19.Q19",
+      "dcterms:title": "Result for FIP19.Q19",
+      "dcterms:description": "Field status: Present; maDMP value: [\"https://creativecommons.org/licenses/by/4.0/\"]; compliance: Compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "pass"
+      ],
+      "ftr:log": [
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP19.Q19",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP20.Q20",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP20.Q20",
+      "dcterms:title": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+      "dcterms:description": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP20.Q20",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP20.Q20",
+      "dcterms:title": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+      "dcterms:description": "DCS field: dataset.data_quality_assurance; allowed_value from the community: [\"PROV-O\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP20.Q20",
+      "ftr:testMetric": "#FIP20.Q20"
+    },
+    {
+      "@id": "#Test_FIP20.Q20_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP20.Q20",
+      "dcterms:title": "Result for FIP20.Q20",
+      "dcterms:description": "Field status: Present; maDMP value: [[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]]; compliance: Non-compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP20.Q20",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#FIP21.Q21",
+      "@type": "dqv:Metric",
+      "dcterms:identifier": "FIP21.Q21",
+      "dcterms:title": "Which metadata schemas do you use for describing the provenance of your datasets?",
+      "dcterms:description": "Which metadata schemas do you use for describing the provenance of your datasets?",
+      "dcat:version": ""
+    },
+    {
+      "@id": "#Test_FIP21.Q21",
+      "@type": [
+        "ftr:Test",
+        "dcat:DataService",
+        "prov:Agent"
+      ],
+      "dcterms:identifier": "Test_FIP21.Q21",
+      "dcterms:title": "Which metadata schemas do you use for describing the provenance of your datasets?",
+      "dcterms:description": "DCS field: dataset.data_quality_assurance; allowed_value from the community: [\"PROV-O\"]",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "dcat:version": "",
+      "sio:is-implementation-of": "#FIP21.Q21",
+      "ftr:testMetric": "#FIP21.Q21"
+    },
+    {
+      "@id": "#Test_FIP21.Q21_result",
+      "@type": [
+        "ftr:TestResult",
+        "prov:Entity"
+      ],
+      "dcterms:identifier": "Test_FIP21.Q21",
+      "dcterms:title": "Result for FIP21.Q21",
+      "dcterms:description": "Field status: Present; maDMP value: [[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]]; compliance: Non-compliant",
+      "dcterms:license": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "prov:value": [
+        "fail"
+      ],
+      "ftr:log": [
+        "[\"Species identifications confirmed by taxonomists\", \"Data curated by REBIPP team\", \"FAIRfication followed WorldFAIR D10.2 guidelines\"]"
+      ],
+      "ftr:completion": "100",
+      "ftr:outputFromTest": "#Test_FIP21.Q21",
+      "prov:wasDerivedFrom": "#input_dmp"
+    },
+    {
+      "@id": "#F1_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "F1",
+      "dcterms:title": "Identifier type",
+      "dcterms:description": "Metrics for FAIR principle F1",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP01.Q1",
+        "#FIP02.Q2"
+      ]
+    },
+    {
+      "@id": "#F2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "F2",
+      "dcterms:title": "Metadata schema",
+      "dcterms:description": "Metrics for FAIR principle F2",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP03.Q3"
+      ]
+    },
+    {
+      "@id": "#F3_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "F3",
+      "dcterms:title": "Metadata-Data linking mechanism",
+      "dcterms:description": "Metrics for FAIR principle F3",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP04.Q4"
+      ]
+    },
+    {
+      "@id": "#F4_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "F4",
+      "dcterms:title": "Search Engines",
+      "dcterms:description": "Metrics for FAIR principle F4",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP05.Q5",
+        "#FIP06.Q6"
+      ]
+    },
+    {
+      "@id": "#A1.1_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "A1.1",
+      "dcterms:title": "Communication protocol",
+      "dcterms:description": "Metrics for FAIR principle A1.1",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP07.Q7",
+        "#FIP08.Q8"
+      ]
+    },
+    {
+      "@id": "#A1.2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "A1.2",
+      "dcterms:title": "Authentication and authorization technique",
+      "dcterms:description": "Metrics for FAIR principle A1.2",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP09.Q9",
+        "#FIP10.Q10"
+      ]
+    },
+    {
+      "@id": "#A2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "A2",
+      "dcterms:title": "Metadata longevity",
+      "dcterms:description": "Metrics for FAIR principle A2",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP11.Q11"
+      ]
+    },
+    {
+      "@id": "#I1_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "I1",
+      "dcterms:title": "Knowledge representation language",
+      "dcterms:description": "Metrics for FAIR principle I1",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP12.Q12",
+        "#FIP13.Q13"
+      ]
+    },
+    {
+      "@id": "#I2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "I2",
+      "dcterms:title": "Structured vocabularies",
+      "dcterms:description": "Metrics for FAIR principle I2",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP14.Q14",
+        "#FIP15.Q15"
+      ]
+    },
+    {
+      "@id": "#I3_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "I3",
+      "dcterms:title": "Metadata/data schema",
+      "dcterms:description": "Metrics for FAIR principle I3",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP16.Q16",
+        "#FIP17.Q17"
+      ]
+    },
+    {
+      "@id": "#R1.1_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "R1.1",
+      "dcterms:title": "Data usage license",
+      "dcterms:description": "Metrics for FAIR principle R1.1",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP18.Q18",
+        "#FIP19.Q19"
+      ]
+    },
+    {
+      "@id": "#R1.2_benchmark",
+      "@type": "ftr:Benchmark",
+      "dcterms:identifier": "R1.2",
+      "dcterms:title": "Provenance model",
+      "dcterms:description": "Metrics for FAIR principle R1.2",
+      "dcat:version": "",
+      "ftr:hasAssociatedMetric": [
+        "#FIP20.Q20",
+        "#FIP21.Q21"
+      ]
+    },
+    {
+      "@id": "#test_execution",
+      "@type": "ftr:TestExecutionActivity",
+      "prov:wasAssociatedWith": [
+        "#Test_FIP01.Q1",
+        "#Test_FIP02.Q2",
+        "#Test_FIP03.Q3",
+        "#Test_FIP04.Q4",
+        "#Test_FIP05.Q5",
+        "#Test_FIP06.Q6",
+        "#Test_FIP07.Q7",
+        "#Test_FIP08.Q8",
+        "#Test_FIP09.Q9",
+        "#Test_FIP10.Q10",
+        "#Test_FIP11.Q11",
+        "#Test_FIP12.Q12",
+        "#Test_FIP13.Q13",
+        "#Test_FIP14.Q14",
+        "#Test_FIP15.Q15",
+        "#Test_FIP16.Q16",
+        "#Test_FIP17.Q17",
+        "#Test_FIP18.Q18",
+        "#Test_FIP19.Q19",
+        "#Test_FIP20.Q20",
+        "#Test_FIP21.Q21"
+      ],
+      "prov:generated": [
+        "#Test_FIP01.Q1_result",
+        "#Test_FIP02.Q2_result",
+        "#Test_FIP03.Q3_result",
+        "#Test_FIP04.Q4_result",
+        "#Test_FIP05.Q5_result",
+        "#Test_FIP06.Q6_result",
+        "#Test_FIP07.Q7_result",
+        "#Test_FIP08.Q8_result",
+        "#Test_FIP09.Q9_result",
+        "#Test_FIP10.Q10_result",
+        "#Test_FIP11.Q11_result",
+        "#Test_FIP12.Q12_result",
+        "#Test_FIP13.Q13_result",
+        "#Test_FIP14.Q14_result",
+        "#Test_FIP15.Q15_result",
+        "#Test_FIP16.Q16_result",
+        "#Test_FIP17.Q17_result",
+        "#Test_FIP18.Q18_result",
+        "#Test_FIP19.Q19_result",
+        "#Test_FIP20.Q20_result",
+        "#Test_FIP21.Q21_result"
+      ],
+      "prov:used": "#input_dmp"
+    }
+  ]
+}

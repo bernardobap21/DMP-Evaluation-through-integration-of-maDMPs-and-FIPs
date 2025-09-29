@@ -22,7 +22,7 @@ tags_metadata = [
     }
 ]
 
-
+# Sort available mapping files
 def get_fip_options():
     return sorted(
         f for f in os.listdir(FIP_DIRECTORY) if f.endswith(".json")

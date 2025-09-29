@@ -128,14 +128,7 @@ SCHEMA = Namespace("https://schema.org/")
 
 
 def fetch_graph(uri: str) -> Dataset:
-    """Retrieve the RDF graph for the given URI.
-
-    The nanopublication registry primarily serves TriG, but some referenced
-    resources might only be available in other RDF serialisations (e.g.
-    Turtle) or not as RDF at all.  In order to be robust we attempt to parse
-    the returned content as TriG first and fall back to a few other common
-    formats before giving up and returning an empty graph.
-    """
+    # Retrieve the RDF graph for the given URI.
 
     resp = requests.get(
         uri,

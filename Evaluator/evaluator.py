@@ -3,7 +3,7 @@ import csv
 from .validation_rules import is_allowed_value
 
 def _collect_values(data, path_parts):
-    """Recursively collect all values for the given path parts."""
+    """Collect all values for the given path parts."""
     if not path_parts:
         return [data]
 
