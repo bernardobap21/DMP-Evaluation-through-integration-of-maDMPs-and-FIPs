@@ -136,7 +136,9 @@ async def upload_fip(
     # Recalculate options so the evaluate endpoint dropdown updates
     global FIP_OPTIONS, fip_query
     FIP_OPTIONS[:] = get_fip_options()
-    fip_query.enum = FIP_OPTIONS
+    if fip_query.json_schema_extra is None:
+        fip_query.json_schema_extra = {}
+    fip_query.json_schema_extra["enum"] = list(FIP_OPTIONS)
     app.openapi_schema = None
 
     return {"filename": filename, "detail": "Uploaded"}
