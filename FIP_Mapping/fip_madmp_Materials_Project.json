@@ -1,0 +1,86 @@
+{
+  "FIP_Version": "",
+  "FIP_maDMP_Mapping": [
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "Convenient web-based retrieval based on assigned material ID. e.g. <https://materialsproject.org/materials/mp-1234>. | provided by funder. DOIs via DataCite.",
+      "Allowed_values": [
+        "URI",
+        "U.S. Department of Energy Office of Scientific and Technical Information (OSTI) Data ID Service"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "URLs for raw data minted and served by NOMAD Laboratory <https://nomad-lab.eu/>.",
+      "Allowed_values": [
+        "URI"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
+      "FAIR_principle": "F2",
+      "FIP_question": "Which metadata schemas do you use for findability?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "The OSTI DOI Identifier Service (http://purl.org/np/RAyIQx7rn1CDYgTqRlSbsZY0yQz46VxRzSgfMp138QInM) provides a schema.org Dataset profile via DataCite. | http://datacite.org/schema/kernel-4 is provided",
+      "Allowed_values": [
+        "schema.org dataset",
+        "DataCite Metadata Scheme"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F3",
+      "FAIR_principle": "F3",
+      "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "DCS_field": "dataset.distribution.host.pid_system",
+      "Mapping_status": "Mapped",
+      "Comments": "Links from data are either to material DOIs via https://doi.org/ URLs or material entities via https://materialsproject.org/ URLs.",
+      "Allowed_values": [
+        "DNS"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your metadata records indexed?",
+      "DCS_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "OSTI sends stuff here (via DataCite?) | Seemed like a good idea to register here.",
+      "Allowed_values": [
+        "Google Dataset Search",
+        "re3data"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your metadata records?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "Public funding! | for  MP Contribs.",
+      "Allowed_values": [
+        "CC BY 4.0",
+        "CC0 1.0"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your datasets?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "public funding!",
+      "Allowed_values": [
+        "CC BY 4.0"
+      ]
+    }
+  ]
+}

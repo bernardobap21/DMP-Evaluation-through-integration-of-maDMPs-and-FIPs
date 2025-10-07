@@ -1,0 +1,24 @@
+{
+  "completeness": {
+    "issues": [
+      "project.project_id.identifier",
+      "project.project_id.type",
+      "dataset.0.personal_data",
+      "dataset.0.sensitive_data",
+      "dataset.1.personal_data",
+      "dataset.1.sensitive_data"
+    ]
+  },
+  "accuracy": {
+    "issues": [
+      "[COVID-19 public health cohort in Aragon (Spain)] Invalid dataset identifier format: f55bf8d2-be76-4ef0-adb6-d14d6a17358d",
+      "[ LINK-VACC: Linking of Registries for COVID-19 Vaccine Surveillance (Belgium)] Invalid dataset identifier format: 686ab52b-7688-4deb-8859-e2b0c792ff72"
+    ]
+  },
+  "availability": {
+    "issues": []
+  },
+  "consistency": {
+    "issues": []
+  }
+}

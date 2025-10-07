@@ -1,0 +1,250 @@
+{
+  "FIP_Version": "",
+  "FIP_maDMP_Mapping": [
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-MD",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for metadata records?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "DOI's can be added upon request to the metadata records. If assigned, they function as an alias to the URI. | The URI holds the historically assigned local incremental ID in the RDBMS. ",
+      "Allowed_values": [
+        "DOI",
+        "URI"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F1-D",
+      "FAIR_principle": "F1",
+      "FIP_question": "What globally unique, persistent, resolvable identifiers do you use for datasets?",
+      "DCS_field": "dataset.dataset_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "The URI holds the historically assigned UUID in the system.",
+      "Allowed_values": [
+        "URI"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F2",
+      "FAIR_principle": "F2",
+      "FIP_question": "Which metadata schemas do you use for findability?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "Internally the metadata registry uses its own custom model that enables supporting multiple schemata, work to support DCAT is still under way | Internally the metadata registry uses its own custom model that enables supporting multiple schemata, among which EML GBIF | Internally the metadata registry uses its own custom model that enables supporting multiple schemata, among which DataCite | Requirement for sharing datasets with one of our partners.  Progress since 2020 has been made, but is not fully operational yet. Required fields are added to the database, exposing the inspire format is in test a | Internally the metadata registry uses its own custom model that enables supporting multiple schemata, among which ISO 19115 | Internally the metadata registry uses its own custom model that enables supporting multiple schemata, work to support schema.org is still under way",
+      "Allowed_values": [
+        "DCAT-AP",
+        "EML GBIF Profile Metadata",
+        "DataCite Metadata Scheme",
+        "INSPIRE EMF ",
+        "ISO 19115",
+        "schema.org dataset"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F3",
+      "FAIR_principle": "F3",
+      "FIP_question": "What is the technology that links the persistent identifiers of your data to the metadata description?",
+      "DCS_field": "dataset.distribution.host.pid_system",
+      "Mapping_status": "Mapped",
+      "Comments": "Requirement for sharing datasets with one of our partners.  Progress since 2020 has been made, but is not fully operational yet. Required fields are added to the database, exposing the inspire format is in test a",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-MD",
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your metadata records indexed?",
+      "DCS_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "Since our metadata registry has a public facing web-interface, even for anonymous users, it was straightforward to let it be indexed by Google.",
+      "Allowed_values": [
+        "Google Search"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-F4-D",
+      "FAIR_principle": "F4",
+      "FIP_question": "In which search engines are your datasets indexed?",
+      "DCS_field": "dataset.distribution.access_url",
+      "Mapping_status": "Mapped",
+      "Comments": "Since our dataset archive has a public facing web-interface, even for anonymous users, it was straightforward to let it be indexed by Google.",
+      "Allowed_values": [
+        "Google Search"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-MD",
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for metadata records?",
+      "DCS_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "In use and harvested by Lifewatch-ERIC catalogue | Was best choice at the time for machine access",
+      "Allowed_values": [
+        "OAI-PMH",
+        "REST"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.1-D",
+      "FAIR_principle": "A1.1",
+      "FIP_question": "Which standardized communication protocol do you use for datasets?",
+      "DCS_field": "dataset.distribution.host.url",
+      "Mapping_status": "Mapped",
+      "Comments": "To be added in the future for datasets for which this service will work.",
+      "Allowed_values": [
+        "ERDDAP"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-MD",
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for metadata records?",
+      "DCS_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "No AAI required",
+      "Allowed_values": [
+        "Open Data"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A1.2-D",
+      "FAIR_principle": "A1.2",
+      "FIP_question": "Which authentication & authorisation technique do you use for datasets?",
+      "DCS_field": "dataset.distribution.data_access",
+      "Mapping_status": "Mapped",
+      "Comments": "Data are added by users who require an account (uname and psswd). Data in private folders are not publically-accessible : if you click on a data link, you will get a message to that effect. Data in the public folders are accessible and a click on the link will start the download. Uses a custom SSO system called 'InovOcean-auth' | Data are added by users who require an account (uname and psswd). Data in private folders are not publically-accessible : if you click on a data link, you will get a message to that effect. Data in the public folders are accessible and a click on the link will start the download. Uses a custom SSO system called 'InovOcean-auth'",
+      "Allowed_values": [
+        "InnovAuth",
+        "Open Data"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-A2",
+      "FAIR_principle": "A2",
+      "FIP_question": "Which metadata longevity plan do you use?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "Data are added by users who require an account (uname and psswd). Data in private folders are not publically-accessible : if you click on a data link, you will get a message to that effect. Data in the public folders are accessible and a click on the link will start the download. Uses a custom SSO system called 'InovOcean-auth'",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-MD",
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "Was best at the time for an addition to EML",
+      "Allowed_values": [
+        "JSON-LD"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I1-D",
+      "FAIR_principle": "I1",
+      "FIP_question": "Which knowledge representation languages (allowing machine interoperation) do you use for datasets?",
+      "DCS_field": "",
+      "Mapping_status": null,
+      "Comments": "Data formats from EMODnet biology",
+      "Allowed_values": [
+        "DwC-A"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-MD",
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to annotate your metadata records?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "Taxonomy of species names | For thematic terms | For geography | To be added to our general catalogue, but for data already in DwC-A format (EMOnet and EurOBIS only) this vocabulary is already used and correctly referenced in the data",
+      "Allowed_values": [
+        "WoRMS",
+        "Aquatic Sciences and Fisheries Thesaurus",
+        "Marine Regions georeferences",
+        "NVS"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I2-D",
+      "FAIR_principle": "I2",
+      "FIP_question": "Which structured vocabularies do you use to encode your datasets?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.identifier",
+      "Mapping_status": "Mapped",
+      "Comments": "Darwin Core is an extension of Dublin Core, and it used EML as its metadata. In addition, DwC-Archive data format incorporates particular vocabularies that are referenced to within the archive. ",
+      "Allowed_values": [
+        "DwC-A"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-MD",
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your metadata records?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "For ecological data. In fact, the EML version (2.1) we currently use does not have full semantic annotation, but we are looking into adopting the version (2.2) that does introduce better support for that. | Historic support for this standard has been built in for quite some time. | Supporting DCAT makes us align with growing use within the EU (as prescribed through the semic-eu DCAT-A -- https://github.com/SEMICeu/DCAT-AP",
+      "Allowed_values": [
+        "EML GBIF Profile Metadata",
+        "DataCite Metadata Scheme",
+        "DCAT"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-I3-D",
+      "FAIR_principle": "I3",
+      "FIP_question": "Which models, schema(s) do you use for your datasets?",
+      "DCS_field": "dataset.metadata.metadata_standard_id.type",
+      "Mapping_status": "Mapped",
+      "Comments": "Data format used by EurOBIS and EMODNet/Bio | Working being done in H2020 ENVRI-FAIR project",
+      "Allowed_values": [
+        "DwC-A",
+        "ERDDAP"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-MD",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your metadata records?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "Working being done in H2020 ENVRI-FAIR project",
+      "Allowed_values": []
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.1-D",
+      "FAIR_principle": "R1.1",
+      "FIP_question": "Which usage license do you use for your datasets?",
+      "DCS_field": "dataset.distribution.license.license_ref",
+      "Mapping_status": "Mapped",
+      "Comments": "Data in our Marine Data Archive, on EurOBIS, and EMODnet Biology, always belong to the data owner, not the system. Hence we wish to allow them a full range of licences, although we encourage CC BY (especially EurOBIS and EMODnet). LifeWatch.be data are also mostly CC BY. | under consideration | under consideration in special cases | In some cases CC0 is concidered 'too open' - and since the academic context has a tendency for proper citation and attribution this step up is considered very mild. | under consideration | In some cases, people like this 'viral' addition. Making sure we all play with the same openness rules in mind.",
+      "Allowed_values": [
+        "CC0 1.0",
+        "CC BY-NC 4.0 ",
+        "CC BY-ND 4.0",
+        "CC BY 4.0",
+        "CC BY-NC-SA 4.0",
+        "CC BY SA 4.0"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-MD",
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your metadata records?",
+      "DCS_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "Our data are ecological, so we use EML. There are fields in EML to accommodate provenance, and we are hoping that this can be expanded on in the near future | To expand on the options we offer (albeit the amount of provenance included in the json export is quite sparse)",
+      "Allowed_values": [
+        "EML GBIF Profile Metadata",
+        "PROV-O"
+      ]
+    },
+    {
+      "Question_URI": "https://w3id.org/fair/fip/terms/FIP-Question-R1.2-D",
+      "FAIR_principle": "R1.2",
+      "FIP_question": "Which metadata schemas do you use for describing the provenance of your datasets?",
+      "DCS_field": "dataset.data_quality_assurance",
+      "Mapping_status": "Mapped",
+      "Comments": "This is only for data provided via EurOBIS",
+      "Allowed_values": [
+        "DwC-A"
+      ]
+    }
+  ]
+}

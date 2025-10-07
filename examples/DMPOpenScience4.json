@@ -1,0 +1,105 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "84a6457b-68ab-4da6-bd6e-14e0866083df",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "maddalena.ghiotto@studio.unibo.it",
+      "name" : "Maddalena  Ghiotto",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "dmp:0009-0007-7813-0939",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Sebastiano Giacomini",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "dmp:0000-0003-3446-1115",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Seyedali Ghasempouri",
+      "additional_properties" : { }
+    }, {
+      "contributor_id" : {
+        "identifier" : "dmp:0009-0009-1309-6340",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "name" : "Maddalena Ghiotto",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2023-07-12T09:31:25Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "d9f48614-bb00-48dd-81b3-ee70e5f694bb",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "<div>The dataset contains the results of our research on OpenCitationMeta's coverage of Social Science and Humanities publications and their Open Access availability. This research is being carried out in the context of the Open Science course of Digital Humanities and Digital Knowledge MA degree at University of Bologna.</div><div>The purpose of the dataset is to be able to easily access and retrieve, as well as visualize the outcome of our research project.</div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "SSH_OA_Publications_in_OCMeta",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    }, {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "2b7376fb-58b7-4a02-8655-fedc3e11292f",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "A Software for the analysis and creation of our data. In particular, this Python software is intended to filter, fetch, and process the data provided by ERIH-PLUS, OpenCitations Meta, and DOAJ, in order to make it available and reusable for some meaningful analysis.&#160;",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Data management software",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "a9ae7573-5c99-434c-939e-639098c49bf9"
+      }
+    } ],
+    "description" : "<div>This DMP is created to address to Research Question number one according to the course&#160;<a href=\"https://github.com/open-sci/2022-2023\" target=\"_blank\">&#34;Open Science&#34;</a>&#160;at the UNIBO. The purpose of the data collection and generation is to assess the state of the art of Social Science and Humanities journals' citation data coverage in OpenCitation databases and investigate how many of these are Open Access. The data will be used to analyze which countries and disciplines hold the most publications and journals. This information is essential to achieving the project's objectives of understanding the openness of Social Science and Humanities publications and promoting cross-disciplinary collaboration and wider dissemination of knowledge.</div><div><br></div>",
+    "dmp_id" : {
+      "identifier" : "7df9879a-825b-48d8-ad73-bc592f972287",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2023-07-12T09:31:55Z",
+    "project" : [ {
+      "description" : "OpenScience at UNIBO",
+      "end" : "Mon Apr 01 16:45:40 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "001G000001qivlwIAA",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "001G000001qivlwIAA",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Sun Apr 02 16:45:40 UTC 2023",
+      "title" : "OpenScience",
+      "additional_properties" : { }
+    } ],
+    "title" : "Open Access availability and Publication distribution of Social Science and Humanities Journals in OpenCitations Meta ",
+    "additional_properties" : {
+      "templates" : [ "a9ae7573-5c99-434c-939e-639098c49bf9" ]
+    }
+  }
+}

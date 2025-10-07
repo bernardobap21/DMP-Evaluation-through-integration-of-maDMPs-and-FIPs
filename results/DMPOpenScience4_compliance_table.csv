@@ -1,0 +1,22 @@
+FIP Question,DCS Field,maDMP Value,Allowed Values,Compliant
+"What globally unique, persistent, resolvable identifiers do you use for metadata records?",dataset.dataset_id.identifier,"[""d9f48614-bb00-48dd-81b3-ee70e5f694bb"", ""2b7376fb-58b7-4a02-8655-fedc3e11292f""]","DOI, Handle System","[No, No]"
+"What globally unique, persistent, resolvable identifiers do you use for datasets?",dataset.dataset_id.identifier,"[""d9f48614-bb00-48dd-81b3-ee70e5f694bb"", ""2b7376fb-58b7-4a02-8655-fedc3e11292f""]",,No choice made by community
+Which metadata schemas do you use for findability?,dataset.metadata.metadata_standard_id.identifier,null,"DDI-Codebook, The Croissant Metadata Format, DCAT",No
+What is the technology that links the persistent identifiers of your data to the metadata description?,dataset.distribution.host.pid_system,null,DOI,No
+In which search engines are your metadata records indexed?,dataset.distribution.access_url,null,"Zenodo, ODISSEI Portal",No
+In which search engines are your datasets indexed?,dataset.distribution.access_url,null,,No choice made by community
+Which standardized communication protocol do you use for metadata records?,dataset.distribution.host.url,null,"Dataverse API , OAI-PMH Schema , HTTPS, SPARQL (open) endpoint ",No
+Which standardized communication protocol do you use for datasets?,dataset.distribution.host.url,null,Data Access Broker,No
+Which authentication & authorisation technique do you use for metadata records?,dataset.distribution.data_access,null,"SURFconext, SURF SRAM ",No
+Which authentication & authorisation technique do you use for datasets?,dataset.distribution.data_access,null,"SURF SRAM , CBS Microdata Authentication",No
+Which metadata longevity plan do you use?,,null,DataCite DOI Policy,No
+Which knowledge representation languages (allowing machine interoperation) do you use for metadata records?,,null,"RDFS, JSON, SKOS, JSON-LD",No
+Which knowledge representation languages (allowing machine interoperation) do you use for datasets?,,null,,No choice made by community
+Which structured vocabularies do you use to annotate your metadata records?,dataset.metadata.metadata_standard_id.identifier,null,"DCMI Metadata Terms, CBS Taxonomy, ELSST, CESSDA Topic Classification, DDI Controlled Vocabularies, FAIRsharing.hzdzq8",No
+Which structured vocabularies do you use to encode your datasets?,dataset.metadata.metadata_standard_id.identifier,null,,No choice made by community
+"Which models, schema(s) do you use for your metadata records?",dataset.metadata.metadata_standard_id.type,null,"DCAT, DataCite Metadata Scheme, DDI-Codebook, SKOS",No
+"Which models, schema(s) do you use for your datasets?",dataset.metadata.metadata_standard_id.type,null,,No choice made by community
+Which usage license do you use for your metadata records?,dataset.distribution.license.license_ref,null,CC0 1.0,No
+Which usage license do you use for your datasets?,dataset.distribution.license.license_ref,null,,No choice made by community
+Which metadata schemas do you use for describing the provenance of your metadata records?,dataset.data_quality_assurance,"[[], []]",,No choice made by community
+Which metadata schemas do you use for describing the provenance of your datasets?,dataset.data_quality_assurance,"[[], []]",,No choice made by community

@@ -18,7 +18,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#A1.2_benchmark> a ftr:Benchmark ;
     dcterms:description "Metrics for FAIR principle A1.2" ;
     dcterms:identifier "A1.2" ;
-    dcterms:title "Authentication and authorization service" ;
+    dcterms:title "Authentication and authorization technique" ;
     dcat:version "" ;
     ftr:hasAssociatedMetric "#FIP09.Q9",
         "#FIP10.Q10" .
@@ -26,7 +26,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#A2_benchmark> a ftr:Benchmark ;
     dcterms:description "Metrics for FAIR principle A2" ;
     dcterms:identifier "A2" ;
-    dcterms:title "Metadata repository" ;
+    dcterms:title "Metadata longevity" ;
     dcat:version "" ;
     ftr:hasAssociatedMetric "#FIP11.Q11" .
 
@@ -55,7 +55,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#F4_benchmark> a ftr:Benchmark ;
     dcterms:description "Metrics for FAIR principle F4" ;
     dcterms:identifier "F4" ;
-    dcterms:title "Registry (searchable repository)" ;
+    dcterms:title "Search Engines" ;
     dcat:version "" ;
     ftr:hasAssociatedMetric "#FIP05.Q5",
         "#FIP06.Q6" .
@@ -197,7 +197,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#I2_benchmark> a ftr:Benchmark ;
     dcterms:description "Metrics for FAIR principle I2" ;
     dcterms:identifier "I2" ;
-    dcterms:title "Structured vocabulary" ;
+    dcterms:title "Structured vocabularies" ;
     dcat:version "" ;
     ftr:hasAssociatedMetric "#FIP14.Q14",
         "#FIP15.Q15" .
@@ -205,7 +205,7 @@
 <file:///C:/Users/berni/OneDrive%20-%20TU%20Wien/THESIS/Code/DMP-Evaluation/#I3_benchmark> a ftr:Benchmark ;
     dcterms:description "Metrics for FAIR principle I3" ;
     dcterms:identifier "I3" ;
-    dcterms:title "Qualified reference mechanism" ;
+    dcterms:title "Metadata/data schema" ;
     dcat:version "" ;
     ftr:hasAssociatedMetric "#FIP16.Q16",
         "#FIP17.Q17" .
@@ -365,7 +365,8 @@
     dcterms:identifier "Test_FIP05.Q5" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Result for FIP05.Q5" ;
-    prov:value "fail" ;
+    prov:value "fail",
+        "pass" ;
     prov:wasDerivedFrom "#input_dmp" ;
     ftr:completion "100" ;
     ftr:log "https://globalbioticinteractions.org/worldfair/",
@@ -389,7 +390,8 @@
     dcterms:identifier "Test_FIP06.Q6" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Result for FIP06.Q6" ;
-    prov:value "fail" ;
+    prov:value "fail",
+        "pass" ;
     prov:wasDerivedFrom "#input_dmp" ;
     ftr:completion "100" ;
     ftr:log "https://globalbioticinteractions.org/worldfair/",
@@ -507,7 +509,7 @@
     dcterms:identifier "Test_FIP11.Q11" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Result for FIP11.Q11" ;
-    prov:value "fail" ;
+    prov:value "indeterminate" ;
     prov:wasDerivedFrom "#input_dmp" ;
     ftr:completion "100" ;
     ftr:log "None" ;
@@ -530,7 +532,7 @@
     dcterms:identifier "Test_FIP12.Q12" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Result for FIP12.Q12" ;
-    prov:value "fail" ;
+    prov:value "indeterminate" ;
     prov:wasDerivedFrom "#input_dmp" ;
     ftr:completion "100" ;
     ftr:log "None" ;
@@ -553,7 +555,7 @@
     dcterms:identifier "Test_FIP13.Q13" ;
     dcterms:license "https://creativecommons.org/publicdomain/zero/1.0/" ;
     dcterms:title "Result for FIP13.Q13" ;
-    prov:value "fail" ;
+    prov:value "indeterminate" ;
     prov:wasDerivedFrom "#input_dmp" ;
     ftr:completion "100" ;
     ftr:log "None" ;

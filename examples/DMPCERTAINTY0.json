@@ -1,0 +1,111 @@
+{
+  "dmp" : {
+    "contact" : {
+      "contact_id" : {
+        "identifier" : "51883996-dec7-4e1b-b912-c0db46062143",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "mbox" : "ann-kristin.naumann@mpimet.mpg.de",
+      "name" : "Ann Kristin Naumann",
+      "additional_properties" : { }
+    },
+    "contributor" : [ {
+      "contributor_id" : {
+        "identifier" : "http://orcid.org/0000-0002-5057-6038",
+        "type" : "orcid",
+        "additional_properties" : { }
+      },
+      "name" : "Ann Kristin Naumann (orcid:0000-0002-5057-6038)",
+      "additional_properties" : { }
+    } ],
+    "cost" : [ ],
+    "created" : "2024-01-16T13:34:10Z",
+    "dataset" : [ {
+      "data_quality_assurance" : [ ],
+      "dataset_id" : {
+        "identifier" : "a118b0a1-15a4-4624-a1c6-5796165cd730",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "In its limited-area setup ICON will use input data from ERA-5 including:<div>1.Vertical profile of state variables<br></div><div>2. Surface conditions</div><div>3. initial conditions<br></div>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "title" : "Input data for ICON",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "dmpSectionIndex" : 3
+      }
+    }, {
+      "data_quality_assurance" : [ "Data conform to format specification", "Consistency verified with data models and standards", "The data quality is as good as the ICON model.<br>" ],
+      "dataset_id" : {
+        "identifier" : "70d64d94-1bbb-4f0f-9d91-8f168d5dbb94",
+        "type" : "other",
+        "additional_properties" : { }
+      },
+      "description" : "Limited area model output to investigate the effects of aerosol and the representation of microphysical processes on cloud evolution in selected test cases.<br>",
+      "language" : "eng",
+      "metadata" : [ ],
+      "preservation_statement" : "The data will be preserved following DKRZ's DOKU guidelines: https://www.wdc-climate.de/docs/DOKU_User_Guide.pdf<br>",
+      "title" : "ICON output ",
+      "type" : "DMP Dataset",
+      "additional_properties" : {
+        "template" : "05fcea9a-0435-4c67-a84d-df152aad868e",
+        "otherDQA" : "The data quality is as good as the ICON model.<br>",
+        "otherDQAID" : "951cf2b3-d680-34ee-f64d-93f62c09a2d5",
+        "dmpSectionIndex" : 3
+      }
+    } ],
+    "description" : "The Data Management Plan (DMP) for model output created at the MPI-MET is developed in the context of effectively managing and preserving valuable data generated for CERTAINTY project.&#160;<div><br></div><div><br></div><div>The DMP for model output at MPI-MET is designed to maximize the value, accessibility, and impact of the data produced, supporting the Institute's mission in advancing meteorological research and services.</div>",
+    "dmp_id" : {
+      "identifier" : "11368787-29e8-4787-b793-380e8df02544",
+      "type" : "other",
+      "additional_properties" : { }
+    },
+    "ethical_issues_exist" : "unknown",
+    "language" : "eng",
+    "modified" : "2024-03-04T10:23:54Z",
+    "project" : [ {
+      "description" : "Cloud, aerosols and their interactions are key regulators of climate. However, uncertainties in the magnitude of the net cooling impact of aerosols on\nclimate and in the cloud response to evolving anthropogenic emissions and climate change induced feedbacks on natural emissions are major\nchallenges that limit our understanding of how global and regional climate, including extremes, respond to changes in greenhouse gases. It is of\nparamount importance to better understand aerosol-cloud processes and their role in the Earth System, from regional to global scales, and over\ndifferent time scales, from days to decades. Over the last decade, extensive research networks, infrastructures, satellite instruments, and atmospheric\nmodels have been developed, making it possible to obtain a holistic view of the effects of clouds and aerosols on climate and weather. CERTAINTY\nwill capitalise on this available data together with advanced algorithms, machine learning and data assimilation methods, high resolution models, and\nEarth system models to bring the fundamental knowledge of interactions between clouds, aerosols, and radiation to a new level. The consortium\npartners are in key roles as operators, data originators, developers, providers, and users of European aerosol and cloud data and ESMs/high resolution\nmodels. The consortium leads the activities of next generation satellite missions (such as EarthCARE), and the development of new satellite products,\nto facilitate their scientific use in CERTAINTY by preparing tools for early adoption of data. CERTAINTY will bring the observation-based\nknowledge to be used in modeling frameworks to improve predictive models and knowledge of processes controlling aerosols, clouds, and their\ninteractions from hours to decades. The ultimate outcome will be better understanding and predictions of extreme events that facilitates planning of\nclimate mitigation/adaptation strategies for the good of European citizens and global society.",
+      "end" : "Sat Nov 16 11:12:03 UTC 2024",
+      "funding" : [ {
+        "funder_id" : {
+          "identifier" : "ec__________::EC||European Commission||EC",
+          "type" : "fundref",
+          "additional_properties" : { }
+        },
+        "grant_id" : {
+          "identifier" : "101137680",
+          "type" : "other",
+          "additional_properties" : { }
+        },
+        "additional_properties" : { }
+      } ],
+      "start" : "Fri Nov 17 11:12:03 UTC 2023",
+      "title" : "CERTAINTY",
+      "additional_properties" : { }
+    } ],
+    "title" : "CERTAINTY MPIMET's DMP",
+    "additional_properties" : {
+      "license" : {
+        "created" : null,
+        "hint" : null,
+        "name" : "Creative Commons Attribution 4.0",
+        "modified" : null,
+        "pid" : "CC-BY-4.0",
+        "id" : null,
+        "tag" : "Open Definition",
+        "source" : null,
+        "abbreviation" : null,
+        "uri" : "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "visible" : true,
+      "dmpProperties" : null,
+      "templates" : [ "05fcea9a-0435-4c67-a84d-df152aad868e" ],
+      "contact" : "51883996-dec7-4e1b-b912-c0db46062143",
+      "publicDate" : "2023-11-17T11:08:59.124Z",
+      "blueprintId" : "86635178-36a6-484f-9057-a934e4eeecd5"
+    }
+  }
+}

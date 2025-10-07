@@ -1,0 +1,24 @@
+{
+  "completeness": {
+    "issues": [
+      "project.project_id.identifier",
+      "project.project_id.type",
+      "dataset.0.personal_data",
+      "dataset.0.sensitive_data",
+      "dataset.1.personal_data",
+      "dataset.1.sensitive_data"
+    ]
+  },
+  "accuracy": {
+    "issues": [
+      "[SSH_OA_Publications_in_OCMeta] Invalid dataset identifier format: d9f48614-bb00-48dd-81b3-ee70e5f694bb",
+      "[Data management software] Invalid dataset identifier format: 2b7376fb-58b7-4a02-8655-fedc3e11292f"
+    ]
+  },
+  "availability": {
+    "issues": []
+  },
+  "consistency": {
+    "issues": []
+  }
+}
