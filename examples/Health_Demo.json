@@ -1,0 +1,85 @@
+{
+  "dmp": {
+    "title": "DMP for Synthetic Health Cohort: Longitudinal Vital Signs and Labs (Demo)",
+    "description": "Synthetic, de-identified health cohort with vitals and labs. Planning aligns with Health FIP (identifiers, discovery, indexing, protocols, access labels, vocabularies, licensing).",
+    "language": "eng",
+    "contact": { "name": "Dr. Ada Rivera", "mbox": "mailto:ada.rivera@demo-health.org" },
+    "contributor": [
+      { "name": "Dr. Ada Rivera", "role": ["DataManager"] },
+      { "name": "Samir Patel", "role": ["DataGenerator"] },
+      { "name": "Demo Health Institute", "role": ["HostingInstitution"] }
+    ],
+    "created": "2025-09-01",
+    "modified": "2025-10-10",
+    "project": [
+      {
+        "title": "Synthetic Health Cohort FAIR Pilot",
+        "description": "Pilot to demonstrate FAIR-by-design planning for health data.",
+        "funding": [
+          {
+            "funder_id": { "identifier": "https://doi.org/10.13039/501100000780", "type": "doi" },
+            "grant_id": { "identifier": "FAIR-HEALTH-EX-001", "type": "other" }
+          }
+        ]
+      }
+    ],
+    "dataset": [
+      {
+        "title": "Synthetic Health Cohort: Longitudinal Vital Signs and Labs",
+        "description": "De-identified synthetic dataset modeling adult encounters with vital signs and labs. No PHI; dates shifted; k-anonymity noise applied.",
+        "type": "Clinical study data",
+        "personal_data": "no",
+        "sensitive_data": "no",
+        "data_quality_assurance": [
+          "De-identification review by privacy officer"
+        ],
+        "dataset_id": {
+          "identifier": "https://doi.org/10.1234/abc-123_def.45",
+          "type": "doi"
+        },
+
+        "metadata": [
+          { "metadata_standard_id": { "identifier": "https://schema.datacite.org/", "type": "url" } },
+          { "metadata_standard_id": { "identifier": "https://schema.org/", "type": "url" } },
+          { "metadata_standard_id": { "identifier": "https://id.nlm.nih.gov/mesh", "type": "url" } },
+          { "metadata_standard_id": { "identifier": "http://www.snomed.org", "type": "url" } },
+          { "metadata_standard_id": { "identifier": "https://ncithesaurus.nci.nih.gov", "type": "url" } },
+          { "metadata_standard_id": { "identifier": "https://hpo.jax.org", "type": "url" } }
+        ],
+
+        "distribution": [
+          {
+            "title": "DataCite Search (dataset index)",
+            "access_url": "http://datacite.org/example",
+            "availability": "public",
+            "data_access": "ELIXIR AAI",
+            "license": [
+              { "license_ref": "https://creativecommons.org/licenses/by/4.0/" }
+            ],
+            "format": ["CSV", "Parquet"],
+            "host": {
+              "title": "DataCite",
+              "url": "https://datacite.org/",
+              "pid_system": ["doi"]
+            }
+          },
+          {
+            "title": "OpenAIRE (metadata index)",
+            "access_url": "https://explore.openaire.eu",
+            "availability": "public",
+            "data_access": "public",
+            "license": [
+              { "license_ref": "https://creativecommons.org/publicdomain/zero/1.0/" }
+            ],
+            "format": ["JSON"],
+            "host": {
+              "title": "OpenAIRE",
+              "url": "https://openaire.eu",
+              "pid_system": ["doi"]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
